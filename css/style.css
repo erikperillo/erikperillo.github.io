@@ -118,6 +118,7 @@ z-index: 999;
 .green-btn { background: #178A27; }
 .green-btn:hover { background: #449D44; }
 .blue-btn { background: #1686C1; }
+.gray-btn { background: #666666; }
 .blue-btn:hover { background: #31B0D5; }
 .red-btn { background: #852406; }
 .red-btn:hover { background: #C9302C; }
@@ -355,7 +356,7 @@ input {
 }
 
 .tm-box {
-	background-color: #e1e1e0;
+	background-color: #d9d9d9;
 	max-width: 1140px;
 	width: 100%;
 	float: left;
