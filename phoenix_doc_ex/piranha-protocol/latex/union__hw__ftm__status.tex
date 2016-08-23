@@ -1,0 +1,37 @@
+\hypertarget{union__hw__ftm__status}{}\section{\+\_\+hw\+\_\+ftm\+\_\+status Union Reference}
+\label{union__hw__ftm__status}\index{\+\_\+hw\+\_\+ftm\+\_\+status@{\+\_\+hw\+\_\+ftm\+\_\+status}}
+
+
+H\+W\+\_\+\+F\+T\+M\+\_\+\+S\+T\+A\+T\+US -\/ Capture And Compare Status (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+ftm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__ftm__status_1_1__hw__ftm__status__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+status\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__ftm__status_a51cf5b42bf00386a29d6a7e84a0a3d2f}{}\label{union__hw__ftm__status_a51cf5b42bf00386a29d6a7e84a0a3d2f}
+
+\item 
+struct \hyperlink{struct__hw__ftm__status_1_1__hw__ftm__status__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+status\+::\+\_\+hw\+\_\+ftm\+\_\+status\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__ftm__status_ae85e31bfa86f9d8a081d4c76c4690a2d}{}\label{union__hw__ftm__status_ae85e31bfa86f9d8a081d4c76c4690a2d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+F\+T\+M\+\_\+\+S\+T\+A\+T\+US -\/ Capture And Compare Status (RW) 
+
+Reset value\+: 0x00000000U
+
+The S\+T\+A\+T\+US register contains a copy of the status flag C\+HnF bit in Cn\+SC for each F\+TM channel for software convenience. Each C\+HnF bit in S\+T\+A\+T\+US is a mirror of C\+HnF bit in Cn\+SC. All C\+HnF bits can be checked using only one read of S\+T\+A\+T\+US. All C\+HnF bits can be cleared by reading S\+T\+A\+T\+US followed by writing 0x00 to S\+T\+A\+T\+US. Hardware sets the individual channel flags when an event occurs on the channel. C\+HnF is cleared by reading S\+T\+A\+T\+US while C\+HnF is set and then writing a 0 to the C\+HnF bit. Writing a 1 to C\+HnF has no effect. If another event occurs between the read and write operations, the write operation has no effect; therefore, C\+HnF remains set indicating an event has occurred. In this case, a C\+HnF interrupt request is not lost due to the clearing sequence for a previous C\+HnF. The S\+T\+A\+T\+US register should be used only in Combine mode. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+ftm.\+h\end{DoxyCompactItemize}

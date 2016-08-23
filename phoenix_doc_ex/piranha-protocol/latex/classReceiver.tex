@@ -1,0 +1,358 @@
+\hypertarget{classReceiver}{}\section{Receiver Class Reference}
+\label{classReceiver}\index{Receiver@{Receiver}}
+
+
+{\ttfamily \#include $<$receiver.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReceiver_ab05f062ad8bc9105e7708c9567552908}{Receiver} ()\hypertarget{classReceiver_ab05f062ad8bc9105e7708c9567552908}{}\label{classReceiver_ab05f062ad8bc9105e7708c9567552908}
+
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\hyperlink{classReceiver_ab8501781dc63233c0c82b499451b08f2}{Receiver} (Endpoint \hyperlink{classReceiver_a94cc9b9a270087ba74c1585978cab38f}{sender\+\_\+addr}, const U\+D\+P\+Socket \&\hyperlink{classReceiver_a54d729b5fefa143500429505375efd68}{sock})
+\item 
+\hyperlink{classReceiver_abccccb3afe6587839f5dd11c80fdf0b2}{Receiver} (Endpoint \hyperlink{classReceiver_a94cc9b9a270087ba74c1585978cab38f}{sender\+\_\+addr}, int sock\+\_\+port=\hyperlink{protocol_8h_a714d0c166e470fe1d95e17305a084931}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT}, int timeout=1)
+\item 
+void \hyperlink{classReceiver_aa147f9f403f704d98610892f3e5adf95}{set\+\_\+sender\+\_\+addr} (const Endpoint \&\hyperlink{classReceiver_a94cc9b9a270087ba74c1585978cab38f}{sender\+\_\+addr})
+\item 
+void \hyperlink{classReceiver_af87898ab72d053f1650540c2fa2947d0}{set\+\_\+socket} (const U\+D\+P\+Socket \&\hyperlink{classReceiver_a54d729b5fefa143500429505375efd68}{sock})
+\item 
+void \hyperlink{classReceiver_acc405024239f1975412f575e91aa5a8f}{set\+\_\+socket} (int port=\hyperlink{protocol_8h_a714d0c166e470fe1d95e17305a084931}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT}, int timeout=1)
+\item 
+Endpoint \hyperlink{classReceiver_ad61317d8e3a6963d69a6c9669d06c6b5}{get\+\_\+sender\+\_\+addr} ()\hypertarget{classReceiver_ad61317d8e3a6963d69a6c9669d06c6b5}{}\label{classReceiver_ad61317d8e3a6963d69a6c9669d06c6b5}
+
+\begin{DoxyCompactList}\small\item\em Gets sender address. \end{DoxyCompactList}\item 
+U\+D\+P\+Socket \hyperlink{classReceiver_a03493e2745f0a9d893d72d7d8a5d4c15}{get\+\_\+socket} ()\hypertarget{classReceiver_a03493e2745f0a9d893d72d7d8a5d4c15}{}\label{classReceiver_a03493e2745f0a9d893d72d7d8a5d4c15}
+
+\begin{DoxyCompactList}\small\item\em Gets receiver socket. \end{DoxyCompactList}\item 
+bool \hyperlink{classReceiver_a07be48f1064a85b96bff4f822696c65b}{receive} ()\hypertarget{classReceiver_a07be48f1064a85b96bff4f822696c65b}{}\label{classReceiver_a07be48f1064a85b96bff4f822696c65b}
+
+\begin{DoxyCompactList}\small\item\em Returns true if a message has been received and false otherwise. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{classReceiver_a6892c16ffee2ceee17920a86413c1418}{get\+\_\+msg} ()\hypertarget{classReceiver_a6892c16ffee2ceee17920a86413c1418}{}\label{classReceiver_a6892c16ffee2ceee17920a86413c1418}
+
+\begin{DoxyCompactList}\small\item\em Returns message contained in header in message buffer. \end{DoxyCompactList}\item 
+float \hyperlink{classReceiver_a6d3a40c1fb7cbdbf68edcac5f865b4e6}{get\+\_\+abs\+\_\+ang\+\_\+ref} ()
+\item 
+float \hyperlink{classReceiver_abeda9ceeaf2b8bc20fce9ca26a0abcc3}{get\+\_\+rel\+\_\+ang\+\_\+ref} ()
+\item 
+float \hyperlink{classReceiver_af6497262041cc93fd4bfe319b1a77373}{get\+\_\+mag\+\_\+ang\+\_\+ref} ()
+\item 
+float \hyperlink{classReceiver_ad3e21d33eeb6e658abbbc5d3fbcc5582}{get\+\_\+gnd\+\_\+vel} ()
+\item 
+void \hyperlink{classReceiver_a0a94deabed7416727ace25ccaaea8d3a}{get\+\_\+brake} (float $\ast$intensity, float $\ast$period)
+\item 
+void \hyperlink{classReceiver_a0cd0df13d41eefce61ab0e268b4946c8}{get\+\_\+jog\+\_\+vel} (float $\ast$period, float $\ast$ratio)
+\item 
+void \hyperlink{classReceiver_a9bfe5dfb43d708e149f0b224a14aee05}{get\+\_\+pid\+\_\+params} (float $\ast$params)
+\item 
+void \hyperlink{classReceiver_ad03b0f06173febf3f0a11cf1b4fc5fc7}{get\+\_\+mag\+\_\+calib} (float $\ast$params)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classReceiver_a5fa8d82ac04bd42f7f314aa61c8b3725}{un\+\_\+scale} (uint16\+\_\+t value, float min, float max)
+\item 
+uint8\+\_\+t \hyperlink{classReceiver_a480c99fb1f3107075a36672376d50dc5}{get\+\_\+header} ()\hypertarget{classReceiver_a480c99fb1f3107075a36672376d50dc5}{}\label{classReceiver_a480c99fb1f3107075a36672376d50dc5}
+
+\begin{DoxyCompactList}\small\item\em Gets header byte from message buffer. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{classReceiver_a439f7ad261ad2843877397fc5c795122}{get\+\_\+raw\+\_\+val} (int pos=0)
+\item 
+float \hyperlink{classReceiver_a9394a5ca927e9fffabe945efb0db0e2b}{get\+\_\+val} (float min, float max, int pos=0)
+\item 
+void \hyperlink{classReceiver_a675c33582709485763bb734673bb43b1}{get\+\_\+vals} (float min, float max, float $\ast$vals, int size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+D\+P\+Socket \hyperlink{classReceiver_a54d729b5fefa143500429505375efd68}{sock}\hypertarget{classReceiver_a54d729b5fefa143500429505375efd68}{}\label{classReceiver_a54d729b5fefa143500429505375efd68}
+
+\begin{DoxyCompactList}\small\item\em Communication endpoint. \end{DoxyCompactList}\item 
+char \hyperlink{classReceiver_ac784703497512ca4ac8bfb533ffba77b}{message} \mbox{[}\hyperlink{protocol_8h_abd55521187de5f99b96a34c3acc93ac1}{M\+S\+G\+\_\+\+B\+U\+F\+\_\+\+L\+EN}\mbox{]}\hypertarget{classReceiver_ac784703497512ca4ac8bfb533ffba77b}{}\label{classReceiver_ac784703497512ca4ac8bfb533ffba77b}
+
+\begin{DoxyCompactList}\small\item\em Message buffer. \end{DoxyCompactList}\item 
+Endpoint \hyperlink{classReceiver_a94cc9b9a270087ba74c1585978cab38f}{sender\+\_\+addr}\hypertarget{classReceiver_a94cc9b9a270087ba74c1585978cab38f}{}\label{classReceiver_a94cc9b9a270087ba74c1585978cab38f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSender}{Sender} side internet address (ip, port). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for receiver side.
+
+Instances of this class contain necessary network information for communication with \hyperlink{classSender}{Sender}. This is supposed to be used by the control module. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Receiver@{Receiver}!Receiver@{Receiver}}
+\index{Receiver@{Receiver}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{Receiver(\+Endpoint sender\+\_\+addr, const U\+D\+P\+Socket \&sock)}{Receiver(Endpoint sender_addr, const UDPSocket &sock)}}]{\setlength{\rightskip}{0pt plus 5cm}Receiver\+::\+Receiver (
+\begin{DoxyParamCaption}
+\item[{Endpoint}]{sender\+\_\+addr, }
+\item[{const U\+D\+P\+Socket \&}]{sock}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_ab8501781dc63233c0c82b499451b08f2}{}\label{classReceiver_ab8501781dc63233c0c82b499451b08f2}
+Constructor using already created socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+\_\+addr} & \hyperlink{classSender}{Sender} side network address. \\
+\hline
+{\em sock} & Already created socket. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!Receiver@{Receiver}}
+\index{Receiver@{Receiver}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{Receiver(\+Endpoint sender\+\_\+addr, int sock\+\_\+port=\+R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+R\+T, int timeout=1)}{Receiver(Endpoint sender_addr, int sock_port=RECEIVER_PORT, int timeout=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Receiver\+::\+Receiver (
+\begin{DoxyParamCaption}
+\item[{Endpoint}]{sender\+\_\+addr, }
+\item[{int}]{sock\+\_\+port = {\ttfamily {\bf R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT}}, }
+\item[{int}]{timeout = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_abccccb3afe6587839f5dd11c80fdf0b2}{}\label{classReceiver_abccccb3afe6587839f5dd11c80fdf0b2}
+Constructor specifying network address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+\_\+addr} & \hyperlink{classSender}{Sender} side network address. \\
+\hline
+{\em sock\+\_\+port} & Socket port to be used by bind. \\
+\hline
+{\em timeout} & Sets blocking behavior of socket. If timeout is less than zero, blocking is set. Else, nonblocking mode is set with timeout in millisseconds. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Receiver@{Receiver}!get\+\_\+abs\+\_\+ang\+\_\+ref@{get\+\_\+abs\+\_\+ang\+\_\+ref}}
+\index{get\+\_\+abs\+\_\+ang\+\_\+ref@{get\+\_\+abs\+\_\+ang\+\_\+ref}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+abs\+\_\+ang\+\_\+ref()}{get_abs_ang_ref()}}]{\setlength{\rightskip}{0pt plus 5cm}float Receiver\+::get\+\_\+abs\+\_\+ang\+\_\+ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_a6d3a40c1fb7cbdbf68edcac5f865b4e6}{}\label{classReceiver_a6d3a40c1fb7cbdbf68edcac5f865b4e6}
+Gets absolute angle reference.
+
+Used in case of message A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF. \index{Receiver@{Receiver}!get\+\_\+brake@{get\+\_\+brake}}
+\index{get\+\_\+brake@{get\+\_\+brake}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+brake(float $\ast$intensity, float $\ast$period)}{get_brake(float *intensity, float *period)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::get\+\_\+brake (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{intensity, }
+\item[{float $\ast$}]{period}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_a0a94deabed7416727ace25ccaaea8d3a}{}\label{classReceiver_a0a94deabed7416727ace25ccaaea8d3a}
+Gets brake parameters.
+
+Used in case of message B\+R\+A\+KE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intensity} & Address to store intensity of brake. \\
+\hline
+{\em period} & Address to store time period(seconds) by which brake will act. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!get\+\_\+gnd\+\_\+vel@{get\+\_\+gnd\+\_\+vel}}
+\index{get\+\_\+gnd\+\_\+vel@{get\+\_\+gnd\+\_\+vel}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+gnd\+\_\+vel()}{get_gnd_vel()}}]{\setlength{\rightskip}{0pt plus 5cm}float Receiver\+::get\+\_\+gnd\+\_\+vel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_ad3e21d33eeb6e658abbbc5d3fbcc5582}{}\label{classReceiver_ad3e21d33eeb6e658abbbc5d3fbcc5582}
+Gets ground velocity.
+
+Used in case of message G\+N\+D\+\_\+\+V\+EL. \index{Receiver@{Receiver}!get\+\_\+jog\+\_\+vel@{get\+\_\+jog\+\_\+vel}}
+\index{get\+\_\+jog\+\_\+vel@{get\+\_\+jog\+\_\+vel}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+jog\+\_\+vel(float $\ast$period, float $\ast$ratio)}{get_jog_vel(float *period, float *ratio)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::get\+\_\+jog\+\_\+vel (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{period, }
+\item[{float $\ast$}]{ratio}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_a0cd0df13d41eefce61ab0e268b4946c8}{}\label{classReceiver_a0cd0df13d41eefce61ab0e268b4946c8}
+Gets jogging velocity parameters.
+
+Used in case of message J\+O\+G\+\_\+\+V\+EL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & Time in seconds of a jogging period. \\
+\hline
+{\em ratio} & Fraction of period car will be stopped. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!get\+\_\+mag\+\_\+ang\+\_\+ref@{get\+\_\+mag\+\_\+ang\+\_\+ref}}
+\index{get\+\_\+mag\+\_\+ang\+\_\+ref@{get\+\_\+mag\+\_\+ang\+\_\+ref}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+mag\+\_\+ang\+\_\+ref()}{get_mag_ang_ref()}}]{\setlength{\rightskip}{0pt plus 5cm}float Receiver\+::get\+\_\+mag\+\_\+ang\+\_\+ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_af6497262041cc93fd4bfe319b1a77373}{}\label{classReceiver_af6497262041cc93fd4bfe319b1a77373}
+Gets magnetometer angle reference.
+
+Used in case of message M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF. \index{Receiver@{Receiver}!get\+\_\+mag\+\_\+calib@{get\+\_\+mag\+\_\+calib}}
+\index{get\+\_\+mag\+\_\+calib@{get\+\_\+mag\+\_\+calib}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+mag\+\_\+calib(float $\ast$params)}{get_mag_calib(float *params)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::get\+\_\+mag\+\_\+calib (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{params}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_ad03b0f06173febf3f0a11cf1b4fc5fc7}{}\label{classReceiver_ad03b0f06173febf3f0a11cf1b4fc5fc7}
+Gets magnetometer calibration parameters.
+
+Used in case of message M\+A\+G\+\_\+\+C\+A\+L\+IB. The order is min\+\_\+x, max\+\_\+x, min\+\_\+y, max\+\_\+y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & Address to store parameters. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!get\+\_\+pid\+\_\+params@{get\+\_\+pid\+\_\+params}}
+\index{get\+\_\+pid\+\_\+params@{get\+\_\+pid\+\_\+params}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+pid\+\_\+params(float $\ast$params)}{get_pid_params(float *params)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::get\+\_\+pid\+\_\+params (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{params}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_a9bfe5dfb43d708e149f0b224a14aee05}{}\label{classReceiver_a9bfe5dfb43d708e149f0b224a14aee05}
+Gets P\+ID control parameters.
+
+Used in case of message P\+I\+D\+\_\+\+P\+A\+R\+A\+MS. The order is P, I, D, N.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & Address to store parameters. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!get\+\_\+raw\+\_\+val@{get\+\_\+raw\+\_\+val}}
+\index{get\+\_\+raw\+\_\+val@{get\+\_\+raw\+\_\+val}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+raw\+\_\+val(int pos=0)}{get_raw_val(int pos=0)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Receiver\+::get\+\_\+raw\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{int}]{pos = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classReceiver_a439f7ad261ad2843877397fc5c795122}{}\label{classReceiver_a439f7ad261ad2843877397fc5c795122}
+Gets unsigned integer value coded by bytes in message buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Index of value from message buffer, eg. pos=1 means second coded value in message buffer. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!get\+\_\+rel\+\_\+ang\+\_\+ref@{get\+\_\+rel\+\_\+ang\+\_\+ref}}
+\index{get\+\_\+rel\+\_\+ang\+\_\+ref@{get\+\_\+rel\+\_\+ang\+\_\+ref}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+rel\+\_\+ang\+\_\+ref()}{get_rel_ang_ref()}}]{\setlength{\rightskip}{0pt plus 5cm}float Receiver\+::get\+\_\+rel\+\_\+ang\+\_\+ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_abeda9ceeaf2b8bc20fce9ca26a0abcc3}{}\label{classReceiver_abeda9ceeaf2b8bc20fce9ca26a0abcc3}
+Gets relative angle reference.
+
+Used in case of message R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF. \index{Receiver@{Receiver}!get\+\_\+val@{get\+\_\+val}}
+\index{get\+\_\+val@{get\+\_\+val}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+val(float min, float max, int pos=0)}{get_val(float min, float max, int pos=0)}}]{\setlength{\rightskip}{0pt plus 5cm}float Receiver\+::get\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{float}]{min, }
+\item[{float}]{max, }
+\item[{int}]{pos = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classReceiver_a9394a5ca927e9fffabe945efb0db0e2b}{}\label{classReceiver_a9394a5ca927e9fffabe945efb0db0e2b}
+Gets float value from message buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minumum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+{\em pos} & Index of value from message buffer. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!get\+\_\+vals@{get\+\_\+vals}}
+\index{get\+\_\+vals@{get\+\_\+vals}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{get\+\_\+vals(float min, float max, float $\ast$vals, int size)}{get_vals(float min, float max, float *vals, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::get\+\_\+vals (
+\begin{DoxyParamCaption}
+\item[{float}]{min, }
+\item[{float}]{max, }
+\item[{float $\ast$}]{vals, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classReceiver_a675c33582709485763bb734673bb43b1}{}\label{classReceiver_a675c33582709485763bb734673bb43b1}
+Gets multiple float values from message buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minumum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+{\em vals} & Array where values will be saved. \\
+\hline
+{\em size} & Number of values to read. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!set\+\_\+sender\+\_\+addr@{set\+\_\+sender\+\_\+addr}}
+\index{set\+\_\+sender\+\_\+addr@{set\+\_\+sender\+\_\+addr}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{set\+\_\+sender\+\_\+addr(const Endpoint \&sender\+\_\+addr)}{set_sender_addr(const Endpoint &sender_addr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::set\+\_\+sender\+\_\+addr (
+\begin{DoxyParamCaption}
+\item[{const Endpoint \&}]{sender\+\_\+addr}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_aa147f9f403f704d98610892f3e5adf95}{}\label{classReceiver_aa147f9f403f704d98610892f3e5adf95}
+Sets sender address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+\_\+addr} & \hyperlink{classSender}{Sender} address. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!set\+\_\+socket@{set\+\_\+socket}}
+\index{set\+\_\+socket@{set\+\_\+socket}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{set\+\_\+socket(const U\+D\+P\+Socket \&sock)}{set_socket(const UDPSocket &sock)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::set\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{const U\+D\+P\+Socket \&}]{sock}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_af87898ab72d053f1650540c2fa2947d0}{}\label{classReceiver_af87898ab72d053f1650540c2fa2947d0}
+Sets up socket for receiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sock} & Already instantiated socket. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!set\+\_\+socket@{set\+\_\+socket}}
+\index{set\+\_\+socket@{set\+\_\+socket}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{set\+\_\+socket(int port=\+R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+R\+T, int timeout=1)}{set_socket(int port=RECEIVER_PORT, int timeout=1)}}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver\+::set\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{int}]{port = {\ttfamily {\bf R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT}}, }
+\item[{int}]{timeout = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classReceiver_acc405024239f1975412f575e91aa5a8f}{}\label{classReceiver_acc405024239f1975412f575e91aa5a8f}
+Sets up socket for receiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sock\+\_\+port} & Socket port to be used by bind. \\
+\hline
+{\em timeout} & Sets blocking behavior of socket. If timeout is less than zero, blocking is set. Else, nonblocking mode is set with timeout in millisseconds. \\
+\hline
+\end{DoxyParams}
+\index{Receiver@{Receiver}!un\+\_\+scale@{un\+\_\+scale}}
+\index{un\+\_\+scale@{un\+\_\+scale}!Receiver@{Receiver}}
+\subsubsection[{\texorpdfstring{un\+\_\+scale(uint16\+\_\+t value, float min, float max)}{un_scale(uint16_t value, float min, float max)}}]{\setlength{\rightskip}{0pt plus 5cm}float Receiver\+::un\+\_\+scale (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{value, }
+\item[{float}]{min, }
+\item[{float}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classReceiver_a5fa8d82ac04bd42f7f314aa61c8b3725}{}\label{classReceiver_a5fa8d82ac04bd42f7f314aa61c8b3725}
+Unscales value from byte string into signed float.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Unsigned integer coded by two bytes. \\
+\hline
+{\em min} & Minimum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/piranha-\/ptc/src/receiver/\hyperlink{receiver_8h}{receiver.\+h}\item 
+/home/erik/proj/piranha/piranha-\/ptc/src/receiver/\hyperlink{receiver_8cpp}{receiver.\+cpp}\end{DoxyCompactItemize}

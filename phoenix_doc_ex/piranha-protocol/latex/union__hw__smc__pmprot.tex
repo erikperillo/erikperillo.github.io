@@ -1,0 +1,37 @@
+\hypertarget{union__hw__smc__pmprot}{}\section{\+\_\+hw\+\_\+smc\+\_\+pmprot Union Reference}
+\label{union__hw__smc__pmprot}\index{\+\_\+hw\+\_\+smc\+\_\+pmprot@{\+\_\+hw\+\_\+smc\+\_\+pmprot}}
+
+
+H\+W\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+OT -\/ Power Mode Protection register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+smc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__smc__pmprot_1_1__hw__smc__pmprot__bitfields}{\+\_\+hw\+\_\+smc\+\_\+pmprot\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__smc__pmprot_a31ec9b5675040e2dc78609a32fc81f2d}{}\label{union__hw__smc__pmprot_a31ec9b5675040e2dc78609a32fc81f2d}
+
+\item 
+struct \hyperlink{struct__hw__smc__pmprot_1_1__hw__smc__pmprot__bitfields}{\+\_\+hw\+\_\+smc\+\_\+pmprot\+::\+\_\+hw\+\_\+smc\+\_\+pmprot\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__smc__pmprot_a233cb4cbc32a25bf935887a5a3eb0842}{}\label{union__hw__smc__pmprot_a233cb4cbc32a25bf935887a5a3eb0842}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+OT -\/ Power Mode Protection register (RW) 
+
+Reset value\+: 0x00U
+
+This register provides protection for entry into any low-\/power run or stop mode. The enabling of the low-\/power run or stop mode occurs by configuring the Power Mode Control register (P\+M\+C\+T\+RL). The P\+M\+P\+R\+OT register can be written only once after any system reset. If the M\+CU is configured for a disallowed or reserved power mode, the M\+CU remains in its current power mode. For example, if the M\+CU is in normal R\+UN mode and A\+V\+LP is 0, an attempt to enter V\+L\+PR mode using P\+M\+C\+T\+RL\mbox{[}R\+U\+NM\mbox{]} is blocked and P\+M\+C\+T\+RL\mbox{[}R\+U\+NM\mbox{]} remains 00b, indicating the M\+CU is still in Normal Run mode. This register is reset on Chip Reset not V\+L\+LS and by reset types that trigger Chip Reset not V\+L\+LS. It is unaffected by reset types that do not trigger Chip Reset not V\+L\+LS. See the Reset section details for more information. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+smc.\+h\end{DoxyCompactItemize}

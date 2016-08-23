@@ -1,0 +1,37 @@
+\hypertarget{union__hw__crc__data}{}\section{\+\_\+hw\+\_\+crc\+\_\+data Union Reference}
+\label{union__hw__crc__data}\index{\+\_\+hw\+\_\+crc\+\_\+data@{\+\_\+hw\+\_\+crc\+\_\+data}}
+
+
+H\+W\+\_\+\+C\+R\+C\+\_\+\+D\+A\+TA -\/ C\+RC Data register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+crc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__crc__data_1_1__hw__crc__data__bitfields}{\+\_\+hw\+\_\+crc\+\_\+data\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__crc__data_a7b1ac8ae523b49ca7ab629f5a570258c}{}\label{union__hw__crc__data_a7b1ac8ae523b49ca7ab629f5a570258c}
+
+\item 
+struct \hyperlink{struct__hw__crc__data_1_1__hw__crc__data__bitfields}{\+\_\+hw\+\_\+crc\+\_\+data\+::\+\_\+hw\+\_\+crc\+\_\+data\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__crc__data_a886ef8eceb46841b64a5370b959f02ec}{}\label{union__hw__crc__data_a886ef8eceb46841b64a5370b959f02ec}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+C\+R\+C\+\_\+\+D\+A\+TA -\/ C\+RC Data register (RW) 
+
+Reset value\+: 0x\+F\+F\+F\+F\+F\+F\+F\+FU
+
+The C\+RC Data register contains the value of the seed, data, and checksum. When C\+T\+RL\mbox{[}W\+AS\mbox{]} is set, any write to the data register is regarded as the seed value. When C\+T\+RL\mbox{[}W\+AS\mbox{]} is cleared, any write to the data register is regarded as data for general C\+RC computation. In 16-\/bit C\+RC mode, the HU and HL fields are not used for programming the seed value, and reads of these fields return an indeterminate value. In 32-\/bit C\+RC mode, all fields are used for programming the seed value. When programming data values, the values can be written 8 bits, 16 bits, or 32 bits at a time, provided all bytes are contiguous; with M\+SB of data value written first. After all data values are written, the C\+RC result can be read from this data register. In 16-\/bit C\+RC mode, the C\+RC result is available in the LU and LL fields. In 32-\/bit C\+RC mode, all fields contain the result. Reads of this register at any time return the intermediate C\+RC value, provided the C\+RC module is configured. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+crc.\+h\end{DoxyCompactItemize}

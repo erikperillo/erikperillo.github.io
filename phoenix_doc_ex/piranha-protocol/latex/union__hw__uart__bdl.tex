@@ -1,0 +1,37 @@
+\hypertarget{union__hw__uart__bdl}{}\section{\+\_\+hw\+\_\+uart\+\_\+bdl Union Reference}
+\label{union__hw__uart__bdl}\index{\+\_\+hw\+\_\+uart\+\_\+bdl@{\+\_\+hw\+\_\+uart\+\_\+bdl}}
+
+
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+B\+DL -\/ U\+A\+RT Baud Rate Registers\+: Low (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+uart.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__uart__bdl_1_1__hw__uart__bdl__bitfields}{\+\_\+hw\+\_\+uart\+\_\+bdl\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__uart__bdl_add52978ae5af206a36f193a2266ba2bf}{}\label{union__hw__uart__bdl_add52978ae5af206a36f193a2266ba2bf}
+
+\item 
+struct \hyperlink{struct__hw__uart__bdl_1_1__hw__uart__bdl__bitfields}{\+\_\+hw\+\_\+uart\+\_\+bdl\+::\+\_\+hw\+\_\+uart\+\_\+bdl\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__uart__bdl_a9c6effc0a2367e9ccdb9587707ee3927}{}\label{union__hw__uart__bdl_a9c6effc0a2367e9ccdb9587707ee3927}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+B\+DL -\/ U\+A\+RT Baud Rate Registers\+: Low (RW) 
+
+Reset value\+: 0x04U
+
+This register, along with the B\+DH register, controls the prescale divisor for U\+A\+RT baud rate generation. To update the 13-\/bit baud rate setting, S\+BR\mbox{[}12\+:0\mbox{]}, first write to B\+DH to buffer the high half of the new value and then write to B\+DL. The working value in B\+DH does not change until B\+DL is written. B\+DL is reset to a nonzero value, but after reset, the baud rate generator remains disabled until the first time the receiver or transmitter is enabled, that is, when C2\mbox{[}RE\mbox{]} or C2\mbox{[}TE\mbox{]} is set. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+uart.\+h\end{DoxyCompactItemize}

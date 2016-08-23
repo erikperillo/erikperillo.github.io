@@ -1,0 +1,302 @@
+\hypertarget{fsl__sim__hal_8h}{}\section{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/sim/fsl\+\_\+sim\+\_\+hal.h File Reference}
+\label{fsl__sim__hal_8h}\index{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/sim/fsl\+\_\+sim\+\_\+hal.\+h@{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/sim/fsl\+\_\+sim\+\_\+hal.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+device\+\_\+registers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+sim\+\_\+features.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structClockNameConfig}{Clock\+Name\+Config}
+\begin{DoxyCompactList}\small\item\em Clock name configuration table structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \+\_\+clock\+\_\+names {\bfseries clock\+\_\+names\+\_\+t}
+\item 
+typedef enum \hyperlink{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}{\+\_\+clock\+\_\+source\+\_\+names} \hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Clock source and sel names. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga48bb70d28e353a255009c5762b248970}{\+\_\+clock\+\_\+divider\+\_\+names} \hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Clock Divider names. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}{\+\_\+sim\+\_\+usbsstby\+\_\+stop} \hyperlink{group__sim__hal_ga3e6c7010d80a822f8224ce7bdc525576}{sim\+\_\+usbsstby\+\_\+stop\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during stop modes. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}{\+\_\+sim\+\_\+usbvstby\+\_\+stop} \hyperlink{group__sim__hal_ga640e85f65b3412e5ce73dcf90c577bd2}{sim\+\_\+usbvstby\+\_\+stop\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during V\+L\+PR and V\+L\+PW modes. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}{\+\_\+sim\+\_\+cmtuartpad\+\_\+strengh} \hyperlink{group__sim__hal_gab8bdf691986599480d4d7963712d7bb5}{sim\+\_\+cmtuartpad\+\_\+strengh\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM C\+M\+T/\+U\+A\+RT pad drive strength. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}{\+\_\+sim\+\_\+ptd7pad\+\_\+strengh} \hyperlink{group__sim__hal_ga81b5576d77b577cbc03bd57c6653b2ca}{sim\+\_\+ptd7pad\+\_\+strengh\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM P\+T\+D7 pad drive strength. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}{\+\_\+sim\+\_\+flexbus\+\_\+security\+\_\+level} \hyperlink{group__sim__hal_ga7302462a5c3005311de845c17aab6971}{sim\+\_\+flexbus\+\_\+security\+\_\+level\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Bus security level. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}{\+\_\+sim\+\_\+pretrgsel} \hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx pre-\/trigger select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}{\+\_\+sim\+\_\+trgsel} \hyperlink{group__sim__hal_ga5bd34cf2c7d81265882d1b79534b43c0}{sim\+\_\+trgsel\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx trigger select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}{\+\_\+sim\+\_\+uart\+\_\+rxsrc} \hyperlink{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{sim\+\_\+uart\+\_\+rxsrc\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM receive data source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}{\+\_\+sim\+\_\+uart\+\_\+txsrc} \hyperlink{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{sim\+\_\+uart\+\_\+txsrc\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM transmit data source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}{\+\_\+sim\+\_\+ftm\+\_\+trg\+\_\+src} \hyperlink{group__sim__hal_ga51391f8c8388e0b84b93bbded825d57b}{sim\+\_\+ftm\+\_\+trg\+\_\+src\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x trigger y select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}{\+\_\+sim\+\_\+ftm\+\_\+clk\+\_\+sel} \hyperlink{group__sim__hal_ga553da71353180a7044fe2b2c2bc7456e}{sim\+\_\+ftm\+\_\+clk\+\_\+sel\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer external clock select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}{\+\_\+sim\+\_\+ftm\+\_\+ch\+\_\+src} \hyperlink{group__sim__hal_ga1b870891313d5b9c55d2d32be3453231}{sim\+\_\+ftm\+\_\+ch\+\_\+src\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x channel y input capture source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}{\+\_\+sim\+\_\+ftm\+\_\+flt\+\_\+sel} \hyperlink{group__sim__hal_ga5f1270e40e152e6fa6f9b845fb8f5bc3}{sim\+\_\+ftm\+\_\+flt\+\_\+sel\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x Fault y select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}{\+\_\+sim\+\_\+tpm\+\_\+clk\+\_\+sel} \hyperlink{group__sim__hal_gaaae3e3d207612ecbfc7d9fb15f393bd9}{sim\+\_\+tpm\+\_\+clk\+\_\+sel\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM external clock select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}{\+\_\+sim\+\_\+tpm\+\_\+ch\+\_\+src} \hyperlink{group__sim__hal_ga82807d4d46060b2abab884b3bd335b29}{sim\+\_\+tpm\+\_\+ch\+\_\+src\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM x channel y input capture source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}{\+\_\+sim\+\_\+hal\+\_\+status} \hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+IM H\+AL A\+PI return status. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structClockNameConfig}{Clock\+Name\+Config} \hyperlink{group__sim__hal_ga0d84063eacefa134ba3be72a9c70222c}{clock\+\_\+name\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Clock name configuration table structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries \+\_\+clock\+\_\+names} \{ \\*
+{\bfseries k\+Core\+Clock}, 
+{\bfseries k\+System\+Clock}, 
+{\bfseries k\+Platform\+Clock}, 
+{\bfseries k\+Bus\+Clock}, 
+\\*
+{\bfseries k\+Flex\+Bus\+Clock}, 
+{\bfseries k\+Flash\+Clock}, 
+{\bfseries k\+Osc32k\+Clock}, 
+{\bfseries k\+Osc0\+Er\+Clock}, 
+\\*
+{\bfseries k\+Osc1\+Er\+Clock}, 
+{\bfseries k\+Irc48m\+Clock}, 
+{\bfseries k\+Rtc32k\+Clock}, 
+{\bfseries k\+Rtc1hz\+Clock}, 
+\\*
+{\bfseries k\+Lpo\+Clock}, 
+{\bfseries k\+Mcg\+Ff\+Clock}, 
+{\bfseries k\+Mcg\+Fll\+Clock}, 
+{\bfseries k\+Mcg\+Pll0\+Clock}, 
+\\*
+{\bfseries k\+Mcg\+Pll1\+Clock}, 
+{\bfseries k\+Mcg\+Out\+Clock}, 
+{\bfseries k\+Mcg\+Ir\+Clock}, 
+{\bfseries k\+S\+D\+H\+C0\+\_\+\+C\+L\+K\+IN}, 
+\\*
+{\bfseries k\+E\+N\+E\+T\+\_\+1588\+\_\+\+C\+L\+K\+IN}, 
+{\bfseries k\+E\+X\+T\+A\+L\+\_\+\+Clock}, 
+{\bfseries k\+E\+X\+T\+A\+L1\+\_\+\+Clock}, 
+{\bfseries k\+U\+S\+B\+\_\+\+C\+L\+K\+IN}, 
+\\*
+{\bfseries k\+Reserved}, 
+{\bfseries k\+Clock\+Name\+Count}
+ \}\hypertarget{group__sim__hal_ga000db43a9c0cfd7473ebf8e4d6e0853b}{}\label{group__sim__hal_ga000db43a9c0cfd7473ebf8e4d6e0853b}
+
+\item 
+enum \hyperlink{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}{\+\_\+clock\+\_\+source\+\_\+names} \{ \\*
+{\bfseries k\+Clock\+Nfc\+Src}, 
+{\bfseries k\+Clock\+Esdhc\+Src}, 
+{\bfseries k\+Clock\+Sdhc\+Src}, 
+{\bfseries k\+Clock\+Lcdc\+Src}, 
+\\*
+{\bfseries k\+Clock\+Time\+Src}, 
+{\bfseries k\+Clock\+Rmii\+Src}, 
+{\bfseries k\+Clock\+Usbf\+Src}, 
+{\bfseries k\+Clock\+Usb\+Src}, 
+\\*
+{\bfseries k\+Clock\+Usbh\+Src}, 
+{\bfseries k\+Clock\+Uart0\+Src}, 
+{\bfseries k\+Clock\+Lpuart\+Src}, 
+{\bfseries k\+Clock\+Tpm\+Src}, 
+\\*
+{\bfseries k\+Clock\+Osc32k\+Sel}, 
+{\bfseries k\+Clock\+Usbf\+Sel}, 
+{\bfseries k\+Clock\+Pllfll\+Sel}, 
+{\bfseries k\+Clock\+Nfc\+Sel}, 
+\\*
+{\bfseries k\+Clock\+Lcdc\+Sel}, 
+{\bfseries k\+Clock\+Trace\+Sel}, 
+{\bfseries k\+Clock\+Clkout\+Sel}, 
+{\bfseries k\+Clock\+Rtc\+Clkout\+Sel}, 
+\\*
+{\bfseries k\+Clock\+Source\+Max}
+ \}\hypertarget{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}{}\label{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}
+\begin{DoxyCompactList}\small\item\em Clock source and sel names. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga48bb70d28e353a255009c5762b248970}{\+\_\+clock\+\_\+divider\+\_\+names} \{ \\*
+{\bfseries k\+Clock\+Divider\+Outdiv1}, 
+{\bfseries k\+Clock\+Divider\+Outdiv2}, 
+{\bfseries k\+Clock\+Divider\+Outdiv3}, 
+{\bfseries k\+Clock\+Divider\+Outdiv4}, 
+\\*
+{\bfseries k\+Clock\+Divider\+Usb\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Usb\+Div}, 
+{\bfseries k\+Clock\+Divider\+Usbfs\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Usbfs\+Div}, 
+\\*
+{\bfseries k\+Clock\+Divider\+Usbhs\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Usbhs\+Div}, 
+{\bfseries k\+Clock\+Divider\+Lcdc\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Lcdc\+Div}, 
+\\*
+{\bfseries k\+Clock\+Divider\+Nfc\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Nfc\+Div}, 
+{\bfseries k\+Clock\+Divider\+Special1}, 
+{\bfseries k\+Clock\+Divider\+Max}
+ \}\hypertarget{group__sim__hal_ga48bb70d28e353a255009c5762b248970}{}\label{group__sim__hal_ga48bb70d28e353a255009c5762b248970}
+\begin{DoxyCompactList}\small\item\em Clock Divider names. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}{\+\_\+sim\+\_\+usbsstby\+\_\+stop} \{ {\bfseries k\+Sim\+Usbsstby\+No\+Regulator}, 
+{\bfseries k\+Sim\+Usbsstby\+With\+Regulator}
+ \}\hypertarget{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}{}\label{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during stop modes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}{\+\_\+sim\+\_\+usbvstby\+\_\+stop} \{ {\bfseries k\+Sim\+Usbvstby\+No\+Regulator}, 
+{\bfseries k\+Sim\+Usbvstby\+With\+Regulator}
+ \}\hypertarget{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}{}\label{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during V\+L\+PR and V\+L\+PW modes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}{\+\_\+sim\+\_\+cmtuartpad\+\_\+strengh} \{ {\bfseries k\+Sim\+Cmtuart\+Single\+Pad}, 
+{\bfseries k\+Sim\+Cmtuart\+Dual\+Pad}
+ \}\hypertarget{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}{}\label{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}
+\begin{DoxyCompactList}\small\item\em S\+IM C\+M\+T/\+U\+A\+RT pad drive strength. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}{\+\_\+sim\+\_\+ptd7pad\+\_\+strengh} \{ {\bfseries k\+Sim\+Ptd7pad\+Single\+Pad}, 
+{\bfseries k\+Sim\+Ptd7pad\+Dual\+Pad}
+ \}\hypertarget{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}{}\label{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}
+\begin{DoxyCompactList}\small\item\em S\+IM P\+T\+D7 pad drive strength. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}{\+\_\+sim\+\_\+flexbus\+\_\+security\+\_\+level} \{ {\bfseries k\+Sim\+Fbsl\+Level0}, 
+{\bfseries k\+Sim\+Fbsl\+Level1}, 
+{\bfseries k\+Sim\+Fbsl\+Level2}, 
+{\bfseries k\+Sim\+Fbsl\+Level3}
+ \}\hypertarget{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}{}\label{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Bus security level. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}{\+\_\+sim\+\_\+pretrgsel} \{ {\bfseries k\+Sim\+Adc\+PretrgselA}, 
+{\bfseries k\+Sim\+Adc\+PretrgselB}
+ \}\hypertarget{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}{}\label{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx pre-\/trigger select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}{\+\_\+sim\+\_\+trgsel} \{ \\*
+{\bfseries k\+Sim\+Adc\+Trgsel\+Ext}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+High\+Speed\+Comp0}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+High\+Speed\+Comp1}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+High\+Speed\+Comp2}, 
+\\*
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit0}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit1}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit2}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit3}, 
+\\*
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm0}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm1}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm2}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm3}, 
+\\*
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Rtc\+Alarm}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Rtc\+Sec}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Lptimer}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Hig\+Speed\+Comp3}
+ \}\hypertarget{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}{}\label{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx trigger select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}{\+\_\+sim\+\_\+uart\+\_\+rxsrc} \{ {\bfseries k\+Sim\+Uart\+Rxsrc\+Pin}, 
+{\bfseries k\+Sim\+Uart\+Rxsrc\+Cmp0}, 
+{\bfseries k\+Sim\+Uart\+Rxsrc\+Cmp1}, 
+{\bfseries k\+Sim\+Uart\+Rxsrc\+Reserved}
+ \}\hypertarget{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}{}\label{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}
+\begin{DoxyCompactList}\small\item\em S\+IM receive data source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}{\+\_\+sim\+\_\+uart\+\_\+txsrc} \{ {\bfseries k\+Sim\+Uart\+Txsrc\+Pin}, 
+{\bfseries k\+Sim\+Uart\+Txsrc\+Cmp0}, 
+{\bfseries k\+Sim\+Uart\+Txsrc\+Cmp1}, 
+{\bfseries k\+Sim\+Uart\+Txsrc\+Reserved}
+ \}\hypertarget{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}{}\label{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}
+\begin{DoxyCompactList}\small\item\em S\+IM transmit data source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}{\+\_\+sim\+\_\+ftm\+\_\+trg\+\_\+src} \{ {\bfseries k\+Sim\+Ftm\+Trg\+Src0}, 
+{\bfseries k\+Sim\+Ftm\+Trg\+Src1}
+ \}\hypertarget{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}{}\label{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x trigger y select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}{\+\_\+sim\+\_\+ftm\+\_\+clk\+\_\+sel} \{ {\bfseries k\+Sim\+Ftm\+Clk\+Sel0}, 
+{\bfseries k\+Sim\+Ftm\+Clk\+Sel1}
+ \}\hypertarget{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}{}\label{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer external clock select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}{\+\_\+sim\+\_\+ftm\+\_\+ch\+\_\+src} \{ {\bfseries k\+Sim\+Ftm\+Ch\+Src0}, 
+{\bfseries k\+Sim\+Ftm\+Ch\+Src1}, 
+{\bfseries k\+Sim\+Ftm\+Ch\+Src2}, 
+{\bfseries k\+Sim\+Ftm\+Ch\+Src3}
+ \}\hypertarget{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}{}\label{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x channel y input capture source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}{\+\_\+sim\+\_\+ftm\+\_\+flt\+\_\+sel} \{ {\bfseries k\+Sim\+Ftm\+Flt\+Sel0}, 
+{\bfseries k\+Sim\+Ftm\+Flt\+Sel1}
+ \}\hypertarget{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}{}\label{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x Fault y select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}{\+\_\+sim\+\_\+tpm\+\_\+clk\+\_\+sel} \{ {\bfseries k\+Sim\+Tpm\+Clk\+Sel0}, 
+{\bfseries k\+Sim\+Tpm\+Clk\+Sel1}
+ \}\hypertarget{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}{}\label{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM external clock select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}{\+\_\+sim\+\_\+tpm\+\_\+ch\+\_\+src} \{ {\bfseries k\+Sim\+Tpm\+Ch\+Src0}, 
+{\bfseries k\+Sim\+Tpm\+Ch\+Src1}
+ \}\hypertarget{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}{}\label{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM x channel y input capture source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}{\+\_\+sim\+\_\+hal\+\_\+status} \{ \\*
+{\bfseries k\+Sim\+Hal\+Success}, 
+{\bfseries k\+Sim\+Hal\+Fail}, 
+{\bfseries k\+Sim\+Hal\+No\+Such\+Module}, 
+{\bfseries k\+Sim\+Hal\+No\+Such\+Clock\+Src}, 
+\\*
+{\bfseries k\+Sim\+Hal\+No\+Such\+Divider}
+ \}\hypertarget{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}{}\label{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}
+\begin{DoxyCompactList}\small\item\em S\+IM H\+AL A\+PI return status. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf clock-\/related feature A\+P\+Is}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga1cbc3930bced80e4db49e5865f3c8cec}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t} clock\+Source, uint8\+\_\+t setting)
+\begin{DoxyCompactList}\small\item\em Sets the clock source setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga9efee2869120ab9cd7862501d88b4883}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t} clock\+Source, uint8\+\_\+t $\ast$setting)
+\begin{DoxyCompactList}\small\item\em Gets the clock source setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga8093fcb014483c7b7a37b21c46290af7}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t} clock\+Divider, uint32\+\_\+t setting)
+\begin{DoxyCompactList}\small\item\em Sets the clock divider setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga302e0b15c1f073aa8b36e5e76aa3a219}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers} (uint32\+\_\+t base\+Addr, uint32\+\_\+t outdiv1, uint32\+\_\+t outdiv2, uint32\+\_\+t outdiv3, uint32\+\_\+t outdiv4)
+\begin{DoxyCompactList}\small\item\em Sets the clock out dividers setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga6337f73b64becb7fed810b37551b3496}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t} clock\+Divider, uint32\+\_\+t $\ast$setting)
+\begin{DoxyCompactList}\small\item\em Gets the clock divider setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf individual field access A\+P\+Is}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__sim__hal_ga15347a0602dc00a135252f4a2b856c67}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, bool enable)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+Cx alternate trigger enable setting. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga49accc18a4a229a869a5101900963e29}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the A\+D\+Cx alternate trigger enable setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gabdd025a72a84dc48bd14341843a8289d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+Cx pre-\/trigger select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t} \hyperlink{group__sim__hal_gac7777699e1e0215e3d0937884c1b448a}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the A\+D\+Cx pre-\/trigger select setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gab7e2e8a05d63b43ed81d89cdfebe7544}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_ga5bd34cf2c7d81265882d1b79534b43c0}{sim\+\_\+trgsel\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+Cx trigger select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t} \hyperlink{group__sim__hal_ga620bc2cd2cd9bdcb696f47146e81d6bb}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the A\+D\+Cx trigger select setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga964f68119e1af83c99797656225507fa}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{sim\+\_\+uart\+\_\+rxsrc\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the U\+A\+R\+Tx receive data source select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{sim\+\_\+uart\+\_\+rxsrc\+\_\+t} \hyperlink{group__sim__hal_gaeda6c9d32bca1c7409b22ff46e3f0056}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the U\+A\+R\+Tx receive data source select setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaf3339b94a520aaf856b897fd945a435e}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{sim\+\_\+uart\+\_\+txsrc\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the U\+A\+R\+Tx transmit data source select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{sim\+\_\+uart\+\_\+txsrc\+\_\+t} \hyperlink{group__sim__hal_gab5e67cad8df0b320d6af9787e32bd496}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the U\+A\+R\+Tx transmit data source select setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{group__sim__hal_ga0d84063eacefa134ba3be72a9c70222c}{clock\+\_\+name\+\_\+config\+\_\+t} \hyperlink{group__sim__hal_gaea8903216c2956a8f1a48dda0ddeaffc}{k\+Clock\+Name\+Config\+Table} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em clock name configuration table for specified C\+PU defined in fsl\+\_\+clock\+\_\+module\+\_\+names\+\_\+\+Kxxx.\+h \end{DoxyCompactList}\end{DoxyCompactItemize}

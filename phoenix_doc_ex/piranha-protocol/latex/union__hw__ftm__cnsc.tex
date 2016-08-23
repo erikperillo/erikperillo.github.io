@@ -1,0 +1,37 @@
+\hypertarget{union__hw__ftm__cnsc}{}\section{\+\_\+hw\+\_\+ftm\+\_\+cnsc Union Reference}
+\label{union__hw__ftm__cnsc}\index{\+\_\+hw\+\_\+ftm\+\_\+cnsc@{\+\_\+hw\+\_\+ftm\+\_\+cnsc}}
+
+
+H\+W\+\_\+\+F\+T\+M\+\_\+\+Cn\+SC -\/ Channel (n) Status And Control (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+ftm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__ftm__cnsc_1_1__hw__ftm__cnsc__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+cnsc\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__ftm__cnsc_a3ee1fb936356bc7a3ec614c6148f4d5d}{}\label{union__hw__ftm__cnsc_a3ee1fb936356bc7a3ec614c6148f4d5d}
+
+\item 
+struct \hyperlink{struct__hw__ftm__cnsc_1_1__hw__ftm__cnsc__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+cnsc\+::\+\_\+hw\+\_\+ftm\+\_\+cnsc\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__ftm__cnsc_a4dfb72bf46ce12c66ec029ee766c6a5e}{}\label{union__hw__ftm__cnsc_a4dfb72bf46ce12c66ec029ee766c6a5e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+F\+T\+M\+\_\+\+Cn\+SC -\/ Channel (n) Status And Control (RW) 
+
+Reset value\+: 0x00000000U
+
+Cn\+SC contains the channel-\/interrupt-\/status flag and control bits used to configure the interrupt enable, channel configuration, and pin function. Mode, edge, and level selection D\+E\+C\+A\+P\+EN C\+O\+M\+B\+I\+NE C\+P\+W\+MS M\+SnB\+:M\+SnA E\+L\+SnB\+:E\+L\+SnA Mode Configuration X X X XX 0 Pin not used for F\+T\+M-\/revert the channel pin to general purpose I/O or other peripheral control 0 0 0 0 1 Input Capture Capture on Rising Edge Only 10 Capture on Falling Edge Only 11 Capture on Rising or Falling Edge 1 1 Output Compare Toggle Output on match 10 Clear Output on match 11 Set Output on match 1X 10 Edge-\/\+Aligned P\+WM High-\/true pulses (clear Output on match) X1 Low-\/true pulses (set Output on match) 1 XX 10 Center-\/\+Aligned P\+WM High-\/true pulses (clear Output on match-\/up) X1 Low-\/true pulses (set Output on match-\/up) 1 0 XX 10 Combine P\+WM High-\/true pulses (set on channel (n) match, and clear on channel (n+1) match) X1 Low-\/true pulses (clear on channel (n) match, and set on channel (n+1) match) 1 0 0 X0 See the following table (\#\+Mode\+Sel2\+Table). Dual Edge Capture One-\/\+Shot Capture mode X1 Continuous Capture mode Dual Edge Capture mode -\/ edge polarity selection E\+L\+SnB E\+L\+SnA Channel Port Enable Detected Edges 0 0 Disabled No edge 0 1 Enabled Rising edge 1 0 Enabled Falling edge 1 1 Enabled Rising and falling edges 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+ftm.\+h\end{DoxyCompactItemize}

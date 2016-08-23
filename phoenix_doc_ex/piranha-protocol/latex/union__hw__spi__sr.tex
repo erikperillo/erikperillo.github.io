@@ -1,0 +1,37 @@
+\hypertarget{union__hw__spi__sr}{}\section{\+\_\+hw\+\_\+spi\+\_\+sr Union Reference}
+\label{union__hw__spi__sr}\index{\+\_\+hw\+\_\+spi\+\_\+sr@{\+\_\+hw\+\_\+spi\+\_\+sr}}
+
+
+H\+W\+\_\+\+S\+P\+I\+\_\+\+SR -\/ Status Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+spi.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__spi__sr_1_1__hw__spi__sr__bitfields}{\+\_\+hw\+\_\+spi\+\_\+sr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__spi__sr_a3e86fde642b8402461d683f745c5af15}{}\label{union__hw__spi__sr_a3e86fde642b8402461d683f745c5af15}
+
+\item 
+struct \hyperlink{struct__hw__spi__sr_1_1__hw__spi__sr__bitfields}{\+\_\+hw\+\_\+spi\+\_\+sr\+::\+\_\+hw\+\_\+spi\+\_\+sr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__spi__sr_aaba5c76357dcf18bfaf67f75c0bc3b8b}{}\label{union__hw__spi__sr_aaba5c76357dcf18bfaf67f75c0bc3b8b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+P\+I\+\_\+\+SR -\/ Status Register (RW) 
+
+Reset value\+: 0x02000000U
+
+SR contains status and flag bits. The bits reflect the status of the module and indicate the occurrence of events that can generate interrupt or D\+MA requests. Software can clear flag bits in the SR by writing a 1 to them. Writing a 0 to a flag bit has no effect. This register may not be writable in Module Disable mode due to the use of power saving mechanisms. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+spi.\+h\end{DoxyCompactItemize}

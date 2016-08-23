@@ -1,0 +1,37 @@
+\hypertarget{union__hw__pmc__lvdsc1}{}\section{\+\_\+hw\+\_\+pmc\+\_\+lvdsc1 Union Reference}
+\label{union__hw__pmc__lvdsc1}\index{\+\_\+hw\+\_\+pmc\+\_\+lvdsc1@{\+\_\+hw\+\_\+pmc\+\_\+lvdsc1}}
+
+
+H\+W\+\_\+\+P\+M\+C\+\_\+\+L\+V\+D\+S\+C1 -\/ Low Voltage Detect Status And Control 1 register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+pmc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__pmc__lvdsc1_1_1__hw__pmc__lvdsc1__bitfields}{\+\_\+hw\+\_\+pmc\+\_\+lvdsc1\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__pmc__lvdsc1_aaa9b15ee8f5a9c3fdd1e7f0bf4d9bfad}{}\label{union__hw__pmc__lvdsc1_aaa9b15ee8f5a9c3fdd1e7f0bf4d9bfad}
+
+\item 
+struct \hyperlink{struct__hw__pmc__lvdsc1_1_1__hw__pmc__lvdsc1__bitfields}{\+\_\+hw\+\_\+pmc\+\_\+lvdsc1\+::\+\_\+hw\+\_\+pmc\+\_\+lvdsc1\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__pmc__lvdsc1_a9ef287bd76557ed14ea7d089ad47abba}{}\label{union__hw__pmc__lvdsc1_a9ef287bd76557ed14ea7d089ad47abba}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+P\+M\+C\+\_\+\+L\+V\+D\+S\+C1 -\/ Low Voltage Detect Status And Control 1 register (RW) 
+
+Reset value\+: 0x10U
+
+This register contains status and control bits to support the low voltage detect function. This register should be written during the reset initialization program to set the desired controls even if the desired settings are the same as the reset settings. While the device is in the very low power or low leakage modes, the L\+VD system is disabled regardless of L\+V\+D\+S\+C1 settings. To protect systems that must have L\+VD always on, configure the Power Mode Protection (P\+M\+P\+R\+OT) register of the S\+MC module (S\+M\+C\+\_\+\+P\+M\+P\+R\+OT) to disallow any very low power or low leakage modes from being enabled. See the device\textquotesingle{}s data sheet for the exact L\+VD trip voltages. The L\+V\+DV bits are reset solely on a P\+OR Only event. The register\textquotesingle{}s other bits are reset on Chip Reset Not V\+L\+LS. For more information about these reset types, refer to the Reset section details. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+pmc.\+h\end{DoxyCompactItemize}

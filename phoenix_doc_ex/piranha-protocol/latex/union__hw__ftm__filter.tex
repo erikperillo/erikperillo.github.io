@@ -1,0 +1,37 @@
+\hypertarget{union__hw__ftm__filter}{}\section{\+\_\+hw\+\_\+ftm\+\_\+filter Union Reference}
+\label{union__hw__ftm__filter}\index{\+\_\+hw\+\_\+ftm\+\_\+filter@{\+\_\+hw\+\_\+ftm\+\_\+filter}}
+
+
+H\+W\+\_\+\+F\+T\+M\+\_\+\+F\+I\+L\+T\+ER -\/ Input Capture Filter Control (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+ftm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__ftm__filter_1_1__hw__ftm__filter__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+filter\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__ftm__filter_a989b612058bd3297153cb76243858fa4}{}\label{union__hw__ftm__filter_a989b612058bd3297153cb76243858fa4}
+
+\item 
+struct \hyperlink{struct__hw__ftm__filter_1_1__hw__ftm__filter__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+filter\+::\+\_\+hw\+\_\+ftm\+\_\+filter\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__ftm__filter_a1c4d840155792ecd5486d6a958670109}{}\label{union__hw__ftm__filter_a1c4d840155792ecd5486d6a958670109}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+F\+T\+M\+\_\+\+F\+I\+L\+T\+ER -\/ Input Capture Filter Control (RW) 
+
+Reset value\+: 0x00000000U
+
+This register selects the filter value for the inputs of channels. Channels 4, 5, 6 and 7 do not have an input filter. Writing to the F\+I\+L\+T\+ER register has immediate effect and must be done only when the channels 0, 1, 2, and 3 are not in input modes. Failure to do this could result in a missing valid signal. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+ftm.\+h\end{DoxyCompactItemize}

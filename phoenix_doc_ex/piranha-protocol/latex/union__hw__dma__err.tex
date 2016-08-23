@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__err}{}\section{\+\_\+hw\+\_\+dma\+\_\+err Union Reference}
+\label{union__hw__dma__err}\index{\+\_\+hw\+\_\+dma\+\_\+err@{\+\_\+hw\+\_\+dma\+\_\+err}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+E\+RR -\/ Error Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__err_1_1__hw__dma__err__bitfields}{\+\_\+hw\+\_\+dma\+\_\+err\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__err_a03accac837a3284b179fb9b7223c8b2a}{}\label{union__hw__dma__err_a03accac837a3284b179fb9b7223c8b2a}
+
+\item 
+struct \hyperlink{struct__hw__dma__err_1_1__hw__dma__err__bitfields}{\+\_\+hw\+\_\+dma\+\_\+err\+::\+\_\+hw\+\_\+dma\+\_\+err\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__err_a91944daeb6e5afbb17faf5f7a02cc68d}{}\label{union__hw__dma__err_a91944daeb6e5afbb17faf5f7a02cc68d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+E\+RR -\/ Error Register (RW) 
+
+Reset value\+: 0x00000000U
+
+The E\+RR provides a bit map for the 16 channels, signaling the presence of an error for each channel. The e\+D\+MA engine signals the occurrence of an error condition by setting the appropriate bit in this register. The outputs of this register are enabled by the contents of the E\+EI, and then routed to the interrupt controller. During the execution of the interrupt-\/service routine associated with any D\+MA errors, it is software\textquotesingle{}s responsibility to clear the appropriate bit, negating the error-\/interrupt request. Typically, a write to the C\+E\+RR in the interrupt-\/service routine is used for this purpose. The normal D\+MA channel completion indicators (setting the transfer control descriptor D\+O\+NE flag and the possible assertion of an interrupt request) are not affected when an error is detected. The contents of this register can also be polled because a non-\/zero value indicates the presence of a channel error regardless of the state of the E\+EI. The state of any given channel\textquotesingle{}s error indicators is affected by writes to this register; it is also affected by writes to the C\+E\+RR. On writes to the E\+RR, a one in any bit position clears the corresponding channel\textquotesingle{}s error status. A zero in any bit position has no affect on the corresponding channel\textquotesingle{}s current error status. The C\+E\+RR is provided so the error indicator for a single channel can easily be cleared. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

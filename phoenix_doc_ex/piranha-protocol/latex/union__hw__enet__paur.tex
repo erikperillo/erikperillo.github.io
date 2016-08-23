@@ -1,0 +1,37 @@
+\hypertarget{union__hw__enet__paur}{}\section{\+\_\+hw\+\_\+enet\+\_\+paur Union Reference}
+\label{union__hw__enet__paur}\index{\+\_\+hw\+\_\+enet\+\_\+paur@{\+\_\+hw\+\_\+enet\+\_\+paur}}
+
+
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+P\+A\+UR -\/ Physical Address Upper Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+enet.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__enet__paur_1_1__hw__enet__paur__bitfields}{\+\_\+hw\+\_\+enet\+\_\+paur\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__enet__paur_a2d872d8a8d9a18751a7ee9f6509c8adc}{}\label{union__hw__enet__paur_a2d872d8a8d9a18751a7ee9f6509c8adc}
+
+\item 
+struct \hyperlink{struct__hw__enet__paur_1_1__hw__enet__paur__bitfields}{\+\_\+hw\+\_\+enet\+\_\+paur\+::\+\_\+hw\+\_\+enet\+\_\+paur\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__enet__paur_af25262104993b9fa84598bd63be58e89}{}\label{union__hw__enet__paur_af25262104993b9fa84598bd63be58e89}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+P\+A\+UR -\/ Physical Address Upper Register (RW) 
+
+Reset value\+: 0x00008808U
+
+P\+A\+UR contains the upper 16 bits (bytes 4 and 5) of the 48-\/bit address used in the address recognition process to compare with the destination address (DA) field of receive frames with an individual DA. In addition, this register is used in bytes 4 and 5 of the six-\/byte source address field when transmitting P\+A\+U\+SE frames. Bits 15\+:0 of P\+A\+UR contain a constant type field (0x8808) for transmission of P\+A\+U\+SE frames. The upper 16 bits of this register are not reset and you must initialize it. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+enet.\+h\end{DoxyCompactItemize}

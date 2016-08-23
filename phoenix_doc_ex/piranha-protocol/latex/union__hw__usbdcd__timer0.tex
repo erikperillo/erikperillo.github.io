@@ -1,0 +1,37 @@
+\hypertarget{union__hw__usbdcd__timer0}{}\section{\+\_\+hw\+\_\+usbdcd\+\_\+timer0 Union Reference}
+\label{union__hw__usbdcd__timer0}\index{\+\_\+hw\+\_\+usbdcd\+\_\+timer0@{\+\_\+hw\+\_\+usbdcd\+\_\+timer0}}
+
+
+H\+W\+\_\+\+U\+S\+B\+D\+C\+D\+\_\+\+T\+I\+M\+E\+R0 -\/ T\+I\+M\+E\+R0 register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+usbdcd.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__usbdcd__timer0_1_1__hw__usbdcd__timer0__bitfields}{\+\_\+hw\+\_\+usbdcd\+\_\+timer0\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__usbdcd__timer0_ab3e7aa4bd21b1d795701c10626470487}{}\label{union__hw__usbdcd__timer0_ab3e7aa4bd21b1d795701c10626470487}
+
+\item 
+struct \hyperlink{struct__hw__usbdcd__timer0_1_1__hw__usbdcd__timer0__bitfields}{\+\_\+hw\+\_\+usbdcd\+\_\+timer0\+::\+\_\+hw\+\_\+usbdcd\+\_\+timer0\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__usbdcd__timer0_adaf893f6dc179eacfdeef91e9adac36e}{}\label{union__hw__usbdcd__timer0_adaf893f6dc179eacfdeef91e9adac36e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+S\+B\+D\+C\+D\+\_\+\+T\+I\+M\+E\+R0 -\/ T\+I\+M\+E\+R0 register (RW) 
+
+Reset value\+: 0x00100000U
+
+T\+I\+M\+E\+R0 has an T\+S\+E\+Q\+\_\+\+I\+N\+IT field that represents the system latency in ms. Latency is measured from the time when V\+B\+US goes active until the time system software initiates charger detection sequence in U\+S\+B\+D\+CD module. When software sets the C\+O\+N\+T\+R\+OL\mbox{[}S\+T\+A\+RT\mbox{]} bit, the Unit Connection Timer (T\+U\+N\+I\+T\+C\+ON) is initialized with the value of T\+S\+E\+Q\+\_\+\+I\+N\+IT. Valid values are 0-\/1023, however the U\+SB Battery Charging Specification requires the entire sequence, including T\+S\+E\+Q\+\_\+\+I\+N\+IT, to be completed in 1s or less. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+usbdcd.\+h\end{DoxyCompactItemize}

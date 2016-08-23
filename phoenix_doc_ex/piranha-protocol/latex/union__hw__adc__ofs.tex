@@ -1,0 +1,37 @@
+\hypertarget{union__hw__adc__ofs}{}\section{\+\_\+hw\+\_\+adc\+\_\+ofs Union Reference}
+\label{union__hw__adc__ofs}\index{\+\_\+hw\+\_\+adc\+\_\+ofs@{\+\_\+hw\+\_\+adc\+\_\+ofs}}
+
+
+H\+W\+\_\+\+A\+D\+C\+\_\+\+O\+FS -\/ A\+DC Offset Correction Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+adc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__adc__ofs_1_1__hw__adc__ofs__bitfields}{\+\_\+hw\+\_\+adc\+\_\+ofs\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__adc__ofs_aea954896ec9fbcf25d3c7f977a1810b7}{}\label{union__hw__adc__ofs_aea954896ec9fbcf25d3c7f977a1810b7}
+
+\item 
+struct \hyperlink{struct__hw__adc__ofs_1_1__hw__adc__ofs__bitfields}{\+\_\+hw\+\_\+adc\+\_\+ofs\+::\+\_\+hw\+\_\+adc\+\_\+ofs\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__adc__ofs_a7f23cf567a584f858cd511108312c1fb}{}\label{union__hw__adc__ofs_a7f23cf567a584f858cd511108312c1fb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+A\+D\+C\+\_\+\+O\+FS -\/ A\+DC Offset Correction Register (RW) 
+
+Reset value\+: 0x00000004U
+
+The A\+DC Offset Correction Register (O\+FS) contains the user-\/selected or calibration-\/generated offset error correction value. This register is a 2\textquotesingle{}s complement, left-\/justified, 16-\/bit value . The value in O\+FS is subtracted from the conversion and the result is transferred into the result registers, Rn. If the result is greater than the maximum or less than the minimum result value, it is forced to the appropriate limit for the current mode of operation. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+adc.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,244 @@
+\hypertarget{group__port__hal}{}\section{Port\+\_\+hal}
+\label{group__port__hal}\index{Port\+\_\+hal@{Port\+\_\+hal}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__port__hal_gac523311af56d02fec0355dd272607d2d}{\+\_\+port\+\_\+pull} \hyperlink{group__port__hal_ga09c4df11e7e6c77f1b669ea5ee920a3d}{port\+\_\+pull\+\_\+t}\hypertarget{group__port__hal_ga09c4df11e7e6c77f1b669ea5ee920a3d}{}\label{group__port__hal_ga09c4df11e7e6c77f1b669ea5ee920a3d}
+
+\begin{DoxyCompactList}\small\item\em Internal resistor pull feature selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__port__hal_ga39dfc59254a6c31e31aed71de831b6a2}{\+\_\+port\+\_\+slew\+\_\+rate} \hyperlink{group__port__hal_ga52d4e11f104f43083057c43efe4b7471}{port\+\_\+slew\+\_\+rate\+\_\+t}\hypertarget{group__port__hal_ga52d4e11f104f43083057c43efe4b7471}{}\label{group__port__hal_ga52d4e11f104f43083057c43efe4b7471}
+
+\begin{DoxyCompactList}\small\item\em Slew rate selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__port__hal_ga17fdac515979a1b6cefc0135add46f42}{\+\_\+port\+\_\+drive\+\_\+strength} \hyperlink{group__port__hal_ga88750b7901b7391d1371cd7118596587}{port\+\_\+drive\+\_\+strength\+\_\+t}\hypertarget{group__port__hal_ga88750b7901b7391d1371cd7118596587}{}\label{group__port__hal_ga88750b7901b7391d1371cd7118596587}
+
+\begin{DoxyCompactList}\small\item\em Configures the drive strength. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__port__hal_gac926cac9eed74e607a4034ce1e210cb7}{\+\_\+port\+\_\+mux} \hyperlink{group__port__hal_ga8099d2a158fb74799ba4861dd81eb691}{port\+\_\+mux\+\_\+t}\hypertarget{group__port__hal_ga8099d2a158fb74799ba4861dd81eb691}{}\label{group__port__hal_ga8099d2a158fb74799ba4861dd81eb691}
+
+\begin{DoxyCompactList}\small\item\em Pin mux selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__port__hal_ga3d53eb7c567ef2777ecdd7d146381bcf}{\+\_\+port\+\_\+interrupt\+\_\+config} \hyperlink{group__port__hal_ga54da044f13951cd799e647eafb825536}{port\+\_\+interrupt\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Digital filter clock source selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__port__hal_gac523311af56d02fec0355dd272607d2d}{\+\_\+port\+\_\+pull} \{ \hyperlink{group__port__hal_ggac523311af56d02fec0355dd272607d2dacf209c981f7b4309847f8de5990b60b8}{k\+Port\+Pull\+Down} = 0U, 
+\hyperlink{group__port__hal_ggac523311af56d02fec0355dd272607d2daa1fd79c30d04eec4c29eaa8e18ce4ecd}{k\+Port\+Pull\+Up} = 1U
+ \}\begin{DoxyCompactList}\small\item\em Internal resistor pull feature selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__port__hal_ga39dfc59254a6c31e31aed71de831b6a2}{\+\_\+port\+\_\+slew\+\_\+rate} \{ \hyperlink{group__port__hal_gga39dfc59254a6c31e31aed71de831b6a2a2176a198865695170da233394740a014}{k\+Port\+Fast\+Slew\+Rate} = 0U, 
+\hyperlink{group__port__hal_gga39dfc59254a6c31e31aed71de831b6a2a16fcdaaf75f46536bbab30fd1ff51349}{k\+Port\+Slow\+Slew\+Rate} = 1U
+ \}\begin{DoxyCompactList}\small\item\em Slew rate selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__port__hal_ga17fdac515979a1b6cefc0135add46f42}{\+\_\+port\+\_\+drive\+\_\+strength} \{ \hyperlink{group__port__hal_gga17fdac515979a1b6cefc0135add46f42a9593bfe51d1f43d06a93c45b21ddacb6}{k\+Port\+Low\+Drive\+Strength} = 0U, 
+\hyperlink{group__port__hal_gga17fdac515979a1b6cefc0135add46f42ad3fd42a5fe72ba226796cfffb7728fb9}{k\+Port\+High\+Drive\+Strength} = 1U
+ \}\begin{DoxyCompactList}\small\item\em Configures the drive strength. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__port__hal_gac926cac9eed74e607a4034ce1e210cb7}{\+\_\+port\+\_\+mux} \{ \\*
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a59a5f8dd8bc06812ae126c9f9192055d}{k\+Port\+Pin\+Disabled} = 0U, 
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7afee101f670bf9680112f0ccc5dd6edbc}{k\+Port\+Mux\+As\+Gpio} = 1U, 
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a517b0c1f678068768d4c7b4d8baa34cd}{k\+Port\+Mux\+Alt2} = 2U, 
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a7e092cd69bcf8ddf135401e7ad861eb6}{k\+Port\+Mux\+Alt3} = 3U, 
+\\*
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7ab1a73de1236b3bc8c11c9e58a7f5460a}{k\+Port\+Mux\+Alt4} = 4U, 
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7aa157f20022a2063dadec850b08c524ee}{k\+Port\+Mux\+Alt5} = 5U, 
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a8038c7f9706bbe3da881a022b09e6f4f}{k\+Port\+Mux\+Alt6} = 6U, 
+\hyperlink{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a069866a50983e744730a2cae5024554d}{k\+Port\+Mux\+Alt7} = 7U
+ \}\begin{DoxyCompactList}\small\item\em Pin mux selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__port__hal_ga3d53eb7c567ef2777ecdd7d146381bcf}{\+\_\+port\+\_\+interrupt\+\_\+config} \{ \\*
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfad44edc3e518db6a9efc1f8e686b42d49}{k\+Port\+Int\+Disabled} = 0x0U, 
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa3dd56f87ed9406d32908fb459a1542ed}{k\+Port\+Dma\+Rising\+Edge} = 0x1U, 
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfaf3094573751eff0fd41e2a4707c133d1}{k\+Port\+Dma\+Falling\+Edge} = 0x2U, 
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa8cd931b077ea5a44ad4c52d263ca668e}{k\+Port\+Dma\+Either\+Edge} = 0x3U, 
+\\*
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa0f6629c695325124029f99bc6c54fce6}{k\+Port\+Int\+Logic\+Zero} = 0x8U, 
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa3b327664a345fee878e0d231f8ef55c8}{k\+Port\+Int\+Rising\+Edge} = 0x9U, 
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa02419142025b0b094fe741a082cefbbb}{k\+Port\+Int\+Falling\+Edge} = 0x\+AU, 
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa04e676a9e360dca3fa773d7f140a6e11}{k\+Port\+Int\+Either\+Edge} = 0x\+BU, 
+\\*
+\hyperlink{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa8524e6c7b0ea170e3094c1db94500493}{k\+Port\+Int\+Logic\+One} = 0x\+CU
+ \}\begin{DoxyCompactList}\small\item\em Digital filter clock source selection. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Configuration}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__port__hal_ga217884d95f48519cd02e755910f5ad99}{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl} (uint32\+\_\+t base\+Addr, uint16\+\_\+t low\+Pin\+Select, uint16\+\_\+t config)
+\begin{DoxyCompactList}\small\item\em Configures the low half of the pin control register for the same settings. This function operates pin 0 -\/15 of one specific port. \end{DoxyCompactList}\item 
+void \hyperlink{group__port__hal_ga841592ec1c8be69d1417317c7b4d1dda}{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl} (uint32\+\_\+t base\+Addr, uint16\+\_\+t high\+Pin\+Select, uint16\+\_\+t config)
+\begin{DoxyCompactList}\small\item\em Configures the high half of pin control register for the same settings. This function operates pin 16 -\/31 of one specific port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!port\+\_\+interrupt\+\_\+config\+\_\+t@{port\+\_\+interrupt\+\_\+config\+\_\+t}}
+\index{port\+\_\+interrupt\+\_\+config\+\_\+t@{port\+\_\+interrupt\+\_\+config\+\_\+t}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{port\+\_\+interrupt\+\_\+config\+\_\+t}{port_interrupt_config_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \+\_\+port\+\_\+interrupt\+\_\+config}  {\bf port\+\_\+interrupt\+\_\+config\+\_\+t}}\hypertarget{group__port__hal_ga54da044f13951cd799e647eafb825536}{}\label{group__port__hal_ga54da044f13951cd799e647eafb825536}
+
+
+Digital filter clock source selection. 
+
+Configures the interrupt generation condition. 
+
+\subsection{Enumeration Type Documentation}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!\+\_\+port\+\_\+drive\+\_\+strength@{\+\_\+port\+\_\+drive\+\_\+strength}}
+\index{\+\_\+port\+\_\+drive\+\_\+strength@{\+\_\+port\+\_\+drive\+\_\+strength}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+port\+\_\+drive\+\_\+strength}{_port_drive_strength}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+port\+\_\+drive\+\_\+strength}}\hypertarget{group__port__hal_ga17fdac515979a1b6cefc0135add46f42}{}\label{group__port__hal_ga17fdac515979a1b6cefc0135add46f42}
+
+
+Configures the drive strength. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Port\+Low\+Drive\+Strength@{k\+Port\+Low\+Drive\+Strength}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Low\+Drive\+Strength@{k\+Port\+Low\+Drive\+Strength}}\item[{\em 
+k\+Port\+Low\+Drive\+Strength\hypertarget{group__port__hal_gga17fdac515979a1b6cefc0135add46f42a9593bfe51d1f43d06a93c45b21ddacb6}{}\label{group__port__hal_gga17fdac515979a1b6cefc0135add46f42a9593bfe51d1f43d06a93c45b21ddacb6}
+}]low drive strength is configured. \index{k\+Port\+High\+Drive\+Strength@{k\+Port\+High\+Drive\+Strength}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+High\+Drive\+Strength@{k\+Port\+High\+Drive\+Strength}}\item[{\em 
+k\+Port\+High\+Drive\+Strength\hypertarget{group__port__hal_gga17fdac515979a1b6cefc0135add46f42ad3fd42a5fe72ba226796cfffb7728fb9}{}\label{group__port__hal_gga17fdac515979a1b6cefc0135add46f42ad3fd42a5fe72ba226796cfffb7728fb9}
+}]high drive strength is configured. \end{description}
+\end{Desc}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!\+\_\+port\+\_\+interrupt\+\_\+config@{\+\_\+port\+\_\+interrupt\+\_\+config}}
+\index{\+\_\+port\+\_\+interrupt\+\_\+config@{\+\_\+port\+\_\+interrupt\+\_\+config}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+port\+\_\+interrupt\+\_\+config}{_port_interrupt_config}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+port\+\_\+interrupt\+\_\+config}}\hypertarget{group__port__hal_ga3d53eb7c567ef2777ecdd7d146381bcf}{}\label{group__port__hal_ga3d53eb7c567ef2777ecdd7d146381bcf}
+
+
+Digital filter clock source selection. 
+
+Configures the interrupt generation condition. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Port\+Int\+Disabled@{k\+Port\+Int\+Disabled}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Int\+Disabled@{k\+Port\+Int\+Disabled}}\item[{\em 
+k\+Port\+Int\+Disabled\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfad44edc3e518db6a9efc1f8e686b42d49}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfad44edc3e518db6a9efc1f8e686b42d49}
+}]Interrupt/\+D\+MA request is disabled. \index{k\+Port\+Dma\+Rising\+Edge@{k\+Port\+Dma\+Rising\+Edge}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Dma\+Rising\+Edge@{k\+Port\+Dma\+Rising\+Edge}}\item[{\em 
+k\+Port\+Dma\+Rising\+Edge\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa3dd56f87ed9406d32908fb459a1542ed}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa3dd56f87ed9406d32908fb459a1542ed}
+}]D\+MA request on rising edge. \index{k\+Port\+Dma\+Falling\+Edge@{k\+Port\+Dma\+Falling\+Edge}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Dma\+Falling\+Edge@{k\+Port\+Dma\+Falling\+Edge}}\item[{\em 
+k\+Port\+Dma\+Falling\+Edge\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfaf3094573751eff0fd41e2a4707c133d1}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfaf3094573751eff0fd41e2a4707c133d1}
+}]D\+MA request on falling edge. \index{k\+Port\+Dma\+Either\+Edge@{k\+Port\+Dma\+Either\+Edge}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Dma\+Either\+Edge@{k\+Port\+Dma\+Either\+Edge}}\item[{\em 
+k\+Port\+Dma\+Either\+Edge\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa8cd931b077ea5a44ad4c52d263ca668e}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa8cd931b077ea5a44ad4c52d263ca668e}
+}]D\+MA request on either edge. \index{k\+Port\+Int\+Logic\+Zero@{k\+Port\+Int\+Logic\+Zero}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Int\+Logic\+Zero@{k\+Port\+Int\+Logic\+Zero}}\item[{\em 
+k\+Port\+Int\+Logic\+Zero\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa0f6629c695325124029f99bc6c54fce6}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa0f6629c695325124029f99bc6c54fce6}
+}]Interrupt when logic zero. \index{k\+Port\+Int\+Rising\+Edge@{k\+Port\+Int\+Rising\+Edge}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Int\+Rising\+Edge@{k\+Port\+Int\+Rising\+Edge}}\item[{\em 
+k\+Port\+Int\+Rising\+Edge\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa3b327664a345fee878e0d231f8ef55c8}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa3b327664a345fee878e0d231f8ef55c8}
+}]Interrupt on rising edge. \index{k\+Port\+Int\+Falling\+Edge@{k\+Port\+Int\+Falling\+Edge}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Int\+Falling\+Edge@{k\+Port\+Int\+Falling\+Edge}}\item[{\em 
+k\+Port\+Int\+Falling\+Edge\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa02419142025b0b094fe741a082cefbbb}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa02419142025b0b094fe741a082cefbbb}
+}]Interrupt on falling edge. \index{k\+Port\+Int\+Either\+Edge@{k\+Port\+Int\+Either\+Edge}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Int\+Either\+Edge@{k\+Port\+Int\+Either\+Edge}}\item[{\em 
+k\+Port\+Int\+Either\+Edge\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa04e676a9e360dca3fa773d7f140a6e11}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa04e676a9e360dca3fa773d7f140a6e11}
+}]Interrupt on either edge. \index{k\+Port\+Int\+Logic\+One@{k\+Port\+Int\+Logic\+One}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Int\+Logic\+One@{k\+Port\+Int\+Logic\+One}}\item[{\em 
+k\+Port\+Int\+Logic\+One\hypertarget{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa8524e6c7b0ea170e3094c1db94500493}{}\label{group__port__hal_gga3d53eb7c567ef2777ecdd7d146381bcfa8524e6c7b0ea170e3094c1db94500493}
+}]Interrupt when logic one. \end{description}
+\end{Desc}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!\+\_\+port\+\_\+mux@{\+\_\+port\+\_\+mux}}
+\index{\+\_\+port\+\_\+mux@{\+\_\+port\+\_\+mux}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+port\+\_\+mux}{_port_mux}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+port\+\_\+mux}}\hypertarget{group__port__hal_gac926cac9eed74e607a4034ce1e210cb7}{}\label{group__port__hal_gac926cac9eed74e607a4034ce1e210cb7}
+
+
+Pin mux selection. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Port\+Pin\+Disabled@{k\+Port\+Pin\+Disabled}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Pin\+Disabled@{k\+Port\+Pin\+Disabled}}\item[{\em 
+k\+Port\+Pin\+Disabled\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a59a5f8dd8bc06812ae126c9f9192055d}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a59a5f8dd8bc06812ae126c9f9192055d}
+}]corresponding pin is disabled as analog. \index{k\+Port\+Mux\+As\+Gpio@{k\+Port\+Mux\+As\+Gpio}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+As\+Gpio@{k\+Port\+Mux\+As\+Gpio}}\item[{\em 
+k\+Port\+Mux\+As\+Gpio\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7afee101f670bf9680112f0ccc5dd6edbc}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7afee101f670bf9680112f0ccc5dd6edbc}
+}]corresponding pin is configured as G\+P\+IO. \index{k\+Port\+Mux\+Alt2@{k\+Port\+Mux\+Alt2}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+Alt2@{k\+Port\+Mux\+Alt2}}\item[{\em 
+k\+Port\+Mux\+Alt2\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a517b0c1f678068768d4c7b4d8baa34cd}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a517b0c1f678068768d4c7b4d8baa34cd}
+}]chip-\/specific \index{k\+Port\+Mux\+Alt3@{k\+Port\+Mux\+Alt3}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+Alt3@{k\+Port\+Mux\+Alt3}}\item[{\em 
+k\+Port\+Mux\+Alt3\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a7e092cd69bcf8ddf135401e7ad861eb6}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a7e092cd69bcf8ddf135401e7ad861eb6}
+}]chip-\/specific \index{k\+Port\+Mux\+Alt4@{k\+Port\+Mux\+Alt4}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+Alt4@{k\+Port\+Mux\+Alt4}}\item[{\em 
+k\+Port\+Mux\+Alt4\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7ab1a73de1236b3bc8c11c9e58a7f5460a}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7ab1a73de1236b3bc8c11c9e58a7f5460a}
+}]chip-\/specific \index{k\+Port\+Mux\+Alt5@{k\+Port\+Mux\+Alt5}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+Alt5@{k\+Port\+Mux\+Alt5}}\item[{\em 
+k\+Port\+Mux\+Alt5\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7aa157f20022a2063dadec850b08c524ee}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7aa157f20022a2063dadec850b08c524ee}
+}]chip-\/specific \index{k\+Port\+Mux\+Alt6@{k\+Port\+Mux\+Alt6}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+Alt6@{k\+Port\+Mux\+Alt6}}\item[{\em 
+k\+Port\+Mux\+Alt6\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a8038c7f9706bbe3da881a022b09e6f4f}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a8038c7f9706bbe3da881a022b09e6f4f}
+}]chip-\/specific \index{k\+Port\+Mux\+Alt7@{k\+Port\+Mux\+Alt7}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Mux\+Alt7@{k\+Port\+Mux\+Alt7}}\item[{\em 
+k\+Port\+Mux\+Alt7\hypertarget{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a069866a50983e744730a2cae5024554d}{}\label{group__port__hal_ggac926cac9eed74e607a4034ce1e210cb7a069866a50983e744730a2cae5024554d}
+}]chip-\/specific \end{description}
+\end{Desc}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!\+\_\+port\+\_\+pull@{\+\_\+port\+\_\+pull}}
+\index{\+\_\+port\+\_\+pull@{\+\_\+port\+\_\+pull}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+port\+\_\+pull}{_port_pull}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+port\+\_\+pull}}\hypertarget{group__port__hal_gac523311af56d02fec0355dd272607d2d}{}\label{group__port__hal_gac523311af56d02fec0355dd272607d2d}
+
+
+Internal resistor pull feature selection. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Port\+Pull\+Down@{k\+Port\+Pull\+Down}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Pull\+Down@{k\+Port\+Pull\+Down}}\item[{\em 
+k\+Port\+Pull\+Down\hypertarget{group__port__hal_ggac523311af56d02fec0355dd272607d2dacf209c981f7b4309847f8de5990b60b8}{}\label{group__port__hal_ggac523311af56d02fec0355dd272607d2dacf209c981f7b4309847f8de5990b60b8}
+}]internal pull-\/down resistor is enabled. \index{k\+Port\+Pull\+Up@{k\+Port\+Pull\+Up}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Pull\+Up@{k\+Port\+Pull\+Up}}\item[{\em 
+k\+Port\+Pull\+Up\hypertarget{group__port__hal_ggac523311af56d02fec0355dd272607d2daa1fd79c30d04eec4c29eaa8e18ce4ecd}{}\label{group__port__hal_ggac523311af56d02fec0355dd272607d2daa1fd79c30d04eec4c29eaa8e18ce4ecd}
+}]internal pull-\/up resistor is enabled. \end{description}
+\end{Desc}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!\+\_\+port\+\_\+slew\+\_\+rate@{\+\_\+port\+\_\+slew\+\_\+rate}}
+\index{\+\_\+port\+\_\+slew\+\_\+rate@{\+\_\+port\+\_\+slew\+\_\+rate}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+port\+\_\+slew\+\_\+rate}{_port_slew_rate}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+port\+\_\+slew\+\_\+rate}}\hypertarget{group__port__hal_ga39dfc59254a6c31e31aed71de831b6a2}{}\label{group__port__hal_ga39dfc59254a6c31e31aed71de831b6a2}
+
+
+Slew rate selection. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Port\+Fast\+Slew\+Rate@{k\+Port\+Fast\+Slew\+Rate}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Fast\+Slew\+Rate@{k\+Port\+Fast\+Slew\+Rate}}\item[{\em 
+k\+Port\+Fast\+Slew\+Rate\hypertarget{group__port__hal_gga39dfc59254a6c31e31aed71de831b6a2a2176a198865695170da233394740a014}{}\label{group__port__hal_gga39dfc59254a6c31e31aed71de831b6a2a2176a198865695170da233394740a014}
+}]fast slew rate is configured. \index{k\+Port\+Slow\+Slew\+Rate@{k\+Port\+Slow\+Slew\+Rate}!Port\+\_\+hal@{Port\+\_\+hal}}\index{Port\+\_\+hal@{Port\+\_\+hal}!k\+Port\+Slow\+Slew\+Rate@{k\+Port\+Slow\+Slew\+Rate}}\item[{\em 
+k\+Port\+Slow\+Slew\+Rate\hypertarget{group__port__hal_gga39dfc59254a6c31e31aed71de831b6a2a16fcdaaf75f46536bbab30fd1ff51349}{}\label{group__port__hal_gga39dfc59254a6c31e31aed71de831b6a2a16fcdaaf75f46536bbab30fd1ff51349}
+}]slow slew rate is configured. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl@{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl}}
+\index{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl@{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl(uint32\+\_\+t base\+Addr, uint16\+\_\+t high\+Pin\+Select, uint16\+\_\+t config)}{PORT_HAL_SetHighGlobalPinCtrl(uint32_t baseAddr, uint16_t highPinSelect, uint16_t config)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+High\+Global\+Pin\+Ctrl (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint16\+\_\+t}]{high\+Pin\+Select, }
+\item[{uint16\+\_\+t}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{group__port__hal_ga841592ec1c8be69d1417317c7b4d1dda}{}\label{group__port__hal_ga841592ec1c8be69d1417317c7b4d1dda}
+
+
+Configures the high half of pin control register for the same settings. This function operates pin 16 -\/31 of one specific port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & port base address \\
+\hline
+{\em high\+Pin\+Select} & update corresponding pin control register or not. For a specific bit\+:
+\begin{DoxyItemize}
+\item 0\+: corresponding high half of pin control register won\textquotesingle{}t be updated according to configuration.
+\item 1\+: corresponding high half of pin control register will be updated according to configuration. 
+\end{DoxyItemize}\\
+\hline
+{\em config} & value is written to a high half port control register bits\mbox{[}15\+:0\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\index{Port\+\_\+hal@{Port\+\_\+hal}!P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl@{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl}}
+\index{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl@{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl}!Port\+\_\+hal@{Port\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl(uint32\+\_\+t base\+Addr, uint16\+\_\+t low\+Pin\+Select, uint16\+\_\+t config)}{PORT_HAL_SetLowGlobalPinCtrl(uint32_t baseAddr, uint16_t lowPinSelect, uint16_t config)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+O\+R\+T\+\_\+\+H\+A\+L\+\_\+\+Set\+Low\+Global\+Pin\+Ctrl (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint16\+\_\+t}]{low\+Pin\+Select, }
+\item[{uint16\+\_\+t}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{group__port__hal_ga217884d95f48519cd02e755910f5ad99}{}\label{group__port__hal_ga217884d95f48519cd02e755910f5ad99}
+
+
+Configures the low half of the pin control register for the same settings. This function operates pin 0 -\/15 of one specific port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & port base address \\
+\hline
+{\em low\+Pin\+Select} & update corresponding pin control register or not. For a specific bit\+:
+\begin{DoxyItemize}
+\item 0\+: corresponding low half of pin control register won\textquotesingle{}t be updated according to configuration.
+\item 1\+: corresponding low half of pin control register will be updated according to configuration. 
+\end{DoxyItemize}\\
+\hline
+{\em config} & value is written to a low half port control register bits\mbox{[}15\+:0\mbox{]}. \\
+\hline
+\end{DoxyParams}

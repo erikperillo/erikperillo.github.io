@@ -1,0 +1,52 @@
+\hypertarget{structDspiCommandDataConfig}{}\section{Dspi\+Command\+Data\+Config Struct Reference}
+\label{structDspiCommandDataConfig}\index{Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}}
+
+
+D\+S\+PI command and data configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$fsl\+\_\+dspi\+\_\+hal.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structDspiCommandDataConfig_a7d50d6a3cca29e69ce757ea1a0f0bce5}{is\+Chip\+Select\+Continuous}
+\item 
+\hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t} \hyperlink{structDspiCommandDataConfig_abedde50b4a95ebfb8475cbdd64875447}{which\+Ctar}
+\item 
+\hyperlink{group__dspi__hal_ga5377cd155b68bf00351fff6e58230062}{dspi\+\_\+which\+\_\+pcs\+\_\+config\+\_\+t} \hyperlink{structDspiCommandDataConfig_ab8a264f828371aabec0a9a08097c14dd}{which\+Pcs}
+\item 
+bool \hyperlink{structDspiCommandDataConfig_a1c1b72544deeae3cd733e5c66fc9da4b}{is\+End\+Of\+Queue}
+\item 
+bool \hyperlink{structDspiCommandDataConfig_ad820da8c6cbf602b707588cf53f8b36a}{clear\+Transfer\+Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+S\+PI command and data configuration structure. 
+
+Note\+: This structure is used with the P\+U\+S\+HR register, which provides the means to write to the Tx F\+I\+FO. Data written to this register is transferred to the Tx F\+I\+FO. Eight or sixteen-\/bit write accesses to the P\+U\+S\+HR transfer all 32 register bits to the Tx F\+I\+FO. The register structure is different in master and slave modes. In master mode, the register provides 16-\/bit command and 16-\/bit data to the Tx F\+I\+FO. In slave mode all 32 register bits can be used as data, supporting up to 32-\/bit S\+PI frame operation. 
+
+\subsection{Member Data Documentation}
+\index{Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}!clear\+Transfer\+Count@{clear\+Transfer\+Count}}
+\index{clear\+Transfer\+Count@{clear\+Transfer\+Count}!Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}}
+\subsubsection[{\texorpdfstring{clear\+Transfer\+Count}{clearTransferCount}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dspi\+Command\+Data\+Config\+::clear\+Transfer\+Count}\hypertarget{structDspiCommandDataConfig_ad820da8c6cbf602b707588cf53f8b36a}{}\label{structDspiCommandDataConfig_ad820da8c6cbf602b707588cf53f8b36a}
+Clears S\+P\+I\+\_\+\+T\+C\+NT field; cleared before transmission starts \index{Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}!is\+Chip\+Select\+Continuous@{is\+Chip\+Select\+Continuous}}
+\index{is\+Chip\+Select\+Continuous@{is\+Chip\+Select\+Continuous}!Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}}
+\subsubsection[{\texorpdfstring{is\+Chip\+Select\+Continuous}{isChipSelectContinuous}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dspi\+Command\+Data\+Config\+::is\+Chip\+Select\+Continuous}\hypertarget{structDspiCommandDataConfig_a7d50d6a3cca29e69ce757ea1a0f0bce5}{}\label{structDspiCommandDataConfig_a7d50d6a3cca29e69ce757ea1a0f0bce5}
+Option to enable the continuous assertion of chip select between transfers \index{Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}!is\+End\+Of\+Queue@{is\+End\+Of\+Queue}}
+\index{is\+End\+Of\+Queue@{is\+End\+Of\+Queue}!Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}}
+\subsubsection[{\texorpdfstring{is\+End\+Of\+Queue}{isEndOfQueue}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dspi\+Command\+Data\+Config\+::is\+End\+Of\+Queue}\hypertarget{structDspiCommandDataConfig_a1c1b72544deeae3cd733e5c66fc9da4b}{}\label{structDspiCommandDataConfig_a1c1b72544deeae3cd733e5c66fc9da4b}
+Signals that the current transfer is the last in the queue \index{Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}!which\+Ctar@{which\+Ctar}}
+\index{which\+Ctar@{which\+Ctar}!Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}}
+\subsubsection[{\texorpdfstring{which\+Ctar}{whichCtar}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dspi\+\_\+ctar\+\_\+selection\+\_\+t} Dspi\+Command\+Data\+Config\+::which\+Ctar}\hypertarget{structDspiCommandDataConfig_abedde50b4a95ebfb8475cbdd64875447}{}\label{structDspiCommandDataConfig_abedde50b4a95ebfb8475cbdd64875447}
+The desired Clock and Transfer Attributes Register (C\+T\+AR) to use for C\+T\+AS \index{Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}!which\+Pcs@{which\+Pcs}}
+\index{which\+Pcs@{which\+Pcs}!Dspi\+Command\+Data\+Config@{Dspi\+Command\+Data\+Config}}
+\subsubsection[{\texorpdfstring{which\+Pcs}{whichPcs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dspi\+\_\+which\+\_\+pcs\+\_\+config\+\_\+t} Dspi\+Command\+Data\+Config\+::which\+Pcs}\hypertarget{structDspiCommandDataConfig_ab8a264f828371aabec0a9a08097c14dd}{}\label{structDspiCommandDataConfig_ab8a264f828371aabec0a9a08097c14dd}
+The desired P\+CS signal to use for the data transfer 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/dspi/\hyperlink{fsl__dspi__hal_8h}{fsl\+\_\+dspi\+\_\+hal.\+h}\end{DoxyCompactItemize}

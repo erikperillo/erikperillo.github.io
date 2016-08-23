@@ -1,0 +1,37 @@
+\hypertarget{union__hw__rcm__srs0}{}\section{\+\_\+hw\+\_\+rcm\+\_\+srs0 Union Reference}
+\label{union__hw__rcm__srs0}\index{\+\_\+hw\+\_\+rcm\+\_\+srs0@{\+\_\+hw\+\_\+rcm\+\_\+srs0}}
+
+
+H\+W\+\_\+\+R\+C\+M\+\_\+\+S\+R\+S0 -\/ System Reset Status Register 0 (RO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+rcm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__rcm__srs0_1_1__hw__rcm__srs0__bitfields}{\+\_\+hw\+\_\+rcm\+\_\+srs0\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__rcm__srs0_ad23f47a4d9fc0193746c97fbaf94baf2}{}\label{union__hw__rcm__srs0_ad23f47a4d9fc0193746c97fbaf94baf2}
+
+\item 
+struct \hyperlink{struct__hw__rcm__srs0_1_1__hw__rcm__srs0__bitfields}{\+\_\+hw\+\_\+rcm\+\_\+srs0\+::\+\_\+hw\+\_\+rcm\+\_\+srs0\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__rcm__srs0_ae21e1cc455a0c4d80f09281463c1da60}{}\label{union__hw__rcm__srs0_ae21e1cc455a0c4d80f09281463c1da60}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+R\+C\+M\+\_\+\+S\+R\+S0 -\/ System Reset Status Register 0 (RO) 
+
+Reset value\+: 0x82U
+
+This register includes read-\/only status flags to indicate the source of the most recent reset. The reset state of these bits depends on what caused the M\+CU to reset. The reset value of this register depends on the reset source\+: P\+OR (including L\+VD) -\/ 0x82 L\+VD (without P\+OR) -\/ 0x02 V\+L\+LS mode wakeup due to R\+E\+S\+ET pin assertion -\/ 0x41 V\+L\+LS mode wakeup due to other wakeup sources -\/ 0x01 Other reset -\/ a bit is set if its corresponding reset source caused the reset 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+rcm.\+h\end{DoxyCompactItemize}

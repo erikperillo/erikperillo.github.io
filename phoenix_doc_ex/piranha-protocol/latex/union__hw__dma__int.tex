@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__int}{}\section{\+\_\+hw\+\_\+dma\+\_\+int Union Reference}
+\label{union__hw__dma__int}\index{\+\_\+hw\+\_\+dma\+\_\+int@{\+\_\+hw\+\_\+dma\+\_\+int}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+I\+NT -\/ Interrupt Request Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__int_1_1__hw__dma__int__bitfields}{\+\_\+hw\+\_\+dma\+\_\+int\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__int_acc83b3901728c131850e582d3789e651}{}\label{union__hw__dma__int_acc83b3901728c131850e582d3789e651}
+
+\item 
+struct \hyperlink{struct__hw__dma__int_1_1__hw__dma__int__bitfields}{\+\_\+hw\+\_\+dma\+\_\+int\+::\+\_\+hw\+\_\+dma\+\_\+int\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__int_ae5056b07b4eefe190bb57e2d576363a5}{}\label{union__hw__dma__int_ae5056b07b4eefe190bb57e2d576363a5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+I\+NT -\/ Interrupt Request Register (RW) 
+
+Reset value\+: 0x00000000U
+
+The I\+NT register provides a bit map for the 16 channels signaling the presence of an interrupt request for each channel. Depending on the appropriate bit setting in the transfer-\/control descriptors, the e\+D\+MA engine generates an interrupt on data transfer completion. The outputs of this register are directly routed to the interrupt controller (I\+N\+TC). During the interrupt-\/service routine associated with any given channel, it is the software\textquotesingle{}s responsibility to clear the appropriate bit, negating the interrupt request. Typically, a write to the C\+I\+NT register in the interrupt service routine is used for this purpose. The state of any given channel\textquotesingle{}s interrupt request is directly affected by writes to this register; it is also affected by writes to the C\+I\+NT register. On writes to I\+NT, a 1 in any bit position clears the corresponding channel\textquotesingle{}s interrupt request. A zero in any bit position has no affect on the corresponding channel\textquotesingle{}s current interrupt status. The C\+I\+NT register is provided so the interrupt request for a single channel can easily be cleared without the need to perform a read-\/modify-\/write sequence to the I\+NT register. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

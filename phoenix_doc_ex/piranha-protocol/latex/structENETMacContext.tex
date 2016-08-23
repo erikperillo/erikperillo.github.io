@@ -1,0 +1,90 @@
+\hypertarget{structENETMacContext}{}\section{E\+N\+E\+T\+Mac\+Context Struct Reference}
+\label{structENETMacContext}\index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+
+
+Defines the E\+N\+ET M\+AC context structure for the buffer address, buffer descriptor address, etc.  
+
+
+
+
+{\ttfamily \#include $<$fsl\+\_\+enet\+\_\+driver.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a06a24caa26fd7269f59ee182c951d687}{rx\+Buffer\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_adc4c623fb65846cfe36082133144dd1f}{rx\+Large\+Buffer\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a4ef76663fb63a619dfea2b2269ce444f}{tx\+Buffer\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a3da8d4131cc9deb3f08a078d27d7913c}{rx\+Bd\+Base\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a7bcc90b2e020d340626ed190a275dabe}{rx\+Bd\+Cur\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a710fe2c01d4b49dde272cee307a17ae5}{rx\+Bd\+Dirty\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a64745c164bca90c5a763c976669f380e}{tx\+Bd\+Base\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_a13579478c98974868f1dd1d0b2a31455}{tx\+Bd\+Cur\+Ptr}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structENETMacContext_aef7d23d7e944f9d916fc272c88b1189b}{tx\+Bd\+Dirty\+Ptr}
+\item 
+bool \hyperlink{structENETMacContext_a499f949b9364e7fec85acc5ad192c4ef}{is\+Tx\+Full}
+\item 
+bool \hyperlink{structENETMacContext_af7869528012536cd911b67b1f6e2228b}{is\+Rx\+Full}
+\item 
+uint32\+\_\+t \hyperlink{structENETMacContext_a7863bb1f5c2c1a2b4990732b603d4224}{bufferdesc\+Size}
+\item 
+uint16\+\_\+t \hyperlink{structENETMacContext_a4245b98c8ec044c3d2b46e6be14cc67f}{rx\+Buffer\+Size\+Aligned}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the E\+N\+ET M\+AC context structure for the buffer address, buffer descriptor address, etc. 
+
+\subsection{Member Data Documentation}
+\index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!bufferdesc\+Size@{bufferdesc\+Size}}
+\index{bufferdesc\+Size@{bufferdesc\+Size}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{bufferdesc\+Size}{bufferdescSize}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+N\+E\+T\+Mac\+Context\+::bufferdesc\+Size}\hypertarget{structENETMacContext_a7863bb1f5c2c1a2b4990732b603d4224}{}\label{structENETMacContext_a7863bb1f5c2c1a2b4990732b603d4224}
+E\+N\+ET buffer descriptor size \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!is\+Rx\+Full@{is\+Rx\+Full}}
+\index{is\+Rx\+Full@{is\+Rx\+Full}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{is\+Rx\+Full}{isRxFull}}]{\setlength{\rightskip}{0pt plus 5cm}bool E\+N\+E\+T\+Mac\+Context\+::is\+Rx\+Full}\hypertarget{structENETMacContext_af7869528012536cd911b67b1f6e2228b}{}\label{structENETMacContext_af7869528012536cd911b67b1f6e2228b}
+Receive buffer descriptor full \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!is\+Tx\+Full@{is\+Tx\+Full}}
+\index{is\+Tx\+Full@{is\+Tx\+Full}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{is\+Tx\+Full}{isTxFull}}]{\setlength{\rightskip}{0pt plus 5cm}bool E\+N\+E\+T\+Mac\+Context\+::is\+Tx\+Full}\hypertarget{structENETMacContext_a499f949b9364e7fec85acc5ad192c4ef}{}\label{structENETMacContext_a499f949b9364e7fec85acc5ad192c4ef}
+Transmit buffer descriptor full \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!rx\+Bd\+Base\+Ptr@{rx\+Bd\+Base\+Ptr}}
+\index{rx\+Bd\+Base\+Ptr@{rx\+Bd\+Base\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{rx\+Bd\+Base\+Ptr}{rxBdBasePtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::rx\+Bd\+Base\+Ptr}\hypertarget{structENETMacContext_a3da8d4131cc9deb3f08a078d27d7913c}{}\label{structENETMacContext_a3da8d4131cc9deb3f08a078d27d7913c}
+Receive buffer descriptor base address pointer \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!rx\+Bd\+Cur\+Ptr@{rx\+Bd\+Cur\+Ptr}}
+\index{rx\+Bd\+Cur\+Ptr@{rx\+Bd\+Cur\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{rx\+Bd\+Cur\+Ptr}{rxBdCurPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::rx\+Bd\+Cur\+Ptr}\hypertarget{structENETMacContext_a7bcc90b2e020d340626ed190a275dabe}{}\label{structENETMacContext_a7bcc90b2e020d340626ed190a275dabe}
+Current receive buffer descriptor pointer \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!rx\+Bd\+Dirty\+Ptr@{rx\+Bd\+Dirty\+Ptr}}
+\index{rx\+Bd\+Dirty\+Ptr@{rx\+Bd\+Dirty\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{rx\+Bd\+Dirty\+Ptr}{rxBdDirtyPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::rx\+Bd\+Dirty\+Ptr}\hypertarget{structENETMacContext_a710fe2c01d4b49dde272cee307a17ae5}{}\label{structENETMacContext_a710fe2c01d4b49dde272cee307a17ae5}
+Receive dirty buffer descriptor \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!rx\+Buffer\+Ptr@{rx\+Buffer\+Ptr}}
+\index{rx\+Buffer\+Ptr@{rx\+Buffer\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{rx\+Buffer\+Ptr}{rxBufferPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::rx\+Buffer\+Ptr}\hypertarget{structENETMacContext_a06a24caa26fd7269f59ee182c951d687}{}\label{structENETMacContext_a06a24caa26fd7269f59ee182c951d687}
+Receive buffer pointer \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!rx\+Buffer\+Size\+Aligned@{rx\+Buffer\+Size\+Aligned}}
+\index{rx\+Buffer\+Size\+Aligned@{rx\+Buffer\+Size\+Aligned}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{rx\+Buffer\+Size\+Aligned}{rxBufferSizeAligned}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t E\+N\+E\+T\+Mac\+Context\+::rx\+Buffer\+Size\+Aligned}\hypertarget{structENETMacContext_a4245b98c8ec044c3d2b46e6be14cc67f}{}\label{structENETMacContext_a4245b98c8ec044c3d2b46e6be14cc67f}
+Receive buffer alignment size \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!rx\+Large\+Buffer\+Ptr@{rx\+Large\+Buffer\+Ptr}}
+\index{rx\+Large\+Buffer\+Ptr@{rx\+Large\+Buffer\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{rx\+Large\+Buffer\+Ptr}{rxLargeBufferPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::rx\+Large\+Buffer\+Ptr}\hypertarget{structENETMacContext_adc4c623fb65846cfe36082133144dd1f}{}\label{structENETMacContext_adc4c623fb65846cfe36082133144dd1f}
+Receive large buffer descriptor \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!tx\+Bd\+Base\+Ptr@{tx\+Bd\+Base\+Ptr}}
+\index{tx\+Bd\+Base\+Ptr@{tx\+Bd\+Base\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{tx\+Bd\+Base\+Ptr}{txBdBasePtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::tx\+Bd\+Base\+Ptr}\hypertarget{structENETMacContext_a64745c164bca90c5a763c976669f380e}{}\label{structENETMacContext_a64745c164bca90c5a763c976669f380e}
+Transmit buffer descriptor base address pointer \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!tx\+Bd\+Cur\+Ptr@{tx\+Bd\+Cur\+Ptr}}
+\index{tx\+Bd\+Cur\+Ptr@{tx\+Bd\+Cur\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{tx\+Bd\+Cur\+Ptr}{txBdCurPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::tx\+Bd\+Cur\+Ptr}\hypertarget{structENETMacContext_a13579478c98974868f1dd1d0b2a31455}{}\label{structENETMacContext_a13579478c98974868f1dd1d0b2a31455}
+Current transmit buffer descriptor pointer \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!tx\+Bd\+Dirty\+Ptr@{tx\+Bd\+Dirty\+Ptr}}
+\index{tx\+Bd\+Dirty\+Ptr@{tx\+Bd\+Dirty\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{tx\+Bd\+Dirty\+Ptr}{txBdDirtyPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::tx\+Bd\+Dirty\+Ptr}\hypertarget{structENETMacContext_aef7d23d7e944f9d916fc272c88b1189b}{}\label{structENETMacContext_aef7d23d7e944f9d916fc272c88b1189b}
+Last cleaned transmit buffer descriptor pointer \index{E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}!tx\+Buffer\+Ptr@{tx\+Buffer\+Ptr}}
+\index{tx\+Buffer\+Ptr@{tx\+Buffer\+Ptr}!E\+N\+E\+T\+Mac\+Context@{E\+N\+E\+T\+Mac\+Context}}
+\subsubsection[{\texorpdfstring{tx\+Buffer\+Ptr}{txBufferPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ E\+N\+E\+T\+Mac\+Context\+::tx\+Buffer\+Ptr}\hypertarget{structENETMacContext_a4ef76663fb63a619dfea2b2269ce444f}{}\label{structENETMacContext_a4ef76663fb63a619dfea2b2269ce444f}
+Transmit buffer pointer 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/drivers/enet/fsl\+\_\+enet\+\_\+driver.\+h\end{DoxyCompactItemize}

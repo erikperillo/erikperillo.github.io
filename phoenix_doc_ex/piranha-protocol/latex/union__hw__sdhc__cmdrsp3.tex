@@ -1,0 +1,37 @@
+\hypertarget{union__hw__sdhc__cmdrsp3}{}\section{\+\_\+hw\+\_\+sdhc\+\_\+cmdrsp3 Union Reference}
+\label{union__hw__sdhc__cmdrsp3}\index{\+\_\+hw\+\_\+sdhc\+\_\+cmdrsp3@{\+\_\+hw\+\_\+sdhc\+\_\+cmdrsp3}}
+
+
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+C\+M\+D\+R\+S\+P3 -\/ Command Response 3 (RO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+sdhc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__sdhc__cmdrsp3_1_1__hw__sdhc__cmdrsp3__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+cmdrsp3\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__sdhc__cmdrsp3_af72d0930302af9151e8a265bc1314499}{}\label{union__hw__sdhc__cmdrsp3_af72d0930302af9151e8a265bc1314499}
+
+\item 
+struct \hyperlink{struct__hw__sdhc__cmdrsp3_1_1__hw__sdhc__cmdrsp3__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+cmdrsp3\+::\+\_\+hw\+\_\+sdhc\+\_\+cmdrsp3\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__sdhc__cmdrsp3_ab345b843c33343ab1b4e2aa07f09c0f3}{}\label{union__hw__sdhc__cmdrsp3_ab345b843c33343ab1b4e2aa07f09c0f3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+C\+M\+D\+R\+S\+P3 -\/ Command Response 3 (RO) 
+
+Reset value\+: 0x00000000U
+
+This register is used to store part 3 of the response bits from the card. The following table describes the mapping of command responses from the SD bus to command response registers for each response type. In the table, R\mbox{[} \mbox{]} refers to a bit range within the response data as transmitted on the SD bus. Response bit definition for each response type Response type Meaning of response Response field Response register R1,R1b (normal response) Card status R\mbox{[}39\+:8\mbox{]} C\+M\+D\+R\+S\+P0 R1b (Auto C\+M\+D12 response) Card status for auto C\+M\+D12 R\mbox{[}39\+:8\mbox{]} C\+M\+D\+R\+S\+P3 R2 (C\+ID, C\+SD register) C\+I\+D/\+C\+SD register \mbox{[}127\+:8\mbox{]} R\mbox{[}127\+:8\mbox{]} \{C\+M\+D\+R\+S\+P3\mbox{[}23\+:0\mbox{]}, C\+M\+D\+R\+S\+P2, C\+M\+D\+R\+S\+P1, C\+M\+D\+R\+S\+P0\} R3 (O\+CR register) O\+CR register for memory R\mbox{[}39\+:8\mbox{]} C\+M\+D\+R\+S\+P0 R4 (O\+CR register) O\+CR register for I/O etc. R\mbox{[}39\+:8\mbox{]} C\+M\+D\+R\+S\+P0 R5, R5b S\+D\+IO response R\mbox{[}39\+:8\mbox{]} C\+M\+D\+R\+S\+P0 R6 (Publish R\+CA) New published R\+CA\mbox{[}31\+:16\mbox{]} and card status\mbox{[}15\+:0\mbox{]} R\mbox{[}39\+:9\mbox{]} C\+M\+D\+R\+S\+P0 This table shows that most responses with a length of 48 (R\mbox{[}47\+:0\mbox{]}) have 32-\/bit of the response data (R\mbox{[}39\+:8\mbox{]}) stored in the C\+M\+D\+R\+S\+P0 register. Responses of type R1b (auto C\+M\+D12 responses) have response data bits (R\mbox{[}39\+:8\mbox{]}) stored in the C\+M\+D\+R\+S\+P3 register. Responses with length 136 (R\mbox{[}135\+:0\mbox{]}) have 120-\/bit of the response data (R\mbox{[}127\+:8\mbox{]}) stored in the C\+M\+D\+R\+S\+P0, 1, 2, and 3 registers. To be able to read the response status efficiently, the S\+D\+HC stores only a part of the response data in the command response registers. This enables the host driver to efficiently read 32-\/bit of response data in one read cycle on a 32-\/bit bus system. Parts of the response, the index field and the C\+RC, are checked by the S\+D\+HC, as specified by X\+F\+E\+R\+T\+YP\mbox{[}C\+I\+C\+EN\mbox{]} and X\+F\+E\+R\+T\+YP\mbox{[}C\+C\+C\+EN\mbox{]}, and generate an error interrupt if any error is detected. The bit range for the C\+RC check depends on the response length. If the response length is 48, the S\+D\+HC will check R\mbox{[}47\+:1\mbox{]}, and if the response length is 136 the S\+D\+HC will check R\mbox{[}119\+:1\mbox{]}. Because the S\+D\+HC may have a multiple block data transfer executing concurrently with a C\+M\+D\+\_\+wo\+\_\+\+D\+AT command, the S\+D\+HC stores the auto C\+M\+D12 response in the C\+M\+D\+R\+S\+P3 register. The C\+M\+D\+\_\+wo\+\_\+\+D\+AT response is stored in C\+M\+D\+R\+S\+P0. This allows the S\+D\+HC to avoid overwriting the Auto C\+M\+D12 response with the C\+M\+D\+\_\+wo\+\_\+\+D\+AT and vice versa. When the S\+D\+HC modifies part of the command response registers, as shown in the table above, it preserves the unmodified bits. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+sdhc.\+h\end{DoxyCompactItemize}

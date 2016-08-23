@@ -1,0 +1,37 @@
+\hypertarget{union__hw__uart__rwfifo}{}\section{\+\_\+hw\+\_\+uart\+\_\+rwfifo Union Reference}
+\label{union__hw__uart__rwfifo}\index{\+\_\+hw\+\_\+uart\+\_\+rwfifo@{\+\_\+hw\+\_\+uart\+\_\+rwfifo}}
+
+
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+R\+W\+F\+I\+FO -\/ U\+A\+RT F\+I\+FO Receive Watermark (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+uart.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__uart__rwfifo_1_1__hw__uart__rwfifo__bitfields}{\+\_\+hw\+\_\+uart\+\_\+rwfifo\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__uart__rwfifo_a5e80c500a778d46f1286df5c8d2fba70}{}\label{union__hw__uart__rwfifo_a5e80c500a778d46f1286df5c8d2fba70}
+
+\item 
+struct \hyperlink{struct__hw__uart__rwfifo_1_1__hw__uart__rwfifo__bitfields}{\+\_\+hw\+\_\+uart\+\_\+rwfifo\+::\+\_\+hw\+\_\+uart\+\_\+rwfifo\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__uart__rwfifo_a79e0150185704d417fbb358186d6f5b1}{}\label{union__hw__uart__rwfifo_a79e0150185704d417fbb358186d6f5b1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+R\+W\+F\+I\+FO -\/ U\+A\+RT F\+I\+FO Receive Watermark (RW) 
+
+Reset value\+: 0x01U
+
+This register provides the ability to set a programmable threshold for notification of the need to remove data from the receiver F\+I\+F\+O/buffer. This register may be read at any time but must be written only when C2\mbox{[}RE\mbox{]} is not asserted. Changing the value in this register will not clear S1\mbox{[}R\+D\+RF\mbox{]}. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+uart.\+h\end{DoxyCompactItemize}

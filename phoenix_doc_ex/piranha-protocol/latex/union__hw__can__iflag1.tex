@@ -1,0 +1,38 @@
+\hypertarget{union__hw__can__iflag1}{}\section{\+\_\+hw\+\_\+can\+\_\+iflag1 Union Reference}
+\label{union__hw__can__iflag1}\index{\+\_\+hw\+\_\+can\+\_\+iflag1@{\+\_\+hw\+\_\+can\+\_\+iflag1}}
+
+
+H\+W\+\_\+\+C\+A\+N\+\_\+\+I\+F\+L\+A\+G1 -\/ Interrupt Flags 1 register (W1C)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+can.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__can__iflag1_1_1__hw__can__iflag1__bitfields}{\+\_\+hw\+\_\+can\+\_\+iflag1\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__can__iflag1_a6b5b197b2f89d9b2c99e3c641bb06b23}{}\label{union__hw__can__iflag1_a6b5b197b2f89d9b2c99e3c641bb06b23}
+
+\item 
+struct \hyperlink{struct__hw__can__iflag1_1_1__hw__can__iflag1__bitfields}{\+\_\+hw\+\_\+can\+\_\+iflag1\+::\+\_\+hw\+\_\+can\+\_\+iflag1\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__can__iflag1_a598c0d70679b3a04544ef5e1ded20148}{}\label{union__hw__can__iflag1_a598c0d70679b3a04544ef5e1ded20148}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+C\+A\+N\+\_\+\+I\+F\+L\+A\+G1 -\/ Interrupt Flags 1 register (W1C) 
+
+Reset value\+: 0x00000000U
+
+This register defines the flags for the 32 Message Buffer interrupts for M\+B31 to M\+B0. It contains one interrupt flag bit per buffer. Each successful transmission or reception sets the corresponding I\+F\+L\+A\+G1 bit. If the corresponding I\+M\+A\+S\+K1 bit is set, an interrupt will be generated. The interrupt flag must be cleared by writing 1 to it. Writing 0 has no effect. The B\+U\+F7I to B\+U\+F5I flags are also used to represent F\+I\+FO interrupts when the Rx F\+I\+FO is enabled. When the bit M\+CR\mbox{[}R\+F\+EN\mbox{]} is set, the function of the 8 least significant interrupt flags B\+UF\mbox{[}7\+:0\mbox{]}I changes\+: B\+U\+F7I, B\+U\+F6I and B\+U\+F5I indicate operating conditions of the F\+I\+FO, and the B\+U\+F4\+T\+O0I field is reserved. Before enabling the R\+F\+EN, the C\+PU must service the I\+F\+L\+AG bits asserted in the Rx F\+I\+FO region; see Section \char`\"{}\+Rx
+\+F\+I\+F\+O\char`\"{}. Otherwise, these I\+F\+L\+AG bits will mistakenly show the related M\+Bs now belonging to F\+I\+FO as having contents to be serviced. When the R\+F\+EN bit is negated, the F\+I\+FO flags must be cleared. The same care must be taken when an R\+F\+FN value is selected extending Rx F\+I\+FO filters beyond M\+B7. For example, when R\+F\+FN is 0x8, the M\+B0-\/23 range is occupied by Rx F\+I\+FO filters and related I\+F\+L\+AG bits must be cleared. Before updating M\+CR\mbox{[}M\+A\+X\+MB\mbox{]} field, C\+PU must service the I\+F\+L\+A\+G1 bits whose MB value is greater than the M\+CR\mbox{[}M\+A\+X\+MB\mbox{]} to be updated; otherwise, they will remain set and be inconsistent with the number of M\+Bs available. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+can.\+h\end{DoxyCompactItemize}

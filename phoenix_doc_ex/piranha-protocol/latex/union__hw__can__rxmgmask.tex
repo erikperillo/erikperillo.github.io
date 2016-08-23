@@ -1,0 +1,37 @@
+\hypertarget{union__hw__can__rxmgmask}{}\section{\+\_\+hw\+\_\+can\+\_\+rxmgmask Union Reference}
+\label{union__hw__can__rxmgmask}\index{\+\_\+hw\+\_\+can\+\_\+rxmgmask@{\+\_\+hw\+\_\+can\+\_\+rxmgmask}}
+
+
+H\+W\+\_\+\+C\+A\+N\+\_\+\+R\+X\+M\+G\+M\+A\+SK -\/ Rx Mailboxes Global Mask Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+can.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__can__rxmgmask_1_1__hw__can__rxmgmask__bitfields}{\+\_\+hw\+\_\+can\+\_\+rxmgmask\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__can__rxmgmask_a4c4fa94eee9c1a48a9bb4e76fc2cc6d5}{}\label{union__hw__can__rxmgmask_a4c4fa94eee9c1a48a9bb4e76fc2cc6d5}
+
+\item 
+struct \hyperlink{struct__hw__can__rxmgmask_1_1__hw__can__rxmgmask__bitfields}{\+\_\+hw\+\_\+can\+\_\+rxmgmask\+::\+\_\+hw\+\_\+can\+\_\+rxmgmask\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__can__rxmgmask_a21da5bf0963eb7e25e3f39b35fa6d44c}{}\label{union__hw__can__rxmgmask_a21da5bf0963eb7e25e3f39b35fa6d44c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+C\+A\+N\+\_\+\+R\+X\+M\+G\+M\+A\+SK -\/ Rx Mailboxes Global Mask Register (RW) 
+
+Reset value\+: 0x\+F\+F\+F\+F\+F\+F\+F\+FU
+
+This register is located in R\+AM. R\+X\+M\+G\+M\+A\+SK is provided for legacy application support. When the M\+CR\mbox{[}I\+R\+MQ\mbox{]} bit is negated, R\+X\+M\+G\+M\+A\+SK is always in effect. When the M\+CR\mbox{[}I\+R\+MQ\mbox{]} bit is asserted, R\+X\+M\+G\+M\+A\+SK has no effect. R\+X\+M\+G\+M\+A\+SK is used to mask the filter fields of all Rx M\+Bs, excluding M\+Bs 14-\/15, which have individual mask registers. This register can only be written in Freeze mode as it is blocked by hardware in other modes. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+can.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,2848 @@
+\hypertarget{group__sim__hal}{}\section{Sim\+\_\+hal}
+\label{group__sim__hal}\index{Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{fsl__sim__hal_8h}{fsl\+\_\+sim\+\_\+hal.\+h}
+\item 
+file \hyperlink{fsl__sim__hal__K64F12_8h}{fsl\+\_\+sim\+\_\+hal\+\_\+\+K64\+F12.\+h}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structClockNameConfig}{Clock\+Name\+Config}
+\begin{DoxyCompactList}\small\item\em Clock name configuration table structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \+\_\+clock\+\_\+names {\bfseries clock\+\_\+names\+\_\+t}\hypertarget{group__sim__hal_ga97947bca6543a154dc0b1174fdf6c82d}{}\label{group__sim__hal_ga97947bca6543a154dc0b1174fdf6c82d}
+
+\item 
+typedef enum \hyperlink{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}{\+\_\+clock\+\_\+source\+\_\+names} \hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t}\hypertarget{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{}\label{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}
+
+\begin{DoxyCompactList}\small\item\em Clock source and sel names. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga48bb70d28e353a255009c5762b248970}{\+\_\+clock\+\_\+divider\+\_\+names} \hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t}\hypertarget{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{}\label{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}
+
+\begin{DoxyCompactList}\small\item\em Clock Divider names. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}{\+\_\+sim\+\_\+usbsstby\+\_\+stop} \hyperlink{group__sim__hal_ga3e6c7010d80a822f8224ce7bdc525576}{sim\+\_\+usbsstby\+\_\+stop\+\_\+t}\hypertarget{group__sim__hal_ga3e6c7010d80a822f8224ce7bdc525576}{}\label{group__sim__hal_ga3e6c7010d80a822f8224ce7bdc525576}
+
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during stop modes. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}{\+\_\+sim\+\_\+usbvstby\+\_\+stop} \hyperlink{group__sim__hal_ga640e85f65b3412e5ce73dcf90c577bd2}{sim\+\_\+usbvstby\+\_\+stop\+\_\+t}\hypertarget{group__sim__hal_ga640e85f65b3412e5ce73dcf90c577bd2}{}\label{group__sim__hal_ga640e85f65b3412e5ce73dcf90c577bd2}
+
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during V\+L\+PR and V\+L\+PW modes. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}{\+\_\+sim\+\_\+cmtuartpad\+\_\+strengh} \hyperlink{group__sim__hal_gab8bdf691986599480d4d7963712d7bb5}{sim\+\_\+cmtuartpad\+\_\+strengh\+\_\+t}\hypertarget{group__sim__hal_gab8bdf691986599480d4d7963712d7bb5}{}\label{group__sim__hal_gab8bdf691986599480d4d7963712d7bb5}
+
+\begin{DoxyCompactList}\small\item\em S\+IM C\+M\+T/\+U\+A\+RT pad drive strength. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}{\+\_\+sim\+\_\+ptd7pad\+\_\+strengh} \hyperlink{group__sim__hal_ga81b5576d77b577cbc03bd57c6653b2ca}{sim\+\_\+ptd7pad\+\_\+strengh\+\_\+t}\hypertarget{group__sim__hal_ga81b5576d77b577cbc03bd57c6653b2ca}{}\label{group__sim__hal_ga81b5576d77b577cbc03bd57c6653b2ca}
+
+\begin{DoxyCompactList}\small\item\em S\+IM P\+T\+D7 pad drive strength. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}{\+\_\+sim\+\_\+flexbus\+\_\+security\+\_\+level} \hyperlink{group__sim__hal_ga7302462a5c3005311de845c17aab6971}{sim\+\_\+flexbus\+\_\+security\+\_\+level\+\_\+t}\hypertarget{group__sim__hal_ga7302462a5c3005311de845c17aab6971}{}\label{group__sim__hal_ga7302462a5c3005311de845c17aab6971}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Bus security level. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}{\+\_\+sim\+\_\+pretrgsel} \hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t}\hypertarget{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{}\label{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}
+
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx pre-\/trigger select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}{\+\_\+sim\+\_\+trgsel} \hyperlink{group__sim__hal_ga5bd34cf2c7d81265882d1b79534b43c0}{sim\+\_\+trgsel\+\_\+t}\hypertarget{group__sim__hal_ga5bd34cf2c7d81265882d1b79534b43c0}{}\label{group__sim__hal_ga5bd34cf2c7d81265882d1b79534b43c0}
+
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx trigger select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}{\+\_\+sim\+\_\+uart\+\_\+rxsrc} \hyperlink{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{sim\+\_\+uart\+\_\+rxsrc\+\_\+t}\hypertarget{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{}\label{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}
+
+\begin{DoxyCompactList}\small\item\em S\+IM receive data source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}{\+\_\+sim\+\_\+uart\+\_\+txsrc} \hyperlink{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{sim\+\_\+uart\+\_\+txsrc\+\_\+t}\hypertarget{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{}\label{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}
+
+\begin{DoxyCompactList}\small\item\em S\+IM transmit data source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}{\+\_\+sim\+\_\+ftm\+\_\+trg\+\_\+src} \hyperlink{group__sim__hal_ga51391f8c8388e0b84b93bbded825d57b}{sim\+\_\+ftm\+\_\+trg\+\_\+src\+\_\+t}\hypertarget{group__sim__hal_ga51391f8c8388e0b84b93bbded825d57b}{}\label{group__sim__hal_ga51391f8c8388e0b84b93bbded825d57b}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x trigger y select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}{\+\_\+sim\+\_\+ftm\+\_\+clk\+\_\+sel} \hyperlink{group__sim__hal_ga553da71353180a7044fe2b2c2bc7456e}{sim\+\_\+ftm\+\_\+clk\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_ga553da71353180a7044fe2b2c2bc7456e}{}\label{group__sim__hal_ga553da71353180a7044fe2b2c2bc7456e}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer external clock select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}{\+\_\+sim\+\_\+ftm\+\_\+ch\+\_\+src} \hyperlink{group__sim__hal_ga1b870891313d5b9c55d2d32be3453231}{sim\+\_\+ftm\+\_\+ch\+\_\+src\+\_\+t}\hypertarget{group__sim__hal_ga1b870891313d5b9c55d2d32be3453231}{}\label{group__sim__hal_ga1b870891313d5b9c55d2d32be3453231}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x channel y input capture source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}{\+\_\+sim\+\_\+ftm\+\_\+flt\+\_\+sel} \hyperlink{group__sim__hal_ga5f1270e40e152e6fa6f9b845fb8f5bc3}{sim\+\_\+ftm\+\_\+flt\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_ga5f1270e40e152e6fa6f9b845fb8f5bc3}{}\label{group__sim__hal_ga5f1270e40e152e6fa6f9b845fb8f5bc3}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x Fault y select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}{\+\_\+sim\+\_\+tpm\+\_\+clk\+\_\+sel} \hyperlink{group__sim__hal_gaaae3e3d207612ecbfc7d9fb15f393bd9}{sim\+\_\+tpm\+\_\+clk\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_gaaae3e3d207612ecbfc7d9fb15f393bd9}{}\label{group__sim__hal_gaaae3e3d207612ecbfc7d9fb15f393bd9}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM external clock select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}{\+\_\+sim\+\_\+tpm\+\_\+ch\+\_\+src} \hyperlink{group__sim__hal_ga82807d4d46060b2abab884b3bd335b29}{sim\+\_\+tpm\+\_\+ch\+\_\+src\+\_\+t}\hypertarget{group__sim__hal_ga82807d4d46060b2abab884b3bd335b29}{}\label{group__sim__hal_ga82807d4d46060b2abab884b3bd335b29}
+
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM x channel y input capture source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}{\+\_\+sim\+\_\+hal\+\_\+status} \hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t}\hypertarget{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{}\label{group__sim__hal_ga7e691721ba86531e94387971c652aa08}
+
+\begin{DoxyCompactList}\small\item\em S\+IM H\+AL A\+PI return status. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structClockNameConfig}{Clock\+Name\+Config} \hyperlink{group__sim__hal_ga0d84063eacefa134ba3be72a9c70222c}{clock\+\_\+name\+\_\+config\+\_\+t}\hypertarget{group__sim__hal_ga0d84063eacefa134ba3be72a9c70222c}{}\label{group__sim__hal_ga0d84063eacefa134ba3be72a9c70222c}
+
+\begin{DoxyCompactList}\small\item\em Clock name configuration table structure. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gad298a91a63548d70748d40d8a485f3e1}{\+\_\+sim\+\_\+sdhc\+\_\+clock\+\_\+source} \hyperlink{group__sim__hal_ga8e71ec33f7769f4392126e7acc92b6d2}{sim\+\_\+sdhc\+\_\+clock\+\_\+source\+\_\+t}\hypertarget{group__sim__hal_ga8e71ec33f7769f4392126e7acc92b6d2}{}\label{group__sim__hal_ga8e71ec33f7769f4392126e7acc92b6d2}
+
+\begin{DoxyCompactList}\small\item\em S\+IM S\+D\+HC clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga9ba1c9896979d291bef95527f789bce5}{\+\_\+sim\+\_\+time\+\_\+clock\+\_\+source} \hyperlink{group__sim__hal_ga679c7384fcf18e6dca91748a9609728c}{sim\+\_\+time\+\_\+clock\+\_\+source\+\_\+t}\hypertarget{group__sim__hal_ga679c7384fcf18e6dca91748a9609728c}{}\label{group__sim__hal_ga679c7384fcf18e6dca91748a9609728c}
+
+\begin{DoxyCompactList}\small\item\em S\+IM T\+I\+ME clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga37be85d1a46e05464021dc63dabbcce9}{\+\_\+sim\+\_\+rmii\+\_\+clock\+\_\+source} \hyperlink{group__sim__hal_ga26ca607d386af281cf580e52705423fb}{sim\+\_\+rmii\+\_\+clock\+\_\+source\+\_\+t}\hypertarget{group__sim__hal_ga26ca607d386af281cf580e52705423fb}{}\label{group__sim__hal_ga26ca607d386af281cf580e52705423fb}
+
+\begin{DoxyCompactList}\small\item\em S\+IM R\+M\+II clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga08e8c635a2a5739f0ce629cd15410a7b}{\+\_\+sim\+\_\+usb\+\_\+clock\+\_\+source} \hyperlink{group__sim__hal_ga28b4cb9340155e307b41f967235d3cc6}{sim\+\_\+usb\+\_\+clock\+\_\+source\+\_\+t}\hypertarget{group__sim__hal_ga28b4cb9340155e307b41f967235d3cc6}{}\label{group__sim__hal_ga28b4cb9340155e307b41f967235d3cc6}
+
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gac50cdfb7351b61de041d031eb0c3bcfc}{\+\_\+sim\+\_\+pllfll\+\_\+clock\+\_\+sel} \hyperlink{group__sim__hal_gac8f034a36dcf79fb7fd4fec1f6d84f1a}{sim\+\_\+pllfll\+\_\+clock\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_gac8f034a36dcf79fb7fd4fec1f6d84f1a}{}\label{group__sim__hal_gac8f034a36dcf79fb7fd4fec1f6d84f1a}
+
+\begin{DoxyCompactList}\small\item\em S\+IM P\+L\+L\+F\+L\+L\+S\+EL clock source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga53eab0504e5f90d3f35a8cdd41aff069}{\+\_\+sim\+\_\+osc32k\+\_\+clock\+\_\+sel} \hyperlink{group__sim__hal_gade426197a221be9ffa447f892f129cdd}{sim\+\_\+osc32k\+\_\+clock\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_gade426197a221be9ffa447f892f129cdd}{}\label{group__sim__hal_gade426197a221be9ffa447f892f129cdd}
+
+\begin{DoxyCompactList}\small\item\em S\+IM O\+S\+C32\+K\+S\+EL clock source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gaadc91652066cea42d44889e57aa74bca}{\+\_\+sim\+\_\+trace\+\_\+clock\+\_\+sel} \hyperlink{group__sim__hal_ga8ed73418d808c98e30c9ac0f2f015861}{sim\+\_\+trace\+\_\+clock\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_ga8ed73418d808c98e30c9ac0f2f015861}{}\label{group__sim__hal_ga8ed73418d808c98e30c9ac0f2f015861}
+
+\begin{DoxyCompactList}\small\item\em S\+IM T\+R\+A\+C\+E\+S\+EL clock source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_ga10bf1258a147a8d691ef8e8afcc1b28a}{\+\_\+sim\+\_\+clkout\+\_\+clock\+\_\+sel} \hyperlink{group__sim__hal_gaaa74ad5f139114f3bcf16a2c22095e39}{sim\+\_\+clkout\+\_\+clock\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_gaaa74ad5f139114f3bcf16a2c22095e39}{}\label{group__sim__hal_gaaa74ad5f139114f3bcf16a2c22095e39}
+
+\begin{DoxyCompactList}\small\item\em S\+IM C\+L\+K\+O\+U\+T\+\_\+\+S\+EL clock source select. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sim__hal_gaa27f7d28ea6be6d650701233789da408}{\+\_\+sim\+\_\+rtcclkout\+\_\+clock\+\_\+sel} \hyperlink{group__sim__hal_ga0a4f9eafe792f5223659bb93247d2a04}{sim\+\_\+rtcclkout\+\_\+clock\+\_\+sel\+\_\+t}\hypertarget{group__sim__hal_ga0a4f9eafe792f5223659bb93247d2a04}{}\label{group__sim__hal_ga0a4f9eafe792f5223659bb93247d2a04}
+
+\begin{DoxyCompactList}\small\item\em S\+IM R\+T\+C\+C\+L\+K\+O\+U\+T\+S\+EL clock source select. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries \+\_\+clock\+\_\+names} \{ \\*
+{\bfseries k\+Core\+Clock}, 
+{\bfseries k\+System\+Clock}, 
+{\bfseries k\+Platform\+Clock}, 
+{\bfseries k\+Bus\+Clock}, 
+\\*
+{\bfseries k\+Flex\+Bus\+Clock}, 
+{\bfseries k\+Flash\+Clock}, 
+{\bfseries k\+Osc32k\+Clock}, 
+{\bfseries k\+Osc0\+Er\+Clock}, 
+\\*
+{\bfseries k\+Osc1\+Er\+Clock}, 
+{\bfseries k\+Irc48m\+Clock}, 
+{\bfseries k\+Rtc32k\+Clock}, 
+{\bfseries k\+Rtc1hz\+Clock}, 
+\\*
+{\bfseries k\+Lpo\+Clock}, 
+{\bfseries k\+Mcg\+Ff\+Clock}, 
+{\bfseries k\+Mcg\+Fll\+Clock}, 
+{\bfseries k\+Mcg\+Pll0\+Clock}, 
+\\*
+{\bfseries k\+Mcg\+Pll1\+Clock}, 
+{\bfseries k\+Mcg\+Out\+Clock}, 
+{\bfseries k\+Mcg\+Ir\+Clock}, 
+{\bfseries k\+S\+D\+H\+C0\+\_\+\+C\+L\+K\+IN}, 
+\\*
+{\bfseries k\+E\+N\+E\+T\+\_\+1588\+\_\+\+C\+L\+K\+IN}, 
+{\bfseries k\+E\+X\+T\+A\+L\+\_\+\+Clock}, 
+{\bfseries k\+E\+X\+T\+A\+L1\+\_\+\+Clock}, 
+{\bfseries k\+U\+S\+B\+\_\+\+C\+L\+K\+IN}, 
+\\*
+{\bfseries k\+Reserved}, 
+{\bfseries k\+Clock\+Name\+Count}
+ \}\hypertarget{group__sim__hal_ga000db43a9c0cfd7473ebf8e4d6e0853b}{}\label{group__sim__hal_ga000db43a9c0cfd7473ebf8e4d6e0853b}
+
+\item 
+enum \hyperlink{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}{\+\_\+clock\+\_\+source\+\_\+names} \{ \\*
+{\bfseries k\+Clock\+Nfc\+Src}, 
+{\bfseries k\+Clock\+Esdhc\+Src}, 
+{\bfseries k\+Clock\+Sdhc\+Src}, 
+{\bfseries k\+Clock\+Lcdc\+Src}, 
+\\*
+{\bfseries k\+Clock\+Time\+Src}, 
+{\bfseries k\+Clock\+Rmii\+Src}, 
+{\bfseries k\+Clock\+Usbf\+Src}, 
+{\bfseries k\+Clock\+Usb\+Src}, 
+\\*
+{\bfseries k\+Clock\+Usbh\+Src}, 
+{\bfseries k\+Clock\+Uart0\+Src}, 
+{\bfseries k\+Clock\+Lpuart\+Src}, 
+{\bfseries k\+Clock\+Tpm\+Src}, 
+\\*
+{\bfseries k\+Clock\+Osc32k\+Sel}, 
+{\bfseries k\+Clock\+Usbf\+Sel}, 
+{\bfseries k\+Clock\+Pllfll\+Sel}, 
+{\bfseries k\+Clock\+Nfc\+Sel}, 
+\\*
+{\bfseries k\+Clock\+Lcdc\+Sel}, 
+{\bfseries k\+Clock\+Trace\+Sel}, 
+{\bfseries k\+Clock\+Clkout\+Sel}, 
+{\bfseries k\+Clock\+Rtc\+Clkout\+Sel}, 
+\\*
+{\bfseries k\+Clock\+Source\+Max}
+ \}\hypertarget{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}{}\label{group__sim__hal_ga77ad0e23383945c5b3e677455627c0fe}
+\begin{DoxyCompactList}\small\item\em Clock source and sel names. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga48bb70d28e353a255009c5762b248970}{\+\_\+clock\+\_\+divider\+\_\+names} \{ \\*
+{\bfseries k\+Clock\+Divider\+Outdiv1}, 
+{\bfseries k\+Clock\+Divider\+Outdiv2}, 
+{\bfseries k\+Clock\+Divider\+Outdiv3}, 
+{\bfseries k\+Clock\+Divider\+Outdiv4}, 
+\\*
+{\bfseries k\+Clock\+Divider\+Usb\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Usb\+Div}, 
+{\bfseries k\+Clock\+Divider\+Usbfs\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Usbfs\+Div}, 
+\\*
+{\bfseries k\+Clock\+Divider\+Usbhs\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Usbhs\+Div}, 
+{\bfseries k\+Clock\+Divider\+Lcdc\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Lcdc\+Div}, 
+\\*
+{\bfseries k\+Clock\+Divider\+Nfc\+Frac}, 
+{\bfseries k\+Clock\+Divider\+Nfc\+Div}, 
+{\bfseries k\+Clock\+Divider\+Special1}, 
+{\bfseries k\+Clock\+Divider\+Max}
+ \}\hypertarget{group__sim__hal_ga48bb70d28e353a255009c5762b248970}{}\label{group__sim__hal_ga48bb70d28e353a255009c5762b248970}
+\begin{DoxyCompactList}\small\item\em Clock Divider names. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}{\+\_\+sim\+\_\+usbsstby\+\_\+stop} \{ {\bfseries k\+Sim\+Usbsstby\+No\+Regulator}, 
+{\bfseries k\+Sim\+Usbsstby\+With\+Regulator}
+ \}\hypertarget{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}{}\label{group__sim__hal_gae03f4921f897f628aacaae2aa34a9519}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during stop modes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}{\+\_\+sim\+\_\+usbvstby\+\_\+stop} \{ {\bfseries k\+Sim\+Usbvstby\+No\+Regulator}, 
+{\bfseries k\+Sim\+Usbvstby\+With\+Regulator}
+ \}\hypertarget{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}{}\label{group__sim__hal_ga7fafd70d9012b3c106f260e4e169fbfe}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB voltage regulator in standby mode setting during V\+L\+PR and V\+L\+PW modes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}{\+\_\+sim\+\_\+cmtuartpad\+\_\+strengh} \{ {\bfseries k\+Sim\+Cmtuart\+Single\+Pad}, 
+{\bfseries k\+Sim\+Cmtuart\+Dual\+Pad}
+ \}\hypertarget{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}{}\label{group__sim__hal_ga14707db7ac1696ba5f3b08dafd1f9b53}
+\begin{DoxyCompactList}\small\item\em S\+IM C\+M\+T/\+U\+A\+RT pad drive strength. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}{\+\_\+sim\+\_\+ptd7pad\+\_\+strengh} \{ {\bfseries k\+Sim\+Ptd7pad\+Single\+Pad}, 
+{\bfseries k\+Sim\+Ptd7pad\+Dual\+Pad}
+ \}\hypertarget{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}{}\label{group__sim__hal_gaaef010423e66cdbe22eb1e01a1feec4b}
+\begin{DoxyCompactList}\small\item\em S\+IM P\+T\+D7 pad drive strength. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}{\+\_\+sim\+\_\+flexbus\+\_\+security\+\_\+level} \{ {\bfseries k\+Sim\+Fbsl\+Level0}, 
+{\bfseries k\+Sim\+Fbsl\+Level1}, 
+{\bfseries k\+Sim\+Fbsl\+Level2}, 
+{\bfseries k\+Sim\+Fbsl\+Level3}
+ \}\hypertarget{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}{}\label{group__sim__hal_ga840826a29859bd88dd2acf9e1512f936}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Bus security level. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}{\+\_\+sim\+\_\+pretrgsel} \{ {\bfseries k\+Sim\+Adc\+PretrgselA}, 
+{\bfseries k\+Sim\+Adc\+PretrgselB}
+ \}\hypertarget{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}{}\label{group__sim__hal_gae8f567aabf54ce80c9dc4def4ad2fa21}
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx pre-\/trigger select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}{\+\_\+sim\+\_\+trgsel} \{ \\*
+{\bfseries k\+Sim\+Adc\+Trgsel\+Ext}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+High\+Speed\+Comp0}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+High\+Speed\+Comp1}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+High\+Speed\+Comp2}, 
+\\*
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit0}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit1}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit2}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Pit3}, 
+\\*
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm0}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm1}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm2}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Ftm3}, 
+\\*
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Rtc\+Alarm}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Rtc\+Sec}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Lptimer}, 
+{\bfseries k\+Sim\+Adc\+Trg\+Sel\+Hig\+Speed\+Comp3}
+ \}\hypertarget{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}{}\label{group__sim__hal_ga54baea382a34e3448223fe9625e0d126}
+\begin{DoxyCompactList}\small\item\em S\+IM A\+D\+Cx trigger select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}{\+\_\+sim\+\_\+uart\+\_\+rxsrc} \{ {\bfseries k\+Sim\+Uart\+Rxsrc\+Pin}, 
+{\bfseries k\+Sim\+Uart\+Rxsrc\+Cmp0}, 
+{\bfseries k\+Sim\+Uart\+Rxsrc\+Cmp1}, 
+{\bfseries k\+Sim\+Uart\+Rxsrc\+Reserved}
+ \}\hypertarget{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}{}\label{group__sim__hal_gaeb8ae2e1a56a4095cc8a137be3760917}
+\begin{DoxyCompactList}\small\item\em S\+IM receive data source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}{\+\_\+sim\+\_\+uart\+\_\+txsrc} \{ {\bfseries k\+Sim\+Uart\+Txsrc\+Pin}, 
+{\bfseries k\+Sim\+Uart\+Txsrc\+Cmp0}, 
+{\bfseries k\+Sim\+Uart\+Txsrc\+Cmp1}, 
+{\bfseries k\+Sim\+Uart\+Txsrc\+Reserved}
+ \}\hypertarget{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}{}\label{group__sim__hal_gac2baf3c3f9f2c2cb016fd88de79a400b}
+\begin{DoxyCompactList}\small\item\em S\+IM transmit data source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}{\+\_\+sim\+\_\+ftm\+\_\+trg\+\_\+src} \{ {\bfseries k\+Sim\+Ftm\+Trg\+Src0}, 
+{\bfseries k\+Sim\+Ftm\+Trg\+Src1}
+ \}\hypertarget{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}{}\label{group__sim__hal_ga8f96c79e1fb5ece73bc80a330714de84}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x trigger y select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}{\+\_\+sim\+\_\+ftm\+\_\+clk\+\_\+sel} \{ {\bfseries k\+Sim\+Ftm\+Clk\+Sel0}, 
+{\bfseries k\+Sim\+Ftm\+Clk\+Sel1}
+ \}\hypertarget{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}{}\label{group__sim__hal_ga5edbf6726ed48c8c0973f02fb20eb224}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer external clock select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}{\+\_\+sim\+\_\+ftm\+\_\+ch\+\_\+src} \{ {\bfseries k\+Sim\+Ftm\+Ch\+Src0}, 
+{\bfseries k\+Sim\+Ftm\+Ch\+Src1}, 
+{\bfseries k\+Sim\+Ftm\+Ch\+Src2}, 
+{\bfseries k\+Sim\+Ftm\+Ch\+Src3}
+ \}\hypertarget{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}{}\label{group__sim__hal_ga1fbcdea9dba7be70b6f169af27855bba}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x channel y input capture source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}{\+\_\+sim\+\_\+ftm\+\_\+flt\+\_\+sel} \{ {\bfseries k\+Sim\+Ftm\+Flt\+Sel0}, 
+{\bfseries k\+Sim\+Ftm\+Flt\+Sel1}
+ \}\hypertarget{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}{}\label{group__sim__hal_gad0a1375efffd7a8c2b2cfba7abd9a43a}
+\begin{DoxyCompactList}\small\item\em S\+IM Flex\+Timer x Fault y select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}{\+\_\+sim\+\_\+tpm\+\_\+clk\+\_\+sel} \{ {\bfseries k\+Sim\+Tpm\+Clk\+Sel0}, 
+{\bfseries k\+Sim\+Tpm\+Clk\+Sel1}
+ \}\hypertarget{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}{}\label{group__sim__hal_ga38d7486974495e036b31f1b2662225f7}
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM external clock select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}{\+\_\+sim\+\_\+tpm\+\_\+ch\+\_\+src} \{ {\bfseries k\+Sim\+Tpm\+Ch\+Src0}, 
+{\bfseries k\+Sim\+Tpm\+Ch\+Src1}
+ \}\hypertarget{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}{}\label{group__sim__hal_ga7f8a5b4e3d3de690cd1881172e726fb5}
+\begin{DoxyCompactList}\small\item\em S\+IM Timer/\+P\+WM x channel y input capture source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}{\+\_\+sim\+\_\+hal\+\_\+status} \{ \\*
+{\bfseries k\+Sim\+Hal\+Success}, 
+{\bfseries k\+Sim\+Hal\+Fail}, 
+{\bfseries k\+Sim\+Hal\+No\+Such\+Module}, 
+{\bfseries k\+Sim\+Hal\+No\+Such\+Clock\+Src}, 
+\\*
+{\bfseries k\+Sim\+Hal\+No\+Such\+Divider}
+ \}\hypertarget{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}{}\label{group__sim__hal_ga3a1d5c9d6e79932e64f798c04fae38fd}
+\begin{DoxyCompactList}\small\item\em S\+IM H\+AL A\+PI return status. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gad298a91a63548d70748d40d8a485f3e1}{\+\_\+sim\+\_\+sdhc\+\_\+clock\+\_\+source} \{ {\bfseries k\+Sim\+Sdhc\+Src\+Core\+Sys\+Clk}, 
+{\bfseries k\+Sim\+Sdhc\+Src\+Pll\+Fll\+Sel}, 
+{\bfseries k\+Sim\+Sdhc\+Src\+Oscerclk}, 
+{\bfseries k\+Sim\+Sdhc\+Src\+Ext}
+ \}\hypertarget{group__sim__hal_gad298a91a63548d70748d40d8a485f3e1}{}\label{group__sim__hal_gad298a91a63548d70748d40d8a485f3e1}
+\begin{DoxyCompactList}\small\item\em S\+IM S\+D\+HC clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga9ba1c9896979d291bef95527f789bce5}{\+\_\+sim\+\_\+time\+\_\+clock\+\_\+source} \{ {\bfseries k\+Sim\+Time\+Src\+Core\+Sys\+Clk}, 
+{\bfseries k\+Sim\+Time\+Src\+Pll\+Fll\+Sel}, 
+{\bfseries k\+Sim\+Time\+Src\+Oscerclk}, 
+{\bfseries k\+Sim\+Time\+Src\+Ext}
+ \}\hypertarget{group__sim__hal_ga9ba1c9896979d291bef95527f789bce5}{}\label{group__sim__hal_ga9ba1c9896979d291bef95527f789bce5}
+\begin{DoxyCompactList}\small\item\em S\+IM T\+I\+ME clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga37be85d1a46e05464021dc63dabbcce9}{\+\_\+sim\+\_\+rmii\+\_\+clock\+\_\+source} \{ {\bfseries k\+Sim\+Rmii\+Src\+Extal\+Clk}, 
+{\bfseries k\+Sim\+Rmii\+Src\+Ext}
+ \}\hypertarget{group__sim__hal_ga37be85d1a46e05464021dc63dabbcce9}{}\label{group__sim__hal_ga37be85d1a46e05464021dc63dabbcce9}
+\begin{DoxyCompactList}\small\item\em S\+IM R\+M\+II clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga08e8c635a2a5739f0ce629cd15410a7b}{\+\_\+sim\+\_\+usb\+\_\+clock\+\_\+source} \{ {\bfseries k\+Sim\+Usb\+Src\+Clk\+In}, 
+{\bfseries k\+Sim\+Usb\+Src\+Pll\+Fll\+Sel}
+ \}\hypertarget{group__sim__hal_ga08e8c635a2a5739f0ce629cd15410a7b}{}\label{group__sim__hal_ga08e8c635a2a5739f0ce629cd15410a7b}
+\begin{DoxyCompactList}\small\item\em S\+IM U\+SB clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gac50cdfb7351b61de041d031eb0c3bcfc}{\+\_\+sim\+\_\+pllfll\+\_\+clock\+\_\+sel} \{ {\bfseries k\+Sim\+Pll\+Fll\+Sel\+Fll}, 
+{\bfseries k\+Sim\+Pll\+Fll\+Sel\+Pll}
+ \}\hypertarget{group__sim__hal_gac50cdfb7351b61de041d031eb0c3bcfc}{}\label{group__sim__hal_gac50cdfb7351b61de041d031eb0c3bcfc}
+\begin{DoxyCompactList}\small\item\em S\+IM P\+L\+L\+F\+L\+L\+S\+EL clock source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga53eab0504e5f90d3f35a8cdd41aff069}{\+\_\+sim\+\_\+osc32k\+\_\+clock\+\_\+sel} \{ {\bfseries k\+Sim\+Osc32k\+Sel\+Osc32k}, 
+{\bfseries k\+Sim\+Osc32k\+Sel\+Reserved}, 
+{\bfseries k\+Sim\+Osc32k\+Sel\+Rtc32k}, 
+{\bfseries k\+Sim\+Osc32k\+Sel\+Lpo}
+ \}\hypertarget{group__sim__hal_ga53eab0504e5f90d3f35a8cdd41aff069}{}\label{group__sim__hal_ga53eab0504e5f90d3f35a8cdd41aff069}
+\begin{DoxyCompactList}\small\item\em S\+IM O\+S\+C32\+K\+S\+EL clock source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gaadc91652066cea42d44889e57aa74bca}{\+\_\+sim\+\_\+trace\+\_\+clock\+\_\+sel} \{ {\bfseries k\+Sim\+Trace\+Mcgout\+Clk}, 
+{\bfseries k\+Sim\+Trace\+Core\+Clk}
+ \}\hypertarget{group__sim__hal_gaadc91652066cea42d44889e57aa74bca}{}\label{group__sim__hal_gaadc91652066cea42d44889e57aa74bca}
+\begin{DoxyCompactList}\small\item\em S\+IM T\+R\+A\+C\+E\+S\+EL clock source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_ga10bf1258a147a8d691ef8e8afcc1b28a}{\+\_\+sim\+\_\+clkout\+\_\+clock\+\_\+sel} \{ \\*
+{\bfseries k\+Sim\+Clkout\+Flexbus\+Clk}, 
+{\bfseries k\+Sim\+Clkout\+Reserved}, 
+{\bfseries k\+Sim\+Clkout\+Flash\+Clk}, 
+{\bfseries k\+Sim\+Clkout\+Lpo\+Clk}, 
+\\*
+{\bfseries k\+Sim\+Clkout\+Mcg\+Irc\+Clk}, 
+{\bfseries k\+Sim\+Clkout\+Rtc32k\+Clk}, 
+{\bfseries k\+Sim\+Clkout\+Reserved1}
+ \}\hypertarget{group__sim__hal_ga10bf1258a147a8d691ef8e8afcc1b28a}{}\label{group__sim__hal_ga10bf1258a147a8d691ef8e8afcc1b28a}
+\begin{DoxyCompactList}\small\item\em S\+IM C\+L\+K\+O\+U\+T\+\_\+\+S\+EL clock source select. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sim__hal_gaa27f7d28ea6be6d650701233789da408}{\+\_\+sim\+\_\+rtcclkout\+\_\+clock\+\_\+sel} \{ {\bfseries k\+Sim\+Rtc\+Clkout1hz\+Clk}, 
+{\bfseries k\+Sim\+Rtc\+Clkout32k\+Clk}
+ \}\hypertarget{group__sim__hal_gaa27f7d28ea6be6d650701233789da408}{}\label{group__sim__hal_gaa27f7d28ea6be6d650701233789da408}
+\begin{DoxyCompactList}\small\item\em S\+IM R\+T\+C\+C\+L\+K\+O\+U\+T\+S\+EL clock source select. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{group__sim__hal_ga0d84063eacefa134ba3be72a9c70222c}{clock\+\_\+name\+\_\+config\+\_\+t} \hyperlink{group__sim__hal_gaea8903216c2956a8f1a48dda0ddeaffc}{k\+Clock\+Name\+Config\+Table} \mbox{[}$\,$\mbox{]}\hypertarget{group__sim__hal_gaea8903216c2956a8f1a48dda0ddeaffc}{}\label{group__sim__hal_gaea8903216c2956a8f1a48dda0ddeaffc}
+
+\begin{DoxyCompactList}\small\item\em clock name configuration table for specified C\+PU defined in fsl\+\_\+clock\+\_\+module\+\_\+names\+\_\+\+Kxxx.\+h \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{clock-\/related feature A\+P\+Is}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga1cbc3930bced80e4db49e5865f3c8cec}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t} clock\+Source, uint8\+\_\+t setting)
+\begin{DoxyCompactList}\small\item\em Sets the clock source setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga9efee2869120ab9cd7862501d88b4883}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t} clock\+Source, uint8\+\_\+t $\ast$setting)
+\begin{DoxyCompactList}\small\item\em Gets the clock source setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga8093fcb014483c7b7a37b21c46290af7}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t} clock\+Divider, uint32\+\_\+t setting)
+\begin{DoxyCompactList}\small\item\em Sets the clock divider setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga302e0b15c1f073aa8b36e5e76aa3a219}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers} (uint32\+\_\+t base\+Addr, uint32\+\_\+t outdiv1, uint32\+\_\+t outdiv2, uint32\+\_\+t outdiv3, uint32\+\_\+t outdiv4)
+\begin{DoxyCompactList}\small\item\em Sets the clock out dividers setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga7e691721ba86531e94387971c652aa08}{sim\+\_\+hal\+\_\+status\+\_\+t} \hyperlink{group__sim__hal_ga6337f73b64becb7fed810b37551b3496}{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider} (uint32\+\_\+t base\+Addr, \hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t} clock\+Divider, uint32\+\_\+t $\ast$setting)
+\begin{DoxyCompactList}\small\item\em Gets the clock divider setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{individual field access A\+P\+Is}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__sim__hal_ga15347a0602dc00a135252f4a2b856c67}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, bool enable)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+Cx alternate trigger enable setting. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga49accc18a4a229a869a5101900963e29}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the A\+D\+Cx alternate trigger enable setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gabdd025a72a84dc48bd14341843a8289d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+Cx pre-\/trigger select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t} \hyperlink{group__sim__hal_gac7777699e1e0215e3d0937884c1b448a}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the A\+D\+Cx pre-\/trigger select setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gab7e2e8a05d63b43ed81d89cdfebe7544}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_ga5bd34cf2c7d81265882d1b79534b43c0}{sim\+\_\+trgsel\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+Cx trigger select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_ga507a628a553fa85c2e2180012220d88e}{sim\+\_\+pretrgsel\+\_\+t} \hyperlink{group__sim__hal_ga620bc2cd2cd9bdcb696f47146e81d6bb}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the A\+D\+Cx trigger select setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga964f68119e1af83c99797656225507fa}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{sim\+\_\+uart\+\_\+rxsrc\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the U\+A\+R\+Tx receive data source select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_gab6fb25254f344eecbd4c71ff1254c6d0}{sim\+\_\+uart\+\_\+rxsrc\+\_\+t} \hyperlink{group__sim__hal_gaeda6c9d32bca1c7409b22ff46e3f0056}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the U\+A\+R\+Tx receive data source select setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaf3339b94a520aaf856b897fd945a435e}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, \hyperlink{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{sim\+\_\+uart\+\_\+txsrc\+\_\+t} select)
+\begin{DoxyCompactList}\small\item\em Sets the U\+A\+R\+Tx transmit data source select setting. \end{DoxyCompactList}\item 
+\hyperlink{group__sim__hal_gaed9f8dc3d5b7d57cc35c192ef9ea30cb}{sim\+\_\+uart\+\_\+txsrc\+\_\+t} \hyperlink{group__sim__hal_gab5e67cad8df0b320d6af9787e32bd496}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode} (uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Gets the U\+A\+R\+Tx transmit data source select setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{IP related clock feature A\+P\+Is}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__sim__hal_ga5bffb0833f52f8270cefb7f29d5732b8}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for D\+MA module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga6c103d4ced60300ded30c327ee1d65e2}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for D\+MA module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga8842bfd07443e8221212d511a5ab5ee6}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for D\+MA module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga30f1820c74557353473201264dce250f}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for D\+M\+A\+M\+UX module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga190381de046fca5af7bc78c53bd5fbe3}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for D\+M\+A\+M\+UX module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gad58a586e7eb4ba6ec75f59a51b727231}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for D\+M\+A\+M\+UX module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gade9c3b5001104022e9daa0fb5877cb0f}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for P\+O\+RT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga50897c47358005040b2d019441131ab1}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for P\+O\+RT module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga4b054f797b40e3206326a53d8a0f85d5}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for P\+O\+RT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga40261ac9c97b9898300ca28d65096366}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for M\+PU module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga61a1d18f3be3b183c37070289bd6a265}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for M\+PU module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gaf20c76ccbda2f2c4dabda65806b2294e}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for M\+PU module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gada1570ce665bc5dba4e4abd5016feac9}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for E\+WM module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga6875db9cf7e63d4cb1045d01ef0621cd}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for E\+WM module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga58e8ca8c263d5147e619dfacda953be1}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for E\+WM module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gae635a2e162081a3b265a007efe7b1379}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for F\+L\+E\+X\+B\+US module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gab100bff725c7222026d29b4f831cc123}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for F\+L\+E\+X\+B\+US module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gabdeb15de4b46befb065981f299346268}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for F\+L\+E\+X\+B\+US module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga562f79a0b3caf75623feb80da50f8f8d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for F\+TF module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga139cbf56f42f4bc90f514de53c24dabd}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for F\+TF module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gad539d227bf49a65c8102a82b324de338}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for F\+TF module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga1442dc91ab5889d36968a461357f4b51}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for C\+RC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga63d3b6afdb4dbc817d011e08db787e6d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for C\+RC module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga3e5bef6f9596388af87f066b8eabed46}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for C\+RC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga285fb9a267a1a74f5c5fbb7bd04ff405}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for R\+N\+GA module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga841eface2a3b253f8a77d1219f3b2e55}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for R\+N\+GA module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga202d7ea0f925f488fb7885602f51105f}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for R\+N\+GA module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga19dfc8d78a979c2800e32d003dfb76a7}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for A\+DC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gabdae7776e96ffa46d785a4f7f1222e94}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for A\+DC module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga7ff8f04f19ecae55451daadb2b4e6ca2}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for A\+DC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaa1276a5620cc2b078d7e975349ef7a57}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for C\+MP module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaf92721b220bccdf5e5e296f11889a02a}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for C\+MP module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga7a6fe7f5ab2b59dd6461e03ddc6f2fc9}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for C\+MP module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gadaa3c179357b1ebb792a6c1df168696c}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for D\+AC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga76aab819376744fdfa4bdc27b4c51ad9}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for D\+AC module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gafa3223f570468edaed2c7eda1979cabf}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for D\+AC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga50439fde9249a4d15e8abc03b22cc3ed}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for V\+R\+EF module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga03dbf349e86d711d695bd3bfe00fe742}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for V\+R\+EF module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga0d33eae129883f62480573e606621871}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for V\+R\+EF module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga83a9d3c41978faa0f2e9827931269897}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for S\+AI module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gac9ee10248dcddf5dfde4219db35ca596}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for S\+AI module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga71508d6f5ed10add5d560b12c7013390}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for S\+AI module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gad22e2e70f01bdc314ded31c5a3049d78}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for P\+DB module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gab07a49b4a55909abc1857f921f44b679}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for P\+DB module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gad6933326b0a18e562725f933488412ff}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for P\+DB module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gab0c8fe16fa484e7103a693ee61cc03af}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for F\+TM module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga0e7e9382800ab71159d09ab52116b271}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for F\+TM module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga9adb87c48d3a6ad5d3881dd4c8ceb8b3}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for F\+TM module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga47316648148eb5c74be15f71069bb784}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for P\+IT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga9f65f3c498fe0820c5cd7ef4ba5ba042}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for P\+IT module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga50b9ff5cfee0dfb5c205ce944a6ab880}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for P\+IT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga3eeb7828922d46d50bcbf341ba020bc7}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for L\+P\+T\+I\+M\+ER module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga769f19968c4ea40f87d29971f1de6744}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for L\+P\+T\+I\+M\+ER module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga1b924a1cc94560801fbd0e9091a02b5d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for L\+P\+T\+I\+M\+ER module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga8713400fc4d0cb8df8d38292dbcb76ff}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for C\+MT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga96bd81cc9f84e6e8525967590dc62ae3}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for C\+MT module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gaef395691247446f206ab5e15d6ea5cf4}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for C\+MT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga03892f00ef5983872377b3fc935442d7}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for R\+TC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gacbbf6cacf3182e0d43f2cff3cc029d1c}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for R\+TC module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga19e87e8fecea6a081bed860f5a56f8da}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for R\+TC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga0da539fb4461c69d84fa89720bfc92b7}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for E\+N\+ET module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaf5314ebda678ce04ab629c9372adac23}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for E\+N\+ET module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gab23f01dfcdaa0bd5984225b41adbdf62}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for E\+N\+ET module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gabee3ac4975c8a018c2fa6cec8fd10989}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for U\+S\+B\+FS module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga89f7d9bd64a1999da46955bba3eaf1a2}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for U\+S\+B\+FS module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga4c5b1708ef4152c1508f0b407df06c9c}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for U\+SB module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaab742f0d175da7310e2b42969b689eb0}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for U\+S\+B\+D\+CD module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gae2f50fcbd9247f5a5f72836cfce1d612}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for U\+S\+B\+D\+CD module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gac8fc6b05e0d1595875560df395423f6d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for U\+S\+B\+D\+CD module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga5e2cf69480e558f97834f64c9b27bbed}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for F\+L\+E\+X\+C\+AN module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaa335c528a1d07f5a8fdee7a362d64da9}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for F\+L\+E\+X\+C\+AN module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga5be8cd2010ad45d3da3a1aa46a2bb450}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for F\+L\+E\+X\+C\+AN module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gad1a3bb7c4726675b16b83e5f9f2aef55}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for S\+PI module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gae81a0facec089e77cc49c97948e12b5f}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for S\+PI module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga4ba38b56fdf7914c4becc63033695874}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for S\+PI module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga386cba00c2fdb7955a6402cee38f2691}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for I2C module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaec4373675698eda5048063dcef82b4da}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for I2C module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga23870a6de0d0dfcc3bc9ad2ba0142f12}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for I2C module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga1449b95e874bccb5debd9d8f2f260c96}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for U\+A\+RT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_ga08c5c55fdeadb397e9a008b5a2fe963b}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for U\+A\+RT module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_ga5d1d5f588e307823c307e3107c1ae4a6}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for U\+A\+RT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gae264a18c0aac38c25563b4606b71ceb2}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Enable the clock for S\+D\+HC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sim__hal_gaa750050b55b4d9973f639e8bb422f67d}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disable the clock for S\+D\+HC module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sim__hal_gadeaa7b00f4e0684a51234e77c4331494}{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Get the the clock gate state for S\+D\+HC module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider}}
+\index{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider(uint32\+\_\+t base\+Addr, clock\+\_\+divider\+\_\+names\+\_\+t clock\+Divider, uint32\+\_\+t $\ast$setting)}{CLOCK_HAL_GetDivider(uint32_t baseAddr, clock_divider_names_t clockDivider, uint32_t *setting)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+hal\+\_\+status\+\_\+t} C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Divider (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf clock\+\_\+divider\+\_\+names\+\_\+t}}]{clock\+Divider, }
+\item[{uint32\+\_\+t $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga6337f73b64becb7fed810b37551b3496}{}\label{group__sim__hal_ga6337f73b64becb7fed810b37551b3496}
+
+
+Gets the clock divider setting. 
+
+This function gets the setting for a specified clock divider. See the reference manual for a supported clock divider and value range and the clock\+\_\+divider\+\_\+names\+\_\+t for dividers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em clock\+Divider} & Clock divider name \\
+\hline
+{\em setting} & Divider value pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status If the clock divider doesn\textquotesingle{}t exist, it returns an error. 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source}}
+\index{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source(uint32\+\_\+t base\+Addr, clock\+\_\+source\+\_\+names\+\_\+t clock\+Source, uint8\+\_\+t $\ast$setting)}{CLOCK_HAL_GetSource(uint32_t baseAddr, clock_source_names_t clockSource, uint8_t *setting)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+hal\+\_\+status\+\_\+t} C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Get\+Source (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf clock\+\_\+source\+\_\+names\+\_\+t}}]{clock\+Source, }
+\item[{uint8\+\_\+t $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga9efee2869120ab9cd7862501d88b4883}{}\label{group__sim__hal_ga9efee2869120ab9cd7862501d88b4883}
+
+
+Gets the clock source setting. 
+
+This function gets the settings for a specified clock source. Each clock source has its own clock selection settings. See the reference manual for clock source detailed settings and the clock\+\_\+source\+\_\+names\+\_\+t for clock sources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em clock\+Source} & Clock source name \\
+\hline
+{\em setting} & Current setting pointer for the clock source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status If the clock source doesn\textquotesingle{}t exist, it returns an error. 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider}}
+\index{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider(uint32\+\_\+t base\+Addr, clock\+\_\+divider\+\_\+names\+\_\+t clock\+Divider, uint32\+\_\+t setting)}{CLOCK_HAL_SetDivider(uint32_t baseAddr, clock_divider_names_t clockDivider, uint32_t setting)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+hal\+\_\+status\+\_\+t} C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Divider (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf clock\+\_\+divider\+\_\+names\+\_\+t}}]{clock\+Divider, }
+\item[{uint32\+\_\+t}]{setting}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga8093fcb014483c7b7a37b21c46290af7}{}\label{group__sim__hal_ga8093fcb014483c7b7a37b21c46290af7}
+
+
+Sets the clock divider setting. 
+
+This function sets the setting for a specified clock divider. See the reference manual for a supported clock divider and value range and the clock\+\_\+divider\+\_\+names\+\_\+t for dividers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em clock\+Divider} & Clock divider name \\
+\hline
+{\em setting} & Divider setting \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status If the clock divider doesn\textquotesingle{}t exist, it returns an error. 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers}}
+\index{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers(uint32\+\_\+t base\+Addr, uint32\+\_\+t outdiv1, uint32\+\_\+t outdiv2, uint32\+\_\+t outdiv3, uint32\+\_\+t outdiv4)}{CLOCK_HAL_SetOutDividers(uint32_t baseAddr, uint32_t outdiv1, uint32_t outdiv2, uint32_t outdiv3, uint32_t outdiv4)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Out\+Dividers (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{outdiv1, }
+\item[{uint32\+\_\+t}]{outdiv2, }
+\item[{uint32\+\_\+t}]{outdiv3, }
+\item[{uint32\+\_\+t}]{outdiv4}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga302e0b15c1f073aa8b36e5e76aa3a219}{}\label{group__sim__hal_ga302e0b15c1f073aa8b36e5e76aa3a219}
+
+
+Sets the clock out dividers setting. 
+
+This function sets the setting for all clock out dividers at the same time. See the reference manual for a supported clock divider and value range and the clock\+\_\+divider\+\_\+names\+\_\+t for clock out dividers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em outdiv1} & Outdivider1 setting \\
+\hline
+{\em outdiv2} & Outdivider2 setting \\
+\hline
+{\em outdiv3} & Outdivider3 setting \\
+\hline
+{\em outdiv4} & Outdivider4 setting \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source}}
+\index{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source@{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source(uint32\+\_\+t base\+Addr, clock\+\_\+source\+\_\+names\+\_\+t clock\+Source, uint8\+\_\+t setting)}{CLOCK_HAL_SetSource(uint32_t baseAddr, clock_source_names_t clockSource, uint8_t setting)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+hal\+\_\+status\+\_\+t} C\+L\+O\+C\+K\+\_\+\+H\+A\+L\+\_\+\+Set\+Source (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf clock\+\_\+source\+\_\+names\+\_\+t}}]{clock\+Source, }
+\item[{uint8\+\_\+t}]{setting}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga1cbc3930bced80e4db49e5865f3c8cec}{}\label{group__sim__hal_ga1cbc3930bced80e4db49e5865f3c8cec}
+
+
+Sets the clock source setting. 
+
+This function sets the settings for a specified clock source. Each clock source has its own clock selection settings. See the chip reference manual for clock source detailed settings and the clock\+\_\+source\+\_\+names\+\_\+t for clock sources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em clock\+Source} & Clock source name defined in sim\+\_\+clock\+\_\+source\+\_\+names\+\_\+t \\
+\hline
+{\em setting} & Setting value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status If the clock source doesn\textquotesingle{}t exist, it returns an error. 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableAdcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Adc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gabdae7776e96ffa46d785a4f7f1222e94}{}\label{group__sim__hal_gabdae7776e96ffa46d785a4f7f1222e94}
+
+
+Disable the clock for A\+DC module. 
+
+This function disables the clock for A\+DC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableCmpClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmp\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaf92721b220bccdf5e5e296f11889a02a}{}\label{group__sim__hal_gaf92721b220bccdf5e5e296f11889a02a}
+
+
+Disable the clock for C\+MP module. 
+
+This function disables the clock for C\+MP moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableCmtClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Cmt\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga96bd81cc9f84e6e8525967590dc62ae3}{}\label{group__sim__hal_ga96bd81cc9f84e6e8525967590dc62ae3}
+
+
+Disable the clock for C\+MT module. 
+
+This function disables the clock for C\+MT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableCrcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Crc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga63d3b6afdb4dbc817d011e08db787e6d}{}\label{group__sim__hal_ga63d3b6afdb4dbc817d011e08db787e6d}
+
+
+Disable the clock for C\+RC module. 
+
+This function disables the clock for C\+RC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableDacClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dac\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga76aab819376744fdfa4bdc27b4c51ad9}{}\label{group__sim__hal_ga76aab819376744fdfa4bdc27b4c51ad9}
+
+
+Disable the clock for D\+AC module. 
+
+This function disables the clock for D\+AC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableDmaClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dma\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga6c103d4ced60300ded30c327ee1d65e2}{}\label{group__sim__hal_ga6c103d4ced60300ded30c327ee1d65e2}
+
+
+Disable the clock for D\+MA module. 
+
+This function disables the clock for D\+MA moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableDmamuxClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Dmamux\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga190381de046fca5af7bc78c53bd5fbe3}{}\label{group__sim__hal_ga190381de046fca5af7bc78c53bd5fbe3}
+
+
+Disable the clock for D\+M\+A\+M\+UX module. 
+
+This function disables the clock for D\+M\+A\+M\+UX moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableEnetClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Enet\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaf5314ebda678ce04ab629c9372adac23}{}\label{group__sim__hal_gaf5314ebda678ce04ab629c9372adac23}
+
+
+Disable the clock for E\+N\+ET module. 
+
+This function disables the clock for E\+N\+ET moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableEwmClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ewm\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga6875db9cf7e63d4cb1045d01ef0621cd}{}\label{group__sim__hal_ga6875db9cf7e63d4cb1045d01ef0621cd}
+
+
+Disable the clock for E\+WM module. 
+
+This function disables the clock for E\+WM moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableFlexbusClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexbus\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gab100bff725c7222026d29b4f831cc123}{}\label{group__sim__hal_gab100bff725c7222026d29b4f831cc123}
+
+
+Disable the clock for F\+L\+E\+X\+B\+US module. 
+
+This function disables the clock for F\+L\+E\+X\+B\+US moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableFlexcanClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Flexcan\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaa335c528a1d07f5a8fdee7a362d64da9}{}\label{group__sim__hal_gaa335c528a1d07f5a8fdee7a362d64da9}
+
+
+Disable the clock for F\+L\+E\+X\+C\+AN module. 
+
+This function disables the clock for F\+L\+E\+X\+C\+AN moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableFtfClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftf\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga139cbf56f42f4bc90f514de53c24dabd}{}\label{group__sim__hal_ga139cbf56f42f4bc90f514de53c24dabd}
+
+
+Disable the clock for F\+TF module. 
+
+This function disables the clock for F\+TF moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableFtmClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Ftm\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga0e7e9382800ab71159d09ab52116b271}{}\label{group__sim__hal_ga0e7e9382800ab71159d09ab52116b271}
+
+
+Disable the clock for F\+TM module. 
+
+This function disables the clock for F\+TM moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableI2cClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+I2c\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaec4373675698eda5048063dcef82b4da}{}\label{group__sim__hal_gaec4373675698eda5048063dcef82b4da}
+
+
+Disable the clock for I2C module. 
+
+This function disables the clock for I2C moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableLptimerClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Lptimer\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga769f19968c4ea40f87d29971f1de6744}{}\label{group__sim__hal_ga769f19968c4ea40f87d29971f1de6744}
+
+
+Disable the clock for L\+P\+T\+I\+M\+ER module. 
+
+This function disables the clock for L\+P\+T\+I\+M\+ER moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableMpuClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Mpu\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga61a1d18f3be3b183c37070289bd6a265}{}\label{group__sim__hal_ga61a1d18f3be3b183c37070289bd6a265}
+
+
+Disable the clock for M\+PU module. 
+
+This function disables the clock for M\+PU moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisablePdbClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pdb\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gab07a49b4a55909abc1857f921f44b679}{}\label{group__sim__hal_gab07a49b4a55909abc1857f921f44b679}
+
+
+Disable the clock for P\+DB module. 
+
+This function disables the clock for P\+DB moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisablePitClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pit\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga9f65f3c498fe0820c5cd7ef4ba5ba042}{}\label{group__sim__hal_ga9f65f3c498fe0820c5cd7ef4ba5ba042}
+
+
+Disable the clock for P\+IT module. 
+
+This function disables the clock for P\+IT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisablePortClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Port\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga50897c47358005040b2d019441131ab1}{}\label{group__sim__hal_ga50897c47358005040b2d019441131ab1}
+
+
+Disable the clock for P\+O\+RT module. 
+
+This function disables the clock for P\+O\+RT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableRngaClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rnga\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga841eface2a3b253f8a77d1219f3b2e55}{}\label{group__sim__hal_ga841eface2a3b253f8a77d1219f3b2e55}
+
+
+Disable the clock for R\+N\+GA module. 
+
+This function disables the clock for R\+N\+GA moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableRtcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Rtc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gacbbf6cacf3182e0d43f2cff3cc029d1c}{}\label{group__sim__hal_gacbbf6cacf3182e0d43f2cff3cc029d1c}
+
+
+Disable the clock for R\+TC module. 
+
+This function disables the clock for R\+TC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableSaiClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sai\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gac9ee10248dcddf5dfde4219db35ca596}{}\label{group__sim__hal_gac9ee10248dcddf5dfde4219db35ca596}
+
+
+Disable the clock for S\+AI module. 
+
+This function disables the clock for S\+AI moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableSdhcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Sdhc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaa750050b55b4d9973f639e8bb422f67d}{}\label{group__sim__hal_gaa750050b55b4d9973f639e8bb422f67d}
+
+
+Disable the clock for S\+D\+HC module. 
+
+This function disables the clock for S\+D\+HC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableSpiClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Spi\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gae81a0facec089e77cc49c97948e12b5f}{}\label{group__sim__hal_gae81a0facec089e77cc49c97948e12b5f}
+
+
+Disable the clock for S\+PI module. 
+
+This function disables the clock for S\+PI moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableUartClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Uart\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga08c5c55fdeadb397e9a008b5a2fe963b}{}\label{group__sim__hal_ga08c5c55fdeadb397e9a008b5a2fe963b}
+
+
+Disable the clock for U\+A\+RT module. 
+
+This function disables the clock for U\+A\+RT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableUsbClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usb\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga89f7d9bd64a1999da46955bba3eaf1a2}{}\label{group__sim__hal_ga89f7d9bd64a1999da46955bba3eaf1a2}
+
+
+Disable the clock for U\+S\+B\+FS module. 
+
+This function disables the clock for U\+S\+B\+FS moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableUsbdcdClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Usbdcd\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gae2f50fcbd9247f5a5f72836cfce1d612}{}\label{group__sim__hal_gae2f50fcbd9247f5a5f72836cfce1d612}
+
+
+Disable the clock for U\+S\+B\+D\+CD module. 
+
+This function disables the clock for U\+S\+B\+D\+CD moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_DisableVrefClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Vref\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga03dbf349e86d711d695bd3bfe00fe742}{}\label{group__sim__hal_ga03dbf349e86d711d695bd3bfe00fe742}
+
+
+Disable the clock for V\+R\+EF module. 
+
+This function disables the clock for V\+R\+EF moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableAdcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Adc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga19dfc8d78a979c2800e32d003dfb76a7}{}\label{group__sim__hal_ga19dfc8d78a979c2800e32d003dfb76a7}
+
+
+Enable the clock for A\+DC module. 
+
+This function enables the clock for A\+DC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableCmpClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmp\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaa1276a5620cc2b078d7e975349ef7a57}{}\label{group__sim__hal_gaa1276a5620cc2b078d7e975349ef7a57}
+
+
+Enable the clock for C\+MP module. 
+
+This function enables the clock for C\+MP moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableCmtClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Cmt\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga8713400fc4d0cb8df8d38292dbcb76ff}{}\label{group__sim__hal_ga8713400fc4d0cb8df8d38292dbcb76ff}
+
+
+Enable the clock for C\+MT module. 
+
+This function enables the clock for C\+MT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableCrcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Crc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga1442dc91ab5889d36968a461357f4b51}{}\label{group__sim__hal_ga1442dc91ab5889d36968a461357f4b51}
+
+
+Enable the clock for C\+RC module. 
+
+This function enables the clock for C\+RC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableDacClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dac\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gadaa3c179357b1ebb792a6c1df168696c}{}\label{group__sim__hal_gadaa3c179357b1ebb792a6c1df168696c}
+
+
+Enable the clock for D\+AC module. 
+
+This function enables the clock for D\+AC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableDmaClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dma\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga5bffb0833f52f8270cefb7f29d5732b8}{}\label{group__sim__hal_ga5bffb0833f52f8270cefb7f29d5732b8}
+
+
+Enable the clock for D\+MA module. 
+
+This function enables the clock for D\+MA moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableDmamuxClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Dmamux\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga30f1820c74557353473201264dce250f}{}\label{group__sim__hal_ga30f1820c74557353473201264dce250f}
+
+
+Enable the clock for D\+M\+A\+M\+UX module. 
+
+This function enables the clock for D\+M\+A\+M\+UX moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableEnetClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Enet\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga0da539fb4461c69d84fa89720bfc92b7}{}\label{group__sim__hal_ga0da539fb4461c69d84fa89720bfc92b7}
+
+
+Enable the clock for E\+N\+ET module. 
+
+This function enables the clock for E\+N\+ET moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableEwmClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ewm\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gada1570ce665bc5dba4e4abd5016feac9}{}\label{group__sim__hal_gada1570ce665bc5dba4e4abd5016feac9}
+
+
+Enable the clock for E\+WM module. 
+
+This function enables the clock for E\+WM moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableFlexbusClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexbus\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gae635a2e162081a3b265a007efe7b1379}{}\label{group__sim__hal_gae635a2e162081a3b265a007efe7b1379}
+
+
+Enable the clock for F\+L\+E\+X\+B\+US module. 
+
+This function enables the clock for F\+L\+E\+X\+B\+US moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableFlexcanClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Flexcan\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga5e2cf69480e558f97834f64c9b27bbed}{}\label{group__sim__hal_ga5e2cf69480e558f97834f64c9b27bbed}
+
+
+Enable the clock for F\+L\+E\+X\+C\+AN module. 
+
+This function enables the clock for F\+L\+E\+X\+C\+AN moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableFtfClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftf\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga562f79a0b3caf75623feb80da50f8f8d}{}\label{group__sim__hal_ga562f79a0b3caf75623feb80da50f8f8d}
+
+
+Enable the clock for F\+TF module. 
+
+This function enables the clock for F\+TF moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableFtmClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Ftm\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gab0c8fe16fa484e7103a693ee61cc03af}{}\label{group__sim__hal_gab0c8fe16fa484e7103a693ee61cc03af}
+
+
+Enable the clock for F\+TM module. 
+
+This function enables the clock for F\+TM moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableI2cClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+I2c\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga386cba00c2fdb7955a6402cee38f2691}{}\label{group__sim__hal_ga386cba00c2fdb7955a6402cee38f2691}
+
+
+Enable the clock for I2C module. 
+
+This function enables the clock for I2C moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableLptimerClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Lptimer\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga3eeb7828922d46d50bcbf341ba020bc7}{}\label{group__sim__hal_ga3eeb7828922d46d50bcbf341ba020bc7}
+
+
+Enable the clock for L\+P\+T\+I\+M\+ER module. 
+
+This function enables the clock for L\+P\+T\+I\+M\+ER moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableMpuClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Mpu\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga40261ac9c97b9898300ca28d65096366}{}\label{group__sim__hal_ga40261ac9c97b9898300ca28d65096366}
+
+
+Enable the clock for M\+PU module. 
+
+This function enables the clock for M\+PU moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnablePdbClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pdb\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gad22e2e70f01bdc314ded31c5a3049d78}{}\label{group__sim__hal_gad22e2e70f01bdc314ded31c5a3049d78}
+
+
+Enable the clock for P\+DB module. 
+
+This function enables the clock for P\+DB moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnablePitClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pit\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga47316648148eb5c74be15f71069bb784}{}\label{group__sim__hal_ga47316648148eb5c74be15f71069bb784}
+
+
+Enable the clock for P\+IT module. 
+
+This function enables the clock for P\+IT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnablePortClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Port\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gade9c3b5001104022e9daa0fb5877cb0f}{}\label{group__sim__hal_gade9c3b5001104022e9daa0fb5877cb0f}
+
+
+Enable the clock for P\+O\+RT module. 
+
+This function enables the clock for P\+O\+RT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableRngaClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rnga\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga285fb9a267a1a74f5c5fbb7bd04ff405}{}\label{group__sim__hal_ga285fb9a267a1a74f5c5fbb7bd04ff405}
+
+
+Enable the clock for R\+N\+GA module. 
+
+This function enables the clock for R\+N\+GA moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableRtcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Rtc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga03892f00ef5983872377b3fc935442d7}{}\label{group__sim__hal_ga03892f00ef5983872377b3fc935442d7}
+
+
+Enable the clock for R\+TC module. 
+
+This function enables the clock for R\+TC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableSaiClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sai\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga83a9d3c41978faa0f2e9827931269897}{}\label{group__sim__hal_ga83a9d3c41978faa0f2e9827931269897}
+
+
+Enable the clock for S\+AI module. 
+
+This function enables the clock for S\+AI moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableSdhcClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Sdhc\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gae264a18c0aac38c25563b4606b71ceb2}{}\label{group__sim__hal_gae264a18c0aac38c25563b4606b71ceb2}
+
+
+Enable the clock for S\+D\+HC module. 
+
+This function enables the clock for S\+D\+HC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableSpiClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Spi\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gad1a3bb7c4726675b16b83e5f9f2aef55}{}\label{group__sim__hal_gad1a3bb7c4726675b16b83e5f9f2aef55}
+
+
+Enable the clock for S\+PI module. 
+
+This function enables the clock for S\+PI moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableUartClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Uart\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga1449b95e874bccb5debd9d8f2f260c96}{}\label{group__sim__hal_ga1449b95e874bccb5debd9d8f2f260c96}
+
+
+Enable the clock for U\+A\+RT module. 
+
+This function enables the clock for U\+A\+RT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableUsbClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usb\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gabee3ac4975c8a018c2fa6cec8fd10989}{}\label{group__sim__hal_gabee3ac4975c8a018c2fa6cec8fd10989}
+
+
+Enable the clock for U\+S\+B\+FS module. 
+
+This function enables the clock for U\+S\+B\+FS moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableUsbdcdClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Usbdcd\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaab742f0d175da7310e2b42969b689eb0}{}\label{group__sim__hal_gaab742f0d175da7310e2b42969b689eb0}
+
+
+Enable the clock for U\+S\+B\+D\+CD module. 
+
+This function enables the clock for U\+S\+B\+D\+CD moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_EnableVrefClock(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Vref\+Clock (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga50439fde9249a4d15e8abc03b22cc3ed}{}\label{group__sim__hal_ga50439fde9249a4d15e8abc03b22cc3ed}
+
+
+Enable the clock for V\+R\+EF module. 
+
+This function enables the clock for V\+R\+EF moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)}{SIM_HAL_GetAdcAlternativeTriggerCmd(uint32_t baseAddr, uint8_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Alternative\+Trigger\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga49accc18a4a229a869a5101900963e29}{}\label{group__sim__hal_ga49accc18a4a229a869a5101900963e29}
+
+
+Gets the A\+D\+Cx alternate trigger enable setting. 
+
+This function gets the A\+D\+Cx alternate trigger enable setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enabled True if A\+D\+Cx alternate trigger is enabled 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetAdcGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga7ff8f04f19ecae55451daadb2b4e6ca2}{}\label{group__sim__hal_ga7ff8f04f19ecae55451daadb2b4e6ca2}
+
+
+Get the the clock gate state for A\+DC module. 
+
+This function will get the clock gate state for A\+DC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)}{SIM_HAL_GetAdcPreTriggerMode(uint32_t baseAddr, uint8_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+pretrgsel\+\_\+t} S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Pre\+Trigger\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gac7777699e1e0215e3d0937884c1b448a}{}\label{group__sim__hal_gac7777699e1e0215e3d0937884c1b448a}
+
+
+Gets the A\+D\+Cx pre-\/trigger select setting. 
+
+This function gets the A\+D\+Cx pre-\/trigger select setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+select A\+D\+Cx pre-\/trigger select setting 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)}{SIM_HAL_GetAdcTriggerMode(uint32_t baseAddr, uint8_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+pretrgsel\+\_\+t} S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Adc\+Trigger\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga620bc2cd2cd9bdcb696f47146e81d6bb}{}\label{group__sim__hal_ga620bc2cd2cd9bdcb696f47146e81d6bb}
+
+
+Gets the A\+D\+Cx trigger select setting. 
+
+This function gets the A\+D\+Cx trigger select setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+select A\+D\+Cx trigger select setting 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetCmpGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmp\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga7a6fe7f5ab2b59dd6461e03ddc6f2fc9}{}\label{group__sim__hal_ga7a6fe7f5ab2b59dd6461e03ddc6f2fc9}
+
+
+Get the the clock gate state for C\+MP module. 
+
+This function will get the clock gate state for C\+MP moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetCmtGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Cmt\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaef395691247446f206ab5e15d6ea5cf4}{}\label{group__sim__hal_gaef395691247446f206ab5e15d6ea5cf4}
+
+
+Get the the clock gate state for C\+MT module. 
+
+This function will get the clock gate state for C\+MT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetCrcGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Crc\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga3e5bef6f9596388af87f066b8eabed46}{}\label{group__sim__hal_ga3e5bef6f9596388af87f066b8eabed46}
+
+
+Get the the clock gate state for C\+RC module. 
+
+This function will get the clock gate state for C\+RC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetDacGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dac\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gafa3223f570468edaed2c7eda1979cabf}{}\label{group__sim__hal_gafa3223f570468edaed2c7eda1979cabf}
+
+
+Get the the clock gate state for D\+AC module. 
+
+This function will get the clock gate state for D\+AC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetDmaGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dma\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga8842bfd07443e8221212d511a5ab5ee6}{}\label{group__sim__hal_ga8842bfd07443e8221212d511a5ab5ee6}
+
+
+Get the the clock gate state for D\+MA module. 
+
+This function will get the clock gate state for D\+MA moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetDmamuxGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Dmamux\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gad58a586e7eb4ba6ec75f59a51b727231}{}\label{group__sim__hal_gad58a586e7eb4ba6ec75f59a51b727231}
+
+
+Get the the clock gate state for D\+M\+A\+M\+UX module. 
+
+This function will get the clock gate state for D\+M\+A\+M\+UX moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetEnetGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Enet\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gab23f01dfcdaa0bd5984225b41adbdf62}{}\label{group__sim__hal_gab23f01dfcdaa0bd5984225b41adbdf62}
+
+
+Get the the clock gate state for E\+N\+ET module. 
+
+This function will get the clock gate state for E\+N\+ET moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetEwmGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ewm\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga58e8ca8c263d5147e619dfacda953be1}{}\label{group__sim__hal_ga58e8ca8c263d5147e619dfacda953be1}
+
+
+Get the the clock gate state for E\+WM module. 
+
+This function will get the clock gate state for E\+WM moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetFlexbusGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexbus\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gabdeb15de4b46befb065981f299346268}{}\label{group__sim__hal_gabdeb15de4b46befb065981f299346268}
+
+
+Get the the clock gate state for F\+L\+E\+X\+B\+US module. 
+
+This function will get the clock gate state for F\+L\+E\+X\+B\+US moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetFlexcanGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Flexcan\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga5be8cd2010ad45d3da3a1aa46a2bb450}{}\label{group__sim__hal_ga5be8cd2010ad45d3da3a1aa46a2bb450}
+
+
+Get the the clock gate state for F\+L\+E\+X\+C\+AN module. 
+
+This function will get the clock gate state for F\+L\+E\+X\+C\+AN moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetFtfGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftf\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gad539d227bf49a65c8102a82b324de338}{}\label{group__sim__hal_gad539d227bf49a65c8102a82b324de338}
+
+
+Get the the clock gate state for F\+TF module. 
+
+This function will get the clock gate state for F\+TF moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetFtmGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Ftm\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga9adb87c48d3a6ad5d3881dd4c8ceb8b3}{}\label{group__sim__hal_ga9adb87c48d3a6ad5d3881dd4c8ceb8b3}
+
+
+Get the the clock gate state for F\+TM module. 
+
+This function will get the clock gate state for F\+TM moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetI2cGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+I2c\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga23870a6de0d0dfcc3bc9ad2ba0142f12}{}\label{group__sim__hal_ga23870a6de0d0dfcc3bc9ad2ba0142f12}
+
+
+Get the the clock gate state for I2C module. 
+
+This function will get the clock gate state for I2C moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetLptimerGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Lptimer\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga1b924a1cc94560801fbd0e9091a02b5d}{}\label{group__sim__hal_ga1b924a1cc94560801fbd0e9091a02b5d}
+
+
+Get the the clock gate state for L\+P\+T\+I\+M\+ER module. 
+
+This function will get the clock gate state for L\+P\+T\+I\+M\+ER moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetMpuGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Mpu\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaf20c76ccbda2f2c4dabda65806b2294e}{}\label{group__sim__hal_gaf20c76ccbda2f2c4dabda65806b2294e}
+
+
+Get the the clock gate state for M\+PU module. 
+
+This function will get the clock gate state for M\+PU moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetPdbGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pdb\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gad6933326b0a18e562725f933488412ff}{}\label{group__sim__hal_gad6933326b0a18e562725f933488412ff}
+
+
+Get the the clock gate state for P\+DB module. 
+
+This function will get the clock gate state for P\+DB moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetPitGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Pit\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga50b9ff5cfee0dfb5c205ce944a6ab880}{}\label{group__sim__hal_ga50b9ff5cfee0dfb5c205ce944a6ab880}
+
+
+Get the the clock gate state for P\+IT module. 
+
+This function will get the clock gate state for P\+IT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetPortGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Port\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga4b054f797b40e3206326a53d8a0f85d5}{}\label{group__sim__hal_ga4b054f797b40e3206326a53d8a0f85d5}
+
+
+Get the the clock gate state for P\+O\+RT module. 
+
+This function will get the clock gate state for P\+O\+RT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetRngaGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rnga\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga202d7ea0f925f488fb7885602f51105f}{}\label{group__sim__hal_ga202d7ea0f925f488fb7885602f51105f}
+
+
+Get the the clock gate state for R\+N\+GA module. 
+
+This function will get the clock gate state for R\+N\+GA moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetRtcGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Rtc\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga19e87e8fecea6a081bed860f5a56f8da}{}\label{group__sim__hal_ga19e87e8fecea6a081bed860f5a56f8da}
+
+
+Get the the clock gate state for R\+TC module. 
+
+This function will get the clock gate state for R\+TC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetSaiGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sai\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga71508d6f5ed10add5d560b12c7013390}{}\label{group__sim__hal_ga71508d6f5ed10add5d560b12c7013390}
+
+
+Get the the clock gate state for S\+AI module. 
+
+This function will get the clock gate state for S\+AI moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetSdhcGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Sdhc\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gadeaa7b00f4e0684a51234e77c4331494}{}\label{group__sim__hal_gadeaa7b00f4e0684a51234e77c4331494}
+
+
+Get the the clock gate state for S\+D\+HC module. 
+
+This function will get the clock gate state for S\+D\+HC moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetSpiGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Spi\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga4ba38b56fdf7914c4becc63033695874}{}\label{group__sim__hal_ga4ba38b56fdf7914c4becc63033695874}
+
+
+Get the the clock gate state for S\+PI module. 
+
+This function will get the clock gate state for S\+PI moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetUartGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga5d1d5f588e307823c307e3107c1ae4a6}{}\label{group__sim__hal_ga5d1d5f588e307823c307e3107c1ae4a6}
+
+
+Get the the clock gate state for U\+A\+RT module. 
+
+This function will get the clock gate state for U\+A\+RT moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)}{SIM_HAL_GetUartRxSrcMode(uint32_t baseAddr, uint8_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+uart\+\_\+rxsrc\+\_\+t} S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Rx\+Src\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaeda6c9d32bca1c7409b22ff46e3f0056}{}\label{group__sim__hal_gaeda6c9d32bca1c7409b22ff46e3f0056}
+
+
+Gets the U\+A\+R\+Tx receive data source select setting. 
+
+This function gets the U\+A\+R\+Tx receive data source select setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+select U\+A\+R\+Tx receive data source select setting 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance)}{SIM_HAL_GetUartTxSrcMode(uint32_t baseAddr, uint8_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sim\+\_\+uart\+\_\+txsrc\+\_\+t} S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Uart\+Tx\+Src\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gab5e67cad8df0b320d6af9787e32bd496}{}\label{group__sim__hal_gab5e67cad8df0b320d6af9787e32bd496}
+
+
+Gets the U\+A\+R\+Tx transmit data source select setting. 
+
+This function gets the U\+A\+R\+Tx transmit data source select setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+select U\+A\+R\+Tx transmit data source select setting 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetUsbdcdGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usbdcd\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gac8fc6b05e0d1595875560df395423f6d}{}\label{group__sim__hal_gac8fc6b05e0d1595875560df395423f6d}
+
+
+Get the the clock gate state for U\+S\+B\+D\+CD module. 
+
+This function will get the clock gate state for U\+S\+B\+D\+CD moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetUsbGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Usb\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga4c5b1708ef4152c1508f0b407df06c9c}{}\label{group__sim__hal_ga4c5b1708ef4152c1508f0b407df06c9c}
+
+
+Get the the clock gate state for U\+SB module. 
+
+This function will get the clock gate state for U\+SB moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t instance)}{SIM_HAL_GetVrefGateCmd(uint32_t baseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Vref\+Gate\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga0d33eae129883f62480573e606621871}{}\label{group__sim__hal_ga0d33eae129883f62480573e606621871}
+
+
+Get the the clock gate state for V\+R\+EF module. 
+
+This function will get the clock gate state for V\+R\+EF moudle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & module device instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state true -\/ ungated(\+Enabled), false -\/ gated (Disabled) 
+\end{DoxyReturn}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, bool enable)}{SIM_HAL_SetAdcAlternativeTriggerCmd(uint32_t baseAddr, uint8_t instance, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Alternative\+Trigger\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga15347a0602dc00a135252f4a2b856c67}{}\label{group__sim__hal_ga15347a0602dc00a135252f4a2b856c67}
+
+
+Sets the A\+D\+Cx alternate trigger enable setting. 
+
+This function enables/disables the alternative conversion triggers for A\+D\+Cx.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+{\em enable} & Enable alternative conversion triggers for A\+D\+Cx
+\begin{DoxyItemize}
+\item true\+: Select alternative conversion trigger.
+\item false\+: Select P\+DB trigger. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, sim\+\_\+pretrgsel\+\_\+t select)}{SIM_HAL_SetAdcPreTriggerMode(uint32_t baseAddr, uint8_t instance, sim_pretrgsel_t select)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Pre\+Trigger\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance, }
+\item[{{\bf sim\+\_\+pretrgsel\+\_\+t}}]{select}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gabdd025a72a84dc48bd14341843a8289d}{}\label{group__sim__hal_gabdd025a72a84dc48bd14341843a8289d}
+
+
+Sets the A\+D\+Cx pre-\/trigger select setting. 
+
+This function selects the A\+D\+Cx pre-\/trigger source when the alternative triggers are enabled through A\+D\+Cx\+A\+L\+T\+T\+R\+G\+EN.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+{\em select} & pre-\/trigger select setting for A\+D\+Cx
+\begin{DoxyItemize}
+\item 0\+: Pre-\/trigger A selected for A\+D\+Cx.
+\item 1\+: Pre-\/trigger B selected for A\+D\+Cx. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, sim\+\_\+trgsel\+\_\+t select)}{SIM_HAL_SetAdcTriggerMode(uint32_t baseAddr, uint8_t instance, sim_trgsel_t select)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Adc\+Trigger\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance, }
+\item[{{\bf sim\+\_\+trgsel\+\_\+t}}]{select}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gab7e2e8a05d63b43ed81d89cdfebe7544}{}\label{group__sim__hal_gab7e2e8a05d63b43ed81d89cdfebe7544}
+
+
+Sets the A\+D\+Cx trigger select setting. 
+
+This function selects the A\+D\+Cx trigger source when alternative triggers are enabled through A\+D\+Cx\+A\+L\+T\+T\+R\+G\+EN.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+{\em select} & trigger select setting for A\+D\+Cx
+\begin{DoxyItemize}
+\item 0000\+: External trigger
+\item 0001\+: High speed comparator 0 asynchronous interrupt
+\item 0010\+: High speed comparator 1 asynchronous interrupt
+\item 0011\+: High speed comparator 2 asynchronous interrupt
+\item 0100\+: P\+IT trigger 0
+\item 0101\+: P\+IT trigger 1
+\item 0110\+: P\+IT trigger 2
+\item 0111\+: P\+IT trigger 3
+\item 1000\+: F\+T\+M0 trigger
+\item 1001\+: F\+T\+M1 trigger
+\item 1010\+: F\+T\+M2 trigger
+\item 1011\+: F\+T\+M3 trigger
+\item 1100\+: R\+TC alarm
+\item 1101\+: R\+TC seconds
+\item 1110\+: Low-\/power timer trigger
+\item 1111\+: High speed comparator 3 asynchronous interrupt 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, sim\+\_\+uart\+\_\+rxsrc\+\_\+t select)}{SIM_HAL_SetUartRxSrcMode(uint32_t baseAddr, uint8_t instance, sim_uart_rxsrc_t select)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Rx\+Src\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance, }
+\item[{{\bf sim\+\_\+uart\+\_\+rxsrc\+\_\+t}}]{select}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_ga964f68119e1af83c99797656225507fa}{}\label{group__sim__hal_ga964f68119e1af83c99797656225507fa}
+
+
+Sets the U\+A\+R\+Tx receive data source select setting. 
+
+This function selects the source for the U\+A\+R\+Tx receive data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+{\em select} & the source for the U\+A\+R\+Tx receive data
+\begin{DoxyItemize}
+\item 00\+: U\+A\+R\+Tx\+\_\+\+RX pin.
+\item 01\+: C\+M\+P0.
+\item 10\+: C\+M\+P1.
+\item 11\+: Reserved. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\index{Sim\+\_\+hal@{Sim\+\_\+hal}!S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode}}
+\index{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode@{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode}!Sim\+\_\+hal@{Sim\+\_\+hal}}
+\subsubsection[{\texorpdfstring{S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode(uint32\+\_\+t base\+Addr, uint8\+\_\+t instance, sim\+\_\+uart\+\_\+txsrc\+\_\+t select)}{SIM_HAL_SetUartTxSrcMode(uint32_t baseAddr, uint8_t instance, sim_uart_txsrc_t select)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+I\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Uart\+Tx\+Src\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{instance, }
+\item[{{\bf sim\+\_\+uart\+\_\+txsrc\+\_\+t}}]{select}
+\end{DoxyParamCaption}
+)}\hypertarget{group__sim__hal_gaf3339b94a520aaf856b897fd945a435e}{}\label{group__sim__hal_gaf3339b94a520aaf856b897fd945a435e}
+
+
+Sets the U\+A\+R\+Tx transmit data source select setting. 
+
+This function selects the source for the U\+A\+R\+Tx transmit data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Base address for current S\+IM instance. \\
+\hline
+{\em instance} & device instance. \\
+\hline
+{\em select} & the source for the U\+A\+R\+Tx transmit data
+\begin{DoxyItemize}
+\item 00\+: U\+A\+R\+Tx\+\_\+\+TX pin.
+\item 01\+: U\+A\+R\+Tx\+\_\+\+TX pin modulated with F\+T\+M1 channel 0 output.
+\item 10\+: U\+A\+R\+Tx\+\_\+\+TX pin modulated with F\+T\+M2 channel 0 output.
+\item 11\+: Reserved. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

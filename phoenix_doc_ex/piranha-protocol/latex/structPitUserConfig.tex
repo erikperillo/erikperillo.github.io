@@ -1,0 +1,47 @@
+\hypertarget{structPitUserConfig}{}\section{Pit\+User\+Config Struct Reference}
+\label{structPitUserConfig}\index{Pit\+User\+Config@{Pit\+User\+Config}}
+
+
+P\+IT timer configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$fsl\+\_\+pit\+\_\+driver.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structPitUserConfig_a4b622c315927ac9071df740fab8a6d46}{is\+Interrupt\+Enabled}
+\item 
+bool \hyperlink{structPitUserConfig_ae84953c67b205efb2b1f1a3a66e1f2bb}{is\+Timer\+Chained}
+\item 
+uint32\+\_\+t \hyperlink{structPitUserConfig_a9a6acd9170268f69e71a6e3822ddda61}{period\+Us}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+IT timer configuration structure. 
+
+Define structure Pit\+Config and use the \hyperlink{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel()} function to make necessary initializations. You may also use the remaining functions for P\+IT configuration.
+
+\begin{DoxyNote}{Note}
+The timer chain feature is not valid in all devices. Check the \hyperlink{fsl__pit__features_8h_source}{fsl\+\_\+pit\+\_\+features.\+h} for accurate settings. If it\textquotesingle{}s not valid, the value set here will be bypassed inside the \hyperlink{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel()} function. 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\index{Pit\+User\+Config@{Pit\+User\+Config}!is\+Interrupt\+Enabled@{is\+Interrupt\+Enabled}}
+\index{is\+Interrupt\+Enabled@{is\+Interrupt\+Enabled}!Pit\+User\+Config@{Pit\+User\+Config}}
+\subsubsection[{\texorpdfstring{is\+Interrupt\+Enabled}{isInterruptEnabled}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pit\+User\+Config\+::is\+Interrupt\+Enabled}\hypertarget{structPitUserConfig_a4b622c315927ac9071df740fab8a6d46}{}\label{structPitUserConfig_a4b622c315927ac9071df740fab8a6d46}
+Timer interrupt 0-\/disable/1-\/enable \index{Pit\+User\+Config@{Pit\+User\+Config}!is\+Timer\+Chained@{is\+Timer\+Chained}}
+\index{is\+Timer\+Chained@{is\+Timer\+Chained}!Pit\+User\+Config@{Pit\+User\+Config}}
+\subsubsection[{\texorpdfstring{is\+Timer\+Chained}{isTimerChained}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pit\+User\+Config\+::is\+Timer\+Chained}\hypertarget{structPitUserConfig_ae84953c67b205efb2b1f1a3a66e1f2bb}{}\label{structPitUserConfig_ae84953c67b205efb2b1f1a3a66e1f2bb}
+Chained with previous timer, 0-\/not/1-\/chained \index{Pit\+User\+Config@{Pit\+User\+Config}!period\+Us@{period\+Us}}
+\index{period\+Us@{period\+Us}!Pit\+User\+Config@{Pit\+User\+Config}}
+\subsubsection[{\texorpdfstring{period\+Us}{periodUs}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Pit\+User\+Config\+::period\+Us}\hypertarget{structPitUserConfig_a9a6acd9170268f69e71a6e3822ddda61}{}\label{structPitUserConfig_a9a6acd9170268f69e71a6e3822ddda61}
+Timer period in unit of microseconds 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/drivers/pit/fsl\+\_\+pit\+\_\+driver.\+h\end{DoxyCompactItemize}

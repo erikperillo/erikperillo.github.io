@@ -1,0 +1,37 @@
+\hypertarget{union__hw__sdhc__ac12err}{}\section{\+\_\+hw\+\_\+sdhc\+\_\+ac12err Union Reference}
+\label{union__hw__sdhc__ac12err}\index{\+\_\+hw\+\_\+sdhc\+\_\+ac12err@{\+\_\+hw\+\_\+sdhc\+\_\+ac12err}}
+
+
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+A\+C12\+E\+RR -\/ Auto C\+M\+D12 Error Status Register (RO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+sdhc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__sdhc__ac12err_1_1__hw__sdhc__ac12err__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+ac12err\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__sdhc__ac12err_aa5eaf9f100481cf4e04dbad59a26d57e}{}\label{union__hw__sdhc__ac12err_aa5eaf9f100481cf4e04dbad59a26d57e}
+
+\item 
+struct \hyperlink{struct__hw__sdhc__ac12err_1_1__hw__sdhc__ac12err__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+ac12err\+::\+\_\+hw\+\_\+sdhc\+\_\+ac12err\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__sdhc__ac12err_a4b462e437e658b715bb94318c32c8444}{}\label{union__hw__sdhc__ac12err_a4b462e437e658b715bb94318c32c8444}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+A\+C12\+E\+RR -\/ Auto C\+M\+D12 Error Status Register (RO) 
+
+Reset value\+: 0x00000000U
+
+When the A\+C12\+E\+S\+EN bit in the Status register is set, the host driver shall check this register to identify what kind of error the Auto C\+M\+D12 indicated. This register is valid only when the Auto C\+M\+D12 Error status bit is set. The following table shows the relationship between the Auto C\+M\+G\+D12 C\+RC error and the Auto C\+M\+D12 command timeout error. Relationship between Command C\+RC Error and Command Timeout Error For Auto C\+M\+D12 Auto C\+M\+D12 C\+RC error Auto C\+M\+D12 timeout error Type of error 0 0 No error 0 1 Response timeout error 1 0 Response C\+RC error 1 1 C\+MD line conflict Changes in Auto C\+M\+D12 Error Status register can be classified in three scenarios\+: When the S\+D\+HC is going to issue an Auto C\+M\+D12\+: Set bit 0 to 1 if the Auto C\+M\+D12 can\textquotesingle{}t be issued due to an error in the previous command. Set bit 0 to 0 if the auto C\+M\+D12 is issued. At the end bit of an auto C\+M\+D12 response\+: Check errors corresponding to bits 1-\/4. Set bits 1-\/4 corresponding to detected errors. Clear bits 1-\/4 corresponding to detected errors. Before reading the Auto C\+M\+D12 error status bit 7\+: Set bit 7 to 1 if there is a command that can\textquotesingle{}t be issued. Clear bit 7 if there is no command to issue. The timing for generating the auto C\+M\+D12 error and writing to the command register are asynchronous. After that, bit 7 shall be sampled when the driver is not writing to the command register. So it is suggested to read this register only when I\+R\+Q\+S\+T\+AT\mbox{[}A\+C12E\mbox{]} is set. An Auto C\+M\+D12 error interrupt is generated when one of the error bits (0-\/4) is set to 1. The command not issued by auto C\+M\+D12 error does not generate an interrupt. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+sdhc.\+h\end{DoxyCompactItemize}

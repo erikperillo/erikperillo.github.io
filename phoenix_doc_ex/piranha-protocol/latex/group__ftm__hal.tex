@@ -1,0 +1,378 @@
+\hypertarget{group__ftm__hal}{}\section{Ftm\+\_\+hal}
+\label{group__ftm__hal}\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union__ftm__edge__mode__t}{\+\_\+ftm\+\_\+edge\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer edge mode. \end{DoxyCompactList}\item 
+struct \hyperlink{structFtmPwmParam}{Ftm\+Pwm\+Param}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer driver P\+WM parameter. \end{DoxyCompactList}\item 
+struct \hyperlink{structFtmPhaseParam}{Ftm\+Phase\+Param}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer quadrature decode phase parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__ftm__hal_gab07f9ba36567d9841387018178ce769b}{H\+W\+\_\+\+C\+H\+A\+N0}~(0\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_gad7bc026f98654ab8a0a869c54d6c09c9}{H\+W\+\_\+\+C\+H\+A\+N1}~(1\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_gab759c806b3708a402717876c439b5a51}{H\+W\+\_\+\+C\+H\+A\+N2}~(2\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_ga68ecd23bb7e7b8601d55f66422fa8e89}{H\+W\+\_\+\+C\+H\+A\+N3}~(3\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_ga02e988fcd4bb2747633b9c23327aadc1}{H\+W\+\_\+\+C\+H\+A\+N4}~(4\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_ga257bd9a10992b23e10d10058578f46a4}{H\+W\+\_\+\+C\+H\+A\+N5}~(5\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_ga220e408682ae8119e251b4232f722af2}{H\+W\+\_\+\+C\+H\+A\+N6}~(6\+U)
+\item 
+\#define \hyperlink{group__ftm__hal_ga51e9ba0dd60ca19d76a24469dff34914}{H\+W\+\_\+\+C\+H\+A\+N7}~(7\+U)
+\item 
+\#define {\bfseries F\+T\+M\+\_\+\+C\+O\+M\+B\+I\+N\+E\+\_\+\+C\+H\+A\+N\+\_\+\+C\+T\+R\+L\+\_\+\+W\+I\+D\+TH}~(8\+U)\hypertarget{group__ftm__hal_ga699ef33c9bb4a9a27db251537eda74a2}{}\label{group__ftm__hal_ga699ef33c9bb4a9a27db251537eda74a2}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__ftm__hal_ga1631aa75184432b61dce335e3ea19c82}{\+\_\+ftm\+\_\+clock\+\_\+source} \hyperlink{group__ftm__hal_ga3b49a5fd637d7fcafa8141e143df4220}{ftm\+\_\+clock\+\_\+source\+\_\+t}\hypertarget{group__ftm__hal_ga3b49a5fd637d7fcafa8141e143df4220}{}\label{group__ftm__hal_ga3b49a5fd637d7fcafa8141e143df4220}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer clock source selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga5c364e9561194510179ee19d0988a45f}{\+\_\+ftm\+\_\+counting\+\_\+mode} \hyperlink{group__ftm__hal_gacd9f6e0046c425c04578e3dc1256737c}{ftm\+\_\+counting\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_gacd9f6e0046c425c04578e3dc1256737c}{}\label{group__ftm__hal_gacd9f6e0046c425c04578e3dc1256737c}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer counting mode selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_gaf2d69ea78d9db386313850f9ab25e30a}{\+\_\+ftm\+\_\+clock\+\_\+ps} \hyperlink{group__ftm__hal_gaf655a5a42ea121a924ac642f23621577}{ftm\+\_\+clock\+\_\+ps\+\_\+t}\hypertarget{group__ftm__hal_gaf655a5a42ea121a924ac642f23621577}{}\label{group__ftm__hal_gaf655a5a42ea121a924ac642f23621577}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer pre-\/scaler factor selection for the clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_gad9f0fd5973baa099b25d10bf325c572d}{\+\_\+ftm\+\_\+deadtime\+\_\+ps} \hyperlink{group__ftm__hal_ga161838c2358121aacc4778c250fd2efe}{ftm\+\_\+deadtime\+\_\+ps\+\_\+t}\hypertarget{group__ftm__hal_ga161838c2358121aacc4778c250fd2efe}{}\label{group__ftm__hal_ga161838c2358121aacc4778c250fd2efe}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer pre-\/scaler factor for the deadtime insertion. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga28d1183ea739cf9ce4983d04677ce6a5}{\+\_\+ftm\+\_\+config\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_gac70fc66eaed6c7863ae8f9c632bac77a}{ftm\+\_\+config\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_gac70fc66eaed6c7863ae8f9c632bac77a}{}\label{group__ftm__hal_gac70fc66eaed6c7863ae8f9c632bac77a}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer operation mode, capture, output, dual. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga9de4f09983cfb6995327d3d4df7061be}{\+\_\+ftm\+\_\+input\+\_\+capture\+\_\+edge\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_gaa7f75061d288318028ebdfa90b27de12}{ftm\+\_\+input\+\_\+capture\+\_\+edge\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_gaa7f75061d288318028ebdfa90b27de12}{}\label{group__ftm__hal_gaa7f75061d288318028ebdfa90b27de12}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer input capture edge mode, rising edge, or falling edge. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga8d694b53bad7bd40f7c79f45ad0ea0cd}{\+\_\+ftm\+\_\+output\+\_\+compare\+\_\+edge\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_ga025e4209539b48426a53d1351e0288a5}{ftm\+\_\+output\+\_\+compare\+\_\+edge\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_ga025e4209539b48426a53d1351e0288a5}{}\label{group__ftm__hal_ga025e4209539b48426a53d1351e0288a5}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer output compare edge mode. Toggle, clear or set. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga6cf3ca8aba3464c254e0b451f4333de9}{\+\_\+ftm\+\_\+pwm\+\_\+edge\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_gad072678496c10bf3ebe1bba980a8ec7d}{ftm\+\_\+pwm\+\_\+edge\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_gad072678496c10bf3ebe1bba980a8ec7d}{}\label{group__ftm__hal_gad072678496c10bf3ebe1bba980a8ec7d}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer P\+WM output pulse mode, high-\/true or low-\/true on match up. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga975267f3de9c92904a6ce4d7951b5b18}{\+\_\+ftm\+\_\+dual\+\_\+capture\+\_\+edge\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_ga5550fba8c8c9ccf1946b76e97bf497c0}{ftm\+\_\+dual\+\_\+capture\+\_\+edge\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_ga5550fba8c8c9ccf1946b76e97bf497c0}{}\label{group__ftm__hal_ga5550fba8c8c9ccf1946b76e97bf497c0}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer dual capture edge mode, one shot or continuous. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_gaae2c75edcd2f32d67dc2f4ba14ff5240}{\+\_\+ftm\+\_\+quad\+\_\+decode\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_ga1ca40e2d4c59bf3d1a88f7712aa37113}{ftm\+\_\+quad\+\_\+decode\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_ga1ca40e2d4c59bf3d1a88f7712aa37113}{}\label{group__ftm__hal_ga1ca40e2d4c59bf3d1a88f7712aa37113}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer quadrature decode modes, phase encode or count and direction mode. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__ftm__hal_ga15ae8f0633b7d3fcf2b589861642cdf8}{\+\_\+ftm\+\_\+quad\+\_\+phase\+\_\+polarity\+\_\+t} \hyperlink{group__ftm__hal_ga0b71d5e8e498700f6aabc56a5bd5f00d}{ftm\+\_\+quad\+\_\+phase\+\_\+polarity\+\_\+t}\hypertarget{group__ftm__hal_ga0b71d5e8e498700f6aabc56a5bd5f00d}{}\label{group__ftm__hal_ga0b71d5e8e498700f6aabc56a5bd5f00d}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer quadrature phase polarities, normal or inverted polarity. \end{DoxyCompactList}\item 
+typedef union \hyperlink{union__ftm__edge__mode__t}{\+\_\+ftm\+\_\+edge\+\_\+mode\+\_\+t} \hyperlink{group__ftm__hal_gac735be85729cb808e6fe1f731d8d8df1}{ftm\+\_\+edge\+\_\+mode\+\_\+t}\hypertarget{group__ftm__hal_gac735be85729cb808e6fe1f731d8d8df1}{}\label{group__ftm__hal_gac735be85729cb808e6fe1f731d8d8df1}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer edge mode. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structFtmPwmParam}{Ftm\+Pwm\+Param} \hyperlink{group__ftm__hal_ga6d4c723a5bafd692b51acaecd62cdd2a}{ftm\+\_\+pwm\+\_\+param\+\_\+t}\hypertarget{group__ftm__hal_ga6d4c723a5bafd692b51acaecd62cdd2a}{}\label{group__ftm__hal_ga6d4c723a5bafd692b51acaecd62cdd2a}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer driver P\+WM parameter. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structFtmPhaseParam}{Ftm\+Phase\+Param} \hyperlink{group__ftm__hal_ga4622903c3f710f86e9f04c5b29220c7c}{ftm\+\_\+phase\+\_\+params\+\_\+t}\hypertarget{group__ftm__hal_ga4622903c3f710f86e9f04c5b29220c7c}{}\label{group__ftm__hal_ga4622903c3f710f86e9f04c5b29220c7c}
+
+\begin{DoxyCompactList}\small\item\em Flex\+Timer quadrature decode phase parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__ftm__hal_ga1631aa75184432b61dce335e3ea19c82}{\+\_\+ftm\+\_\+clock\+\_\+source} \{ {\bfseries k\+Clock\+\_\+source\+\_\+\+F\+T\+M\+\_\+\+None} = 0, 
+{\bfseries k\+Clock\+\_\+source\+\_\+\+F\+T\+M\+\_\+\+System\+Clk}, 
+{\bfseries k\+Clock\+\_\+source\+\_\+\+F\+T\+M\+\_\+\+Fixed\+Clk}, 
+{\bfseries k\+Clock\+\_\+source\+\_\+\+F\+T\+M\+\_\+\+External\+Clk}
+ \}\hypertarget{group__ftm__hal_ga1631aa75184432b61dce335e3ea19c82}{}\label{group__ftm__hal_ga1631aa75184432b61dce335e3ea19c82}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer clock source selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga5c364e9561194510179ee19d0988a45f}{\+\_\+ftm\+\_\+counting\+\_\+mode} \{ {\bfseries k\+Counting\+\_\+\+F\+T\+M\+\_\+\+UP} = 0, 
+{\bfseries k\+Counting\+\_\+\+F\+T\+M\+\_\+\+Up\+Down}
+ \}\hypertarget{group__ftm__hal_ga5c364e9561194510179ee19d0988a45f}{}\label{group__ftm__hal_ga5c364e9561194510179ee19d0988a45f}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer counting mode selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_gaf2d69ea78d9db386313850f9ab25e30a}{\+\_\+ftm\+\_\+clock\+\_\+ps} \{ \\*
+{\bfseries k\+Ftm\+Divided\+By1} = 0, 
+{\bfseries k\+Ftm\+Divided\+By2}, 
+{\bfseries k\+Ftm\+Divided\+By4}, 
+{\bfseries k\+Ftm\+Divided\+By8}, 
+\\*
+{\bfseries k\+Ftm\+Divided\+By16}, 
+{\bfseries k\+Ftm\+Divided\+By32}, 
+{\bfseries k\+Ftm\+Divided\+By64}, 
+{\bfseries k\+Ftm\+Divided\+By128}
+ \}\hypertarget{group__ftm__hal_gaf2d69ea78d9db386313850f9ab25e30a}{}\label{group__ftm__hal_gaf2d69ea78d9db386313850f9ab25e30a}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer pre-\/scaler factor selection for the clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_gad9f0fd5973baa099b25d10bf325c572d}{\+\_\+ftm\+\_\+deadtime\+\_\+ps} \{ {\bfseries k\+Ftm\+Divided1} = 1, 
+{\bfseries k\+Ftm\+Divided4} = 2, 
+{\bfseries k\+Ftm\+Divided16} = 3
+ \}\hypertarget{group__ftm__hal_gad9f0fd5973baa099b25d10bf325c572d}{}\label{group__ftm__hal_gad9f0fd5973baa099b25d10bf325c572d}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer pre-\/scaler factor for the deadtime insertion. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga28d1183ea739cf9ce4983d04677ce6a5}{\+\_\+ftm\+\_\+config\+\_\+mode\+\_\+t} \{ \\*
+{\bfseries k\+Ftm\+Input\+Capture}, 
+{\bfseries k\+Ftm\+Output\+Compare}, 
+{\bfseries k\+Ftm\+Edge\+Aligned\+P\+WM}, 
+{\bfseries k\+Ftm\+Center\+Aligned\+P\+WM}, 
+\\*
+{\bfseries k\+Ftm\+Combined\+P\+WM}, 
+{\bfseries k\+Ftm\+Dual\+Edge\+Capture}
+ \}\hypertarget{group__ftm__hal_ga28d1183ea739cf9ce4983d04677ce6a5}{}\label{group__ftm__hal_ga28d1183ea739cf9ce4983d04677ce6a5}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer operation mode, capture, output, dual. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga9de4f09983cfb6995327d3d4df7061be}{\+\_\+ftm\+\_\+input\+\_\+capture\+\_\+edge\+\_\+mode\+\_\+t} \{ {\bfseries k\+Ftm\+Rising\+Edge} = 0, 
+{\bfseries k\+Ftm\+Falling\+Edge}, 
+{\bfseries k\+Ftm\+Rising\+And\+Falling}
+ \}\hypertarget{group__ftm__hal_ga9de4f09983cfb6995327d3d4df7061be}{}\label{group__ftm__hal_ga9de4f09983cfb6995327d3d4df7061be}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer input capture edge mode, rising edge, or falling edge. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga8d694b53bad7bd40f7c79f45ad0ea0cd}{\+\_\+ftm\+\_\+output\+\_\+compare\+\_\+edge\+\_\+mode\+\_\+t} \{ {\bfseries k\+Ftm\+Toggle\+On\+Match} = 0, 
+{\bfseries k\+Ftm\+Clear\+On\+Match}, 
+{\bfseries k\+Ftm\+Set\+On\+Match}
+ \}\hypertarget{group__ftm__hal_ga8d694b53bad7bd40f7c79f45ad0ea0cd}{}\label{group__ftm__hal_ga8d694b53bad7bd40f7c79f45ad0ea0cd}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer output compare edge mode. Toggle, clear or set. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga6cf3ca8aba3464c254e0b451f4333de9}{\+\_\+ftm\+\_\+pwm\+\_\+edge\+\_\+mode\+\_\+t} \{ {\bfseries k\+Ftm\+High\+True} = 0, 
+{\bfseries k\+Ftm\+Low\+True}
+ \}\hypertarget{group__ftm__hal_ga6cf3ca8aba3464c254e0b451f4333de9}{}\label{group__ftm__hal_ga6cf3ca8aba3464c254e0b451f4333de9}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer P\+WM output pulse mode, high-\/true or low-\/true on match up. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga975267f3de9c92904a6ce4d7951b5b18}{\+\_\+ftm\+\_\+dual\+\_\+capture\+\_\+edge\+\_\+mode\+\_\+t} \{ {\bfseries k\+Ftm\+One\+Shout} = 0, 
+{\bfseries k\+Ftm\+Continuous}
+ \}\hypertarget{group__ftm__hal_ga975267f3de9c92904a6ce4d7951b5b18}{}\label{group__ftm__hal_ga975267f3de9c92904a6ce4d7951b5b18}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer dual capture edge mode, one shot or continuous. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_gaae2c75edcd2f32d67dc2f4ba14ff5240}{\+\_\+ftm\+\_\+quad\+\_\+decode\+\_\+mode\+\_\+t} \{ {\bfseries k\+Ftm\+Quad\+Phase\+Encode} = 0, 
+{\bfseries k\+Ftm\+Quad\+Count\+And\+Dir}
+ \}\hypertarget{group__ftm__hal_gaae2c75edcd2f32d67dc2f4ba14ff5240}{}\label{group__ftm__hal_gaae2c75edcd2f32d67dc2f4ba14ff5240}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer quadrature decode modes, phase encode or count and direction mode. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__ftm__hal_ga15ae8f0633b7d3fcf2b589861642cdf8}{\+\_\+ftm\+\_\+quad\+\_\+phase\+\_\+polarity\+\_\+t} \{ {\bfseries k\+Ftm\+Quad\+Phase\+Normal} = 0, 
+{\bfseries k\+Ftm\+Quad\+Phase\+Invert}
+ \}\hypertarget{group__ftm__hal_ga15ae8f0633b7d3fcf2b589861642cdf8}{}\label{group__ftm__hal_ga15ae8f0633b7d3fcf2b589861642cdf8}
+\begin{DoxyCompactList}\small\item\em Flex\+Timer quadrature phase polarities, normal or inverted polarity. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__ftm__hal_ga821a0ba6562df6593adafb19d7211bf2}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger} (uint32\+\_\+t ftm\+Base\+Addr, uint8\+\_\+t trigger\+\_\+num, bool enable)
+\begin{DoxyCompactList}\small\item\em Sets the F\+TM peripheral timer hardware trigger. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__ftm__hal_ga16b264b492e4eaa1c5de876eb8400529}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index} (uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Combines the channel control. \end{DoxyCompactList}\item 
+void \hyperlink{group__ftm__hal_gad998b9480e2df94f108e51cf5448acc6}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd} (uint32\+\_\+t ftm\+Base\+Addr, uint8\+\_\+t channel, bool val)
+\begin{DoxyCompactList}\small\item\em Enables or disables the generation of the F\+TM peripheral timer channel trigger. \end{DoxyCompactList}\item 
+void \hyperlink{group__ftm__hal_ga8e20915f0866f000c672cb12e20c81e6}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter} (uint32\+\_\+t ftm\+Base\+Addr, uint8\+\_\+t channel, uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the F\+TM peripheral timer channel input capture filter value. \end{DoxyCompactList}\item 
+void \hyperlink{group__ftm__hal_ga56f497e6231ee52889eb269f5216c132}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset} (uint32\+\_\+t ftm\+Base\+Addr, uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Resets the F\+TM registers. \end{DoxyCompactList}\item 
+void \hyperlink{group__ftm__hal_gacf419efabc3d6d06cb50938bdad7de5c}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t ftm\+Base\+Addr)
+\begin{DoxyCompactList}\small\item\em Initializes the F\+TM. \end{DoxyCompactList}\item 
+void \hyperlink{group__ftm__hal_gaf216af3b7a82d1183cf88df75c4de5dc}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode} (uint32\+\_\+t ftm\+Base\+Addr, \hyperlink{group__ftm__hal_ga6d4c723a5bafd692b51acaecd62cdd2a}{ftm\+\_\+pwm\+\_\+param\+\_\+t} $\ast$config, uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Enables the F\+TM timer when it is P\+WM output mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__ftm__hal_gac089e089bee8f1223ef2a8489e529a5b}{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode} (uint32\+\_\+t ftm\+Base\+Addr, \hyperlink{group__ftm__hal_ga6d4c723a5bafd692b51acaecd62cdd2a}{ftm\+\_\+pwm\+\_\+param\+\_\+t} $\ast$config, uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Disables the P\+WM output mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N0@{H\+W\+\_\+\+C\+H\+A\+N0}}
+\index{H\+W\+\_\+\+C\+H\+A\+N0@{H\+W\+\_\+\+C\+H\+A\+N0}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N0}{HW_CHAN0}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N0~(0\+U)}\hypertarget{group__ftm__hal_gab07f9ba36567d9841387018178ce769b}{}\label{group__ftm__hal_gab07f9ba36567d9841387018178ce769b}
+Channel number for C\+H\+A\+N0. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N1@{H\+W\+\_\+\+C\+H\+A\+N1}}
+\index{H\+W\+\_\+\+C\+H\+A\+N1@{H\+W\+\_\+\+C\+H\+A\+N1}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N1}{HW_CHAN1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N1~(1\+U)}\hypertarget{group__ftm__hal_gad7bc026f98654ab8a0a869c54d6c09c9}{}\label{group__ftm__hal_gad7bc026f98654ab8a0a869c54d6c09c9}
+Channel number for C\+H\+A\+N1. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N2@{H\+W\+\_\+\+C\+H\+A\+N2}}
+\index{H\+W\+\_\+\+C\+H\+A\+N2@{H\+W\+\_\+\+C\+H\+A\+N2}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N2}{HW_CHAN2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N2~(2\+U)}\hypertarget{group__ftm__hal_gab759c806b3708a402717876c439b5a51}{}\label{group__ftm__hal_gab759c806b3708a402717876c439b5a51}
+Channel number for C\+H\+A\+N2. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N3@{H\+W\+\_\+\+C\+H\+A\+N3}}
+\index{H\+W\+\_\+\+C\+H\+A\+N3@{H\+W\+\_\+\+C\+H\+A\+N3}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N3}{HW_CHAN3}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N3~(3\+U)}\hypertarget{group__ftm__hal_ga68ecd23bb7e7b8601d55f66422fa8e89}{}\label{group__ftm__hal_ga68ecd23bb7e7b8601d55f66422fa8e89}
+Channel number for C\+H\+A\+N3. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N4@{H\+W\+\_\+\+C\+H\+A\+N4}}
+\index{H\+W\+\_\+\+C\+H\+A\+N4@{H\+W\+\_\+\+C\+H\+A\+N4}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N4}{HW_CHAN4}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N4~(4\+U)}\hypertarget{group__ftm__hal_ga02e988fcd4bb2747633b9c23327aadc1}{}\label{group__ftm__hal_ga02e988fcd4bb2747633b9c23327aadc1}
+Channel number for C\+H\+A\+N4. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N5@{H\+W\+\_\+\+C\+H\+A\+N5}}
+\index{H\+W\+\_\+\+C\+H\+A\+N5@{H\+W\+\_\+\+C\+H\+A\+N5}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N5}{HW_CHAN5}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N5~(5\+U)}\hypertarget{group__ftm__hal_ga257bd9a10992b23e10d10058578f46a4}{}\label{group__ftm__hal_ga257bd9a10992b23e10d10058578f46a4}
+Channel number for C\+H\+A\+N5. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N6@{H\+W\+\_\+\+C\+H\+A\+N6}}
+\index{H\+W\+\_\+\+C\+H\+A\+N6@{H\+W\+\_\+\+C\+H\+A\+N6}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N6}{HW_CHAN6}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N6~(6\+U)}\hypertarget{group__ftm__hal_ga220e408682ae8119e251b4232f722af2}{}\label{group__ftm__hal_ga220e408682ae8119e251b4232f722af2}
+Channel number for C\+H\+A\+N6. \index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!H\+W\+\_\+\+C\+H\+A\+N7@{H\+W\+\_\+\+C\+H\+A\+N7}}
+\index{H\+W\+\_\+\+C\+H\+A\+N7@{H\+W\+\_\+\+C\+H\+A\+N7}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{H\+W\+\_\+\+C\+H\+A\+N7}{HW_CHAN7}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+W\+\_\+\+C\+H\+A\+N7~(7\+U)}\hypertarget{group__ftm__hal_ga51e9ba0dd60ca19d76a24469dff34914}{}\label{group__ftm__hal_ga51e9ba0dd60ca19d76a24469dff34914}
+Channel number for C\+H\+A\+N7. 
+
+\subsection{Function Documentation}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode(uint32\+\_\+t ftm\+Base\+Addr, ftm\+\_\+pwm\+\_\+param\+\_\+t $\ast$config, uint8\+\_\+t channel)}{FTM_HAL_DisablePwmMode(uint32_t ftmBaseAddr, ftm_pwm_param_t *config, uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Disable\+Pwm\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr, }
+\item[{{\bf ftm\+\_\+pwm\+\_\+param\+\_\+t} $\ast$}]{config, }
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_gac089e089bee8f1223ef2a8489e529a5b}{}\label{group__ftm__hal_gac089e089bee8f1223ef2a8489e529a5b}
+
+
+Disables the P\+WM output mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ftm\+Base\+Addr} & The F\+TM base address \\
+\hline
+{\em config} & P\+WM configuration parameter \\
+\hline
+{\em channel} & The channel or channel pair number(combined mode). \\
+\hline
+\end{DoxyParams}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode(uint32\+\_\+t ftm\+Base\+Addr, ftm\+\_\+pwm\+\_\+param\+\_\+t $\ast$config, uint8\+\_\+t channel)}{FTM_HAL_EnablePwmMode(uint32_t ftmBaseAddr, ftm_pwm_param_t *config, uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Enable\+Pwm\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr, }
+\item[{{\bf ftm\+\_\+pwm\+\_\+param\+\_\+t} $\ast$}]{config, }
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_gaf216af3b7a82d1183cf88df75c4de5dc}{}\label{group__ftm__hal_gaf216af3b7a82d1183cf88df75c4de5dc}
+
+
+Enables the F\+TM timer when it is P\+WM output mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ftm\+Base\+Addr} & The F\+TM base address \\
+\hline
+{\em config} & P\+WM configuration parameter \\
+\hline
+{\em channel} & The channel or channel pair number(combined mode). \\
+\hline
+\end{DoxyParams}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index(uint8\+\_\+t channel)}{FTM_HAL_GetChnPairIndex(uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Get\+Chn\+Pair\+Index (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_ga16b264b492e4eaa1c5de876eb8400529}{}\label{group__ftm__hal_ga16b264b492e4eaa1c5de876eb8400529}
+
+
+Combines the channel control. 
+
+Returns an index for each channel pair.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The F\+TM peripheral channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for channel pair 0 \& 1~\newline
+ 1 for channel pair 2 \& 3~\newline
+ 2 for channel pair 4 \& 5~\newline
+ 3 for channel pair 6 \& 7 
+\end{DoxyReturn}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init(uint32\+\_\+t ftm\+Base\+Addr)}{FTM_HAL_Init(uint32_t ftmBaseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_gacf419efabc3d6d06cb50938bdad7de5c}{}\label{group__ftm__hal_gacf419efabc3d6d06cb50938bdad7de5c}
+
+
+Initializes the F\+TM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ftm\+Base\+Addr} & The F\+TM base address. \\
+\hline
+\end{DoxyParams}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset(uint32\+\_\+t ftm\+Base\+Addr, uint32\+\_\+t instance)}{FTM_HAL_Reset(uint32_t ftmBaseAddr, uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Reset (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr, }
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_ga56f497e6231ee52889eb269f5216c132}{}\label{group__ftm__hal_ga56f497e6231ee52889eb269f5216c132}
+
+
+Resets the F\+TM registers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & The F\+TM instance number \\
+\hline
+{\em ftm\+Base\+Addr} & The F\+TM base address \\
+\hline
+\end{DoxyParams}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter(uint32\+\_\+t ftm\+Base\+Addr, uint8\+\_\+t channel, uint8\+\_\+t val)}{FTM_HAL_SetChnInputCaptureFilter(uint32_t ftmBaseAddr, uint8_t channel, uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Input\+Capture\+Filter (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr, }
+\item[{uint8\+\_\+t}]{channel, }
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_ga8e20915f0866f000c672cb12e20c81e6}{}\label{group__ftm__hal_ga8e20915f0866f000c672cb12e20c81e6}
+
+
+Sets the F\+TM peripheral timer channel input capture filter value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ftm\+Base\+Addr} & The F\+TM base address \\
+\hline
+{\em channel} & The F\+TM peripheral channel number, only 0,1,2,3, channel 4, 5,6, 7 don\textquotesingle{}t have. \\
+\hline
+{\em val} & Filter value to be set \\
+\hline
+\end{DoxyParams}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd(uint32\+\_\+t ftm\+Base\+Addr, uint8\+\_\+t channel, bool val)}{FTM_HAL_SetChnTriggerCmd(uint32_t ftmBaseAddr, uint8_t channel, bool val)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Chn\+Trigger\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr, }
+\item[{uint8\+\_\+t}]{channel, }
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_gad998b9480e2df94f108e51cf5448acc6}{}\label{group__ftm__hal_gad998b9480e2df94f108e51cf5448acc6}
+
+
+Enables or disables the generation of the F\+TM peripheral timer channel trigger. 
+
+Enables or disables the when the generation of the F\+TM peripheral timer channel trigger when the F\+TM counter is equal to its initial value. Channels 6 and 7 cannot be used as triggers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ftm\+Base\+Addr} & The F\+TM base address \\
+\hline
+{\em channel} & Channel to be enabled, valid value 0, 1, 2, 3, 4, 5 \\
+\hline
+{\em val} & True to enable, false to disable \\
+\hline
+\end{DoxyParams}
+\index{Ftm\+\_\+hal@{Ftm\+\_\+hal}!F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger}}
+\index{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger@{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger}!Ftm\+\_\+hal@{Ftm\+\_\+hal}}
+\subsubsection[{\texorpdfstring{F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger(uint32\+\_\+t ftm\+Base\+Addr, uint8\+\_\+t trigger\+\_\+num, bool enable)}{FTM_HAL_SetHardwareTrigger(uint32_t ftmBaseAddr, uint8_t trigger_num, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+T\+M\+\_\+\+H\+A\+L\+\_\+\+Set\+Hardware\+Trigger (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ftm\+Base\+Addr, }
+\item[{uint8\+\_\+t}]{trigger\+\_\+num, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ftm__hal_ga821a0ba6562df6593adafb19d7211bf2}{}\label{group__ftm__hal_ga821a0ba6562df6593adafb19d7211bf2}
+
+
+Sets the F\+TM peripheral timer hardware trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ftm\+Base\+Addr} & The F\+TM base address \\
+\hline
+{\em trigger\+\_\+num} & 0, 1, 2 for trigger0, trigger1 and trigger3 \\
+\hline
+{\em enable} & true\+: enable hardware trigger from field trigger\+\_\+num for P\+WM synch false\+: disable hardware trigger from field trigger\+\_\+num for P\+WM synch \\
+\hline
+\end{DoxyParams}

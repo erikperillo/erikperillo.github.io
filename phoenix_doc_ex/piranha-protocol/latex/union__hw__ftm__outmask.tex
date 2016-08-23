@@ -1,0 +1,37 @@
+\hypertarget{union__hw__ftm__outmask}{}\section{\+\_\+hw\+\_\+ftm\+\_\+outmask Union Reference}
+\label{union__hw__ftm__outmask}\index{\+\_\+hw\+\_\+ftm\+\_\+outmask@{\+\_\+hw\+\_\+ftm\+\_\+outmask}}
+
+
+H\+W\+\_\+\+F\+T\+M\+\_\+\+O\+U\+T\+M\+A\+SK -\/ Output Mask (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+ftm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__ftm__outmask_1_1__hw__ftm__outmask__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+outmask\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__ftm__outmask_a4b1d7afd2724745fe9631877aebb8c2d}{}\label{union__hw__ftm__outmask_a4b1d7afd2724745fe9631877aebb8c2d}
+
+\item 
+struct \hyperlink{struct__hw__ftm__outmask_1_1__hw__ftm__outmask__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+outmask\+::\+\_\+hw\+\_\+ftm\+\_\+outmask\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__ftm__outmask_a8afdf0c8888b654e31fea4f113feb69f}{}\label{union__hw__ftm__outmask_a8afdf0c8888b654e31fea4f113feb69f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+F\+T\+M\+\_\+\+O\+U\+T\+M\+A\+SK -\/ Output Mask (RW) 
+
+Reset value\+: 0x00000000U
+
+This register provides a mask for each F\+TM channel. The mask of a channel determines if its output responds, that is, it is masked or not, when a match occurs. This feature is used for B\+L\+DC control where the P\+WM signal is presented to an electric motor at specific times to provide electronic commutation. Any write to the O\+U\+T\+M\+A\+SK register, stores the value in its write buffer. The register is updated with the value of its write buffer according to P\+WM synchronization. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+ftm.\+h\end{DoxyCompactItemize}

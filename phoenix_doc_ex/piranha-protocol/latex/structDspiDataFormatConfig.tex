@@ -1,0 +1,47 @@
+\hypertarget{structDspiDataFormatConfig}{}\section{Dspi\+Data\+Format\+Config Struct Reference}
+\label{structDspiDataFormatConfig}\index{Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}}
+
+
+D\+S\+PI data format settings configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$fsl\+\_\+dspi\+\_\+hal.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structDspiDataFormatConfig_ac63c29bae9be526eb82eb9188a3685d4}{bits\+Per\+Frame}
+\item 
+\hyperlink{group__dspi__hal_ga959b683effa08cff187f755506526745}{dspi\+\_\+clock\+\_\+polarity\+\_\+t} \hyperlink{structDspiDataFormatConfig_a6351c261cb1ec33e415c3cfe5118acb9}{clk\+Polarity}
+\item 
+\hyperlink{group__dspi__hal_gace26aa668a9601c9d79bdd5205f37b14}{dspi\+\_\+clock\+\_\+phase\+\_\+t} \hyperlink{structDspiDataFormatConfig_a6a28276cf9ea7163033dc4d69a6162ff}{clk\+Phase}
+\item 
+\hyperlink{group__dspi__hal_ga536388ab9d8d1b88f7d112a83b769366}{dspi\+\_\+shift\+\_\+direction\+\_\+t} \hyperlink{structDspiDataFormatConfig_ad0c3a440790fa062778dfa1f4ca48175}{direction}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+S\+PI data format settings configuration structure. 
+
+This structure contains the data format settings. These settings apply to a specific C\+T\+A\+Rn register, which the user must provide in this structure. 
+
+\subsection{Member Data Documentation}
+\index{Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}!bits\+Per\+Frame@{bits\+Per\+Frame}}
+\index{bits\+Per\+Frame@{bits\+Per\+Frame}!Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}}
+\subsubsection[{\texorpdfstring{bits\+Per\+Frame}{bitsPerFrame}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Dspi\+Data\+Format\+Config\+::bits\+Per\+Frame}\hypertarget{structDspiDataFormatConfig_ac63c29bae9be526eb82eb9188a3685d4}{}\label{structDspiDataFormatConfig_ac63c29bae9be526eb82eb9188a3685d4}
+Bits per frame, minimum 4, maximum 16 (master), 32 (slave) \index{Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}!clk\+Phase@{clk\+Phase}}
+\index{clk\+Phase@{clk\+Phase}!Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}}
+\subsubsection[{\texorpdfstring{clk\+Phase}{clkPhase}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dspi\+\_\+clock\+\_\+phase\+\_\+t} Dspi\+Data\+Format\+Config\+::clk\+Phase}\hypertarget{structDspiDataFormatConfig_a6a28276cf9ea7163033dc4d69a6162ff}{}\label{structDspiDataFormatConfig_a6a28276cf9ea7163033dc4d69a6162ff}
+Clock phase setting to change and capture data \index{Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}!clk\+Polarity@{clk\+Polarity}}
+\index{clk\+Polarity@{clk\+Polarity}!Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}}
+\subsubsection[{\texorpdfstring{clk\+Polarity}{clkPolarity}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dspi\+\_\+clock\+\_\+polarity\+\_\+t} Dspi\+Data\+Format\+Config\+::clk\+Polarity}\hypertarget{structDspiDataFormatConfig_a6351c261cb1ec33e415c3cfe5118acb9}{}\label{structDspiDataFormatConfig_a6351c261cb1ec33e415c3cfe5118acb9}
+Active high or low clock polarity \index{Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}!direction@{direction}}
+\index{direction@{direction}!Dspi\+Data\+Format\+Config@{Dspi\+Data\+Format\+Config}}
+\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dspi\+\_\+shift\+\_\+direction\+\_\+t} Dspi\+Data\+Format\+Config\+::direction}\hypertarget{structDspiDataFormatConfig_ad0c3a440790fa062778dfa1f4ca48175}{}\label{structDspiDataFormatConfig_ad0c3a440790fa062778dfa1f4ca48175}
+M\+SB or L\+SB data shift direction This setting relevant only in master mode and can be ignored in slave mode 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/dspi/\hyperlink{fsl__dspi__hal_8h}{fsl\+\_\+dspi\+\_\+hal.\+h}\end{DoxyCompactItemize}

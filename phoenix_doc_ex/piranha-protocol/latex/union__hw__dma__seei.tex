@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__seei}{}\section{\+\_\+hw\+\_\+dma\+\_\+seei Union Reference}
+\label{union__hw__dma__seei}\index{\+\_\+hw\+\_\+dma\+\_\+seei@{\+\_\+hw\+\_\+dma\+\_\+seei}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+S\+E\+EI -\/ Set Enable Error Interrupt Register (WO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__seei_1_1__hw__dma__seei__bitfields}{\+\_\+hw\+\_\+dma\+\_\+seei\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__seei_aa6b056e367b0593a8e3a6af01a1f5b4f}{}\label{union__hw__dma__seei_aa6b056e367b0593a8e3a6af01a1f5b4f}
+
+\item 
+struct \hyperlink{struct__hw__dma__seei_1_1__hw__dma__seei__bitfields}{\+\_\+hw\+\_\+dma\+\_\+seei\+::\+\_\+hw\+\_\+dma\+\_\+seei\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__seei_af66658177b6b669abcdbab7eea846cec}{}\label{union__hw__dma__seei_af66658177b6b669abcdbab7eea846cec}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+S\+E\+EI -\/ Set Enable Error Interrupt Register (WO) 
+
+Reset value\+: 0x00U
+
+The S\+E\+EI provides a simple memory-\/mapped mechanism to set a given bit in the E\+EI to enable the error interrupt for a given channel. The data value on a register write causes the corresponding bit in the E\+EI to be set. Setting the S\+A\+EE bit provides a global set function, forcing the entire E\+EI contents to be set. If the N\+OP bit is set, the command is ignored. This allows you to write multiple-\/byte registers as a 32-\/bit word. Reads of this register return all zeroes. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

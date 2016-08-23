@@ -1,0 +1,352 @@
+\hypertarget{group__phy__driver}{}\section{Phy\+\_\+driver}
+\label{group__phy__driver}\index{Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{fsl__phy__driver_8h}{fsl\+\_\+phy\+\_\+driver.\+h}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structENETPhyApi}{E\+N\+E\+T\+Phy\+Api}
+\begin{DoxyCompactList}\small\item\em Defines the basic P\+HY application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__phy__driver_ga28619b08d6526aa3af9ea59c0db08d4b}{\+\_\+phy\+\_\+status} \hyperlink{group__phy__driver_gaa62a41ce1e26145301eaf130ee4da5f7}{phy\+\_\+status\+\_\+t}\hypertarget{group__phy__driver_gaa62a41ce1e26145301eaf130ee4da5f7}{}\label{group__phy__driver_gaa62a41ce1e26145301eaf130ee4da5f7}
+
+\begin{DoxyCompactList}\small\item\em Defines the P\+HY return status. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__phy__driver_ga0a607514e221403ba1d43a898e6de111}{\+\_\+phy\+\_\+timeout} \hyperlink{group__phy__driver_gad1b3bd40fec9690070f8028525c9792a}{phy\+\_\+timeout\+\_\+t}\hypertarget{group__phy__driver_gad1b3bd40fec9690070f8028525c9792a}{}\label{group__phy__driver_gad1b3bd40fec9690070f8028525c9792a}
+
+\begin{DoxyCompactList}\small\item\em Defines the E\+N\+ET timeout. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__phy__driver_gab2743b422515f6d141e5386380832475}{\+\_\+enet\+\_\+phy\+\_\+register} \hyperlink{group__phy__driver_ga57565a311c189d65ddc985d1845e3917}{enet\+\_\+phy\+\_\+register\+\_\+t}\hypertarget{group__phy__driver_ga57565a311c189d65ddc985d1845e3917}{}\label{group__phy__driver_ga57565a311c189d65ddc985d1845e3917}
+
+\begin{DoxyCompactList}\small\item\em Defines the P\+HY register. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__phy__driver_ga6a73ce8fecc8d411b87534a1c598f45b}{\+\_\+enet\+\_\+phy\+\_\+control} \hyperlink{group__phy__driver_gace87387943dc1795fcb70bcb8c37e510}{enet\+\_\+phy\+\_\+control\+\_\+t}\hypertarget{group__phy__driver_gace87387943dc1795fcb70bcb8c37e510}{}\label{group__phy__driver_gace87387943dc1795fcb70bcb8c37e510}
+
+\begin{DoxyCompactList}\small\item\em Defines the control flag. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__phy__driver_ga123897a64fd9524efbc2d786c8a8a503}{\+\_\+enet\+\_\+phy\+\_\+speed} \hyperlink{group__phy__driver_ga6525c0ff103f370287f9995e8761b325}{enet\+\_\+phy\+\_\+speed\+\_\+t}\hypertarget{group__phy__driver_ga6525c0ff103f370287f9995e8761b325}{}\label{group__phy__driver_ga6525c0ff103f370287f9995e8761b325}
+
+\begin{DoxyCompactList}\small\item\em Defines the P\+HY link speed. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__phy__driver_ga25ad8ca957c7a3088e2d40fbe61decd9}{\+\_\+enet\+\_\+phy\+\_\+duplex} \hyperlink{group__phy__driver_ga0c6955577513a799936696749860cf0b}{enet\+\_\+phy\+\_\+duplex\+\_\+t}\hypertarget{group__phy__driver_ga0c6955577513a799936696749860cf0b}{}\label{group__phy__driver_ga0c6955577513a799936696749860cf0b}
+
+\begin{DoxyCompactList}\small\item\em Defines the P\+HY link duplex. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__phy__driver_ga36e35ce36b105de1638ac99724204790}{\+\_\+enet\+\_\+phy\+\_\+status} \hyperlink{group__phy__driver_gad99f33b24e4edb7c736097bf061122dd}{enet\+\_\+phy\+\_\+status\+\_\+t}\hypertarget{group__phy__driver_gad99f33b24e4edb7c736097bf061122dd}{}\label{group__phy__driver_gad99f33b24e4edb7c736097bf061122dd}
+
+\begin{DoxyCompactList}\small\item\em Defines the P\+HY status. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structENETPhyApi}{E\+N\+E\+T\+Phy\+Api} \hyperlink{group__phy__driver_ga2ff12f57e0a9d4cec3036656a2895581}{enet\+\_\+phy\+\_\+api\+\_\+t}\hypertarget{group__phy__driver_ga2ff12f57e0a9d4cec3036656a2895581}{}\label{group__phy__driver_ga2ff12f57e0a9d4cec3036656a2895581}
+
+\begin{DoxyCompactList}\small\item\em Defines the basic P\+HY application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__phy__driver_ga28619b08d6526aa3af9ea59c0db08d4b}{\+\_\+phy\+\_\+status} \{ \hyperlink{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4bac8639157b9626a9da24a4df380a10609}{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Success} = 0, 
+\hyperlink{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4bae0dd54ce4009e13f8af04454bd91183a}{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Invaild\+Input} = 1, 
+\hyperlink{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4ba706cfc6c1902d87f0edbbff59ff862c4}{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Time\+Out} = 2, 
+\hyperlink{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4badf043d4c63816c6c2e495019fcb618d0}{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Fail} = 3
+ \}\begin{DoxyCompactList}\small\item\em Defines the P\+HY return status. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__phy__driver_ga0a607514e221403ba1d43a898e6de111}{\+\_\+phy\+\_\+timeout} \{ \hyperlink{group__phy__driver_gga0a607514e221403ba1d43a898e6de111a6a539892a2a41d48e0877174a63b9864}{k\+Phy\+Timeout} = 0x10000
+ \}\begin{DoxyCompactList}\small\item\em Defines the E\+N\+ET timeout. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__phy__driver_gab2743b422515f6d141e5386380832475}{\+\_\+enet\+\_\+phy\+\_\+register} \{ \\*
+\hyperlink{group__phy__driver_ggab2743b422515f6d141e5386380832475a5342b4c6eadb34dfa8093922766ede92}{k\+Enet\+Phy\+CR} = 0, 
+\hyperlink{group__phy__driver_ggab2743b422515f6d141e5386380832475a56b3448a9756a8c8d41fc8b998d060d2}{k\+Enet\+Phy\+SR} = 1, 
+\hyperlink{group__phy__driver_ggab2743b422515f6d141e5386380832475aab888a9ba251a4006bc7df865507ed3b}{k\+Enet\+Phy\+Id1} = 2, 
+\hyperlink{group__phy__driver_ggab2743b422515f6d141e5386380832475a7e9502c69f543fde3b2f026705b184ac}{k\+Enet\+Phy\+Id2} = 3, 
+\\*
+\hyperlink{group__phy__driver_ggab2743b422515f6d141e5386380832475ae6836e527f4eafb93e40180f77bde2b8}{k\+Enet\+Phy\+Ct2} = 0x1e
+ \}\begin{DoxyCompactList}\small\item\em Defines the P\+HY register. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__phy__driver_ga6a73ce8fecc8d411b87534a1c598f45b}{\+\_\+enet\+\_\+phy\+\_\+control} \{ \\*
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba1091ee7adc484549a23d68f0a5020128}{k\+Enet\+Phy\+Auto\+Neg} = 0x1000, 
+{\bfseries k\+Enet\+Phy\+Speed} = 0x2000, 
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba91b73217772be0b07fa7663a6881a746}{k\+Enet\+Phy\+Loop} = 0x4000, 
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45baaae99db895b614781a1b5dab051ed0d5}{k\+Enet\+Phy\+Reset} = 0x8000, 
+\\*
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba9ff0311d0d861d3511e1346e954cd342}{k\+Enet\+Phy10\+Half\+Duplex} = 0x01, 
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba0a0e94496ab16437578db72a2331f427}{k\+Enet\+Phy100\+Half\+Duplex} = 0x02, 
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba0548ba1204aa54cc96f23b60de54b1d5}{k\+Enet\+Phy10\+Full\+Duplex} = 0x05, 
+\hyperlink{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba32921ffa56891958163e77f2e14fcc28}{k\+Enet\+Phy100\+Full\+Duplex} = 0x06
+ \}\begin{DoxyCompactList}\small\item\em Defines the control flag. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__phy__driver_ga123897a64fd9524efbc2d786c8a8a503}{\+\_\+enet\+\_\+phy\+\_\+speed} \{ \hyperlink{group__phy__driver_gga123897a64fd9524efbc2d786c8a8a503a6e408c8061cc2d9bf67a09c1e724f1f6}{k\+Enet\+Speed10M} = 0, 
+\hyperlink{group__phy__driver_gga123897a64fd9524efbc2d786c8a8a503a4292079df8c723c0002aa12f7a1401d8}{k\+Enet\+Speed100M} = 1
+ \}\begin{DoxyCompactList}\small\item\em Defines the P\+HY link speed. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__phy__driver_ga25ad8ca957c7a3088e2d40fbe61decd9}{\+\_\+enet\+\_\+phy\+\_\+duplex} \{ \hyperlink{group__phy__driver_gga25ad8ca957c7a3088e2d40fbe61decd9a42ed52741468d5d6b4f4d997a6bf24b0}{k\+Enet\+Half\+Duplex} = 0, 
+\hyperlink{group__phy__driver_gga25ad8ca957c7a3088e2d40fbe61decd9aafc839b3008cbdaa41d14f2e1433fd14}{k\+Enet\+Full\+Duplex} = 1
+ \}\begin{DoxyCompactList}\small\item\em Defines the P\+HY link duplex. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__phy__driver_ga36e35ce36b105de1638ac99724204790}{\+\_\+enet\+\_\+phy\+\_\+status} \{ \hyperlink{group__phy__driver_gga36e35ce36b105de1638ac99724204790a7bb83f7daa330cbadfa4341c6f5e1549}{k\+Enet\+Phy\+Link\+Status} = 0x4, 
+\hyperlink{group__phy__driver_gga36e35ce36b105de1638ac99724204790aa1f63ca7f6496119e9c4348534a3725e}{k\+Enet\+Phy\+Auto\+Neg\+Able} = 0x08, 
+\hyperlink{group__phy__driver_gga36e35ce36b105de1638ac99724204790a268b5a9c36a83b819da31b3de23008b8}{k\+Enet\+Phy\+Auto\+Neg\+Complete} = 0x20, 
+\hyperlink{group__phy__driver_gga36e35ce36b105de1638ac99724204790abf2375548d142130bd97555e91706a06}{k\+Enet\+Phy\+Speed\+Dulpex\+Mask} = 0x07
+ \}\begin{DoxyCompactList}\small\item\em Defines the P\+HY status. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{group__phy__driver_ga2ff12f57e0a9d4cec3036656a2895581}{enet\+\_\+phy\+\_\+api\+\_\+t} {\bfseries g\+\_\+enet\+Phy\+Api}\hypertarget{group__phy__driver_ga9fa4ba208c8d7a4b949013ffafd75704}{}\label{group__phy__driver_ga9fa4ba208c8d7a4b949013ffafd75704}
+
+\end{DoxyCompactItemize}
+\subsection*{P\+HY Driver}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__phy__driver_gaf2858e0c30b833bf5e08d267e0f5a7cc}{phy\+\_\+init} (\hyperlink{group__enet__driver_ga497f30fbc93952e93d9fb8cf78480b75}{enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$enet\+If\+Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes P\+HY. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__phy__driver_ga78dc8c34e1e4617817ee6c15b5be4e94}{phy\+\_\+auto\+\_\+discover} (\hyperlink{group__enet__driver_ga497f30fbc93952e93d9fb8cf78480b75}{enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$enet\+If\+Ptr)
+\begin{DoxyCompactList}\small\item\em P\+HY address auto discover. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__phy__driver_ga171da61f37921e88f0a2da126a01e852}{phy\+\_\+get\+\_\+link\+\_\+speed} (\hyperlink{group__enet__driver_ga497f30fbc93952e93d9fb8cf78480b75}{enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$enet\+If\+Ptr, \hyperlink{group__phy__driver_ga6525c0ff103f370287f9995e8761b325}{enet\+\_\+phy\+\_\+speed\+\_\+t} $\ast$status)
+\begin{DoxyCompactList}\small\item\em Gets the P\+HY link speed. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__phy__driver_gab8a249e13852fa30c49d5cbfed6c6bce}{phy\+\_\+get\+\_\+link\+\_\+status} (\hyperlink{group__enet__driver_ga497f30fbc93952e93d9fb8cf78480b75}{enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$enet\+If\+Ptr, bool $\ast$status)
+\begin{DoxyCompactList}\small\item\em Gets the P\+HY link status. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__phy__driver_ga7f614eb1dd43de9aeb3fb3ebea76d1b6}{phy\+\_\+get\+\_\+link\+\_\+duplex} (\hyperlink{group__enet__driver_ga497f30fbc93952e93d9fb8cf78480b75}{enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$enet\+If\+Ptr, \hyperlink{group__phy__driver_ga0c6955577513a799936696749860cf0b}{enet\+\_\+phy\+\_\+duplex\+\_\+t} $\ast$status)
+\begin{DoxyCompactList}\small\item\em Gets the P\+HY link duplex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+enet\+\_\+phy\+\_\+control@{\+\_\+enet\+\_\+phy\+\_\+control}}
+\index{\+\_\+enet\+\_\+phy\+\_\+control@{\+\_\+enet\+\_\+phy\+\_\+control}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+enet\+\_\+phy\+\_\+control}{_enet_phy_control}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+enet\+\_\+phy\+\_\+control}}\hypertarget{group__phy__driver_ga6a73ce8fecc8d411b87534a1c598f45b}{}\label{group__phy__driver_ga6a73ce8fecc8d411b87534a1c598f45b}
+
+
+Defines the control flag. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Enet\+Phy\+Auto\+Neg@{k\+Enet\+Phy\+Auto\+Neg}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Auto\+Neg@{k\+Enet\+Phy\+Auto\+Neg}}\item[{\em 
+k\+Enet\+Phy\+Auto\+Neg\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba1091ee7adc484549a23d68f0a5020128}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba1091ee7adc484549a23d68f0a5020128}
+}]E\+N\+ET P\+HY auto negotiation control \index{k\+Enet\+Phy\+Loop@{k\+Enet\+Phy\+Loop}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Loop@{k\+Enet\+Phy\+Loop}}\item[{\em 
+k\+Enet\+Phy\+Loop\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba91b73217772be0b07fa7663a6881a746}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba91b73217772be0b07fa7663a6881a746}
+}]E\+N\+ET P\+HY speed control E\+N\+ET P\+HY loop control \index{k\+Enet\+Phy\+Reset@{k\+Enet\+Phy\+Reset}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Reset@{k\+Enet\+Phy\+Reset}}\item[{\em 
+k\+Enet\+Phy\+Reset\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45baaae99db895b614781a1b5dab051ed0d5}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45baaae99db895b614781a1b5dab051ed0d5}
+}]E\+N\+ET P\+HY reset control \index{k\+Enet\+Phy10\+Half\+Duplex@{k\+Enet\+Phy10\+Half\+Duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy10\+Half\+Duplex@{k\+Enet\+Phy10\+Half\+Duplex}}\item[{\em 
+k\+Enet\+Phy10\+Half\+Duplex\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba9ff0311d0d861d3511e1346e954cd342}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba9ff0311d0d861d3511e1346e954cd342}
+}]E\+N\+ET P\+HY 10 M half duplex \index{k\+Enet\+Phy100\+Half\+Duplex@{k\+Enet\+Phy100\+Half\+Duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy100\+Half\+Duplex@{k\+Enet\+Phy100\+Half\+Duplex}}\item[{\em 
+k\+Enet\+Phy100\+Half\+Duplex\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba0a0e94496ab16437578db72a2331f427}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba0a0e94496ab16437578db72a2331f427}
+}]E\+N\+ET P\+HY 100 M half duplex \index{k\+Enet\+Phy10\+Full\+Duplex@{k\+Enet\+Phy10\+Full\+Duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy10\+Full\+Duplex@{k\+Enet\+Phy10\+Full\+Duplex}}\item[{\em 
+k\+Enet\+Phy10\+Full\+Duplex\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba0548ba1204aa54cc96f23b60de54b1d5}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba0548ba1204aa54cc96f23b60de54b1d5}
+}]E\+N\+ET P\+HY 10 M full duplex \index{k\+Enet\+Phy100\+Full\+Duplex@{k\+Enet\+Phy100\+Full\+Duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy100\+Full\+Duplex@{k\+Enet\+Phy100\+Full\+Duplex}}\item[{\em 
+k\+Enet\+Phy100\+Full\+Duplex\hypertarget{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba32921ffa56891958163e77f2e14fcc28}{}\label{group__phy__driver_gga6a73ce8fecc8d411b87534a1c598f45ba32921ffa56891958163e77f2e14fcc28}
+}]E\+N\+ET P\+HY 100 M full duplex \end{description}
+\end{Desc}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+enet\+\_\+phy\+\_\+duplex@{\+\_\+enet\+\_\+phy\+\_\+duplex}}
+\index{\+\_\+enet\+\_\+phy\+\_\+duplex@{\+\_\+enet\+\_\+phy\+\_\+duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+enet\+\_\+phy\+\_\+duplex}{_enet_phy_duplex}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+enet\+\_\+phy\+\_\+duplex}}\hypertarget{group__phy__driver_ga25ad8ca957c7a3088e2d40fbe61decd9}{}\label{group__phy__driver_ga25ad8ca957c7a3088e2d40fbe61decd9}
+
+
+Defines the P\+HY link duplex. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Enet\+Half\+Duplex@{k\+Enet\+Half\+Duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Half\+Duplex@{k\+Enet\+Half\+Duplex}}\item[{\em 
+k\+Enet\+Half\+Duplex\hypertarget{group__phy__driver_gga25ad8ca957c7a3088e2d40fbe61decd9a42ed52741468d5d6b4f4d997a6bf24b0}{}\label{group__phy__driver_gga25ad8ca957c7a3088e2d40fbe61decd9a42ed52741468d5d6b4f4d997a6bf24b0}
+}]E\+N\+ET P\+HY half duplex \index{k\+Enet\+Full\+Duplex@{k\+Enet\+Full\+Duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Full\+Duplex@{k\+Enet\+Full\+Duplex}}\item[{\em 
+k\+Enet\+Full\+Duplex\hypertarget{group__phy__driver_gga25ad8ca957c7a3088e2d40fbe61decd9aafc839b3008cbdaa41d14f2e1433fd14}{}\label{group__phy__driver_gga25ad8ca957c7a3088e2d40fbe61decd9aafc839b3008cbdaa41d14f2e1433fd14}
+}]E\+N\+ET P\+HY full duplex \end{description}
+\end{Desc}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+enet\+\_\+phy\+\_\+register@{\+\_\+enet\+\_\+phy\+\_\+register}}
+\index{\+\_\+enet\+\_\+phy\+\_\+register@{\+\_\+enet\+\_\+phy\+\_\+register}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+enet\+\_\+phy\+\_\+register}{_enet_phy_register}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+enet\+\_\+phy\+\_\+register}}\hypertarget{group__phy__driver_gab2743b422515f6d141e5386380832475}{}\label{group__phy__driver_gab2743b422515f6d141e5386380832475}
+
+
+Defines the P\+HY register. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Enet\+Phy\+CR@{k\+Enet\+Phy\+CR}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+CR@{k\+Enet\+Phy\+CR}}\item[{\em 
+k\+Enet\+Phy\+CR\hypertarget{group__phy__driver_ggab2743b422515f6d141e5386380832475a5342b4c6eadb34dfa8093922766ede92}{}\label{group__phy__driver_ggab2743b422515f6d141e5386380832475a5342b4c6eadb34dfa8093922766ede92}
+}]P\+HY control register \index{k\+Enet\+Phy\+SR@{k\+Enet\+Phy\+SR}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+SR@{k\+Enet\+Phy\+SR}}\item[{\em 
+k\+Enet\+Phy\+SR\hypertarget{group__phy__driver_ggab2743b422515f6d141e5386380832475a56b3448a9756a8c8d41fc8b998d060d2}{}\label{group__phy__driver_ggab2743b422515f6d141e5386380832475a56b3448a9756a8c8d41fc8b998d060d2}
+}]P\+HY status register \index{k\+Enet\+Phy\+Id1@{k\+Enet\+Phy\+Id1}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Id1@{k\+Enet\+Phy\+Id1}}\item[{\em 
+k\+Enet\+Phy\+Id1\hypertarget{group__phy__driver_ggab2743b422515f6d141e5386380832475aab888a9ba251a4006bc7df865507ed3b}{}\label{group__phy__driver_ggab2743b422515f6d141e5386380832475aab888a9ba251a4006bc7df865507ed3b}
+}]P\+HY identification register 1 \index{k\+Enet\+Phy\+Id2@{k\+Enet\+Phy\+Id2}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Id2@{k\+Enet\+Phy\+Id2}}\item[{\em 
+k\+Enet\+Phy\+Id2\hypertarget{group__phy__driver_ggab2743b422515f6d141e5386380832475a7e9502c69f543fde3b2f026705b184ac}{}\label{group__phy__driver_ggab2743b422515f6d141e5386380832475a7e9502c69f543fde3b2f026705b184ac}
+}]P\+HY identification register 2 \index{k\+Enet\+Phy\+Ct2@{k\+Enet\+Phy\+Ct2}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Ct2@{k\+Enet\+Phy\+Ct2}}\item[{\em 
+k\+Enet\+Phy\+Ct2\hypertarget{group__phy__driver_ggab2743b422515f6d141e5386380832475ae6836e527f4eafb93e40180f77bde2b8}{}\label{group__phy__driver_ggab2743b422515f6d141e5386380832475ae6836e527f4eafb93e40180f77bde2b8}
+}]P\+HY control2 register \end{description}
+\end{Desc}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+enet\+\_\+phy\+\_\+speed@{\+\_\+enet\+\_\+phy\+\_\+speed}}
+\index{\+\_\+enet\+\_\+phy\+\_\+speed@{\+\_\+enet\+\_\+phy\+\_\+speed}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+enet\+\_\+phy\+\_\+speed}{_enet_phy_speed}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+enet\+\_\+phy\+\_\+speed}}\hypertarget{group__phy__driver_ga123897a64fd9524efbc2d786c8a8a503}{}\label{group__phy__driver_ga123897a64fd9524efbc2d786c8a8a503}
+
+
+Defines the P\+HY link speed. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Enet\+Speed10M@{k\+Enet\+Speed10M}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Speed10M@{k\+Enet\+Speed10M}}\item[{\em 
+k\+Enet\+Speed10M\hypertarget{group__phy__driver_gga123897a64fd9524efbc2d786c8a8a503a6e408c8061cc2d9bf67a09c1e724f1f6}{}\label{group__phy__driver_gga123897a64fd9524efbc2d786c8a8a503a6e408c8061cc2d9bf67a09c1e724f1f6}
+}]E\+N\+ET P\+HY 10 M speed \index{k\+Enet\+Speed100M@{k\+Enet\+Speed100M}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Speed100M@{k\+Enet\+Speed100M}}\item[{\em 
+k\+Enet\+Speed100M\hypertarget{group__phy__driver_gga123897a64fd9524efbc2d786c8a8a503a4292079df8c723c0002aa12f7a1401d8}{}\label{group__phy__driver_gga123897a64fd9524efbc2d786c8a8a503a4292079df8c723c0002aa12f7a1401d8}
+}]E\+N\+ET P\+HY 100 M speed \end{description}
+\end{Desc}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+enet\+\_\+phy\+\_\+status@{\+\_\+enet\+\_\+phy\+\_\+status}}
+\index{\+\_\+enet\+\_\+phy\+\_\+status@{\+\_\+enet\+\_\+phy\+\_\+status}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+enet\+\_\+phy\+\_\+status}{_enet_phy_status}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+enet\+\_\+phy\+\_\+status}}\hypertarget{group__phy__driver_ga36e35ce36b105de1638ac99724204790}{}\label{group__phy__driver_ga36e35ce36b105de1638ac99724204790}
+
+
+Defines the P\+HY status. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Enet\+Phy\+Link\+Status@{k\+Enet\+Phy\+Link\+Status}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Link\+Status@{k\+Enet\+Phy\+Link\+Status}}\item[{\em 
+k\+Enet\+Phy\+Link\+Status\hypertarget{group__phy__driver_gga36e35ce36b105de1638ac99724204790a7bb83f7daa330cbadfa4341c6f5e1549}{}\label{group__phy__driver_gga36e35ce36b105de1638ac99724204790a7bb83f7daa330cbadfa4341c6f5e1549}
+}]E\+N\+ET P\+HY link status bit \index{k\+Enet\+Phy\+Auto\+Neg\+Able@{k\+Enet\+Phy\+Auto\+Neg\+Able}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Auto\+Neg\+Able@{k\+Enet\+Phy\+Auto\+Neg\+Able}}\item[{\em 
+k\+Enet\+Phy\+Auto\+Neg\+Able\hypertarget{group__phy__driver_gga36e35ce36b105de1638ac99724204790aa1f63ca7f6496119e9c4348534a3725e}{}\label{group__phy__driver_gga36e35ce36b105de1638ac99724204790aa1f63ca7f6496119e9c4348534a3725e}
+}]E\+N\+ET P\+HY auto negotiation ability \index{k\+Enet\+Phy\+Auto\+Neg\+Complete@{k\+Enet\+Phy\+Auto\+Neg\+Complete}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Auto\+Neg\+Complete@{k\+Enet\+Phy\+Auto\+Neg\+Complete}}\item[{\em 
+k\+Enet\+Phy\+Auto\+Neg\+Complete\hypertarget{group__phy__driver_gga36e35ce36b105de1638ac99724204790a268b5a9c36a83b819da31b3de23008b8}{}\label{group__phy__driver_gga36e35ce36b105de1638ac99724204790a268b5a9c36a83b819da31b3de23008b8}
+}]E\+N\+ET P\+HY auto negotiation complete \index{k\+Enet\+Phy\+Speed\+Dulpex\+Mask@{k\+Enet\+Phy\+Speed\+Dulpex\+Mask}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Enet\+Phy\+Speed\+Dulpex\+Mask@{k\+Enet\+Phy\+Speed\+Dulpex\+Mask}}\item[{\em 
+k\+Enet\+Phy\+Speed\+Dulpex\+Mask\hypertarget{group__phy__driver_gga36e35ce36b105de1638ac99724204790abf2375548d142130bd97555e91706a06}{}\label{group__phy__driver_gga36e35ce36b105de1638ac99724204790abf2375548d142130bd97555e91706a06}
+}]E\+N\+ET P\+HY speed mask on status register 2 \end{description}
+\end{Desc}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+phy\+\_\+status@{\+\_\+phy\+\_\+status}}
+\index{\+\_\+phy\+\_\+status@{\+\_\+phy\+\_\+status}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+phy\+\_\+status}{_phy_status}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+phy\+\_\+status}}\hypertarget{group__phy__driver_ga28619b08d6526aa3af9ea59c0db08d4b}{}\label{group__phy__driver_ga28619b08d6526aa3af9ea59c0db08d4b}
+
+
+Defines the P\+HY return status. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Success@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Success}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Success@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Success}}\item[{\em 
+k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Success\hypertarget{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4bac8639157b9626a9da24a4df380a10609}{}\label{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4bac8639157b9626a9da24a4df380a10609}
+}]Success \index{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Invaild\+Input@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Invaild\+Input}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Invaild\+Input@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Invaild\+Input}}\item[{\em 
+k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Invaild\+Input\hypertarget{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4bae0dd54ce4009e13f8af04454bd91183a}{}\label{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4bae0dd54ce4009e13f8af04454bd91183a}
+}]Invalid P\+HY input parameter \index{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Time\+Out@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Time\+Out}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Time\+Out@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Time\+Out}}\item[{\em 
+k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Time\+Out\hypertarget{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4ba706cfc6c1902d87f0edbbff59ff862c4}{}\label{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4ba706cfc6c1902d87f0edbbff59ff862c4}
+}]P\+HY timeout \index{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Fail@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Fail}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Fail@{k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Fail}}\item[{\em 
+k\+Status\+\_\+\+P\+H\+Y\+\_\+\+Fail\hypertarget{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4badf043d4c63816c6c2e495019fcb618d0}{}\label{group__phy__driver_gga28619b08d6526aa3af9ea59c0db08d4badf043d4c63816c6c2e495019fcb618d0}
+}]P\+HY fail \end{description}
+\end{Desc}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!\+\_\+phy\+\_\+timeout@{\+\_\+phy\+\_\+timeout}}
+\index{\+\_\+phy\+\_\+timeout@{\+\_\+phy\+\_\+timeout}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{\+\_\+phy\+\_\+timeout}{_phy_timeout}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+phy\+\_\+timeout}}\hypertarget{group__phy__driver_ga0a607514e221403ba1d43a898e6de111}{}\label{group__phy__driver_ga0a607514e221403ba1d43a898e6de111}
+
+
+Defines the E\+N\+ET timeout. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Phy\+Timeout@{k\+Phy\+Timeout}!Phy\+\_\+driver@{Phy\+\_\+driver}}\index{Phy\+\_\+driver@{Phy\+\_\+driver}!k\+Phy\+Timeout@{k\+Phy\+Timeout}}\item[{\em 
+k\+Phy\+Timeout\hypertarget{group__phy__driver_gga0a607514e221403ba1d43a898e6de111a6a539892a2a41d48e0877174a63b9864}{}\label{group__phy__driver_gga0a607514e221403ba1d43a898e6de111a6a539892a2a41d48e0877174a63b9864}
+}]E\+N\+ET resets timeout. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!phy\+\_\+auto\+\_\+discover@{phy\+\_\+auto\+\_\+discover}}
+\index{phy\+\_\+auto\+\_\+discover@{phy\+\_\+auto\+\_\+discover}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{phy\+\_\+auto\+\_\+discover(enet\+\_\+dev\+\_\+if\+\_\+t $\ast$enet\+If\+Ptr)}{phy_auto_discover(enet_dev_if_t *enetIfPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t phy\+\_\+auto\+\_\+discover (
+\begin{DoxyParamCaption}
+\item[{{\bf enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$}]{enet\+If\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__phy__driver_ga78dc8c34e1e4617817ee6c15b5be4e94}{}\label{group__phy__driver_ga78dc8c34e1e4617817ee6c15b5be4e94}
+
+
+P\+HY address auto discover. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enet\+If\+Ptr} & The E\+N\+ET context structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The execution status. 
+\end{DoxyReturn}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!phy\+\_\+get\+\_\+link\+\_\+duplex@{phy\+\_\+get\+\_\+link\+\_\+duplex}}
+\index{phy\+\_\+get\+\_\+link\+\_\+duplex@{phy\+\_\+get\+\_\+link\+\_\+duplex}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{phy\+\_\+get\+\_\+link\+\_\+duplex(enet\+\_\+dev\+\_\+if\+\_\+t $\ast$enet\+If\+Ptr, enet\+\_\+phy\+\_\+duplex\+\_\+t $\ast$status)}{phy_get_link_duplex(enet_dev_if_t *enetIfPtr, enet_phy_duplex_t *status)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t phy\+\_\+get\+\_\+link\+\_\+duplex (
+\begin{DoxyParamCaption}
+\item[{{\bf enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$}]{enet\+If\+Ptr, }
+\item[{{\bf enet\+\_\+phy\+\_\+duplex\+\_\+t} $\ast$}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{group__phy__driver_ga7f614eb1dd43de9aeb3fb3ebea76d1b6}{}\label{group__phy__driver_ga7f614eb1dd43de9aeb3fb3ebea76d1b6}
+
+
+Gets the P\+HY link duplex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enet\+If\+Ptr} & The E\+N\+ET context structure. \\
+\hline
+{\em status} & The link duplex status of P\+HY. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The execution status. 
+\end{DoxyReturn}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!phy\+\_\+get\+\_\+link\+\_\+speed@{phy\+\_\+get\+\_\+link\+\_\+speed}}
+\index{phy\+\_\+get\+\_\+link\+\_\+speed@{phy\+\_\+get\+\_\+link\+\_\+speed}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{phy\+\_\+get\+\_\+link\+\_\+speed(enet\+\_\+dev\+\_\+if\+\_\+t $\ast$enet\+If\+Ptr, enet\+\_\+phy\+\_\+speed\+\_\+t $\ast$status)}{phy_get_link_speed(enet_dev_if_t *enetIfPtr, enet_phy_speed_t *status)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t phy\+\_\+get\+\_\+link\+\_\+speed (
+\begin{DoxyParamCaption}
+\item[{{\bf enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$}]{enet\+If\+Ptr, }
+\item[{{\bf enet\+\_\+phy\+\_\+speed\+\_\+t} $\ast$}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{group__phy__driver_ga171da61f37921e88f0a2da126a01e852}{}\label{group__phy__driver_ga171da61f37921e88f0a2da126a01e852}
+
+
+Gets the P\+HY link speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enet\+If\+Ptr} & The E\+N\+ET context structure. \\
+\hline
+{\em status} & The link speed of P\+HY. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The execution status. 
+\end{DoxyReturn}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!phy\+\_\+get\+\_\+link\+\_\+status@{phy\+\_\+get\+\_\+link\+\_\+status}}
+\index{phy\+\_\+get\+\_\+link\+\_\+status@{phy\+\_\+get\+\_\+link\+\_\+status}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{phy\+\_\+get\+\_\+link\+\_\+status(enet\+\_\+dev\+\_\+if\+\_\+t $\ast$enet\+If\+Ptr, bool $\ast$status)}{phy_get_link_status(enet_dev_if_t *enetIfPtr, bool *status)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t phy\+\_\+get\+\_\+link\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{{\bf enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$}]{enet\+If\+Ptr, }
+\item[{bool $\ast$}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{group__phy__driver_gab8a249e13852fa30c49d5cbfed6c6bce}{}\label{group__phy__driver_gab8a249e13852fa30c49d5cbfed6c6bce}
+
+
+Gets the P\+HY link status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enet\+If\+Ptr} & The E\+N\+ET context structure. \\
+\hline
+{\em status} & The link on or down status of the P\+HY. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The execution status. 
+\end{DoxyReturn}
+\index{Phy\+\_\+driver@{Phy\+\_\+driver}!phy\+\_\+init@{phy\+\_\+init}}
+\index{phy\+\_\+init@{phy\+\_\+init}!Phy\+\_\+driver@{Phy\+\_\+driver}}
+\subsubsection[{\texorpdfstring{phy\+\_\+init(enet\+\_\+dev\+\_\+if\+\_\+t $\ast$enet\+If\+Ptr)}{phy_init(enet_dev_if_t *enetIfPtr)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t phy\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf enet\+\_\+dev\+\_\+if\+\_\+t} $\ast$}]{enet\+If\+Ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__phy__driver_gaf2858e0c30b833bf5e08d267e0f5a7cc}{}\label{group__phy__driver_gaf2858e0c30b833bf5e08d267e0f5a7cc}
+
+
+Initializes P\+HY. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enet\+If\+Ptr} & The E\+N\+ET context structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The execution status. 
+\end{DoxyReturn}

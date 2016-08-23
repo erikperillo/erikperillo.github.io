@@ -1,0 +1,37 @@
+\hypertarget{union__hw__sim__clkdiv1}{}\section{\+\_\+hw\+\_\+sim\+\_\+clkdiv1 Union Reference}
+\label{union__hw__sim__clkdiv1}\index{\+\_\+hw\+\_\+sim\+\_\+clkdiv1@{\+\_\+hw\+\_\+sim\+\_\+clkdiv1}}
+
+
+H\+W\+\_\+\+S\+I\+M\+\_\+\+C\+L\+K\+D\+I\+V1 -\/ System Clock Divider Register 1 (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+sim.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__sim__clkdiv1_1_1__hw__sim__clkdiv1__bitfields}{\+\_\+hw\+\_\+sim\+\_\+clkdiv1\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__sim__clkdiv1_a258e6ea05492bc065349d2cd3d0851ce}{}\label{union__hw__sim__clkdiv1_a258e6ea05492bc065349d2cd3d0851ce}
+
+\item 
+struct \hyperlink{struct__hw__sim__clkdiv1_1_1__hw__sim__clkdiv1__bitfields}{\+\_\+hw\+\_\+sim\+\_\+clkdiv1\+::\+\_\+hw\+\_\+sim\+\_\+clkdiv1\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__sim__clkdiv1_a92215774425757c6894f49b8565be7c3}{}\label{union__hw__sim__clkdiv1_a92215774425757c6894f49b8565be7c3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+I\+M\+\_\+\+C\+L\+K\+D\+I\+V1 -\/ System Clock Divider Register 1 (RW) 
+
+Reset value\+: 0x00010000U
+
+When updating C\+L\+K\+D\+I\+V1, update all fields using the one write command. Attempting to write an invalid clock ratio to the C\+L\+K\+D\+I\+V1 register will cause the write to be ignored. The maximum divide ratio that can be programmed between core/system clock and the other divided clocks is divide by 8. When O\+U\+T\+D\+I\+V1 equals 0000 (divide by 1), the other dividers cannot be set higher than 0111 (divide by 8). The C\+L\+K\+D\+I\+V1 register cannot be written to when the device is in V\+L\+PR mode. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+sim.\+h\end{DoxyCompactItemize}

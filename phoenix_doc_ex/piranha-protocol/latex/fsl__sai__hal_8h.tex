@@ -1,0 +1,199 @@
+\hypertarget{fsl__sai__hal_8h}{}\section{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/sai/fsl\+\_\+sai\+\_\+hal.h File Reference}
+\label{fsl__sai__hal_8h}\index{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/sai/fsl\+\_\+sai\+\_\+hal.\+h@{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/sai/fsl\+\_\+sai\+\_\+hal.\+h}}
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+device\+\_\+registers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+sai\+\_\+features.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+A\+I\+\_\+\+B\+I\+T\+\_\+\+M\+IN}~8
+\item 
+\#define {\bfseries S\+A\+I\+\_\+\+B\+I\+T\+\_\+\+M\+AX}~32
+\item 
+\#define {\bfseries S\+A\+I\+\_\+\+F\+R\+A\+C\+T\+\_\+\+M\+AX}~256
+\item 
+\#define {\bfseries S\+A\+I\+\_\+\+D\+I\+V\+\_\+\+M\+AX}~4096
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__sai__hal_ga5a56e024c1155a61c6f46513e57b473f}{\+\_\+sai\+\_\+protocol} \hyperlink{group__sai__hal_ga2f1f1a725e4d1540d8dfccbdaed66b26}{sai\+\_\+protocol\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Define the bus type of sai. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gab94a8b97a2fa0881a3259d1f514fcf40}{\+\_\+sai\+\_\+master\+\_\+slave} \hyperlink{group__sai__hal_ga90144d956adefe0eaf778868dd06dab4}{sai\+\_\+master\+\_\+slave\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Master or slave mode. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_ga336516f5afeec0ab04b69f7a2efbc3cc}{\+\_\+sai\+\_\+clk\+\_\+polarity} \hyperlink{group__sai__hal_ga263ddf42662e606be8ea6813c257f9f8}{sai\+\_\+clk\+\_\+polarity\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Polarity of S\+AI clock. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_ga249de9addcc563f1e381e4d46776e9a9}{\+\_\+sai\+\_\+clk\+\_\+direction} \hyperlink{group__sai__hal_ga52974b0818e0e5a38b1f7043e91f7185}{sai\+\_\+clk\+\_\+direction\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Clock generate direction. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_ga835cf95188e9d76d02b573d525e6447a}{\+\_\+sai\+\_\+data\+\_\+order} \hyperlink{group__sai__hal_ga6c09c5ee1699b834bcdcf38b0aaa579e}{sai\+\_\+data\+\_\+order\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Data transfer polarity, means M\+SB first of L\+SB first. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_ga40bad4fe84f0826fe0565c46f0763395}{\+\_\+sai\+\_\+sync\+\_\+mode} \hyperlink{group__sai__hal_ga0cc249bf49da9d53829d1e1eabc8cc91}{sai\+\_\+sync\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Synchronous or asynchronous mode. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gaaecbbb83a43bd9cfb1e3e96a049350a7}{\+\_\+sai\+\_\+mclk\+\_\+source} \hyperlink{group__sai__hal_ga2714d9e49839eb3c8f22ffa73a5ba9fe}{sai\+\_\+mclk\+\_\+source\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Mater clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gae133d8e667ce98cdb9f7b3e4d60679ff}{\+\_\+sai\+\_\+bclk\+\_\+source} \hyperlink{group__sai__hal_ga048c6fc58b414c5f571ad47b1923470b}{sai\+\_\+bclk\+\_\+source\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Bit clock source. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_ga85456b4cb780b26903bf8df1c5fa80e2}{\+\_\+sai\+\_\+interrupt\+\_\+request} \hyperlink{group__sai__hal_ga9bdde8d5136f0ba14347482d291dcb4e}{sai\+\_\+interrupt\+\_\+request\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The S\+AI state flag. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gac39699ac34d770c6bc83dd2c92ecd9d9}{\+\_\+sai\+\_\+dma\+\_\+request} \hyperlink{group__sai__hal_gad39105ce78413d7c5c27ee1d56e6e003}{sai\+\_\+dma\+\_\+request\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The D\+MA request sources. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gaa95d2087778fca116c3d7df0e3bd943e}{\+\_\+sai\+\_\+state\+\_\+flag} \hyperlink{group__sai__hal_gafe5a7889b1a42b3e54be7cad3091a5ee}{sai\+\_\+state\+\_\+flag\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The S\+AI state flag. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gaaa4bb640acb35ece5d999635e41f033a}{\+\_\+sai\+\_\+reset\+\_\+type} \hyperlink{group__sai__hal_gaca36f65012b1a99022d1bc02be2d33c5}{sai\+\_\+reset\+\_\+type\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The reset type. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__sai__hal_gaf88043ae2cb5faaa066820476c2665e6}{\+\_\+sai\+\_\+running\+\_\+mode} {\bfseries sai\+\_\+run\+\_\+mode\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__sai__hal_ga5a56e024c1155a61c6f46513e57b473f}{\+\_\+sai\+\_\+protocol} \{ \\*
+{\bfseries k\+Sai\+Bus\+I2\+S\+Left} = 0x0, 
+{\bfseries k\+Sai\+Bus\+I2\+S\+Right} = 0x1, 
+{\bfseries k\+Sai\+Bus\+I2\+S\+Type} = 0x2, 
+{\bfseries k\+Sai\+Bus\+P\+C\+MA} = 0x3, 
+\\*
+{\bfseries k\+Sai\+Bus\+P\+C\+MB} = 0x4, 
+{\bfseries k\+Sai\+Bus\+A\+C97} = 0x5
+ \}\hypertarget{group__sai__hal_ga5a56e024c1155a61c6f46513e57b473f}{}\label{group__sai__hal_ga5a56e024c1155a61c6f46513e57b473f}
+\begin{DoxyCompactList}\small\item\em Define the bus type of sai. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gab94a8b97a2fa0881a3259d1f514fcf40}{\+\_\+sai\+\_\+master\+\_\+slave} \{ \hyperlink{group__sai__hal_ggab94a8b97a2fa0881a3259d1f514fcf40a200599ee4e9400d3322c3d9e0cf539fe}{k\+Sai\+Master} = 0x0, 
+\hyperlink{group__sai__hal_ggab94a8b97a2fa0881a3259d1f514fcf40a06cc7d3d27e7b3e10b41e579f7b21e06}{k\+Sai\+Slave} = 0x1
+ \}\begin{DoxyCompactList}\small\item\em Master or slave mode. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_ga336516f5afeec0ab04b69f7a2efbc3cc}{\+\_\+sai\+\_\+clk\+\_\+polarity} \{ \hyperlink{group__sai__hal_gga336516f5afeec0ab04b69f7a2efbc3cca65dded865c186dccbfa803e53cd87ce8}{k\+Sai\+Clk\+Polarity\+High} = 0x0, 
+\hyperlink{group__sai__hal_gga336516f5afeec0ab04b69f7a2efbc3ccaa89055cd957234b15a927b692e4f9d71}{k\+Sai\+Clk\+Polarity\+Low} = 0x1
+ \}\begin{DoxyCompactList}\small\item\em Polarity of S\+AI clock. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_ga249de9addcc563f1e381e4d46776e9a9}{\+\_\+sai\+\_\+clk\+\_\+direction} \{ \hyperlink{group__sai__hal_gga249de9addcc563f1e381e4d46776e9a9adfd69ed18b8cf26fd6e90ba83c2c50e6}{k\+Sai\+Clk\+Internal} = 0x0, 
+\hyperlink{group__sai__hal_gga249de9addcc563f1e381e4d46776e9a9a3f73c910e6c4c301472a346692994e4a}{k\+Sai\+Clk\+External} = 0x1
+ \}\begin{DoxyCompactList}\small\item\em Clock generate direction. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_ga835cf95188e9d76d02b573d525e6447a}{\+\_\+sai\+\_\+data\+\_\+order} \{ \hyperlink{group__sai__hal_gga835cf95188e9d76d02b573d525e6447aa13655d5f485836898719999a03247f95}{k\+Sai\+L\+S\+B\+First} = 0x0, 
+\hyperlink{group__sai__hal_gga835cf95188e9d76d02b573d525e6447aa6258d4e3df576e89c0f87cc46cd66eb3}{k\+Sai\+M\+S\+B\+First} = 0x1
+ \}\begin{DoxyCompactList}\small\item\em Data transfer polarity, means M\+SB first of L\+SB first. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_ga40bad4fe84f0826fe0565c46f0763395}{\+\_\+sai\+\_\+sync\+\_\+mode} \{ \hyperlink{group__sai__hal_gga40bad4fe84f0826fe0565c46f0763395a057177a032f80bff6b4d96ad1d11e833}{k\+Sai\+Mode\+Async} = 0x0, 
+\hyperlink{group__sai__hal_gga40bad4fe84f0826fe0565c46f0763395a4a59702f545b74b9b97e29d495d433ef}{k\+Sai\+Mode\+Sync} = 0x1, 
+\hyperlink{group__sai__hal_gga40bad4fe84f0826fe0565c46f0763395ab2a1b1698b20b4e447304111ba2e6782}{k\+Sai\+Mode\+Sync\+With\+Other\+Tx} = 0x2, 
+\hyperlink{group__sai__hal_gga40bad4fe84f0826fe0565c46f0763395a666e77bb74cf01be0619f8b53164ddbc}{k\+Sai\+Mode\+Sync\+With\+Other\+Rx} = 0x3
+ \}\begin{DoxyCompactList}\small\item\em Synchronous or asynchronous mode. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gaaecbbb83a43bd9cfb1e3e96a049350a7}{\+\_\+sai\+\_\+mclk\+\_\+source} \{ \hyperlink{group__sai__hal_ggaaecbbb83a43bd9cfb1e3e96a049350a7ac6cbcec37c18aaa05405733a8848c566}{k\+Sai\+Mclk\+Source\+Sysclk} = 0x0, 
+\hyperlink{group__sai__hal_ggaaecbbb83a43bd9cfb1e3e96a049350a7a38e640b8779066856f44b0a59461be37}{k\+Sai\+Mclk\+Source\+Select1} = 0x1, 
+\hyperlink{group__sai__hal_ggaaecbbb83a43bd9cfb1e3e96a049350a7a7d54ff89acce0ca1c73a0620b286266a}{k\+Sai\+Mclk\+Source\+Select2} = 0x2, 
+\hyperlink{group__sai__hal_ggaaecbbb83a43bd9cfb1e3e96a049350a7a5c57ffd864e9d9a29dca2f2efeb1bc47}{k\+Sai\+Mclk\+Source\+Select3} = 0x3
+ \}\begin{DoxyCompactList}\small\item\em Mater clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gae133d8e667ce98cdb9f7b3e4d60679ff}{\+\_\+sai\+\_\+bclk\+\_\+source} \{ \hyperlink{group__sai__hal_ggae133d8e667ce98cdb9f7b3e4d60679ffa5460a85c9b6f8a85e879c97a9e106bde}{k\+Sai\+Bclk\+Source\+Busclk} = 0x0, 
+\hyperlink{group__sai__hal_ggae133d8e667ce98cdb9f7b3e4d60679ffa57a1a0ef5ed40f6797adb92f8da8233e}{k\+Sai\+Bclk\+Source\+Mclk\+Div} = 0x1, 
+\hyperlink{group__sai__hal_ggae133d8e667ce98cdb9f7b3e4d60679ffa2a1f032b0be7178165c042e41f65be86}{k\+Sai\+Bclk\+Source\+Other\+Sai0} = 0x2, 
+\hyperlink{group__sai__hal_ggae133d8e667ce98cdb9f7b3e4d60679ffa2ea9c460965d350f08fb3505733784fc}{k\+Sai\+Bclk\+Source\+Other\+Sai1} = 0x3
+ \}\begin{DoxyCompactList}\small\item\em Bit clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_ga85456b4cb780b26903bf8df1c5fa80e2}{\+\_\+sai\+\_\+interrupt\+\_\+request} \{ \\*
+\hyperlink{group__sai__hal_gga85456b4cb780b26903bf8df1c5fa80e2a4906f59009323cb61a87f8f61d857391}{k\+Sai\+Intrequest\+Word\+Start} = 0x0, 
+\hyperlink{group__sai__hal_gga85456b4cb780b26903bf8df1c5fa80e2ae76b7a797080a4e1099f65eebf8411e7}{k\+Sai\+Intrequest\+Sync\+Error} = 0x1, 
+\hyperlink{group__sai__hal_gga85456b4cb780b26903bf8df1c5fa80e2a2a70fef81ce2974284c7fa28fe572815}{k\+Sai\+Intrequest\+F\+I\+F\+O\+Warning} = 0x2, 
+\hyperlink{group__sai__hal_gga85456b4cb780b26903bf8df1c5fa80e2af61052d7d911f69f6719b9e7a8e93378}{k\+Sai\+Intrequest\+F\+I\+F\+O\+Error} = 0x3, 
+\\*
+\hyperlink{group__sai__hal_gga85456b4cb780b26903bf8df1c5fa80e2ab3a758e1733eb46674bc2d69a2505d5f}{k\+Sai\+Intrequest\+F\+I\+F\+O\+Request} = 0x4
+ \}\begin{DoxyCompactList}\small\item\em The S\+AI state flag. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gac39699ac34d770c6bc83dd2c92ecd9d9}{\+\_\+sai\+\_\+dma\+\_\+request} \{ \hyperlink{group__sai__hal_ggac39699ac34d770c6bc83dd2c92ecd9d9a2c312c7d231f552d4582a8ecaec087c9}{k\+Sai\+Dma\+Req\+F\+I\+F\+O\+Warning} = 0x0, 
+\hyperlink{group__sai__hal_ggac39699ac34d770c6bc83dd2c92ecd9d9a8ab265e2dd4778b5a305e14e6dbb87dd}{k\+Sai\+Dma\+Req\+F\+I\+F\+O\+Request} = 0x1
+ \}\begin{DoxyCompactList}\small\item\em The D\+MA request sources. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gaa95d2087778fca116c3d7df0e3bd943e}{\+\_\+sai\+\_\+state\+\_\+flag} \{ \\*
+\hyperlink{group__sai__hal_ggaa95d2087778fca116c3d7df0e3bd943ea747d71835f6c43f8a66b19f94cfe02af}{k\+Sai\+State\+Flag\+Word\+Start} = 0x0, 
+\hyperlink{group__sai__hal_ggaa95d2087778fca116c3d7df0e3bd943eae22c18fa3ff7a1c353857130fed314fc}{k\+Sai\+State\+Flag\+Sync\+Error} = 0x1, 
+\hyperlink{group__sai__hal_ggaa95d2087778fca116c3d7df0e3bd943eac4e977e6c26f8890e08a06731d6604c4}{k\+Sai\+State\+Flag\+F\+I\+F\+O\+Error} = 0x2, 
+{\bfseries k\+Sai\+State\+Flag\+F\+I\+F\+O\+Request} = 0x3, 
+\\*
+{\bfseries k\+Sai\+State\+Flag\+F\+I\+F\+O\+Warning} = 0x4, 
+\hyperlink{group__sai__hal_ggaa95d2087778fca116c3d7df0e3bd943ea9916648337198eb0e3006511b1db45f0}{k\+Sai\+State\+Flag\+Soft\+Reset} = 0x5
+ \}\begin{DoxyCompactList}\small\item\em The S\+AI state flag. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gaaa4bb640acb35ece5d999635e41f033a}{\+\_\+sai\+\_\+reset\+\_\+type} \{ \hyperlink{group__sai__hal_ggaaa4bb640acb35ece5d999635e41f033aa8f001b7b83c6392a035822f94d56f95a}{k\+Sai\+Reset\+Type\+Software} = 0x0, 
+\hyperlink{group__sai__hal_ggaaa4bb640acb35ece5d999635e41f033aaa991189bedccd57458e4292a816c0d21}{k\+Sai\+Reset\+Type\+F\+I\+FO} = 0x1
+ \}\begin{DoxyCompactList}\small\item\em The reset type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__sai__hal_gaf88043ae2cb5faaa066820476c2665e6}{\+\_\+sai\+\_\+running\+\_\+mode} \{ \hyperlink{group__sai__hal_ggaf88043ae2cb5faaa066820476c2665e6a1ac7d3f5aae643fbf4e5f3209aa14b00}{k\+Sai\+Run\+Mode\+Debug} = 0x0, 
+\hyperlink{group__sai__hal_ggaf88043ae2cb5faaa066820476c2665e6aadc9f2705a6354a343cc1080c6865e0b}{k\+Sai\+Run\+Mode\+Stop} = 0x1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__sai__hal_ga5c6b3b024d75d8723fdbdc29729e17dc}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Sync\+Mode} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga0cc249bf49da9d53829d1e1eabc8cc91}{sai\+\_\+sync\+\_\+mode\+\_\+t} sync\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em S\+AI Tx sync mode setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gafafb8a0ed8be42aa4904f0569436130b}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Sync\+Mode} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga0cc249bf49da9d53829d1e1eabc8cc91}{sai\+\_\+sync\+\_\+mode\+\_\+t} sync\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em S\+AI Rx sync mode setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga5912d548427eb30dafe6b68cc2dc4853}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Int\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga9bdde8d5136f0ba14347482d291dcb4e}{sai\+\_\+interrupt\+\_\+request\+\_\+t} source, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables the Tx interrupt from different interrupt sources. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gaccf6a6ca1e063b94182d021e35a18795}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Int\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga9bdde8d5136f0ba14347482d291dcb4e}{sai\+\_\+interrupt\+\_\+request\+\_\+t} source, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables the Rx interrupt from different interrupt sources. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sai__hal_ga8b7046a1e1a47fb3f4658b9aa05ce79c}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Get\+Int\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga9bdde8d5136f0ba14347482d291dcb4e}{sai\+\_\+interrupt\+\_\+request\+\_\+t} source)
+\begin{DoxyCompactList}\small\item\em Gets the status as to whether the Tx interrupt source is enabled. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sai__hal_gac50de21649ab9e9b201245c84b9f551b}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Get\+Int\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga9bdde8d5136f0ba14347482d291dcb4e}{sai\+\_\+interrupt\+\_\+request\+\_\+t} source)
+\begin{DoxyCompactList}\small\item\em Gets the status as to whether the Rx interrupt source is enabled. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga0760eccbb4f0041bf4e78ebc3e8bd01c}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Dma\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gad39105ce78413d7c5c27ee1d56e6e003}{sai\+\_\+dma\+\_\+request\+\_\+t} source, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables the Tx D\+MA request from different sources. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga621923e1c01da8050a2fff25748457ef}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Dma\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gad39105ce78413d7c5c27ee1d56e6e003}{sai\+\_\+dma\+\_\+request\+\_\+t} source, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables the Rx D\+MA request from different sources. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sai__hal_ga329d2766b46c9213028b1e75cfef3580}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Get\+Dma\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gad39105ce78413d7c5c27ee1d56e6e003}{sai\+\_\+dma\+\_\+request\+\_\+t} source)
+\begin{DoxyCompactList}\small\item\em Gets the status whether the Tx D\+MA source is enabled. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sai__hal_ga239c1f58571f9ae62d42af3394fc4ef3}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Get\+Dma\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gad39105ce78413d7c5c27ee1d56e6e003}{sai\+\_\+dma\+\_\+request\+\_\+t} source)
+\begin{DoxyCompactList}\small\item\em Gets the status whether the Rx D\+MA source is enabled. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gaebfafcaec126e5c69f5feaf8958e5ca6}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Clear\+State\+Flag} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gafe5a7889b1a42b3e54be7cad3091a5ee}{sai\+\_\+state\+\_\+flag\+\_\+t} flag)
+\begin{DoxyCompactList}\small\item\em Clears the Tx state flags. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gadab16a7a29f0caa9e50255d9bbba1b75}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Clear\+State\+Flag} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gafe5a7889b1a42b3e54be7cad3091a5ee}{sai\+\_\+state\+\_\+flag\+\_\+t} flag)
+\begin{DoxyCompactList}\small\item\em Clears the Rx state flags. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gaca8049d11b159adad5b480098014fe29}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Reset} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gaca36f65012b1a99022d1bc02be2d33c5}{sai\+\_\+reset\+\_\+type\+\_\+t} type)
+\begin{DoxyCompactList}\small\item\em Resets the Tx module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga8aaa72d3b8b9556f1fd77675f01d01fe}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Reset} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gaca36f65012b1a99022d1bc02be2d33c5}{sai\+\_\+reset\+\_\+type\+\_\+t} type)
+\begin{DoxyCompactList}\small\item\em Resets the Rx module. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gaf280cab40954dc387d929235977a1c56}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Run\+Mode\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, sai\+\_\+run\+\_\+mode\+\_\+t run\+\_\+mode, bool enable)
+\begin{DoxyCompactList}\small\item\em Sets the running mode of the Tx. There is a debug mode, stop mode, and a normal mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga8b89e95d9024689db103e42236b4bc53}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Run\+Mode\+Cmd} (uint32\+\_\+t sai\+Base\+Addr, sai\+\_\+run\+\_\+mode\+\_\+t run\+\_\+mode, bool enable)
+\begin{DoxyCompactList}\small\item\em Sets the running mode of the Rx. There is a debug mode, stop mode, and a normal mode. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sai__hal_ga03a9643f79b1d53477258083c1c0c68a}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Get\+State\+Flag} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gafe5a7889b1a42b3e54be7cad3091a5ee}{sai\+\_\+state\+\_\+flag\+\_\+t} flag)
+\begin{DoxyCompactList}\small\item\em Gets the state of the flags in the T\+C\+SR. \end{DoxyCompactList}\item 
+bool \hyperlink{group__sai__hal_ga4d51d543344c9efc774357c2bd396a7e}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Get\+State\+Flag} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_gafe5a7889b1a42b3e54be7cad3091a5ee}{sai\+\_\+state\+\_\+flag\+\_\+t} flag)
+\begin{DoxyCompactList}\small\item\em Gets the state of the flags in the R\+C\+SR. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__sai__hal_gab7403e1aa123e602db47542a2b946eac}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Receive\+Data\+Blocking} (uint32\+\_\+t sai\+Base\+Addr, uint32\+\_\+t rx\+\_\+channel)
+\begin{DoxyCompactList}\small\item\em Uses blocking to receive data. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gad0a9d3631dc731cf8edc04d2e0183f1f}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Send\+Data\+Blocking} (uint32\+\_\+t sai\+Base\+Addr, uint32\+\_\+t tx\+\_\+channel, uint32\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Uses blocking to send data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Module control}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__sai__hal_ga364d34eba9aa023c417d56a8c685c4c4}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Init} (uint32\+\_\+t sai\+Base\+Addr)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+AI Tx. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gabca11870bf673648eb222a808c258ff7}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Init} (uint32\+\_\+t sai\+Base\+Addr)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+AI Rx. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga5f208126a041bf5d09735dd3d4d88691}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Protocol} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga2f1f1a725e4d1540d8dfccbdaed66b26}{sai\+\_\+protocol\+\_\+t} protocol)
+\begin{DoxyCompactList}\small\item\em Sets Tx protocol relevant settings. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_gae7b6e30854d4694ee17feaf7299d59fa}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Protocol} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga2f1f1a725e4d1540d8dfccbdaed66b26}{sai\+\_\+protocol\+\_\+t} protocol)
+\begin{DoxyCompactList}\small\item\em Sets Rx protocol relevant settings. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga071ce3e1ed30924db84362592d39ea06}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Tx\+Set\+Master\+Slave} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga90144d956adefe0eaf778868dd06dab4}{sai\+\_\+master\+\_\+slave\+\_\+t} master\+\_\+slave\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em Sets master or slave mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__sai__hal_ga658c40fd83ff84ef5cc547ae7c579d2d}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Rx\+Set\+Master\+Slave} (uint32\+\_\+t sai\+Base\+Addr, \hyperlink{group__sai__hal_ga90144d956adefe0eaf778868dd06dab4}{sai\+\_\+master\+\_\+slave\+\_\+t} master\+\_\+slave\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em Sets master or slave mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Master clock configuration}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__sai__hal_gaca1f38cdd4e0ba3bd95ba76729850428}{S\+A\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Mclk\+Div} (uint32\+\_\+t sai\+Base\+Addr, uint32\+\_\+t mclk, uint32\+\_\+t src\+\_\+clk)
+\begin{DoxyCompactList}\small\item\em Sets the divider of the master clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Bit clock configuration}\par
+\end{Indent}
+\begin{Indent}{\bf Frame sync configuration}\par
+\end{Indent}
+\begin{Indent}{\bf Word configurations}\par
+\end{Indent}
+\begin{Indent}{\bf watermark settings}\par
+\end{Indent}

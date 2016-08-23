@@ -1,0 +1,37 @@
+\hypertarget{union__hw__axbs__prsn}{}\section{\+\_\+hw\+\_\+axbs\+\_\+prsn Union Reference}
+\label{union__hw__axbs__prsn}\index{\+\_\+hw\+\_\+axbs\+\_\+prsn@{\+\_\+hw\+\_\+axbs\+\_\+prsn}}
+
+
+H\+W\+\_\+\+A\+X\+B\+S\+\_\+\+P\+R\+Sn -\/ Priority Registers Slave (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+axbs.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__axbs__prsn_1_1__hw__axbs__prsn__bitfields}{\+\_\+hw\+\_\+axbs\+\_\+prsn\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__axbs__prsn_ae7fa03833fc567868e1154c0ee9bea89}{}\label{union__hw__axbs__prsn_ae7fa03833fc567868e1154c0ee9bea89}
+
+\item 
+struct \hyperlink{struct__hw__axbs__prsn_1_1__hw__axbs__prsn__bitfields}{\+\_\+hw\+\_\+axbs\+\_\+prsn\+::\+\_\+hw\+\_\+axbs\+\_\+prsn\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__axbs__prsn_a574a10f846d92f54da9440b097909a44}{}\label{union__hw__axbs__prsn_a574a10f846d92f54da9440b097909a44}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+A\+X\+B\+S\+\_\+\+P\+R\+Sn -\/ Priority Registers Slave (RW) 
+
+Reset value\+: 0x00543210U
+
+The priority registers (P\+R\+Sn) set the priority of each master port on a per slave port basis and reside in each slave port. The priority register can be accessed only with 32-\/bit accesses. After the C\+R\+Sn\mbox{[}RO\mbox{]} bit is set, the P\+R\+Sn register can only be read; attempts to write to it have no effect on P\+R\+Sn and result in a bus-\/error response to the master initiating the write. Two available masters must not be programmed with the same priority level. Attempts to program two or more masters with the same priority level result in a bus-\/error response and the P\+R\+Sn is not updated. Valid values for the Mn priority fields depend on which masters are available on the chip. This information can be found in the chip-\/specific information for the crossbar. If the chip contains less than five masters, values 0 to 3 are valid. Writing other values will result in an error. If the chip contains five or more masters, valid values are 0 to n-\/1, where n is the number of masters attached to the A\+X\+BS module. Other values will result in an error. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+axbs.\+h\end{DoxyCompactItemize}

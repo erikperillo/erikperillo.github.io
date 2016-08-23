@@ -1,0 +1,37 @@
+\hypertarget{union__hw__sdhc__irqstat}{}\section{\+\_\+hw\+\_\+sdhc\+\_\+irqstat Union Reference}
+\label{union__hw__sdhc__irqstat}\index{\+\_\+hw\+\_\+sdhc\+\_\+irqstat@{\+\_\+hw\+\_\+sdhc\+\_\+irqstat}}
+
+
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+I\+R\+Q\+S\+T\+AT -\/ Interrupt Status register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+sdhc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__sdhc__irqstat_1_1__hw__sdhc__irqstat__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+irqstat\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__sdhc__irqstat_a27f3a71195b7c174f7f155f74b235b2f}{}\label{union__hw__sdhc__irqstat_a27f3a71195b7c174f7f155f74b235b2f}
+
+\item 
+struct \hyperlink{struct__hw__sdhc__irqstat_1_1__hw__sdhc__irqstat__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+irqstat\+::\+\_\+hw\+\_\+sdhc\+\_\+irqstat\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__sdhc__irqstat_a30c235d227587b711d091e18bc5cd295}{}\label{union__hw__sdhc__irqstat_a30c235d227587b711d091e18bc5cd295}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+I\+R\+Q\+S\+T\+AT -\/ Interrupt Status register (RW) 
+
+Reset value\+: 0x00000000U
+
+An interrupt is generated when the Normal Interrupt Signal Enable is enabled and at least one of the status bits is set to 1. For all bits, writing 1 to a bit clears it; writing to 0 keeps the bit unchanged. More than one status can be cleared with a single register write. For Card Interrupt, before writing 1 to clear, it is required that the card stops asserting the interrupt, meaning that when the Card Driver services the interrupt condition, otherwise the C\+I\+NT bit will be asserted again. The table below shows the relationship between the C\+T\+OE and the CC bits. S\+D\+HC status for C\+T\+O\+E/\+CC bit combinations Command complete Command timeout error Meaning of the status 0 0 X X 1 Response not received within 64 S\+D\+C\+LK cycles 1 0 Response received The table below shows the relationship between the Transfer Complete and the Data Timeout Error. S\+D\+HC status for data timeout error/transfer complete bit combinations Transfer complete Data timeout error Meaning of the status 0 0 X 0 1 Timeout occurred during transfer 1 X Data transfer complete The table below shows the relationship between the command C\+RC Error (C\+CE) and Command Timeout Error (C\+T\+OE). S\+D\+HC status for C\+C\+E/\+C\+T\+OE Bit Combinations Command complete Command timeout error Meaning of the status 0 0 No error 0 1 Response timeout error 1 0 Response C\+RC error 1 1 C\+MD line conflict 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+sdhc.\+h\end{DoxyCompactItemize}

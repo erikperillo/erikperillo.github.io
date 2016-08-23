@@ -1,0 +1,37 @@
+\hypertarget{union__hw__can__esr1}{}\section{\+\_\+hw\+\_\+can\+\_\+esr1 Union Reference}
+\label{union__hw__can__esr1}\index{\+\_\+hw\+\_\+can\+\_\+esr1@{\+\_\+hw\+\_\+can\+\_\+esr1}}
+
+
+H\+W\+\_\+\+C\+A\+N\+\_\+\+E\+S\+R1 -\/ Error and Status 1 register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+can.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__can__esr1_1_1__hw__can__esr1__bitfields}{\+\_\+hw\+\_\+can\+\_\+esr1\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__can__esr1_a15720ff6c130eb74a461d959d162f675}{}\label{union__hw__can__esr1_a15720ff6c130eb74a461d959d162f675}
+
+\item 
+struct \hyperlink{struct__hw__can__esr1_1_1__hw__can__esr1__bitfields}{\+\_\+hw\+\_\+can\+\_\+esr1\+::\+\_\+hw\+\_\+can\+\_\+esr1\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__can__esr1_a3add71e3538eeec1bf79fe1f333de92f}{}\label{union__hw__can__esr1_a3add71e3538eeec1bf79fe1f333de92f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+C\+A\+N\+\_\+\+E\+S\+R1 -\/ Error and Status 1 register (RW) 
+
+Reset value\+: 0x00000000U
+
+This register reflects various error conditions, some general status of the device and it is the source of interrupts to the C\+PU. The C\+PU read action clears bits 15-\/10. Therefore the reported error conditions (bits 15-\/10) are those that occurred since the last time the C\+PU read this register. Bits 9-\/3 are status bits. The following table shows the Flex\+C\+AN state variables and their meanings. Other combinations not shown in the table are reserved. S\+Y\+N\+CH I\+D\+LE TX RX Flex\+C\+AN State 0 0 0 0 Not synchronized to C\+AN bus 1 1 x x Idle 1 0 1 0 Transmitting 1 0 0 1 Receiving 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+can.\+h\end{DoxyCompactItemize}

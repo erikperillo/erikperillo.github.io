@@ -1,0 +1,37 @@
+\hypertarget{union__hw__aips__mpra}{}\section{\+\_\+hw\+\_\+aips\+\_\+mpra Union Reference}
+\label{union__hw__aips__mpra}\index{\+\_\+hw\+\_\+aips\+\_\+mpra@{\+\_\+hw\+\_\+aips\+\_\+mpra}}
+
+
+H\+W\+\_\+\+A\+I\+P\+S\+\_\+\+M\+P\+RA -\/ Master Privilege Register A (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+aips.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__aips__mpra_1_1__hw__aips__mpra__bitfields}{\+\_\+hw\+\_\+aips\+\_\+mpra\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__aips__mpra_a26437eeb1e7805e654754ba07abc28b5}{}\label{union__hw__aips__mpra_a26437eeb1e7805e654754ba07abc28b5}
+
+\item 
+struct \hyperlink{struct__hw__aips__mpra_1_1__hw__aips__mpra__bitfields}{\+\_\+hw\+\_\+aips\+\_\+mpra\+::\+\_\+hw\+\_\+aips\+\_\+mpra\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__aips__mpra_ad82e53b428d697a7ff42c14d38054de8}{}\label{union__hw__aips__mpra_ad82e53b428d697a7ff42c14d38054de8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+A\+I\+P\+S\+\_\+\+M\+P\+RA -\/ Master Privilege Register A (RW) 
+
+Reset value\+: 0x77700000U
+
+The M\+P\+RA specifies identical 4-\/bit fields defining the access-\/privilege level associated with a bus master to various peripherals on the chip. The register provides one field per bus master. At reset, the default value loaded into the M\+P\+RA fields is chip-\/specific. See the chip configuration details for the value of a particular device. A register field that maps to an unimplemented master or peripheral behaves as read-\/only-\/zero. Each master is assigned a logical ID from 0 to 15. See the master logical ID assignment table in the chip-\/specific A\+I\+PS information. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+aips.\+h\end{DoxyCompactItemize}

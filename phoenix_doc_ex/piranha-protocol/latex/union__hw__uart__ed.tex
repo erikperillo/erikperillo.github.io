@@ -1,0 +1,37 @@
+\hypertarget{union__hw__uart__ed}{}\section{\+\_\+hw\+\_\+uart\+\_\+ed Union Reference}
+\label{union__hw__uart__ed}\index{\+\_\+hw\+\_\+uart\+\_\+ed@{\+\_\+hw\+\_\+uart\+\_\+ed}}
+
+
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+ED -\/ U\+A\+RT Extended Data Register (RO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+uart.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__uart__ed_1_1__hw__uart__ed__bitfields}{\+\_\+hw\+\_\+uart\+\_\+ed\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__uart__ed_ab33be8b0ddf66ffc7278e9ec1bc8028e}{}\label{union__hw__uart__ed_ab33be8b0ddf66ffc7278e9ec1bc8028e}
+
+\item 
+struct \hyperlink{struct__hw__uart__ed_1_1__hw__uart__ed__bitfields}{\+\_\+hw\+\_\+uart\+\_\+ed\+::\+\_\+hw\+\_\+uart\+\_\+ed\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__uart__ed_ade7ea720c42daaedeb15ab2c3421d8bc}{}\label{union__hw__uart__ed_ade7ea720c42daaedeb15ab2c3421d8bc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+ED -\/ U\+A\+RT Extended Data Register (RO) 
+
+Reset value\+: 0x00U
+
+This register contains additional information flags that are stored with a received dataword. This register may be read at any time but contains valid data only if there is a dataword in the receive F\+I\+FO. The data contained in this register represents additional information regarding the conditions on which a dataword was received. The importance of this data varies with the application, and in some cases maybe completely optional. These fields automatically update to reflect the conditions of the next dataword whenever D is read. If S1\mbox{[}NF\mbox{]} and S1\mbox{[}PF\mbox{]} have not been set since the last time the receive buffer was empty, the N\+O\+I\+SY and P\+A\+R\+I\+T\+YE fields will be zero. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+uart.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__tcdn__nbytes__mloffno}{}\section{\+\_\+hw\+\_\+dma\+\_\+tcdn\+\_\+nbytes\+\_\+mloffno Union Reference}
+\label{union__hw__dma__tcdn__nbytes__mloffno}\index{\+\_\+hw\+\_\+dma\+\_\+tcdn\+\_\+nbytes\+\_\+mloffno@{\+\_\+hw\+\_\+dma\+\_\+tcdn\+\_\+nbytes\+\_\+mloffno}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+T\+C\+Dn\+\_\+\+N\+B\+Y\+T\+E\+S\+\_\+\+M\+L\+O\+F\+F\+NO -\/ T\+CD Signed Minor Loop Offset (Minor Loop Enabled and Offset Disabled) (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__tcdn__nbytes__mloffno_1_1__hw__dma__tcdn__nbytes__mloffno__bitfields}{\+\_\+hw\+\_\+dma\+\_\+tcdn\+\_\+nbytes\+\_\+mloffno\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__tcdn__nbytes__mloffno_aa6b223a6b679587412064af35248454c}{}\label{union__hw__dma__tcdn__nbytes__mloffno_aa6b223a6b679587412064af35248454c}
+
+\item 
+struct \hyperlink{struct__hw__dma__tcdn__nbytes__mloffno_1_1__hw__dma__tcdn__nbytes__mloffno__bitfields}{\+\_\+hw\+\_\+dma\+\_\+tcdn\+\_\+nbytes\+\_\+mloffno\+::\+\_\+hw\+\_\+dma\+\_\+tcdn\+\_\+nbytes\+\_\+mloffno\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__tcdn__nbytes__mloffno_a6fcd00d4ffe9a0d00504accafbce31bd}{}\label{union__hw__dma__tcdn__nbytes__mloffno_a6fcd00d4ffe9a0d00504accafbce31bd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+T\+C\+Dn\+\_\+\+N\+B\+Y\+T\+E\+S\+\_\+\+M\+L\+O\+F\+F\+NO -\/ T\+CD Signed Minor Loop Offset (Minor Loop Enabled and Offset Disabled) (RW) 
+
+Reset value\+: 0x00000000U
+
+One of three registers (this register, T\+C\+D\+\_\+\+N\+B\+Y\+T\+E\+S\+\_\+\+M\+L\+NO, or T\+C\+D\+\_\+\+N\+B\+Y\+T\+E\+S\+\_\+\+M\+L\+O\+F\+F\+Y\+ES), defines the number of bytes to transfer per request. Which register to use depends on whether minor loop mapping is disabled, enabled but not used for this channel, or enabled and used. T\+CD word 2 is defined as follows if\+: Minor loop mapping is enabled (CR\mbox{[}E\+M\+LM\mbox{]} = 1) and S\+M\+L\+OE = 0 and D\+M\+L\+OE = 0 If minor loop mapping is enabled and S\+M\+L\+OE or D\+M\+L\+OE is set, then refer to the T\+C\+D\+\_\+\+N\+B\+Y\+T\+E\+S\+\_\+\+M\+L\+O\+F\+F\+Y\+ES register description. If minor loop mapping is disabled, then refer to the T\+C\+D\+\_\+\+N\+B\+Y\+T\+E\+S\+\_\+\+M\+L\+NO register description. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

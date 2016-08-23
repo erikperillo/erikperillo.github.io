@@ -1,0 +1,502 @@
+\hypertarget{classSender}{}\section{Sender Class Reference}
+\label{classSender}\index{Sender@{Sender}}
+
+
+{\ttfamily \#include $<$sender.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSender_ae14150bc5755bf478a7ad1904c017ba1}{Sender} ()\hypertarget{classSender_ae14150bc5755bf478a7ad1904c017ba1}{}\label{classSender_ae14150bc5755bf478a7ad1904c017ba1}
+
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\hyperlink{classSender_a5cd264b370a787a72739587aa8752004}{Sender} (int socket, struct sockaddr\+\_\+in \hyperlink{classSender_a4b1e281b5b86c9e899e46d4e12269dc7}{receiver\+\_\+addr})
+\item 
+\hyperlink{classSender_a84c28b0127e73e519a8713a7aa070327}{Sender} (const char $\ast$receiver\+\_\+host, unsigned short receiver\+\_\+port, int sock\+\_\+domain=A\+F\+\_\+\+I\+N\+ET, int sock\+\_\+flags=0)
+\item 
+void \hyperlink{classSender_a45f977589e7c0af7a557b9f29a47aa8b}{set\+\_\+receiver\+\_\+addr} (const char $\ast$host=\hyperlink{protocol_8h_a03882e8e162387e0e8adcddd9f7249ab}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+I\+F\+A\+C\+E\+\_\+\+A\+D\+DR}, unsigned short port=\hyperlink{protocol_8h_a714d0c166e470fe1d95e17305a084931}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT})
+\item 
+void \hyperlink{classSender_a68ac5477ee2f8406a778b3611b6bffaf}{set\+\_\+receiver\+\_\+addr} (const struct sockaddr\+\_\+in \&addr)
+\item 
+void \hyperlink{classSender_a6a151617c58294bc35904be60f8a067f}{set\+\_\+socket} (int domain=A\+F\+\_\+\+I\+N\+ET, int flags=0)
+\item 
+void \hyperlink{classSender_a19d2ffec5053ab10b10120cdb53e0cac}{set\+\_\+socket} (int \hyperlink{classSender_acfedab82d977e97e9424fb95f13d347d}{sock})
+\item 
+struct sockaddr\+\_\+in \hyperlink{classSender_ad89449f704a8a6fb1d2d80116d13e54c}{get\+\_\+receiver\+\_\+addr} ()\hypertarget{classSender_ad89449f704a8a6fb1d2d80116d13e54c}{}\label{classSender_ad89449f704a8a6fb1d2d80116d13e54c}
+
+\begin{DoxyCompactList}\small\item\em Gets receiver address. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_aa980762ecc55e68e2643b73794fb133d}{get\+\_\+socket} ()\hypertarget{classSender_aa980762ecc55e68e2643b73794fb133d}{}\label{classSender_aa980762ecc55e68e2643b73794fb133d}
+
+\begin{DoxyCompactList}\small\item\em Gets receiver socket. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_a572a11a494dd094393f6dae1bfa21699}{send\+\_\+msg\+\_\+none} ()\hypertarget{classSender_a572a11a494dd094393f6dae1bfa21699}{}\label{classSender_a572a11a494dd094393f6dae1bfa21699}
+
+\begin{DoxyCompactList}\small\item\em Sends message N\+O\+NE. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_a9c83cd3f62855eb89f93c217f7640880}{send\+\_\+msg\+\_\+gyro\+\_\+zero} ()\hypertarget{classSender_a9c83cd3f62855eb89f93c217f7640880}{}\label{classSender_a9c83cd3f62855eb89f93c217f7640880}
+
+\begin{DoxyCompactList}\small\item\em Sends message G\+Y\+R\+O\+\_\+\+Z\+E\+RO. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_ae0364f42abe89410ee2b296971eeda7e}{send\+\_\+msg\+\_\+ang\+\_\+set} ()\hypertarget{classSender_ae0364f42abe89410ee2b296971eeda7e}{}\label{classSender_ae0364f42abe89410ee2b296971eeda7e}
+
+\begin{DoxyCompactList}\small\item\em Sends message A\+N\+G\+\_\+\+S\+ET. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_a5b3b6bcf76321f5c51a1a6a8d2236294}{send\+\_\+msg\+\_\+ang\+\_\+rst} ()\hypertarget{classSender_a5b3b6bcf76321f5c51a1a6a8d2236294}{}\label{classSender_a5b3b6bcf76321f5c51a1a6a8d2236294}
+
+\begin{DoxyCompactList}\small\item\em Sends message A\+N\+G\+\_\+\+R\+ST. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_aa6188a96dad9343953564a3c8b83a765}{send\+\_\+msg\+\_\+led\+\_\+on} ()\hypertarget{classSender_aa6188a96dad9343953564a3c8b83a765}{}\label{classSender_aa6188a96dad9343953564a3c8b83a765}
+
+\begin{DoxyCompactList}\small\item\em Sends message L\+E\+D\+\_\+\+ON. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_a224a07f8f7d1e150a2d55ef826149121}{send\+\_\+msg\+\_\+led\+\_\+off} ()\hypertarget{classSender_a224a07f8f7d1e150a2d55ef826149121}{}\label{classSender_a224a07f8f7d1e150a2d55ef826149121}
+
+\begin{DoxyCompactList}\small\item\em Sends message L\+E\+D\+\_\+\+O\+FF. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_af6b81ecc0e0681f7319d7c1c00c87342}{send\+\_\+abs\+\_\+ang\+\_\+ref} (float ref)
+\item 
+int \hyperlink{classSender_a2b96697abbe41d9c6859a4f76b3c6cb6}{send\+\_\+rel\+\_\+ang\+\_\+ref} (float ref)
+\item 
+int \hyperlink{classSender_a75c26041665a84c10188d30a3d66d92b}{send\+\_\+mag\+\_\+ang\+\_\+ref} (float ref)
+\item 
+int \hyperlink{classSender_a5481155d916e285a6a5aea6d15b65ff3}{send\+\_\+gnd\+\_\+vel} (float vel)
+\item 
+int \hyperlink{classSender_a0f766c1d8717e44ff355de0c94d2d37a}{send\+\_\+brake} (float intensity, float period)
+\item 
+int \hyperlink{classSender_a4dbfac20c2bb47fb3059177847cb3a0c}{send\+\_\+jog\+\_\+vel} (float period, float ratio)
+\item 
+int \hyperlink{classSender_a45e907040a2c705cadcd207f46d31b72}{send\+\_\+pid\+\_\+params} (float kp, float ki, float kd, float n)
+\item 
+int \hyperlink{classSender_adaabd2ca227ee641c98448c80bc8b995}{send\+\_\+mag\+\_\+calib} (float min\+\_\+x, float max\+\_\+x, float min\+\_\+y, float max\+\_\+y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{classSender_a3f9b3e01bba5182c99bcdcd255b2b54d}{scale} (float value, float min, float max)
+\item 
+void \hyperlink{classSender_ae9d3dc0d2d5437301c95a9b2705e237c}{set\+\_\+header} (uint8\+\_\+t msg)
+\item 
+void \hyperlink{classSender_afe046ebb888182a423ce0b4b4202d6ec}{set\+\_\+raw\+\_\+val} (uint16\+\_\+t value, int pos=0)
+\item 
+void \hyperlink{classSender_af290dc1fdd12fc1b1c1bec91f7dc0311}{set\+\_\+val} (float val, float min, float max, int pos=0)
+\item 
+int \hyperlink{classSender_a65ab243a47547575be6faccd9fb21127}{send} ()\hypertarget{classSender_a65ab243a47547575be6faccd9fb21127}{}\label{classSender_a65ab243a47547575be6faccd9fb21127}
+
+\begin{DoxyCompactList}\small\item\em Sends current message in buffer to receiver. \end{DoxyCompactList}\item 
+int \hyperlink{classSender_a02926397fba30138bf766d7a967d1318}{send\+\_\+msg} (uint8\+\_\+t msg)
+\item 
+int \hyperlink{classSender_aaad3560b43b3baf02e133ab3966711ab}{send\+\_\+msg} (uint8\+\_\+t msg, float val, float min, float max)
+\item 
+int \hyperlink{classSender_ab09ef77aed052f2dc2736655ee6b5598}{send\+\_\+msg} (uint8\+\_\+t msg, float $\ast$vals, int size, float min, float max)
+\item 
+int \hyperlink{classSender_abad229fe0df639fd1ccb38714d9c77ec}{send\+\_\+msg} (uint8\+\_\+t msg, float $\ast$vals, float $\ast$mins, float $\ast$maxs, int size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classSender_acfedab82d977e97e9424fb95f13d347d}{sock}\hypertarget{classSender_acfedab82d977e97e9424fb95f13d347d}{}\label{classSender_acfedab82d977e97e9424fb95f13d347d}
+
+\begin{DoxyCompactList}\small\item\em Socket used by sender. \end{DoxyCompactList}\item 
+char \hyperlink{classSender_a72460f4674b129a03ee5bb73d7d24777}{message} \mbox{[}\hyperlink{protocol_8h_abd55521187de5f99b96a34c3acc93ac1}{M\+S\+G\+\_\+\+B\+U\+F\+\_\+\+L\+EN}\mbox{]}\hypertarget{classSender_a72460f4674b129a03ee5bb73d7d24777}{}\label{classSender_a72460f4674b129a03ee5bb73d7d24777}
+
+\begin{DoxyCompactList}\small\item\em Message buffer. \end{DoxyCompactList}\item 
+struct sockaddr\+\_\+in \hyperlink{classSender_a4b1e281b5b86c9e899e46d4e12269dc7}{receiver\+\_\+addr}\hypertarget{classSender_a4b1e281b5b86c9e899e46d4e12269dc7}{}\label{classSender_a4b1e281b5b86c9e899e46d4e12269dc7}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classReceiver}{Receiver} network address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for sender side.
+
+Instances of this class contain necessary network information for communication with \hyperlink{classReceiver}{Receiver}. This is supposed to be used by the control module. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sender@{Sender}!Sender@{Sender}}
+\index{Sender@{Sender}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{Sender(int socket, struct sockaddr\+\_\+in receiver\+\_\+addr)}{Sender(int socket, struct sockaddr_in receiver_addr)}}]{\setlength{\rightskip}{0pt plus 5cm}Sender\+::\+Sender (
+\begin{DoxyParamCaption}
+\item[{int}]{socket, }
+\item[{struct sockaddr\+\_\+in}]{receiver\+\_\+addr}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a5cd264b370a787a72739587aa8752004}{}\label{classSender_a5cd264b370a787a72739587aa8752004}
+Class constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+\_\+addr} & \hyperlink{classReceiver}{Receiver} side network address. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!Sender@{Sender}}
+\index{Sender@{Sender}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{Sender(const char $\ast$receiver\+\_\+host, unsigned short receiver\+\_\+port, int sock\+\_\+domain=\+A\+F\+\_\+\+I\+N\+E\+T, int sock\+\_\+flags=0)}{Sender(const char *receiver_host, unsigned short receiver_port, int sock_domain=AF_INET, int sock_flags=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Sender\+::\+Sender (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{receiver\+\_\+host, }
+\item[{unsigned short}]{receiver\+\_\+port, }
+\item[{int}]{sock\+\_\+domain = {\ttfamily AF\+\_\+INET}, }
+\item[{int}]{sock\+\_\+flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a84c28b0127e73e519a8713a7aa070327}{}\label{classSender_a84c28b0127e73e519a8713a7aa070327}
+Class constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+\_\+host} & \hyperlink{classReceiver}{Receiver} IP address. \\
+\hline
+{\em receiver\+\_\+port} & \hyperlink{classReceiver}{Receiver} port. \\
+\hline
+{\em sock\+\_\+domain} & Socket domain. \\
+\hline
+{\em sock\+\_\+flags} & Socket flags. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Sender@{Sender}!scale@{scale}}
+\index{scale@{scale}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{scale(float value, float min, float max)}{scale(float value, float min, float max)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Sender\+::scale (
+\begin{DoxyParamCaption}
+\item[{float}]{value, }
+\item[{float}]{min, }
+\item[{float}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_a3f9b3e01bba5182c99bcdcd255b2b54d}{}\label{classSender_a3f9b3e01bba5182c99bcdcd255b2b54d}
+Scales value from float to byte string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Float signed value. \\
+\hline
+{\em min} & Minimum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+abs\+\_\+ang\+\_\+ref@{send\+\_\+abs\+\_\+ang\+\_\+ref}}
+\index{send\+\_\+abs\+\_\+ang\+\_\+ref@{send\+\_\+abs\+\_\+ang\+\_\+ref}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+abs\+\_\+ang\+\_\+ref(float ref)}{send_abs_ang_ref(float ref)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+abs\+\_\+ang\+\_\+ref (
+\begin{DoxyParamCaption}
+\item[{float}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_af6b81ecc0e0681f7319d7c1c00c87342}{}\label{classSender_af6b81ecc0e0681f7319d7c1c00c87342}
+Sends absolute angle reference.
+
+Used in case of message A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF. \index{Sender@{Sender}!send\+\_\+brake@{send\+\_\+brake}}
+\index{send\+\_\+brake@{send\+\_\+brake}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+brake(float intensity, float period)}{send_brake(float intensity, float period)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+brake (
+\begin{DoxyParamCaption}
+\item[{float}]{intensity, }
+\item[{float}]{period}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a0f766c1d8717e44ff355de0c94d2d37a}{}\label{classSender_a0f766c1d8717e44ff355de0c94d2d37a}
+Sends brake parameters.
+
+Used in case of message B\+R\+A\+KE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intensity} & intensity of brake. \\
+\hline
+{\em period} & period by which brake will act. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+gnd\+\_\+vel@{send\+\_\+gnd\+\_\+vel}}
+\index{send\+\_\+gnd\+\_\+vel@{send\+\_\+gnd\+\_\+vel}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+gnd\+\_\+vel(float vel)}{send_gnd_vel(float vel)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+gnd\+\_\+vel (
+\begin{DoxyParamCaption}
+\item[{float}]{vel}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a5481155d916e285a6a5aea6d15b65ff3}{}\label{classSender_a5481155d916e285a6a5aea6d15b65ff3}
+Sends ground velocity.
+
+Used in case of message G\+N\+D\+\_\+\+V\+EL. \index{Sender@{Sender}!send\+\_\+jog\+\_\+vel@{send\+\_\+jog\+\_\+vel}}
+\index{send\+\_\+jog\+\_\+vel@{send\+\_\+jog\+\_\+vel}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+jog\+\_\+vel(float period, float ratio)}{send_jog_vel(float period, float ratio)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+jog\+\_\+vel (
+\begin{DoxyParamCaption}
+\item[{float}]{period, }
+\item[{float}]{ratio}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a4dbfac20c2bb47fb3059177847cb3a0c}{}\label{classSender_a4dbfac20c2bb47fb3059177847cb3a0c}
+Sends jogging velocity parameters.
+
+Used in case of message J\+O\+G\+\_\+\+V\+EL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & Time in seconds of a jogging period. \\
+\hline
+{\em ratio} & Fraction of period car will be stopped. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+mag\+\_\+ang\+\_\+ref@{send\+\_\+mag\+\_\+ang\+\_\+ref}}
+\index{send\+\_\+mag\+\_\+ang\+\_\+ref@{send\+\_\+mag\+\_\+ang\+\_\+ref}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+mag\+\_\+ang\+\_\+ref(float ref)}{send_mag_ang_ref(float ref)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+mag\+\_\+ang\+\_\+ref (
+\begin{DoxyParamCaption}
+\item[{float}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a75c26041665a84c10188d30a3d66d92b}{}\label{classSender_a75c26041665a84c10188d30a3d66d92b}
+Sends magnetometer angle reference.
+
+Used in case of message M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF. \index{Sender@{Sender}!send\+\_\+mag\+\_\+calib@{send\+\_\+mag\+\_\+calib}}
+\index{send\+\_\+mag\+\_\+calib@{send\+\_\+mag\+\_\+calib}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+mag\+\_\+calib(float min\+\_\+x, float max\+\_\+x, float min\+\_\+y, float max\+\_\+y)}{send_mag_calib(float min_x, float max_x, float min_y, float max_y)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+mag\+\_\+calib (
+\begin{DoxyParamCaption}
+\item[{float}]{min\+\_\+x, }
+\item[{float}]{max\+\_\+x, }
+\item[{float}]{min\+\_\+y, }
+\item[{float}]{max\+\_\+y}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_adaabd2ca227ee641c98448c80bc8b995}{}\label{classSender_adaabd2ca227ee641c98448c80bc8b995}
+Sends magnetometer calibration parameters.
+
+Used in case of message M\+A\+G\+\_\+\+C\+A\+L\+IB.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+x} & Minimum x of calibration. \\
+\hline
+{\em max\+\_\+x} & Maximum x of calibration. \\
+\hline
+{\em min\+\_\+y} & Minimum y of calibration. \\
+\hline
+{\em max\+\_\+y} & Maximum y of calibration. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+msg@{send\+\_\+msg}}
+\index{send\+\_\+msg@{send\+\_\+msg}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+msg(uint8\+\_\+t msg)}{send_msg(uint8_t msg)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+msg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_a02926397fba30138bf766d7a967d1318}{}\label{classSender_a02926397fba30138bf766d7a967d1318}
+Sends message in header in message buffer to receiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to send. See \hyperlink{protocol_8h}{protocol.\+h} for possible messages. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+msg@{send\+\_\+msg}}
+\index{send\+\_\+msg@{send\+\_\+msg}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+msg(uint8\+\_\+t msg, float val, float min, float max)}{send_msg(uint8_t msg, float val, float min, float max)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+msg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{msg, }
+\item[{float}]{val, }
+\item[{float}]{min, }
+\item[{float}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_aaad3560b43b3baf02e133ab3966711ab}{}\label{classSender_aaad3560b43b3baf02e133ab3966711ab}
+Sends message that contains a value to receiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message header to send. \\
+\hline
+{\em val} & Float value to send. \\
+\hline
+{\em min} & Minimum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+msg@{send\+\_\+msg}}
+\index{send\+\_\+msg@{send\+\_\+msg}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+msg(uint8\+\_\+t msg, float $\ast$vals, int size, float min, float max)}{send_msg(uint8_t msg, float *vals, int size, float min, float max)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+msg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{msg, }
+\item[{float $\ast$}]{vals, }
+\item[{int}]{size, }
+\item[{float}]{min, }
+\item[{float}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_ab09ef77aed052f2dc2736655ee6b5598}{}\label{classSender_ab09ef77aed052f2dc2736655ee6b5598}
+Sends message that contains multiple values to receiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message header to send. \\
+\hline
+{\em val} & Pointer to array of values. \\
+\hline
+{\em size} & Number of values. \\
+\hline
+{\em min} & Minimum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+msg@{send\+\_\+msg}}
+\index{send\+\_\+msg@{send\+\_\+msg}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+msg(uint8\+\_\+t msg, float $\ast$vals, float $\ast$mins, float $\ast$maxs, int size)}{send_msg(uint8_t msg, float *vals, float *mins, float *maxs, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+msg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{msg, }
+\item[{float $\ast$}]{vals, }
+\item[{float $\ast$}]{mins, }
+\item[{float $\ast$}]{maxs, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_abad229fe0df639fd1ccb38714d9c77ec}{}\label{classSender_abad229fe0df639fd1ccb38714d9c77ec}
+Sends message that contains multiple values to receiver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message header to send. \\
+\hline
+{\em vals} & Pointer to array of values. \\
+\hline
+{\em mins} & Pointer to array of minumum values respective to vals. \\
+\hline
+{\em maxs} & Pointer to array of maximum values respective to vals. \\
+\hline
+{\em size} & Number of values. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+pid\+\_\+params@{send\+\_\+pid\+\_\+params}}
+\index{send\+\_\+pid\+\_\+params@{send\+\_\+pid\+\_\+params}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+pid\+\_\+params(float kp, float ki, float kd, float n)}{send_pid_params(float kp, float ki, float kd, float n)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+pid\+\_\+params (
+\begin{DoxyParamCaption}
+\item[{float}]{kp, }
+\item[{float}]{ki, }
+\item[{float}]{kd, }
+\item[{float}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a45e907040a2c705cadcd207f46d31b72}{}\label{classSender_a45e907040a2c705cadcd207f46d31b72}
+Sends P\+ID control parameters.
+
+Used in case of message P\+I\+D\+\_\+\+P\+A\+R\+A\+MS.
+
+
+\begin{DoxyParams}{Parameters}
+{\em kp} & Proportional control parameter. \\
+\hline
+{\em ki} & Integral control parameter. \\
+\hline
+{\em kd} & Derivative control parameter. \\
+\hline
+{\em n} & N control parameter. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!send\+\_\+rel\+\_\+ang\+\_\+ref@{send\+\_\+rel\+\_\+ang\+\_\+ref}}
+\index{send\+\_\+rel\+\_\+ang\+\_\+ref@{send\+\_\+rel\+\_\+ang\+\_\+ref}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{send\+\_\+rel\+\_\+ang\+\_\+ref(float ref)}{send_rel_ang_ref(float ref)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sender\+::send\+\_\+rel\+\_\+ang\+\_\+ref (
+\begin{DoxyParamCaption}
+\item[{float}]{ref}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a2b96697abbe41d9c6859a4f76b3c6cb6}{}\label{classSender_a2b96697abbe41d9c6859a4f76b3c6cb6}
+Sends relative angle reference.
+
+Used in case of message R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF. \index{Sender@{Sender}!set\+\_\+header@{set\+\_\+header}}
+\index{set\+\_\+header@{set\+\_\+header}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+header(uint8\+\_\+t msg)}{set_header(uint8_t msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+header (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_ae9d3dc0d2d5437301c95a9b2705e237c}{}\label{classSender_ae9d3dc0d2d5437301c95a9b2705e237c}
+Sets message buffer header with message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to use. See \hyperlink{protocol_8h}{protocol.\+h} for possible messages. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!set\+\_\+raw\+\_\+val@{set\+\_\+raw\+\_\+val}}
+\index{set\+\_\+raw\+\_\+val@{set\+\_\+raw\+\_\+val}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+raw\+\_\+val(uint16\+\_\+t value, int pos=0)}{set_raw_val(uint16_t value, int pos=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+raw\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{value, }
+\item[{int}]{pos = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_afe046ebb888182a423ce0b4b4202d6ec}{}\label{classSender_afe046ebb888182a423ce0b4b4202d6ec}
+Writes integer value to message buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be coded into message buffer. \\
+\hline
+{\em pos} & Index of value in message buffer, eg. pos=1 means second space for values in message buffer. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!set\+\_\+receiver\+\_\+addr@{set\+\_\+receiver\+\_\+addr}}
+\index{set\+\_\+receiver\+\_\+addr@{set\+\_\+receiver\+\_\+addr}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+receiver\+\_\+addr(const char $\ast$host=\+R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+I\+F\+A\+C\+E\+\_\+\+A\+D\+D\+R, unsigned short port=\+R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+R\+T)}{set_receiver_addr(const char *host=RECEIVER_IFACE_ADDR, unsigned short port=RECEIVER_PORT)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+receiver\+\_\+addr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{host = {\ttfamily {\bf R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+I\+F\+A\+C\+E\+\_\+\+A\+D\+DR}}, }
+\item[{unsigned short}]{port = {\ttfamily {\bf R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a45f977589e7c0af7a557b9f29a47aa8b}{}\label{classSender_a45f977589e7c0af7a557b9f29a47aa8b}
+Sets receiver network address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & \hyperlink{classReceiver}{Receiver} IP address. \\
+\hline
+{\em port} & \hyperlink{classReceiver}{Receiver} port. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!set\+\_\+receiver\+\_\+addr@{set\+\_\+receiver\+\_\+addr}}
+\index{set\+\_\+receiver\+\_\+addr@{set\+\_\+receiver\+\_\+addr}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+receiver\+\_\+addr(const struct sockaddr\+\_\+in \&addr)}{set_receiver_addr(const struct sockaddr_in &addr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+receiver\+\_\+addr (
+\begin{DoxyParamCaption}
+\item[{const struct sockaddr\+\_\+in \&}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a68ac5477ee2f8406a778b3611b6bffaf}{}\label{classSender_a68ac5477ee2f8406a778b3611b6bffaf}
+Sets receiver network address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & \hyperlink{classReceiver}{Receiver} address. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!set\+\_\+socket@{set\+\_\+socket}}
+\index{set\+\_\+socket@{set\+\_\+socket}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+socket(int domain=\+A\+F\+\_\+\+I\+N\+E\+T, int flags=0)}{set_socket(int domain=AF_INET, int flags=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{int}]{domain = {\ttfamily AF\+\_\+INET}, }
+\item[{int}]{flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a6a151617c58294bc35904be60f8a067f}{}\label{classSender_a6a151617c58294bc35904be60f8a067f}
+Sets sender socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & Socket domain. \\
+\hline
+{\em flags} & Socket flags. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!set\+\_\+socket@{set\+\_\+socket}}
+\index{set\+\_\+socket@{set\+\_\+socket}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+socket(int sock)}{set_socket(int sock)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{int}]{sock}
+\end{DoxyParamCaption}
+)}\hypertarget{classSender_a19d2ffec5053ab10b10120cdb53e0cac}{}\label{classSender_a19d2ffec5053ab10b10120cdb53e0cac}
+Sets sender socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sock} & Already existing socket. \\
+\hline
+\end{DoxyParams}
+\index{Sender@{Sender}!set\+\_\+val@{set\+\_\+val}}
+\index{set\+\_\+val@{set\+\_\+val}!Sender@{Sender}}
+\subsubsection[{\texorpdfstring{set\+\_\+val(float val, float min, float max, int pos=0)}{set_val(float val, float min, float max, int pos=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sender\+::set\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{float}]{val, }
+\item[{float}]{min, }
+\item[{float}]{max, }
+\item[{int}]{pos = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classSender_af290dc1fdd12fc1b1c1bec91f7dc0311}{}\label{classSender_af290dc1fdd12fc1b1c1bec91f7dc0311}
+Writes float value into message buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Value to be stored. \\
+\hline
+{\em min} & Minimum value in float range. \\
+\hline
+{\em max} & Maximum value in float range. \\
+\hline
+{\em pos} & Index of values space in message buffer to store value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/piranha-\/ptc/src/sender/\hyperlink{sender_8h}{sender.\+h}\item 
+/home/erik/proj/piranha/piranha-\/ptc/src/sender/sender.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{union__hw__pmc__lvdsc2}{}\section{\+\_\+hw\+\_\+pmc\+\_\+lvdsc2 Union Reference}
+\label{union__hw__pmc__lvdsc2}\index{\+\_\+hw\+\_\+pmc\+\_\+lvdsc2@{\+\_\+hw\+\_\+pmc\+\_\+lvdsc2}}
+
+
+H\+W\+\_\+\+P\+M\+C\+\_\+\+L\+V\+D\+S\+C2 -\/ Low Voltage Detect Status And Control 2 register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+pmc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__pmc__lvdsc2_1_1__hw__pmc__lvdsc2__bitfields}{\+\_\+hw\+\_\+pmc\+\_\+lvdsc2\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__pmc__lvdsc2_aed72341b7e592166e6bbb90a5d4b80a9}{}\label{union__hw__pmc__lvdsc2_aed72341b7e592166e6bbb90a5d4b80a9}
+
+\item 
+struct \hyperlink{struct__hw__pmc__lvdsc2_1_1__hw__pmc__lvdsc2__bitfields}{\+\_\+hw\+\_\+pmc\+\_\+lvdsc2\+::\+\_\+hw\+\_\+pmc\+\_\+lvdsc2\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__pmc__lvdsc2_a29c659bbeafa376742e8593c370ca2d1}{}\label{union__hw__pmc__lvdsc2_a29c659bbeafa376742e8593c370ca2d1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+P\+M\+C\+\_\+\+L\+V\+D\+S\+C2 -\/ Low Voltage Detect Status And Control 2 register (RW) 
+
+Reset value\+: 0x00U
+
+This register contains status and control bits to support the low voltage warning function. While the device is in the very low power or low leakage modes, the L\+VD system is disabled regardless of L\+V\+D\+S\+C2 settings. See the device\textquotesingle{}s data sheet for the exact L\+VD trip voltages. The L\+VW trip voltages depend on L\+V\+WV and L\+V\+DV. L\+V\+WV is reset solely on a P\+OR Only event. The other fields of the register are reset on Chip Reset Not V\+L\+LS. For more information about these reset types, refer to the Reset section details. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+pmc.\+h\end{DoxyCompactItemize}

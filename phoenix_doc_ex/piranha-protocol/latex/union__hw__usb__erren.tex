@@ -1,0 +1,37 @@
+\hypertarget{union__hw__usb__erren}{}\section{\+\_\+hw\+\_\+usb\+\_\+erren Union Reference}
+\label{union__hw__usb__erren}\index{\+\_\+hw\+\_\+usb\+\_\+erren@{\+\_\+hw\+\_\+usb\+\_\+erren}}
+
+
+H\+W\+\_\+\+U\+S\+B\+\_\+\+E\+R\+R\+EN -\/ Error Interrupt Enable register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+usb.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__usb__erren_1_1__hw__usb__erren__bitfields}{\+\_\+hw\+\_\+usb\+\_\+erren\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__usb__erren_aebaf788c8590a8c69108cbba927d5a19}{}\label{union__hw__usb__erren_aebaf788c8590a8c69108cbba927d5a19}
+
+\item 
+struct \hyperlink{struct__hw__usb__erren_1_1__hw__usb__erren__bitfields}{\+\_\+hw\+\_\+usb\+\_\+erren\+::\+\_\+hw\+\_\+usb\+\_\+erren\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__usb__erren_a87a6b974c69f9d483ad1b8ad03e6a0a6}{}\label{union__hw__usb__erren_a87a6b974c69f9d483ad1b8ad03e6a0a6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+S\+B\+\_\+\+E\+R\+R\+EN -\/ Error Interrupt Enable register (RW) 
+
+Reset value\+: 0x00U
+
+Contains enable bits for each of the error interrupt sources within the U\+SB module. Setting any of these bits enables the respective interrupt source in E\+R\+R\+S\+T\+AT. Each bit is set as soon as the error condition is detected. Therefore, the interrupt does not typically correspond with the end of a token being processed. This register contains the value of 0x00 after a reset. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+usb.\+h\end{DoxyCompactItemize}

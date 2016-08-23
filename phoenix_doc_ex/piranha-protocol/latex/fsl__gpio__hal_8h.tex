@@ -1,0 +1,46 @@
+\hypertarget{fsl__gpio__hal_8h}{}\section{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/gpio/fsl\+\_\+gpio\+\_\+hal.h File Reference}
+\label{fsl__gpio__hal_8h}\index{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/gpio/fsl\+\_\+gpio\+\_\+hal.\+h@{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/gpio/fsl\+\_\+gpio\+\_\+hal.\+h}}
+
+
+G\+P\+IO hardware driver configuration. Use these functions to set the G\+P\+IO input/output, set output logic or get input logic. Check the G\+P\+IO header file for base address. Each G\+P\+IO instance has 32 pins with numbers from 0 to 31.  
+
+
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+gpio\+\_\+features.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+device\+\_\+registers.\+h\char`\"{}}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__gpio__hal_ga0df4be96fa56f3bdd7bfa048fdaacd6b}{\+\_\+gpio\+\_\+pin\+\_\+direction} \hyperlink{group__gpio__hal_gaf7d75755774a0f20385fbdda546f1f1d}{gpio\+\_\+pin\+\_\+direction\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO direction definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__gpio__hal_ga0df4be96fa56f3bdd7bfa048fdaacd6b}{\+\_\+gpio\+\_\+pin\+\_\+direction} \{ \hyperlink{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6babec990a5b8f20f01f2beda22945fe54d}{k\+Gpio\+Digital\+Input} = 0, 
+\hyperlink{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6baa00f38f21e6d42b0211d04e53e371247}{k\+Gpio\+Digital\+Output} = 1
+ \}\begin{DoxyCompactList}\small\item\em G\+P\+IO direction definition. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Configuration}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__gpio__hal_ga464b7464be9ddddd535f2ee3ceb712ad}{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir} (uint32\+\_\+t base\+Addr, uint32\+\_\+t pin, \hyperlink{group__gpio__hal_gaf7d75755774a0f20385fbdda546f1f1d}{gpio\+\_\+pin\+\_\+direction\+\_\+t} direction)
+\begin{DoxyCompactList}\small\item\em Sets the individual G\+P\+IO pin to general input or output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Status}\par
+\end{Indent}
+\begin{Indent}{\bf Output Operation}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__gpio__hal_ga8038c1d22811c93bde5f4842e1012ff1}{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output} (uint32\+\_\+t base\+Addr, uint32\+\_\+t pin, uint32\+\_\+t output)
+\begin{DoxyCompactList}\small\item\em Sets the output level of the individual G\+P\+IO pin to logic 1 or 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Input Operation}\par
+\end{Indent}
+
+
+\subsection{Detailed Description}
+G\+P\+IO hardware driver configuration. Use these functions to set the G\+P\+IO input/output, set output logic or get input logic. Check the G\+P\+IO header file for base address. Each G\+P\+IO instance has 32 pins with numbers from 0 to 31. 
+

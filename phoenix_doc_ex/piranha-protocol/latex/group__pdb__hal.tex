@@ -1,0 +1,451 @@
+\hypertarget{group__pdb__hal}{}\section{Pdb\+\_\+hal}
+\label{group__pdb__hal}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__pdb__hal_gaa17da678ec0a92f7c1dd0dfa2a58717f}{\+\_\+pdb\+\_\+status} \hyperlink{group__pdb__hal_gab056cd14ac826acc9cf93f7d7600d103}{pdb\+\_\+status\+\_\+t}\hypertarget{group__pdb__hal_gab056cd14ac826acc9cf93f7d7600d103}{}\label{group__pdb__hal_gab056cd14ac826acc9cf93f7d7600d103}
+
+\begin{DoxyCompactList}\small\item\em P\+DB status return codes. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__pdb__hal_ga24cd30e248ca866cb85a353b2c69ac65}{\+\_\+pdb\+\_\+load\+\_\+mode} \hyperlink{group__pdb__hal_gaee15374478afc65a8d15ee4b5e1fdd44}{pdb\+\_\+load\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Defines the type of value load mode for the P\+DB module. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__pdb__hal_gaf0f364ab5a47793544fdd1b60438a1ef}{\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode} \hyperlink{group__pdb__hal_ga5a21fc27e1ab395e71229c49d5426fe2}{pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode\+\_\+t}\hypertarget{group__pdb__hal_ga5a21fc27e1ab395e71229c49d5426fe2}{}\label{group__pdb__hal_ga5a21fc27e1ab395e71229c49d5426fe2}
+
+\begin{DoxyCompactList}\small\item\em Defines the type of prescaler divider for the P\+DB counter clock. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__pdb__hal_ga436ffb28ac0668778b62d7e380815cb9}{\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode} \hyperlink{group__pdb__hal_ga309bd99814bc35b81b79d08340d23258}{pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Defines the type of trigger source mode for the P\+DB. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__pdb__hal_gae87b5a0cf111784453bd0090c1a05254}{\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode} \hyperlink{group__pdb__hal_ga26a3aaa96982c57d4db1c4e579dc59db}{pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Defines the type of the multiplication source mode for P\+DB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__pdb__hal_gaa17da678ec0a92f7c1dd0dfa2a58717f}{\+\_\+pdb\+\_\+status} \{ \hyperlink{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717fa6fe6047b626a61c7f0ba70c251b66f0d}{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Success} = 0U, 
+\hyperlink{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717faed731bf434c59c6376549d7cd5919888}{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Invalid\+Argument} = 1U, 
+\hyperlink{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717fad120bd1f770605f5c7f73f23cd6ceba3}{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Failed} = 2U
+ \}\begin{DoxyCompactList}\small\item\em P\+DB status return codes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__pdb__hal_ga24cd30e248ca866cb85a353b2c69ac65}{\+\_\+pdb\+\_\+load\+\_\+mode} \{ \hyperlink{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65a0426c87a5f64ded022bdc050cf1c2310}{k\+Pdb\+Load\+Immediately} = 0U, 
+\hyperlink{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65aaa293dc9deca57e1aeae40e634a08365}{k\+Pdb\+Load\+At\+Modulo\+Counter} = 1U, 
+\hyperlink{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65ac5681120208e96a265d73b243cca3702}{k\+Pdb\+Load\+At\+Next\+Trigger} = 2U, 
+\hyperlink{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65a4f31f7acd4f40c22fcb37911906c62d3}{k\+Pdb\+Load\+At\+Modulo\+Counter\+Or\+Next\+Trigger} = 3U
+ \}\begin{DoxyCompactList}\small\item\em Defines the type of value load mode for the P\+DB module. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__pdb__hal_gaf0f364ab5a47793544fdd1b60438a1ef}{\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode} \{ \\*
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa6bf562905ca594c518454501697f419a}{k\+Pdb\+Clk\+Pre\+Div\+By1} = 0U, 
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa5e1cff952ec04b21b17b4b639f635557}{k\+Pdb\+Clk\+Pre\+Div\+By2} = 1U, 
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa46c4ef05ee4ea0510bfe4152aaa74a4d}{k\+Pdb\+Clk\+Pre\+Div\+By4} = 2U, 
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efab5e92786aab31366c36d122756da8bf8}{k\+Pdb\+Clk\+Pre\+Div\+By8} = 3U, 
+\\*
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa66d9b90a06f9ba0be52ad304e3cda138}{k\+Pdb\+Clk\+Pre\+Div\+By16} = 4U, 
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa253bd0ea918f48574a079919092238ab}{k\+Pdb\+Clk\+Pre\+Div\+By32} = 5U, 
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa3c4096e8e28719129d39ac6495ce169b}{k\+Pdb\+Clk\+Pre\+Div\+By64} = 6U, 
+\hyperlink{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa97f9ba909984261210b6483b759afc69}{k\+Pdb\+Clk\+Pre\+Div\+By128} = 7U
+ \}\begin{DoxyCompactList}\small\item\em Defines the type of prescaler divider for the P\+DB counter clock. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__pdb__hal_ga436ffb28ac0668778b62d7e380815cb9}{\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode} \{ \\*
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a326ac4a938724616edf746894eaac4b9}{k\+Pdb\+Trigger0} = 0U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a809dd71c0be75e448c1a9824234608cd}{k\+Pdb\+Trigger1} = 1U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9aee0ceba4b2df0a48f9821d2ccfcc747b}{k\+Pdb\+Trigger2} = 2U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ae9e1661f83e67853cba9deef103fc6a3}{k\+Pdb\+Trigger3} = 3U, 
+\\*
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a30f832c4a176f913b5406348a4f8bc2c}{k\+Pdb\+Trigger4} = 4U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a9a95473cb905e74369b5cb371990f3b4}{k\+Pdb\+Trigger5} = 5U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a50265bfda7724646083127660ec85628}{k\+Pdb\+Trigger6} = 6U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9afb942d3c89ab6a7b46c6a188c14c961c}{k\+Pdb\+Trigger7} = 7U, 
+\\*
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a72e0d71a8256dcda001600b77b4a2742}{k\+Pdb\+Trigger8} = 8U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ab10e37e88c8f9b818b7d45b89cbd7318}{k\+Pdb\+Trigger9} = 9U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ad093843d0d341e56c204a5b80caf7c66}{k\+Pdb\+Trigger10} = 10U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a68018e91153cb404ed8d61f49ebabb5f}{k\+Pdb\+Trigger11} = 11U, 
+\\*
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ace68ee8a3848d5d4fcfb51c17db8be25}{k\+Pdb\+Trigger12} = 12U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9af014a0b070deb26383adb72ed4fc3227}{k\+Pdb\+Trigger13} = 13U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ac22d9dc94b8faeae85dbbf53e43f674a}{k\+Pdb\+Trigger14} = 14U, 
+\hyperlink{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a05b38b4e6f5b74b8cf1ab3ea0ff27e54}{k\+Pdb\+Soft\+Trigger} = 15U
+ \}\begin{DoxyCompactList}\small\item\em Defines the type of trigger source mode for the P\+DB. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__pdb__hal_gae87b5a0cf111784453bd0090c1a05254}{\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode} \{ \hyperlink{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254a5b0fbc4cbb169d1e904a6028e464c3a5}{k\+Pdb\+Mult\+Factor\+As1} = 0U, 
+\hyperlink{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254adf5e8b02d6cb032d3c5158fba1249f5a}{k\+Pdb\+Mult\+Factor\+As10} = 1U, 
+\hyperlink{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254ab045fefa8a71122211b4c02a1f0717a0}{k\+Pdb\+Mult\+Factor\+As20} = 2U, 
+\hyperlink{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254a3a91ab697bf34c36f70a8496fde8d37b}{k\+Pdb\+Mult\+Factor\+As40} = 3U
+ \}\begin{DoxyCompactList}\small\item\em Defines the type of the multiplication source mode for P\+DB. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__pdb__hal_ga683d4e2dfdd5f5555cd8d4995340e45a}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Resets the P\+DB registers to a known state. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_gaf63cd59a44d0692383a3158040bbaf02}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, bool enable)
+\begin{DoxyCompactList}\small\item\em Switches to enable the pre-\/trigger back-\/to-\/back mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_gabcb4cd84d67c908882f7729fb0a5f1c0}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, bool enable)
+\begin{DoxyCompactList}\small\item\em Switches to enable the pre-\/trigger output. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_ga40fe32a5922373838d10ca464de532a4}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, bool enable)
+\begin{DoxyCompactList}\small\item\em Switches to enable the pre-\/trigger. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_ga6ffffda960f2c32f1a3f60d87a184692}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag} (uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn)
+\begin{DoxyCompactList}\small\item\em Clears the flag which indicates that the P\+DB counter has reached the pre-\/trigger delay value. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_gaf2bb2448e5b1d963638db5526e8545ef}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag} (uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn)
+\begin{DoxyCompactList}\small\item\em Clears the flag which indicates that a sequence error has been detected. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_ga83a1deb20007651ed2b52bdcae9702e9}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count} (uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Sets the pre-\/trigger delay value. \end{DoxyCompactList}\item 
+void \hyperlink{group__pdb__hal_ga8c6f17719ef1626da57a17dc79bc891e}{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t pulse\+Chn, bool enable)
+\begin{DoxyCompactList}\small\item\em Switches to enable the pulse-\/out trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!pdb\+\_\+load\+\_\+mode\+\_\+t@{pdb\+\_\+load\+\_\+mode\+\_\+t}}
+\index{pdb\+\_\+load\+\_\+mode\+\_\+t@{pdb\+\_\+load\+\_\+mode\+\_\+t}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{pdb\+\_\+load\+\_\+mode\+\_\+t}{pdb_load_mode_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \+\_\+pdb\+\_\+load\+\_\+mode}  {\bf pdb\+\_\+load\+\_\+mode\+\_\+t}}\hypertarget{group__pdb__hal_gaee15374478afc65a8d15ee4b5e1fdd44}{}\label{group__pdb__hal_gaee15374478afc65a8d15ee4b5e1fdd44}
+
+
+Defines the type of value load mode for the P\+DB module. 
+
+Some timing related registers, such as the M\+OD, I\+D\+LY, C\+Hn\+D\+L\+Ym, I\+N\+Tx and P\+Oy\+D\+LY, buffer the setting values. Only the load operation is triggered. The setting value is loaded from a buffer and takes effect. There are four loading modes to fit different applications. \index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t@{pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t}}
+\index{pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t@{pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t}{pdb_mult_factor_mode_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode}  {\bf pdb\+\_\+mult\+\_\+factor\+\_\+mode\+\_\+t}}\hypertarget{group__pdb__hal_ga26a3aaa96982c57d4db1c4e579dc59db}{}\label{group__pdb__hal_ga26a3aaa96982c57d4db1c4e579dc59db}
+
+
+Defines the type of the multiplication source mode for P\+DB. 
+
+Selects the multiplication factor of the prescaler divider for the P\+DB counter clock. \index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t@{pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t}}
+\index{pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t@{pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t}{pdb_trigger_src_mode_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode}  {\bf pdb\+\_\+trigger\+\_\+src\+\_\+mode\+\_\+t}}\hypertarget{group__pdb__hal_ga309bd99814bc35b81b79d08340d23258}{}\label{group__pdb__hal_ga309bd99814bc35b81b79d08340d23258}
+
+
+Defines the type of trigger source mode for the P\+DB. 
+
+Selects the trigger input source for the P\+DB. The trigger input source can be internal or external (E\+X\+T\+RG pin), or the software trigger. 
+
+\subsection{Enumeration Type Documentation}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode@{\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode}}
+\index{\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode@{\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode}{_pdb_clk_prescaler_div_mode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+pdb\+\_\+clk\+\_\+prescaler\+\_\+div\+\_\+mode}}\hypertarget{group__pdb__hal_gaf0f364ab5a47793544fdd1b60438a1ef}{}\label{group__pdb__hal_gaf0f364ab5a47793544fdd1b60438a1ef}
+
+
+Defines the type of prescaler divider for the P\+DB counter clock. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Pdb\+Clk\+Pre\+Div\+By1@{k\+Pdb\+Clk\+Pre\+Div\+By1}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By1@{k\+Pdb\+Clk\+Pre\+Div\+By1}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By1\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa6bf562905ca594c518454501697f419a}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa6bf562905ca594c518454501697f419a}
+}]Counting divided by multiplication factor selected by M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By2@{k\+Pdb\+Clk\+Pre\+Div\+By2}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By2@{k\+Pdb\+Clk\+Pre\+Div\+By2}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By2\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa5e1cff952ec04b21b17b4b639f635557}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa5e1cff952ec04b21b17b4b639f635557}
+}]Counting divided by multiplication factor selected by 2 times of\+M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By4@{k\+Pdb\+Clk\+Pre\+Div\+By4}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By4@{k\+Pdb\+Clk\+Pre\+Div\+By4}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By4\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa46c4ef05ee4ea0510bfe4152aaa74a4d}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa46c4ef05ee4ea0510bfe4152aaa74a4d}
+}]Counting divided by multiplication factor selected by 4 times of\+M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By8@{k\+Pdb\+Clk\+Pre\+Div\+By8}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By8@{k\+Pdb\+Clk\+Pre\+Div\+By8}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By8\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efab5e92786aab31366c36d122756da8bf8}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efab5e92786aab31366c36d122756da8bf8}
+}]Counting divided by multiplication factor selected by 8 times of\+M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By16@{k\+Pdb\+Clk\+Pre\+Div\+By16}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By16@{k\+Pdb\+Clk\+Pre\+Div\+By16}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By16\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa66d9b90a06f9ba0be52ad304e3cda138}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa66d9b90a06f9ba0be52ad304e3cda138}
+}]Counting divided by multiplication factor selected by 16 times of\+M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By32@{k\+Pdb\+Clk\+Pre\+Div\+By32}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By32@{k\+Pdb\+Clk\+Pre\+Div\+By32}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By32\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa253bd0ea918f48574a079919092238ab}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa253bd0ea918f48574a079919092238ab}
+}]Counting divided by multiplication factor selected by 32 times of\+M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By64@{k\+Pdb\+Clk\+Pre\+Div\+By64}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By64@{k\+Pdb\+Clk\+Pre\+Div\+By64}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By64\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa3c4096e8e28719129d39ac6495ce169b}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa3c4096e8e28719129d39ac6495ce169b}
+}]Counting divided by multiplication factor selected by 64 times of\+M\+U\+LT. \index{k\+Pdb\+Clk\+Pre\+Div\+By128@{k\+Pdb\+Clk\+Pre\+Div\+By128}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Clk\+Pre\+Div\+By128@{k\+Pdb\+Clk\+Pre\+Div\+By128}}\item[{\em 
+k\+Pdb\+Clk\+Pre\+Div\+By128\hypertarget{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa97f9ba909984261210b6483b759afc69}{}\label{group__pdb__hal_ggaf0f364ab5a47793544fdd1b60438a1efa97f9ba909984261210b6483b759afc69}
+}]Counting divided by multiplication factor selected by 128 times of\+M\+U\+LT. \end{description}
+\end{Desc}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!\+\_\+pdb\+\_\+load\+\_\+mode@{\+\_\+pdb\+\_\+load\+\_\+mode}}
+\index{\+\_\+pdb\+\_\+load\+\_\+mode@{\+\_\+pdb\+\_\+load\+\_\+mode}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+pdb\+\_\+load\+\_\+mode}{_pdb_load_mode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+pdb\+\_\+load\+\_\+mode}}\hypertarget{group__pdb__hal_ga24cd30e248ca866cb85a353b2c69ac65}{}\label{group__pdb__hal_ga24cd30e248ca866cb85a353b2c69ac65}
+
+
+Defines the type of value load mode for the P\+DB module. 
+
+Some timing related registers, such as the M\+OD, I\+D\+LY, C\+Hn\+D\+L\+Ym, I\+N\+Tx and P\+Oy\+D\+LY, buffer the setting values. Only the load operation is triggered. The setting value is loaded from a buffer and takes effect. There are four loading modes to fit different applications. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Pdb\+Load\+Immediately@{k\+Pdb\+Load\+Immediately}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Load\+Immediately@{k\+Pdb\+Load\+Immediately}}\item[{\em 
+k\+Pdb\+Load\+Immediately\hypertarget{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65a0426c87a5f64ded022bdc050cf1c2310}{}\label{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65a0426c87a5f64ded022bdc050cf1c2310}
+}]Loaded immediately after load operation. \index{k\+Pdb\+Load\+At\+Modulo\+Counter@{k\+Pdb\+Load\+At\+Modulo\+Counter}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Load\+At\+Modulo\+Counter@{k\+Pdb\+Load\+At\+Modulo\+Counter}}\item[{\em 
+k\+Pdb\+Load\+At\+Modulo\+Counter\hypertarget{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65aaa293dc9deca57e1aeae40e634a08365}{}\label{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65aaa293dc9deca57e1aeae40e634a08365}
+}]Loaded when counter hits the modulo after load operation. \index{k\+Pdb\+Load\+At\+Next\+Trigger@{k\+Pdb\+Load\+At\+Next\+Trigger}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Load\+At\+Next\+Trigger@{k\+Pdb\+Load\+At\+Next\+Trigger}}\item[{\em 
+k\+Pdb\+Load\+At\+Next\+Trigger\hypertarget{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65ac5681120208e96a265d73b243cca3702}{}\label{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65ac5681120208e96a265d73b243cca3702}
+}]Loaded when detecting an input trigger after load operation. \index{k\+Pdb\+Load\+At\+Modulo\+Counter\+Or\+Next\+Trigger@{k\+Pdb\+Load\+At\+Modulo\+Counter\+Or\+Next\+Trigger}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Load\+At\+Modulo\+Counter\+Or\+Next\+Trigger@{k\+Pdb\+Load\+At\+Modulo\+Counter\+Or\+Next\+Trigger}}\item[{\em 
+k\+Pdb\+Load\+At\+Modulo\+Counter\+Or\+Next\+Trigger\hypertarget{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65a4f31f7acd4f40c22fcb37911906c62d3}{}\label{group__pdb__hal_gga24cd30e248ca866cb85a353b2c69ac65a4f31f7acd4f40c22fcb37911906c62d3}
+}]Loaded when counter hits the modulo or detecting an input trigger after load operation. \end{description}
+\end{Desc}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode@{\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode}}
+\index{\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode@{\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode}{_pdb_mult_factor_mode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+pdb\+\_\+mult\+\_\+factor\+\_\+mode}}\hypertarget{group__pdb__hal_gae87b5a0cf111784453bd0090c1a05254}{}\label{group__pdb__hal_gae87b5a0cf111784453bd0090c1a05254}
+
+
+Defines the type of the multiplication source mode for P\+DB. 
+
+Selects the multiplication factor of the prescaler divider for the P\+DB counter clock. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Pdb\+Mult\+Factor\+As1@{k\+Pdb\+Mult\+Factor\+As1}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Mult\+Factor\+As1@{k\+Pdb\+Mult\+Factor\+As1}}\item[{\em 
+k\+Pdb\+Mult\+Factor\+As1\hypertarget{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254a5b0fbc4cbb169d1e904a6028e464c3a5}{}\label{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254a5b0fbc4cbb169d1e904a6028e464c3a5}
+}]Multiplication factor is 1. \index{k\+Pdb\+Mult\+Factor\+As10@{k\+Pdb\+Mult\+Factor\+As10}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Mult\+Factor\+As10@{k\+Pdb\+Mult\+Factor\+As10}}\item[{\em 
+k\+Pdb\+Mult\+Factor\+As10\hypertarget{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254adf5e8b02d6cb032d3c5158fba1249f5a}{}\label{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254adf5e8b02d6cb032d3c5158fba1249f5a}
+}]Multiplication factor is 10. \index{k\+Pdb\+Mult\+Factor\+As20@{k\+Pdb\+Mult\+Factor\+As20}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Mult\+Factor\+As20@{k\+Pdb\+Mult\+Factor\+As20}}\item[{\em 
+k\+Pdb\+Mult\+Factor\+As20\hypertarget{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254ab045fefa8a71122211b4c02a1f0717a0}{}\label{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254ab045fefa8a71122211b4c02a1f0717a0}
+}]Multiplication factor is 20. \index{k\+Pdb\+Mult\+Factor\+As40@{k\+Pdb\+Mult\+Factor\+As40}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Mult\+Factor\+As40@{k\+Pdb\+Mult\+Factor\+As40}}\item[{\em 
+k\+Pdb\+Mult\+Factor\+As40\hypertarget{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254a3a91ab697bf34c36f70a8496fde8d37b}{}\label{group__pdb__hal_ggae87b5a0cf111784453bd0090c1a05254a3a91ab697bf34c36f70a8496fde8d37b}
+}]Multiplication factor is 40. \end{description}
+\end{Desc}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!\+\_\+pdb\+\_\+status@{\+\_\+pdb\+\_\+status}}
+\index{\+\_\+pdb\+\_\+status@{\+\_\+pdb\+\_\+status}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+pdb\+\_\+status}{_pdb_status}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+pdb\+\_\+status}}\hypertarget{group__pdb__hal_gaa17da678ec0a92f7c1dd0dfa2a58717f}{}\label{group__pdb__hal_gaa17da678ec0a92f7c1dd0dfa2a58717f}
+
+
+P\+DB status return codes. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Success@{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Success}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Status\+\_\+\+P\+D\+B\+\_\+\+Success@{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Success}}\item[{\em 
+k\+Status\+\_\+\+P\+D\+B\+\_\+\+Success\hypertarget{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717fa6fe6047b626a61c7f0ba70c251b66f0d}{}\label{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717fa6fe6047b626a61c7f0ba70c251b66f0d}
+}]Success. \index{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Invalid\+Argument@{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Invalid\+Argument}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Status\+\_\+\+P\+D\+B\+\_\+\+Invalid\+Argument@{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Invalid\+Argument}}\item[{\em 
+k\+Status\+\_\+\+P\+D\+B\+\_\+\+Invalid\+Argument\hypertarget{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717faed731bf434c59c6376549d7cd5919888}{}\label{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717faed731bf434c59c6376549d7cd5919888}
+}]Invalid argument existed. \index{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Failed@{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Failed}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Status\+\_\+\+P\+D\+B\+\_\+\+Failed@{k\+Status\+\_\+\+P\+D\+B\+\_\+\+Failed}}\item[{\em 
+k\+Status\+\_\+\+P\+D\+B\+\_\+\+Failed\hypertarget{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717fad120bd1f770605f5c7f73f23cd6ceba3}{}\label{group__pdb__hal_ggaa17da678ec0a92f7c1dd0dfa2a58717fad120bd1f770605f5c7f73f23cd6ceba3}
+}]Execution failed. \end{description}
+\end{Desc}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode@{\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode}}
+\index{\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode@{\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode}{_pdb_trigger_src_mode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+pdb\+\_\+trigger\+\_\+src\+\_\+mode}}\hypertarget{group__pdb__hal_ga436ffb28ac0668778b62d7e380815cb9}{}\label{group__pdb__hal_ga436ffb28ac0668778b62d7e380815cb9}
+
+
+Defines the type of trigger source mode for the P\+DB. 
+
+Selects the trigger input source for the P\+DB. The trigger input source can be internal or external (E\+X\+T\+RG pin), or the software trigger. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Pdb\+Trigger0@{k\+Pdb\+Trigger0}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger0@{k\+Pdb\+Trigger0}}\item[{\em 
+k\+Pdb\+Trigger0\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a326ac4a938724616edf746894eaac4b9}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a326ac4a938724616edf746894eaac4b9}
+}]Select trigger-\/\+In 0. \index{k\+Pdb\+Trigger1@{k\+Pdb\+Trigger1}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger1@{k\+Pdb\+Trigger1}}\item[{\em 
+k\+Pdb\+Trigger1\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a809dd71c0be75e448c1a9824234608cd}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a809dd71c0be75e448c1a9824234608cd}
+}]Select trigger-\/\+In 1. \index{k\+Pdb\+Trigger2@{k\+Pdb\+Trigger2}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger2@{k\+Pdb\+Trigger2}}\item[{\em 
+k\+Pdb\+Trigger2\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9aee0ceba4b2df0a48f9821d2ccfcc747b}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9aee0ceba4b2df0a48f9821d2ccfcc747b}
+}]Select trigger-\/\+In 2. \index{k\+Pdb\+Trigger3@{k\+Pdb\+Trigger3}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger3@{k\+Pdb\+Trigger3}}\item[{\em 
+k\+Pdb\+Trigger3\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ae9e1661f83e67853cba9deef103fc6a3}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ae9e1661f83e67853cba9deef103fc6a3}
+}]Select trigger-\/\+In 3. \index{k\+Pdb\+Trigger4@{k\+Pdb\+Trigger4}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger4@{k\+Pdb\+Trigger4}}\item[{\em 
+k\+Pdb\+Trigger4\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a30f832c4a176f913b5406348a4f8bc2c}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a30f832c4a176f913b5406348a4f8bc2c}
+}]Select trigger-\/\+In 4. \index{k\+Pdb\+Trigger5@{k\+Pdb\+Trigger5}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger5@{k\+Pdb\+Trigger5}}\item[{\em 
+k\+Pdb\+Trigger5\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a9a95473cb905e74369b5cb371990f3b4}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a9a95473cb905e74369b5cb371990f3b4}
+}]Select trigger-\/\+In 5. \index{k\+Pdb\+Trigger6@{k\+Pdb\+Trigger6}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger6@{k\+Pdb\+Trigger6}}\item[{\em 
+k\+Pdb\+Trigger6\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a50265bfda7724646083127660ec85628}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a50265bfda7724646083127660ec85628}
+}]Select trigger-\/\+In 6. \index{k\+Pdb\+Trigger7@{k\+Pdb\+Trigger7}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger7@{k\+Pdb\+Trigger7}}\item[{\em 
+k\+Pdb\+Trigger7\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9afb942d3c89ab6a7b46c6a188c14c961c}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9afb942d3c89ab6a7b46c6a188c14c961c}
+}]Select trigger-\/\+In 7. \index{k\+Pdb\+Trigger8@{k\+Pdb\+Trigger8}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger8@{k\+Pdb\+Trigger8}}\item[{\em 
+k\+Pdb\+Trigger8\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a72e0d71a8256dcda001600b77b4a2742}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a72e0d71a8256dcda001600b77b4a2742}
+}]Select trigger-\/\+In 8. \index{k\+Pdb\+Trigger9@{k\+Pdb\+Trigger9}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger9@{k\+Pdb\+Trigger9}}\item[{\em 
+k\+Pdb\+Trigger9\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ab10e37e88c8f9b818b7d45b89cbd7318}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ab10e37e88c8f9b818b7d45b89cbd7318}
+}]Select trigger-\/\+In 8. \index{k\+Pdb\+Trigger10@{k\+Pdb\+Trigger10}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger10@{k\+Pdb\+Trigger10}}\item[{\em 
+k\+Pdb\+Trigger10\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ad093843d0d341e56c204a5b80caf7c66}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ad093843d0d341e56c204a5b80caf7c66}
+}]Select trigger-\/\+In 10. \index{k\+Pdb\+Trigger11@{k\+Pdb\+Trigger11}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger11@{k\+Pdb\+Trigger11}}\item[{\em 
+k\+Pdb\+Trigger11\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a68018e91153cb404ed8d61f49ebabb5f}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a68018e91153cb404ed8d61f49ebabb5f}
+}]Select trigger-\/\+In 11. \index{k\+Pdb\+Trigger12@{k\+Pdb\+Trigger12}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger12@{k\+Pdb\+Trigger12}}\item[{\em 
+k\+Pdb\+Trigger12\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ace68ee8a3848d5d4fcfb51c17db8be25}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ace68ee8a3848d5d4fcfb51c17db8be25}
+}]Select trigger-\/\+In 12. \index{k\+Pdb\+Trigger13@{k\+Pdb\+Trigger13}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger13@{k\+Pdb\+Trigger13}}\item[{\em 
+k\+Pdb\+Trigger13\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9af014a0b070deb26383adb72ed4fc3227}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9af014a0b070deb26383adb72ed4fc3227}
+}]Select trigger-\/\+In 13. \index{k\+Pdb\+Trigger14@{k\+Pdb\+Trigger14}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Trigger14@{k\+Pdb\+Trigger14}}\item[{\em 
+k\+Pdb\+Trigger14\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ac22d9dc94b8faeae85dbbf53e43f674a}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9ac22d9dc94b8faeae85dbbf53e43f674a}
+}]Select trigger-\/\+In 14. \index{k\+Pdb\+Soft\+Trigger@{k\+Pdb\+Soft\+Trigger}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!k\+Pdb\+Soft\+Trigger@{k\+Pdb\+Soft\+Trigger}}\item[{\em 
+k\+Pdb\+Soft\+Trigger\hypertarget{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a05b38b4e6f5b74b8cf1ab3ea0ff27e54}{}\label{group__pdb__hal_gga436ffb28ac0668778b62d7e380815cb9a05b38b4e6f5b74b8cf1ab3ea0ff27e54}
+}]Select software trigger. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag(uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn)}{PDB_HAL_ClearPreTriggerFlag(uint32_t baseAddr, uint32_t chn, uint32_t preChn)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{chn, }
+\item[{uint32\+\_\+t}]{pre\+Chn}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_ga6ffffda960f2c32f1a3f60d87a184692}{}\label{group__pdb__hal_ga6ffffda960f2c32f1a3f60d87a184692}
+
+
+Clears the flag which indicates that the P\+DB counter has reached the pre-\/trigger delay value. 
+
+This function clears the flag which indicates that the P\+DB counter has reached the pre-\/trigger delay value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em chn} & A\+DC instance index for trigger. \\
+\hline
+{\em pre\+Chn} & A\+DC channel group index for trigger. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag(uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn)}{PDB_HAL_ClearPreTriggerSeqErrFlag(uint32_t baseAddr, uint32_t chn, uint32_t preChn)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Clear\+Pre\+Trigger\+Seq\+Err\+Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{chn, }
+\item[{uint32\+\_\+t}]{pre\+Chn}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_gaf2bb2448e5b1d963638db5526e8545ef}{}\label{group__pdb__hal_gaf2bb2448e5b1d963638db5526e8545ef}
+
+
+Clears the flag which indicates that a sequence error has been detected. 
+
+This function clears the flag which indicates that the sequence error has been detected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em chn} & A\+DC instance index for trigger. \\
+\hline
+{\em pre\+Chn} & A\+DC channel group index for trigger. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init(uint32\+\_\+t base\+Addr)}{PDB_HAL_Init(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_ga683d4e2dfdd5f5555cd8d4995340e45a}{}\label{group__pdb__hal_ga683d4e2dfdd5f5555cd8d4995340e45a}
+
+
+Resets the P\+DB registers to a known state. 
+
+This function resets the P\+DB registers to a known state. This state is defined in a reference manual and is power on reset value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, bool enable)}{PDB_HAL_SetPreTriggerBackToBackCmd(uint32_t baseAddr, uint32_t chn, uint32_t preChn, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Back\+To\+Back\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{chn, }
+\item[{uint32\+\_\+t}]{pre\+Chn, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_gaf63cd59a44d0692383a3158040bbaf02}{}\label{group__pdb__hal_gaf63cd59a44d0692383a3158040bbaf02}
+
+
+Switches to enable the pre-\/trigger back-\/to-\/back mode. 
+
+This function switches to enable the pre-\/trigger back-\/to-\/back mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em chn} & A\+DC instance index for trigger. \\
+\hline
+{\em pre\+Chn} & A\+DC channel group index for trigger. \\
+\hline
+{\em enable} & Switcher to assert the feature. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, bool enable)}{PDB_HAL_SetPreTriggerCmd(uint32_t baseAddr, uint32_t chn, uint32_t preChn, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{chn, }
+\item[{uint32\+\_\+t}]{pre\+Chn, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_ga40fe32a5922373838d10ca464de532a4}{}\label{group__pdb__hal_ga40fe32a5922373838d10ca464de532a4}
+
+
+Switches to enable the pre-\/trigger. 
+
+This function switches to enable the pre-\/trigger.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em chn} & A\+DC instance index for trigger. \\
+\hline
+{\em pre\+Chn} & A\+DC channel group index for trigger. \\
+\hline
+{\em enable} & Switcher to assert the feature. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count(uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, uint32\+\_\+t value)}{PDB_HAL_SetPreTriggerDelayCount(uint32_t baseAddr, uint32_t chn, uint32_t preChn, uint32_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Delay\+Count (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{chn, }
+\item[{uint32\+\_\+t}]{pre\+Chn, }
+\item[{uint32\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_ga83a1deb20007651ed2b52bdcae9702e9}{}\label{group__pdb__hal_ga83a1deb20007651ed2b52bdcae9702e9}
+
+
+Sets the pre-\/trigger delay value. 
+
+This function sets the pre-\/trigger delay value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em chn} & A\+DC instance index for trigger. \\
+\hline
+{\em pre\+Chn} & A\+DC channel group index for trigger. \\
+\hline
+{\em value} & Setting value for pre-\/trigger\textquotesingle{}s delay value. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t chn, uint32\+\_\+t pre\+Chn, bool enable)}{PDB_HAL_SetPreTriggerOutputCmd(uint32_t baseAddr, uint32_t chn, uint32_t preChn, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pre\+Trigger\+Output\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{chn, }
+\item[{uint32\+\_\+t}]{pre\+Chn, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_gabcb4cd84d67c908882f7729fb0a5f1c0}{}\label{group__pdb__hal_gabcb4cd84d67c908882f7729fb0a5f1c0}
+
+
+Switches to enable the pre-\/trigger output. 
+
+This function switches to enable pre-\/trigger output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em chn} & A\+DC instance index for trigger. \\
+\hline
+{\em pre\+Chn} & A\+DC channel group index for trigger. \\
+\hline
+{\em enable} & Switcher to assert the feature. \\
+\hline
+\end{DoxyParams}
+\index{Pdb\+\_\+hal@{Pdb\+\_\+hal}!P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd}}
+\index{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd@{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd}!Pdb\+\_\+hal@{Pdb\+\_\+hal}}
+\subsubsection[{\texorpdfstring{P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t pulse\+Chn, bool enable)}{PDB_HAL_SetPulseOutCmd(uint32_t baseAddr, uint32_t pulseChn, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+D\+B\+\_\+\+H\+A\+L\+\_\+\+Set\+Pulse\+Out\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{pulse\+Chn, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pdb__hal_ga8c6f17719ef1626da57a17dc79bc891e}{}\label{group__pdb__hal_ga8c6f17719ef1626da57a17dc79bc891e}
+
+
+Switches to enable the pulse-\/out trigger. 
+
+This function switches to enable the pulse-\/out trigger.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for the module. \\
+\hline
+{\em pulse\+Chn} & Pulse-\/out channle index for trigger. \\
+\hline
+{\em enable} & Switcher to assert the feature. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,37 @@
+\hypertarget{union__hw__can__rximrn}{}\section{\+\_\+hw\+\_\+can\+\_\+rximrn Union Reference}
+\label{union__hw__can__rximrn}\index{\+\_\+hw\+\_\+can\+\_\+rximrn@{\+\_\+hw\+\_\+can\+\_\+rximrn}}
+
+
+H\+W\+\_\+\+C\+A\+N\+\_\+\+R\+X\+I\+M\+Rn -\/ Rx Individual Mask Registers (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+can.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__can__rximrn_1_1__hw__can__rximrn__bitfields}{\+\_\+hw\+\_\+can\+\_\+rximrn\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__can__rximrn_a31eddfea5c1d4da583f5ee1b016b2361}{}\label{union__hw__can__rximrn_a31eddfea5c1d4da583f5ee1b016b2361}
+
+\item 
+struct \hyperlink{struct__hw__can__rximrn_1_1__hw__can__rximrn__bitfields}{\+\_\+hw\+\_\+can\+\_\+rximrn\+::\+\_\+hw\+\_\+can\+\_\+rximrn\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__can__rximrn_a8bcdd53cd84323bf4b8232df135b3198}{}\label{union__hw__can__rximrn_a8bcdd53cd84323bf4b8232df135b3198}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+C\+A\+N\+\_\+\+R\+X\+I\+M\+Rn -\/ Rx Individual Mask Registers (RW) 
+
+Reset value\+: 0x00000000U
+
+These registers are located in R\+AM. R\+X\+I\+MR are used as acceptance masks for ID filtering in Rx M\+Bs and the Rx F\+I\+FO. If the Rx F\+I\+FO is not enabled, one mask register is provided for each available Mailbox, providing ID masking capability on a per Mailbox basis. When the Rx F\+I\+FO is enabled (M\+CR\mbox{[}R\+F\+EN\mbox{]} bit is asserted), up to 32 Rx Individual Mask Registers can apply to the Rx F\+I\+FO ID Filter Table elements on a one-\/to-\/one correspondence depending on the setting of C\+T\+R\+L2\mbox{[}R\+F\+FN\mbox{]}. R\+X\+I\+MR can only be written by the C\+PU while the module is in Freeze mode; otherwise, they are blocked by hardware. The Individual Rx Mask Registers are not affected by reset and must be explicitly initialized prior to any reception. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+can.\+h\end{DoxyCompactItemize}

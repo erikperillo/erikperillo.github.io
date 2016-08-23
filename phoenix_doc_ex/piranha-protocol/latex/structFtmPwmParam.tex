@@ -1,0 +1,50 @@
+\hypertarget{structFtmPwmParam}{}\section{Ftm\+Pwm\+Param Struct Reference}
+\label{structFtmPwmParam}\index{Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}}
+
+
+Flex\+Timer driver P\+WM parameter.  
+
+
+
+
+{\ttfamily \#include $<$fsl\+\_\+ftm\+\_\+hal.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__ftm__hal_gac70fc66eaed6c7863ae8f9c632bac77a}{ftm\+\_\+config\+\_\+mode\+\_\+t} \hyperlink{structFtmPwmParam_a8ea0c02d8ce13209f06c98a707a5037f}{mode}
+\item 
+\hyperlink{group__ftm__hal_gad072678496c10bf3ebe1bba980a8ec7d}{ftm\+\_\+pwm\+\_\+edge\+\_\+mode\+\_\+t} \hyperlink{structFtmPwmParam_a311ef6071723d29f3427f8a7bc580691}{edge\+Mode}
+\item 
+uint32\+\_\+t \hyperlink{structFtmPwmParam_ad165194b75959ee61877a6169c6e895b}{u\+Frequency\+HZ}
+\item 
+uint32\+\_\+t \hyperlink{structFtmPwmParam_a0ce2cb93a84dade11458809e303716c3}{u\+Duty\+Cycle\+Percent}
+\item 
+uint16\+\_\+t \hyperlink{structFtmPwmParam_a67950ed56a49a0e41fdd7f9f5124ea9c}{u\+First\+Edge\+Delay\+Percent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Flex\+Timer driver P\+WM parameter. 
+
+\subsection{Member Data Documentation}
+\index{Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}!edge\+Mode@{edge\+Mode}}
+\index{edge\+Mode@{edge\+Mode}!Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}}
+\subsubsection[{\texorpdfstring{edge\+Mode}{edgeMode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ftm\+\_\+pwm\+\_\+edge\+\_\+mode\+\_\+t} Ftm\+Pwm\+Param\+::edge\+Mode}\hypertarget{structFtmPwmParam_a311ef6071723d29f3427f8a7bc580691}{}\label{structFtmPwmParam_a311ef6071723d29f3427f8a7bc580691}
+P\+WM output mode \index{Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}!mode@{mode}}
+\index{mode@{mode}!Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}}
+\subsubsection[{\texorpdfstring{mode}{mode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ftm\+\_\+config\+\_\+mode\+\_\+t} Ftm\+Pwm\+Param\+::mode}\hypertarget{structFtmPwmParam_a8ea0c02d8ce13209f06c98a707a5037f}{}\label{structFtmPwmParam_a8ea0c02d8ce13209f06c98a707a5037f}
+Flex\+Timer P\+WM operation mode \index{Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}!u\+Duty\+Cycle\+Percent@{u\+Duty\+Cycle\+Percent}}
+\index{u\+Duty\+Cycle\+Percent@{u\+Duty\+Cycle\+Percent}!Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}}
+\subsubsection[{\texorpdfstring{u\+Duty\+Cycle\+Percent}{uDutyCyclePercent}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Ftm\+Pwm\+Param\+::u\+Duty\+Cycle\+Percent}\hypertarget{structFtmPwmParam_a0ce2cb93a84dade11458809e303716c3}{}\label{structFtmPwmParam_a0ce2cb93a84dade11458809e303716c3}
+P\+WM pulse width, value should be between 0 to 100 0=inactive signal(0\% duty cycle)... 100=active signal (100\% duty cycle). \index{Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}!u\+First\+Edge\+Delay\+Percent@{u\+First\+Edge\+Delay\+Percent}}
+\index{u\+First\+Edge\+Delay\+Percent@{u\+First\+Edge\+Delay\+Percent}!Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}}
+\subsubsection[{\texorpdfstring{u\+First\+Edge\+Delay\+Percent}{uFirstEdgeDelayPercent}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Ftm\+Pwm\+Param\+::u\+First\+Edge\+Delay\+Percent}\hypertarget{structFtmPwmParam_a67950ed56a49a0e41fdd7f9f5124ea9c}{}\label{structFtmPwmParam_a67950ed56a49a0e41fdd7f9f5124ea9c}
+Used only in combined P\+WM mode to generate asymmetrical P\+WM. Specifies the delay to the first edge in a P\+WM period. If unsure please leave as 0, should be specified as percentage of the P\+WM period \index{Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}!u\+Frequency\+HZ@{u\+Frequency\+HZ}}
+\index{u\+Frequency\+HZ@{u\+Frequency\+HZ}!Ftm\+Pwm\+Param@{Ftm\+Pwm\+Param}}
+\subsubsection[{\texorpdfstring{u\+Frequency\+HZ}{uFrequencyHZ}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Ftm\+Pwm\+Param\+::u\+Frequency\+HZ}\hypertarget{structFtmPwmParam_ad165194b75959ee61877a6169c6e895b}{}\label{structFtmPwmParam_ad165194b75959ee61877a6169c6e895b}
+P\+WM period in Hz 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/flextimer/fsl\+\_\+ftm\+\_\+hal.\+h\end{DoxyCompactItemize}

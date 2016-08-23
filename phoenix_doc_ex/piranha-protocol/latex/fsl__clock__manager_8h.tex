@@ -1,0 +1,64 @@
+\hypertarget{fsl__clock__manager_8h}{}\section{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/drivers/clock/fsl\+\_\+clock\+\_\+manager.h File Reference}
+\label{fsl__clock__manager_8h}\index{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/drivers/clock/fsl\+\_\+clock\+\_\+manager.\+h@{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/drivers/clock/fsl\+\_\+clock\+\_\+manager.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+mcg\+\_\+hal.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+sim\+\_\+hal.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries C\+P\+U\+\_\+\+X\+T\+A\+L1hz\+\_\+\+C\+L\+K\+\_\+\+HZ}~1
+\item 
+\#define {\bfseries C\+P\+U\+\_\+\+L\+P\+O\+\_\+\+C\+L\+K\+\_\+\+HZ}~1000
+\item 
+\#define {\bfseries S\+D\+H\+C0\+\_\+\+C\+L\+K\+IN}~0   /$\ast$ k\+Sim\+S\+D\+H\+C0\+\_\+\+C\+L\+K\+IN $\ast$/
+\item 
+\#define {\bfseries E\+N\+E\+T\+\_\+1588\+\_\+\+C\+L\+K\+IN}~0   /$\ast$ k\+Sim\+E\+N\+E\+T\+\_\+1588\+\_\+\+C\+L\+K\+IN $\ast$/
+\item 
+\#define {\bfseries E\+X\+T\+A\+L\+\_\+\+Clock}~0   /$\ast$ k\+Sim\+E\+X\+T\+A\+L\+\_\+\+Clock $\ast$/
+\item 
+\#define {\bfseries E\+X\+T\+A\+L1\+\_\+\+Clock}~0   /$\ast$ k\+Sim\+E\+X\+T\+A\+L1\+\_\+\+Clock $\ast$/
+\item 
+\#define {\bfseries U\+S\+B\+\_\+\+C\+L\+K\+IN}~0   /$\ast$ k\+Sim\+U\+S\+B\+\_\+\+C\+L\+K\+IN $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__clock__manager_gabd583c936fb62bc8e25cd4273b8447f0}{\+\_\+clock\+\_\+manager\+\_\+error\+\_\+code} \hyperlink{group__clock__manager_ga384b25940eac5c28dceb4e11131818da}{clock\+\_\+manager\+\_\+error\+\_\+code\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Error code definition for the clock manager A\+P\+Is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__clock__manager_gabd583c936fb62bc8e25cd4273b8447f0}{\+\_\+clock\+\_\+manager\+\_\+error\+\_\+code} \{ \\*
+\hyperlink{group__clock__manager_ggabd583c936fb62bc8e25cd4273b8447f0a27edd2a23adbf7e9827bddcca8c4d6b8}{k\+Clock\+Manager\+Success}, 
+\hyperlink{group__clock__manager_ggabd583c936fb62bc8e25cd4273b8447f0aea3c6b8205a2f60ab4f683ed14afa09a}{k\+Clock\+Manager\+No\+Such\+Clock\+Name}, 
+\hyperlink{group__clock__manager_ggabd583c936fb62bc8e25cd4273b8447f0a981f1392b7c9dc192f015f84832bf316}{k\+Clock\+Manager\+No\+Such\+Clock\+Module}, 
+\hyperlink{group__clock__manager_ggabd583c936fb62bc8e25cd4273b8447f0a89ca5f88b4048944221717c8f4b14753}{k\+Clock\+Manager\+No\+Such\+Clock\+Source}, 
+\\*
+\hyperlink{group__clock__manager_ggabd583c936fb62bc8e25cd4273b8447f0ac6478235feac2c8de2bad5dc4294e137}{k\+Clock\+Manager\+No\+Such\+Divider}, 
+\hyperlink{group__clock__manager_ggabd583c936fb62bc8e25cd4273b8447f0a1f2904e4f388c81c36c381557bffd548}{k\+Clock\+Manager\+Unknown}
+ \}\begin{DoxyCompactList}\small\item\em Error code definition for the clock manager A\+P\+Is. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Clock Frequencies}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__clock__manager_ga384b25940eac5c28dceb4e11131818da}{clock\+\_\+manager\+\_\+error\+\_\+code\+\_\+t} \hyperlink{group__clock__manager_gaaf2bcbff6bbb1ae3fa927d6636930952}{C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+\_\+\+Get\+Freq} (clock\+\_\+names\+\_\+t clock\+Name, uint32\+\_\+t $\ast$frequency)
+\begin{DoxyCompactList}\small\item\em Gets the clock frequency for a specific clock name. \end{DoxyCompactList}\item 
+\hyperlink{group__clock__manager_ga384b25940eac5c28dceb4e11131818da}{clock\+\_\+manager\+\_\+error\+\_\+code\+\_\+t} \hyperlink{group__clock__manager_ga5c4ffc75afc5217797a539ea944fe44e}{C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+\_\+\+Set\+Source} (\hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t} clock\+Source, uint8\+\_\+t setting)
+\begin{DoxyCompactList}\small\item\em Sets the clock source setting. \end{DoxyCompactList}\item 
+\hyperlink{group__clock__manager_ga384b25940eac5c28dceb4e11131818da}{clock\+\_\+manager\+\_\+error\+\_\+code\+\_\+t} \hyperlink{group__clock__manager_ga0dbd45226d934c3f647275ae08624e49}{C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+\_\+\+Get\+Source} (\hyperlink{group__sim__hal_ga9c9127c1f219ab5bfb55d7041124a8bf}{clock\+\_\+source\+\_\+names\+\_\+t} clock\+Source, uint8\+\_\+t $\ast$setting)
+\begin{DoxyCompactList}\small\item\em Gets the clock source setting. \end{DoxyCompactList}\item 
+\hyperlink{group__clock__manager_ga384b25940eac5c28dceb4e11131818da}{clock\+\_\+manager\+\_\+error\+\_\+code\+\_\+t} \hyperlink{group__clock__manager_ga588310517b8e2b50fdb2569bdba4116b}{C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+\_\+\+Set\+Divider} (\hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t} clock\+Divider, uint32\+\_\+t setting)
+\begin{DoxyCompactList}\small\item\em Sets the clock divider setting. \end{DoxyCompactList}\item 
+\hyperlink{group__clock__manager_ga384b25940eac5c28dceb4e11131818da}{clock\+\_\+manager\+\_\+error\+\_\+code\+\_\+t} \hyperlink{group__clock__manager_ga47be42a2115e8de1ab5d27c9a4c06330}{C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+\_\+\+Get\+Divider} (\hyperlink{group__sim__hal_ga51a225b8eb0e0d00e7911b3603d7caa2}{clock\+\_\+divider\+\_\+names\+\_\+t} clock\+Divider, uint32\+\_\+t $\ast$setting)
+\begin{DoxyCompactList}\small\item\em Gets the clock divider setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t {\bfseries g\+\_\+sim\+Base\+Addr} \mbox{[}$\,$\mbox{]}
+\item 
+const uint32\+\_\+t {\bfseries g\+\_\+mcg\+Base\+Addr} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}

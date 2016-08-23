@@ -1,0 +1,37 @@
+\hypertarget{union__hw__pmc__regsc}{}\section{\+\_\+hw\+\_\+pmc\+\_\+regsc Union Reference}
+\label{union__hw__pmc__regsc}\index{\+\_\+hw\+\_\+pmc\+\_\+regsc@{\+\_\+hw\+\_\+pmc\+\_\+regsc}}
+
+
+H\+W\+\_\+\+P\+M\+C\+\_\+\+R\+E\+G\+SC -\/ Regulator Status And Control register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+pmc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__pmc__regsc_1_1__hw__pmc__regsc__bitfields}{\+\_\+hw\+\_\+pmc\+\_\+regsc\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__pmc__regsc_a9cbd303299377d0b6f5e6e5dca062f56}{}\label{union__hw__pmc__regsc_a9cbd303299377d0b6f5e6e5dca062f56}
+
+\item 
+struct \hyperlink{struct__hw__pmc__regsc_1_1__hw__pmc__regsc__bitfields}{\+\_\+hw\+\_\+pmc\+\_\+regsc\+::\+\_\+hw\+\_\+pmc\+\_\+regsc\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__pmc__regsc_a84f815d055931105bfa80f141c80097f}{}\label{union__hw__pmc__regsc_a84f815d055931105bfa80f141c80097f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+P\+M\+C\+\_\+\+R\+E\+G\+SC -\/ Regulator Status And Control register (RW) 
+
+Reset value\+: 0x04U
+
+The P\+MC contains an internal voltage regulator. The voltage regulator design uses a bandgap reference that is also available through a buffer as input to certain internal peripherals, such as the C\+MP and A\+DC. The internal regulator provides a status bit (R\+E\+G\+O\+NS) indicating the regulator is in run regulation. This register is reset on Chip Reset Not V\+L\+LS and by reset types that trigger Chip Reset not V\+L\+LS. See the Reset section details for more information. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+pmc.\+h\end{DoxyCompactItemize}

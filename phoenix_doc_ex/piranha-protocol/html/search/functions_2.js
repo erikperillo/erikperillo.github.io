@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['scale',['scale',['../classSender.html#a3f9b3e01bba5182c99bcdcd255b2b54d',1,'Sender']]],
+  ['send',['send',['../classSender.html#a65ab243a47547575be6faccd9fb21127',1,'Sender']]],
+  ['send_5fabs_5fang_5fref',['send_abs_ang_ref',['../classSender.html#af6b81ecc0e0681f7319d7c1c00c87342',1,'Sender']]],
+  ['send_5fbrake',['send_brake',['../classSender.html#a0f766c1d8717e44ff355de0c94d2d37a',1,'Sender']]],
+  ['send_5fgnd_5fvel',['send_gnd_vel',['../classSender.html#a5481155d916e285a6a5aea6d15b65ff3',1,'Sender']]],
+  ['send_5fjog_5fvel',['send_jog_vel',['../classSender.html#a4dbfac20c2bb47fb3059177847cb3a0c',1,'Sender']]],
+  ['send_5fmag_5fang_5fref',['send_mag_ang_ref',['../classSender.html#a75c26041665a84c10188d30a3d66d92b',1,'Sender']]],
+  ['send_5fmag_5fcalib',['send_mag_calib',['../classSender.html#adaabd2ca227ee641c98448c80bc8b995',1,'Sender']]],
+  ['send_5fmsg',['send_msg',['../classSender.html#a02926397fba30138bf766d7a967d1318',1,'Sender::send_msg(uint8_t msg)'],['../classSender.html#aaad3560b43b3baf02e133ab3966711ab',1,'Sender::send_msg(uint8_t msg, float val, float min, float max)'],['../classSender.html#ab09ef77aed052f2dc2736655ee6b5598',1,'Sender::send_msg(uint8_t msg, float *vals, int size, float min, float max)'],['../classSender.html#abad229fe0df639fd1ccb38714d9c77ec',1,'Sender::send_msg(uint8_t msg, float *vals, float *mins, float *maxs, int size)']]],
+  ['send_5fmsg_5fang_5frst',['send_msg_ang_rst',['../classSender.html#a5b3b6bcf76321f5c51a1a6a8d2236294',1,'Sender']]],
+  ['send_5fmsg_5fang_5fset',['send_msg_ang_set',['../classSender.html#ae0364f42abe89410ee2b296971eeda7e',1,'Sender']]],
+  ['send_5fmsg_5fgyro_5fzero',['send_msg_gyro_zero',['../classSender.html#a9c83cd3f62855eb89f93c217f7640880',1,'Sender']]],
+  ['send_5fmsg_5fled_5foff',['send_msg_led_off',['../classSender.html#a224a07f8f7d1e150a2d55ef826149121',1,'Sender']]],
+  ['send_5fmsg_5fled_5fon',['send_msg_led_on',['../classSender.html#aa6188a96dad9343953564a3c8b83a765',1,'Sender']]],
+  ['send_5fmsg_5fnone',['send_msg_none',['../classSender.html#a572a11a494dd094393f6dae1bfa21699',1,'Sender']]],
+  ['send_5fpid_5fparams',['send_pid_params',['../classSender.html#a45e907040a2c705cadcd207f46d31b72',1,'Sender']]],
+  ['send_5frel_5fang_5fref',['send_rel_ang_ref',['../classSender.html#a2b96697abbe41d9c6859a4f76b3c6cb6',1,'Sender']]],
+  ['sender',['Sender',['../classSender.html#ae14150bc5755bf478a7ad1904c017ba1',1,'Sender::Sender()'],['../classSender.html#a5cd264b370a787a72739587aa8752004',1,'Sender::Sender(int socket, struct sockaddr_in receiver_addr)'],['../classSender.html#a84c28b0127e73e519a8713a7aa070327',1,'Sender::Sender(const char *receiver_host, unsigned short receiver_port, int sock_domain=AF_INET, int sock_flags=0)']]],
+  ['set_5fheader',['set_header',['../classSender.html#ae9d3dc0d2d5437301c95a9b2705e237c',1,'Sender']]],
+  ['set_5fraw_5fval',['set_raw_val',['../classSender.html#afe046ebb888182a423ce0b4b4202d6ec',1,'Sender']]],
+  ['set_5freceiver_5faddr',['set_receiver_addr',['../classSender.html#a45f977589e7c0af7a557b9f29a47aa8b',1,'Sender::set_receiver_addr(const char *host=RECEIVER_IFACE_ADDR, unsigned short port=RECEIVER_PORT)'],['../classSender.html#a68ac5477ee2f8406a778b3611b6bffaf',1,'Sender::set_receiver_addr(const struct sockaddr_in &amp;addr)']]],
+  ['set_5fsender_5faddr',['set_sender_addr',['../classReceiver.html#aa147f9f403f704d98610892f3e5adf95',1,'Receiver']]],
+  ['set_5fsocket',['set_socket',['../classSender.html#a6a151617c58294bc35904be60f8a067f',1,'Sender::set_socket(int domain=AF_INET, int flags=0)'],['../classSender.html#a19d2ffec5053ab10b10120cdb53e0cac',1,'Sender::set_socket(int sock)'],['../classReceiver.html#af87898ab72d053f1650540c2fa2947d0',1,'Receiver::set_socket(const UDPSocket &amp;sock)'],['../classReceiver.html#acc405024239f1975412f575e91aa5a8f',1,'Receiver::set_socket(int port=RECEIVER_PORT, int timeout=1)']]],
+  ['set_5fval',['set_val',['../classSender.html#af290dc1fdd12fc1b1c1bec91f7dc0311',1,'Sender']]]
+];

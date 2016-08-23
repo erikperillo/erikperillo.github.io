@@ -1,0 +1,129 @@
+\hypertarget{group__wdog__hal}{}\section{Wdog\+\_\+hal}
+\label{group__wdog__hal}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union__wdog__common__config}{\+\_\+wdog\+\_\+common\+\_\+config}
+\begin{DoxyCompactList}\small\item\em Define the common configure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries W\+D\+O\+G\+\_\+\+U\+N\+L\+O\+C\+K\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+I\+GH}~(0x\+C520\+U)\hypertarget{group__wdog__hal_ga5eb4cb6520ed8d76d92f7fed0e6bc70d}{}\label{group__wdog__hal_ga5eb4cb6520ed8d76d92f7fed0e6bc70d}
+
+\item 
+\#define {\bfseries W\+D\+O\+G\+\_\+\+U\+N\+L\+O\+C\+K\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+OW}~(0x\+D928\+U)\hypertarget{group__wdog__hal_gaba9c3e63ac06eed0c8206705050e0669}{}\label{group__wdog__hal_gaba9c3e63ac06eed0c8206705050e0669}
+
+\item 
+\#define {\bfseries W\+D\+O\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+I\+GH}~(0x\+A602\+U)\hypertarget{group__wdog__hal_ga4c7b691c66ca0647605ef1db03ab82c3}{}\label{group__wdog__hal_ga4c7b691c66ca0647605ef1db03ab82c3}
+
+\item 
+\#define {\bfseries W\+D\+O\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+OW}~(0x\+B480\+U)\hypertarget{group__wdog__hal_ga4b4c200b5b239da273a0124c89d627ee}{}\label{group__wdog__hal_ga4b4c200b5b239da273a0124c89d627ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__wdog__hal_ga39f05d1e3aef745dad3b9e3ebd37260a}{\+\_\+wdog\+\_\+clock\+\_\+source} \hyperlink{group__wdog__hal_gaefa111de2da7243f0be401a7eeba88d2}{wdog\+\_\+clock\+\_\+source\+\_\+t}\hypertarget{group__wdog__hal_gaefa111de2da7243f0be401a7eeba88d2}{}\label{group__wdog__hal_gaefa111de2da7243f0be401a7eeba88d2}
+
+\begin{DoxyCompactList}\small\item\em Watchdog clock source selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__wdog__hal_ga21b132de3ebfea46c098feb9a0ee742d}{\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value} \hyperlink{group__wdog__hal_ga5659968e0766fb95c68ff0e90423064c}{wdog\+\_\+clock\+\_\+prescaler\+\_\+value\+\_\+t}\hypertarget{group__wdog__hal_ga5659968e0766fb95c68ff0e90423064c}{}\label{group__wdog__hal_ga5659968e0766fb95c68ff0e90423064c}
+
+\begin{DoxyCompactList}\small\item\em Define the selection of the clock prescaler. \end{DoxyCompactList}\item 
+typedef union \hyperlink{union__wdog__common__config}{\+\_\+wdog\+\_\+common\+\_\+config} \hyperlink{group__wdog__hal_ga6226a4eb4833dc0ccedd0e01af1e4819}{wdog\+\_\+common\+\_\+config}\hypertarget{group__wdog__hal_ga6226a4eb4833dc0ccedd0e01af1e4819}{}\label{group__wdog__hal_ga6226a4eb4833dc0ccedd0e01af1e4819}
+
+\begin{DoxyCompactList}\small\item\em Define the common configure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__wdog__hal_ga39f05d1e3aef745dad3b9e3ebd37260a}{\+\_\+wdog\+\_\+clock\+\_\+source} \{ \hyperlink{group__wdog__hal_gga39f05d1e3aef745dad3b9e3ebd37260aa90a31bf386939ee6bd642e6d2a58933e}{k\+Wdog\+Clock\+Source\+Lpo\+Clock} = 0x0U, 
+\hyperlink{group__wdog__hal_gga39f05d1e3aef745dad3b9e3ebd37260aa9768e70993e1c8572672c4009a3757e0}{k\+Wdog\+Clock\+Source\+Bus\+Clock} = 0x1U
+ \}\begin{DoxyCompactList}\small\item\em Watchdog clock source selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__wdog__hal_ga21b132de3ebfea46c098feb9a0ee742d}{\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value} \{ \\*
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daa63e5d740eb86f7c245f07c915c2fa53}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide1} = 0x0U, 
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da7a4a268625dcd354de43bb8747d35a11}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide2} = 0x1U, 
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742dac38a35a15917cb3f95db65faa47b72e3}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide3} = 0x2U, 
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da6744bb2715cab990334bd129ca089901}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide4} = 0x3U, 
+\\*
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daf2a94c736d3b2eadc5880efe413c425e}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide5} = 0x4U, 
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da9da8c0b5226b823f446bd884a2470545}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide6} = 0x5U, 
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daab7b6a6aa6a836f1bc68959ec834690e}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide7} = 0x6U, 
+\hyperlink{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daa51bba82f53dcc1587b7ebb115473840}{k\+Wdog\+Clock\+Prescaler\+Value\+Devide8} = 0x7U
+ \}\begin{DoxyCompactList}\small\item\em Define the selection of the clock prescaler. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Watchdog H\+AL.}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__wdog__hal_ga80c766e7e9ba83f7f968f5c4e2370b19}{W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Restores the W\+D\+OG module to reset value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value@{\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value}}
+\index{\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value@{\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value}{_wdog_clock_prescaler_value}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+wdog\+\_\+clock\+\_\+prescaler\+\_\+value}}\hypertarget{group__wdog__hal_ga21b132de3ebfea46c098feb9a0ee742d}{}\label{group__wdog__hal_ga21b132de3ebfea46c098feb9a0ee742d}
+
+
+Define the selection of the clock prescaler. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide1@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide1}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide1@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide1}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide1\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daa63e5d740eb86f7c245f07c915c2fa53}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daa63e5d740eb86f7c245f07c915c2fa53}
+}]Divided by 1 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide2@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide2}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide2@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide2}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide2\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da7a4a268625dcd354de43bb8747d35a11}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da7a4a268625dcd354de43bb8747d35a11}
+}]Divided by 2 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide3@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide3}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide3@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide3}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide3\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742dac38a35a15917cb3f95db65faa47b72e3}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742dac38a35a15917cb3f95db65faa47b72e3}
+}]Divided by 3 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide4@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide4}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide4@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide4}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide4\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da6744bb2715cab990334bd129ca089901}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da6744bb2715cab990334bd129ca089901}
+}]Divided by 4 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide5@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide5}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide5@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide5}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide5\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daf2a94c736d3b2eadc5880efe413c425e}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daf2a94c736d3b2eadc5880efe413c425e}
+}]Divided by 5 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide6@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide6}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide6@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide6}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide6\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da9da8c0b5226b823f446bd884a2470545}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742da9da8c0b5226b823f446bd884a2470545}
+}]Divided by 6 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide7@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide7}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide7@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide7}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide7\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daab7b6a6aa6a836f1bc68959ec834690e}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daab7b6a6aa6a836f1bc68959ec834690e}
+}]Divided by 7 \index{k\+Wdog\+Clock\+Prescaler\+Value\+Devide8@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide8}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Prescaler\+Value\+Devide8@{k\+Wdog\+Clock\+Prescaler\+Value\+Devide8}}\item[{\em 
+k\+Wdog\+Clock\+Prescaler\+Value\+Devide8\hypertarget{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daa51bba82f53dcc1587b7ebb115473840}{}\label{group__wdog__hal_gga21b132de3ebfea46c098feb9a0ee742daa51bba82f53dcc1587b7ebb115473840}
+}]Divided by 8 \end{description}
+\end{Desc}
+\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!\+\_\+wdog\+\_\+clock\+\_\+source@{\+\_\+wdog\+\_\+clock\+\_\+source}}
+\index{\+\_\+wdog\+\_\+clock\+\_\+source@{\+\_\+wdog\+\_\+clock\+\_\+source}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+wdog\+\_\+clock\+\_\+source}{_wdog_clock_source}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+wdog\+\_\+clock\+\_\+source}}\hypertarget{group__wdog__hal_ga39f05d1e3aef745dad3b9e3ebd37260a}{}\label{group__wdog__hal_ga39f05d1e3aef745dad3b9e3ebd37260a}
+
+
+Watchdog clock source selection. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Wdog\+Clock\+Source\+Lpo\+Clock@{k\+Wdog\+Clock\+Source\+Lpo\+Clock}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Source\+Lpo\+Clock@{k\+Wdog\+Clock\+Source\+Lpo\+Clock}}\item[{\em 
+k\+Wdog\+Clock\+Source\+Lpo\+Clock\hypertarget{group__wdog__hal_gga39f05d1e3aef745dad3b9e3ebd37260aa90a31bf386939ee6bd642e6d2a58933e}{}\label{group__wdog__hal_gga39f05d1e3aef745dad3b9e3ebd37260aa90a31bf386939ee6bd642e6d2a58933e}
+}]Clock source is L\+PO clock \index{k\+Wdog\+Clock\+Source\+Bus\+Clock@{k\+Wdog\+Clock\+Source\+Bus\+Clock}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!k\+Wdog\+Clock\+Source\+Bus\+Clock@{k\+Wdog\+Clock\+Source\+Bus\+Clock}}\item[{\em 
+k\+Wdog\+Clock\+Source\+Bus\+Clock\hypertarget{group__wdog__hal_gga39f05d1e3aef745dad3b9e3ebd37260aa9768e70993e1c8572672c4009a3757e0}{}\label{group__wdog__hal_gga39f05d1e3aef745dad3b9e3ebd37260aa9768e70993e1c8572672c4009a3757e0}
+}]Clock source is Bus clock \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Wdog\+\_\+hal@{Wdog\+\_\+hal}!W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init@{W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init}}
+\index{W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init@{W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init}!Wdog\+\_\+hal@{Wdog\+\_\+hal}}
+\subsubsection[{\texorpdfstring{W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init(uint32\+\_\+t base\+Addr)}{WDOG_HAL_Init(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void W\+D\+O\+G\+\_\+\+H\+A\+L\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__wdog__hal_ga80c766e7e9ba83f7f968f5c4e2370b19}{}\label{group__wdog__hal_ga80c766e7e9ba83f7f968f5c4e2370b19}
+
+
+Restores the W\+D\+OG module to reset value. 
+
+This function restores the W\+D\+OG module to reset value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & The W\+D\+OG peripheral base address \\
+\hline
+\end{DoxyParams}

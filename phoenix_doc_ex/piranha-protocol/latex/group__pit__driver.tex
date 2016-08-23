@@ -1,0 +1,258 @@
+\hypertarget{group__pit__driver}{}\section{Pit\+\_\+driver}
+\label{group__pit__driver}\index{Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPitUserConfig}{Pit\+User\+Config}
+\begin{DoxyCompactList}\small\item\em P\+IT timer configuration structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structPitUserConfig}{Pit\+User\+Config} \hyperlink{group__pit__driver_ga05f144da781ddb765b1ec9ac8887c7eb}{pit\+\_\+user\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em P\+IT timer configuration structure. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{group__pit__driver_gaa877fbdf0d2c05a13fde6c680d1d6b4d}{pit\+\_\+isr\+\_\+callback\+\_\+t}) (void)\hypertarget{group__pit__driver_gaa877fbdf0d2c05a13fde6c680d1d6b4d}{}\label{group__pit__driver_gaa877fbdf0d2c05a13fde6c680d1d6b4d}
+
+\begin{DoxyCompactList}\small\item\em P\+IT I\+SR callback function typedef. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Initialize and Shutdown}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__pit__driver_gade7db6b50ff1fc8209b295f89f775a9d}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init} (uint32\+\_\+t instance, bool is\+Run\+In\+Debug)
+\begin{DoxyCompactList}\small\item\em Initializes the P\+IT module. \end{DoxyCompactList}\item 
+void \hyperlink{group__pit__driver_gab5a3126edf78349fe4845c48bfbb6978}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit} (uint32\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Disables the P\+IT module and gate control. \end{DoxyCompactList}\item 
+void \hyperlink{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel} (uint32\+\_\+t instance, uint32\+\_\+t channel, const \hyperlink{group__pit__driver_ga05f144da781ddb765b1ec9ac8887c7eb}{pit\+\_\+user\+\_\+config\+\_\+t} $\ast$config)
+\begin{DoxyCompactList}\small\item\em Initializes the P\+IT channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Timer Start and Stop}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__pit__driver_ga1443f423c01d741dbe7ad9fd81eb9f59}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer} (uint32\+\_\+t instance, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Starts the timer counting. \end{DoxyCompactList}\item 
+void \hyperlink{group__pit__driver_ga368d1b78f6c2fb6b351f797b724007a6}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer} (uint32\+\_\+t instance, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Stops the timer counting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Timer Period}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__pit__driver_ga7b0d9eeb96ae3810c801b9998d5774bf}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us} (uint32\+\_\+t instance, uint32\+\_\+t channel, uint32\+\_\+t us)
+\begin{DoxyCompactList}\small\item\em Sets the timer period in microseconds. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__pit__driver_ga5ee81b85b0c672604b35855c86967ac7}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us} (uint32\+\_\+t instance, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Reads the current timer value in microseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{I\+SR Callback Function}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__pit__driver_ga1a28c078e3820e920560f56c4e081948}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback} (uint32\+\_\+t instance, uint32\+\_\+t channel, \hyperlink{group__pit__driver_gaa877fbdf0d2c05a13fde6c680d1d6b4d}{pit\+\_\+isr\+\_\+callback\+\_\+t} function)
+\begin{DoxyCompactList}\small\item\em Registers the P\+IT I\+SR callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!pit\+\_\+user\+\_\+config\+\_\+t@{pit\+\_\+user\+\_\+config\+\_\+t}}
+\index{pit\+\_\+user\+\_\+config\+\_\+t@{pit\+\_\+user\+\_\+config\+\_\+t}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{pit\+\_\+user\+\_\+config\+\_\+t}{pit_user_config_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Pit\+User\+Config}  {\bf pit\+\_\+user\+\_\+config\+\_\+t}}\hypertarget{group__pit__driver_ga05f144da781ddb765b1ec9ac8887c7eb}{}\label{group__pit__driver_ga05f144da781ddb765b1ec9ac8887c7eb}
+
+
+P\+IT timer configuration structure. 
+
+Define structure Pit\+Config and use the \hyperlink{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel()} function to make necessary initializations. You may also use the remaining functions for P\+IT configuration.
+
+\begin{DoxyNote}{Note}
+The timer chain feature is not valid in all devices. Check the \hyperlink{fsl__pit__features_8h_source}{fsl\+\_\+pit\+\_\+features.\+h} for accurate settings. If it\textquotesingle{}s not valid, the value set here will be bypassed inside the \hyperlink{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel()} function. 
+\end{DoxyNote}
+
+
+\subsection{Function Documentation}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit(uint32\+\_\+t instance)}{PIT_DRV_Deinit(uint32_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Deinit (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_gab5a3126edf78349fe4845c48bfbb6978}{}\label{group__pit__driver_gab5a3126edf78349fe4845c48bfbb6978}
+
+
+Disables the P\+IT module and gate control. 
+
+This function disables all P\+IT interrupts and P\+IT clock. It then gates the P\+IT clock control. P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init must be called if you want to use P\+IT again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+\end{DoxyParams}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init(uint32\+\_\+t instance, bool is\+Run\+In\+Debug)}{PIT_DRV_Init(uint32_t instance, bool isRunInDebug)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{bool}]{is\+Run\+In\+Debug}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_gade7db6b50ff1fc8209b295f89f775a9d}{}\label{group__pit__driver_gade7db6b50ff1fc8209b295f89f775a9d}
+
+
+Initializes the P\+IT module. 
+
+This function must be called before calling all the other P\+IT driver functions. This function un-\/gates the P\+IT clock and enables the P\+IT module. The is\+Run\+In\+Debug passed into function affects all timer channels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em is\+Run\+In\+Debug} & Timers run or stop in debug mode.
+\begin{DoxyItemize}
+\item true\+: Timers continue to run in debug mode.
+\item false\+: Timers stop in debug mode. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel(uint32\+\_\+t instance, uint32\+\_\+t channel, const pit\+\_\+user\+\_\+config\+\_\+t $\ast$config)}{PIT_DRV_InitChannel(uint32_t instance, uint32_t channel, const pit_user_config_t *config)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Init\+Channel (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{const {\bf pit\+\_\+user\+\_\+config\+\_\+t} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}{}\label{group__pit__driver_ga25cbdbfdd630d0e96f7e18b2d03f62a8}
+
+
+Initializes the P\+IT channel. 
+
+This function initializes the P\+IT timers by using a channel. Pass in the timer number and its configuration structure. Timers do not start counting by default after calling this function. The function P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer must be called to start the timer counting. Call the P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us to re-\/set the period.
+
+This is an example demonstrating how to define a P\+IT channel configuration structure\+: 
+\begin{DoxyCode}
+1 pit\_user\_config\_t pitTestInit = \{
+2      .isInterruptEnabled = true,
+3      // Only takes effect when chain feature is available.
+4      // Otherwise, pass in arbitrary value(true/false).
+5      .isTimerChained = false, 
+6      // In unit of microseconds.
+7      .periodUs = 1000,
+8 \};
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em channel} & Timer channel number. \\
+\hline
+{\em config} & P\+IT channel configuration structure. \\
+\hline
+\end{DoxyParams}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback(uint32\+\_\+t instance, uint32\+\_\+t channel, pit\+\_\+isr\+\_\+callback\+\_\+t function)}{PIT_DRV_InstallCallback(uint32_t instance, uint32_t channel, pit_isr_callback_t function)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Install\+Callback (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{{\bf pit\+\_\+isr\+\_\+callback\+\_\+t}}]{function}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_ga1a28c078e3820e920560f56c4e081948}{}\label{group__pit__driver_ga1a28c078e3820e920560f56c4e081948}
+
+
+Registers the P\+IT I\+SR callback function. 
+
+System default I\+SR interfaces are already defined in the fsl\+\_\+pit\+\_\+irq.\+c. Users can either edit these I\+S\+Rs or use this function to register a callback function. The default I\+SR runs the callback function if there is one installed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em channel} & Timer channel number. \\
+\hline
+{\em function} & Pointer to pit I\+SR callback function. \\
+\hline
+\end{DoxyParams}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us(uint32\+\_\+t instance, uint32\+\_\+t channel)}{PIT_DRV_ReadTimerUs(uint32_t instance, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Read\+Timer\+Us (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_ga5ee81b85b0c672604b35855c86967ac7}{}\label{group__pit__driver_ga5ee81b85b0c672604b35855c86967ac7}
+
+
+Reads the current timer value in microseconds. 
+
+This function returns an absolute time stamp in microseconds. One common use of this function is to measure the running time of a part of code. Call this function at both the beginning and end of code. The time difference between these two time stamps is the running time. Make sure the running time does not exceed the timer period. The time stamp returned is up-\/counting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em channel} & Timer channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current timer value in microseconds. 
+\end{DoxyReturn}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us(uint32\+\_\+t instance, uint32\+\_\+t channel, uint32\+\_\+t us)}{PIT_DRV_SetTimerPeriodByUs(uint32_t instance, uint32_t channel, uint32_t us)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Set\+Timer\+Period\+By\+Us (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{uint32\+\_\+t}]{us}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_ga7b0d9eeb96ae3810c801b9998d5774bf}{}\label{group__pit__driver_ga7b0d9eeb96ae3810c801b9998d5774bf}
+
+
+Sets the timer period in microseconds. 
+
+The period range depends on the frequency of the P\+IT source clock. If the required period is out of range, use the lifetime timer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em channel} & Timer channel number. \\
+\hline
+{\em us} & Timer period in microseconds. \\
+\hline
+\end{DoxyParams}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer(uint32\+\_\+t instance, uint32\+\_\+t channel)}{PIT_DRV_StartTimer(uint32_t instance, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_ga1443f423c01d741dbe7ad9fd81eb9f59}{}\label{group__pit__driver_ga1443f423c01d741dbe7ad9fd81eb9f59}
+
+
+Starts the timer counting. 
+
+After calling this function, timers load period value, count down to 0 and then load the respective start value again. Each time a timer reaches 0, it generates a trigger pulse and sets the timeout interrupt flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em channel} & Timer channel number. \\
+\hline
+\end{DoxyParams}
+\index{Pit\+\_\+driver@{Pit\+\_\+driver}!P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer}}
+\index{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer@{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer}!Pit\+\_\+driver@{Pit\+\_\+driver}}
+\subsubsection[{\texorpdfstring{P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer(uint32\+\_\+t instance, uint32\+\_\+t channel)}{PIT_DRV_StopTimer(uint32_t instance, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Stop\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{instance, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__pit__driver_ga368d1b78f6c2fb6b351f797b724007a6}{}\label{group__pit__driver_ga368d1b78f6c2fb6b351f797b724007a6}
+
+
+Stops the timer counting. 
+
+This function stops every timer counting. Timers reload their periods respectively after the next time they call the P\+I\+T\+\_\+\+D\+R\+V\+\_\+\+Start\+Timer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & P\+IT module instance number. \\
+\hline
+{\em channel} & Timer channel number. \\
+\hline
+\end{DoxyParams}

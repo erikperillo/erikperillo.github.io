@@ -1,0 +1,37 @@
+\hypertarget{union__hw__usb__softhld}{}\section{\+\_\+hw\+\_\+usb\+\_\+softhld Union Reference}
+\label{union__hw__usb__softhld}\index{\+\_\+hw\+\_\+usb\+\_\+softhld@{\+\_\+hw\+\_\+usb\+\_\+softhld}}
+
+
+H\+W\+\_\+\+U\+S\+B\+\_\+\+S\+O\+F\+T\+H\+LD -\/ S\+OF Threshold register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+usb.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__usb__softhld_1_1__hw__usb__softhld__bitfields}{\+\_\+hw\+\_\+usb\+\_\+softhld\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__usb__softhld_ae9afed6f8a033d65a5756e66ec387ad9}{}\label{union__hw__usb__softhld_ae9afed6f8a033d65a5756e66ec387ad9}
+
+\item 
+struct \hyperlink{struct__hw__usb__softhld_1_1__hw__usb__softhld__bitfields}{\+\_\+hw\+\_\+usb\+\_\+softhld\+::\+\_\+hw\+\_\+usb\+\_\+softhld\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__usb__softhld_a9a02cc4afe8738fbb1272c29cdd1292f}{}\label{union__hw__usb__softhld_a9a02cc4afe8738fbb1272c29cdd1292f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+S\+B\+\_\+\+S\+O\+F\+T\+H\+LD -\/ S\+OF Threshold register (RW) 
+
+Reset value\+: 0x00U
+
+The S\+OF Threshold Register is used only in Host mode (H\+O\+S\+T\+M\+O\+D\+E\+EN=1). When in Host mode, the 14-\/bit S\+OF counter counts the interval between S\+OF frames. The S\+OF must be transmitted every 1ms so therefore the S\+OF counter is loaded with a value of 12000. When the S\+OF counter reaches zero, a Start Of Frame (S\+OF) token is transmitted. The S\+OF threshold register is used to program the number of U\+SB byte times before the S\+OF to stop initiating token packet transactions. This register must be set to a value that ensures that other packets are not actively being transmitted when the S\+OF time counts to zero. When the S\+OF counter reaches the threshold value, no more tokens are transmitted until after the S\+OF has been transmitted. The value programmed into the threshold register must reserve enough time to ensure the worst case transaction completes. In general the worst case transaction is an IN token followed by a data packet from the target followed by the response from the host. The actual time required is a function of the maximum packet size on the bus. Typical values for the S\+OF threshold are\+: 64-\/byte packets=74; 32-\/byte packets=42; 16-\/byte packets=26; 8-\/byte packets=18. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+usb.\+h\end{DoxyCompactItemize}

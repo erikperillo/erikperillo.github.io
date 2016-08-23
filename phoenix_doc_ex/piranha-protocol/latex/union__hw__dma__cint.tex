@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__cint}{}\section{\+\_\+hw\+\_\+dma\+\_\+cint Union Reference}
+\label{union__hw__dma__cint}\index{\+\_\+hw\+\_\+dma\+\_\+cint@{\+\_\+hw\+\_\+dma\+\_\+cint}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+C\+I\+NT -\/ Clear Interrupt Request Register (WO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__cint_1_1__hw__dma__cint__bitfields}{\+\_\+hw\+\_\+dma\+\_\+cint\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__cint_add31285ce18076a2ca786c72dea95c4c}{}\label{union__hw__dma__cint_add31285ce18076a2ca786c72dea95c4c}
+
+\item 
+struct \hyperlink{struct__hw__dma__cint_1_1__hw__dma__cint__bitfields}{\+\_\+hw\+\_\+dma\+\_\+cint\+::\+\_\+hw\+\_\+dma\+\_\+cint\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__cint_aa09cb8382a9686db3cc3e2a0252f1718}{}\label{union__hw__dma__cint_aa09cb8382a9686db3cc3e2a0252f1718}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+C\+I\+NT -\/ Clear Interrupt Request Register (WO) 
+
+Reset value\+: 0x00U
+
+The C\+I\+NT provides a simple, memory-\/mapped mechanism to clear a given bit in the I\+NT to disable the interrupt request for a given channel. The given value on a register write causes the corresponding bit in the I\+NT to be cleared. Setting the C\+A\+IR bit provides a global clear function, forcing the entire contents of the I\+NT to be cleared, disabling all D\+MA interrupt requests. If the N\+OP bit is set, the command is ignored. This allows you to write multiple-\/byte registers as a 32-\/bit word. Reads of this register return all zeroes. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

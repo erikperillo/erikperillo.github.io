@@ -1,0 +1,37 @@
+\hypertarget{union__hw__spi__ctarn}{}\section{\+\_\+hw\+\_\+spi\+\_\+ctarn Union Reference}
+\label{union__hw__spi__ctarn}\index{\+\_\+hw\+\_\+spi\+\_\+ctarn@{\+\_\+hw\+\_\+spi\+\_\+ctarn}}
+
+
+H\+W\+\_\+\+S\+P\+I\+\_\+\+C\+T\+A\+Rn -\/ Clock and Transfer Attributes Register (In Master Mode) (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+spi.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__spi__ctarn_1_1__hw__spi__ctarn__bitfields}{\+\_\+hw\+\_\+spi\+\_\+ctarn\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__spi__ctarn_a991a48c225b41f3289462d6dafa77bb0}{}\label{union__hw__spi__ctarn_a991a48c225b41f3289462d6dafa77bb0}
+
+\item 
+struct \hyperlink{struct__hw__spi__ctarn_1_1__hw__spi__ctarn__bitfields}{\+\_\+hw\+\_\+spi\+\_\+ctarn\+::\+\_\+hw\+\_\+spi\+\_\+ctarn\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__spi__ctarn_abe49cc78105083caf81e3e562da737db}{}\label{union__hw__spi__ctarn_abe49cc78105083caf81e3e562da737db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+P\+I\+\_\+\+C\+T\+A\+Rn -\/ Clock and Transfer Attributes Register (In Master Mode) (RW) 
+
+Reset value\+: 0x78000000U
+
+C\+T\+AR registers are used to define different transfer attributes. Do not write to the C\+T\+AR registers while the module is in the Running state. In Master mode, the C\+T\+AR registers define combinations of transfer attributes such as frame size, clock phase and polarity, data bit ordering, baud rate, and various delays. In slave mode, a subset of the bitfields in C\+T\+A\+R0 are used to set the slave transfer attributes. When the module is configured as an S\+PI master, the C\+T\+AS field in the command portion of the TX F\+I\+FO entry selects which of the C\+T\+AR registers is used. When the module is configured as an S\+PI bus slave, it uses the C\+T\+A\+R0 register. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+spi.\+h\end{DoxyCompactItemize}

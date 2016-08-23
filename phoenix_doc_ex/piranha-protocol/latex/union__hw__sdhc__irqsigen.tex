@@ -1,0 +1,37 @@
+\hypertarget{union__hw__sdhc__irqsigen}{}\section{\+\_\+hw\+\_\+sdhc\+\_\+irqsigen Union Reference}
+\label{union__hw__sdhc__irqsigen}\index{\+\_\+hw\+\_\+sdhc\+\_\+irqsigen@{\+\_\+hw\+\_\+sdhc\+\_\+irqsigen}}
+
+
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+I\+R\+Q\+S\+I\+G\+EN -\/ Interrupt Signal Enable register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+sdhc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__sdhc__irqsigen_1_1__hw__sdhc__irqsigen__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+irqsigen\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__sdhc__irqsigen_a6a245936daa7376e5efeb36faa98b989}{}\label{union__hw__sdhc__irqsigen_a6a245936daa7376e5efeb36faa98b989}
+
+\item 
+struct \hyperlink{struct__hw__sdhc__irqsigen_1_1__hw__sdhc__irqsigen__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+irqsigen\+::\+\_\+hw\+\_\+sdhc\+\_\+irqsigen\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__sdhc__irqsigen_af62a9fcb2905509fc3770346dbeb9847}{}\label{union__hw__sdhc__irqsigen_af62a9fcb2905509fc3770346dbeb9847}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+I\+R\+Q\+S\+I\+G\+EN -\/ Interrupt Signal Enable register (RW) 
+
+Reset value\+: 0x00000000U
+
+This register is used to select which interrupt status is indicated to the host system as the interrupt. All of these status bits share the same interrupt line. Setting any of these bits to 1 enables interrupt generation. The corresponding status register bit will generate an interrupt when the corresponding interrupt signal enable bit is set. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+sdhc.\+h\end{DoxyCompactItemize}

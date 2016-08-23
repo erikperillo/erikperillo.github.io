@@ -1,0 +1,37 @@
+\hypertarget{union__hw__enet__mmfr}{}\section{\+\_\+hw\+\_\+enet\+\_\+mmfr Union Reference}
+\label{union__hw__enet__mmfr}\index{\+\_\+hw\+\_\+enet\+\_\+mmfr@{\+\_\+hw\+\_\+enet\+\_\+mmfr}}
+
+
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+M\+M\+FR -\/ M\+II Management Frame Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+enet.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__enet__mmfr_1_1__hw__enet__mmfr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+mmfr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__enet__mmfr_a86626a3944738228fdd4c963b881cb7c}{}\label{union__hw__enet__mmfr_a86626a3944738228fdd4c963b881cb7c}
+
+\item 
+struct \hyperlink{struct__hw__enet__mmfr_1_1__hw__enet__mmfr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+mmfr\+::\+\_\+hw\+\_\+enet\+\_\+mmfr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__enet__mmfr_acc08e9d2183add594d5ba900ae7703ed}{}\label{union__hw__enet__mmfr_acc08e9d2183add594d5ba900ae7703ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+M\+M\+FR -\/ M\+II Management Frame Register (RW) 
+
+Reset value\+: 0x00000000U
+
+Writing to M\+M\+FR triggers a management frame transaction to the P\+HY device unless M\+S\+CR is programmed to zero. If M\+S\+CR is changed from zero to non-\/zero during a write to M\+M\+FR, an M\+II frame is generated with the data previously written to the M\+M\+FR. This allows M\+M\+FR and M\+S\+CR to be programmed in either order if M\+S\+CR is currently zero. If the M\+M\+FR register is written while frame generation is in progress, the frame contents are altered. Software must use the E\+IR\mbox{[}M\+II\mbox{]} interrupt indication to avoid writing to the M\+M\+FR register while frame generation is in progress. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+enet.\+h\end{DoxyCompactItemize}

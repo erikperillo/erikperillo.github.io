@@ -1,0 +1,37 @@
+\hypertarget{union__hw__usb__addr}{}\section{\+\_\+hw\+\_\+usb\+\_\+addr Union Reference}
+\label{union__hw__usb__addr}\index{\+\_\+hw\+\_\+usb\+\_\+addr@{\+\_\+hw\+\_\+usb\+\_\+addr}}
+
+
+H\+W\+\_\+\+U\+S\+B\+\_\+\+A\+D\+DR -\/ Address register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+usb.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__usb__addr_1_1__hw__usb__addr__bitfields}{\+\_\+hw\+\_\+usb\+\_\+addr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__usb__addr_ac872c6150a98bb7e2f001f5289fd23a8}{}\label{union__hw__usb__addr_ac872c6150a98bb7e2f001f5289fd23a8}
+
+\item 
+struct \hyperlink{struct__hw__usb__addr_1_1__hw__usb__addr__bitfields}{\+\_\+hw\+\_\+usb\+\_\+addr\+::\+\_\+hw\+\_\+usb\+\_\+addr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__usb__addr_af5bfe729200da5864657f894d45b0bf1}{}\label{union__hw__usb__addr_af5bfe729200da5864657f894d45b0bf1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+S\+B\+\_\+\+A\+D\+DR -\/ Address register (RW) 
+
+Reset value\+: 0x00U
+
+Holds the unique U\+SB address that the U\+SB module decodes when in Peripheral mode (H\+O\+S\+T\+M\+O\+D\+E\+EN=0). When operating in Host mode (H\+O\+S\+T\+M\+O\+D\+E\+EN=1) the U\+SB module transmits this address with a T\+O\+K\+EN packet. This enables the U\+SB module to uniquely address any U\+SB peripheral. In either mode, C\+TL\mbox{[}U\+S\+B\+E\+N\+S\+O\+F\+EN\mbox{]} must be 1. The Address register is reset to 0x00 after the reset input becomes active or the U\+SB module decodes a U\+SB reset signal. This action initializes the Address register to decode address 0x00 as required by the U\+SB specification. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+usb.\+h\end{DoxyCompactItemize}

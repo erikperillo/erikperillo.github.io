@@ -1,0 +1,37 @@
+\hypertarget{union__hw__enet__rdsr}{}\section{\+\_\+hw\+\_\+enet\+\_\+rdsr Union Reference}
+\label{union__hw__enet__rdsr}\index{\+\_\+hw\+\_\+enet\+\_\+rdsr@{\+\_\+hw\+\_\+enet\+\_\+rdsr}}
+
+
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+R\+D\+SR -\/ Receive Descriptor Ring Start Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+enet.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__enet__rdsr_1_1__hw__enet__rdsr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+rdsr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__enet__rdsr_abfdffc1974efaa94b87043382bc6e507}{}\label{union__hw__enet__rdsr_abfdffc1974efaa94b87043382bc6e507}
+
+\item 
+struct \hyperlink{struct__hw__enet__rdsr_1_1__hw__enet__rdsr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+rdsr\+::\+\_\+hw\+\_\+enet\+\_\+rdsr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__enet__rdsr_a0177abce9e3b90e3b720b630c33ad5d7}{}\label{union__hw__enet__rdsr_a0177abce9e3b90e3b720b630c33ad5d7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+R\+D\+SR -\/ Receive Descriptor Ring Start Register (RW) 
+
+Reset value\+: 0x00000000U
+
+R\+D\+SR points to the beginning of the circular receive buffer descriptor queue in external memory. This pointer must be 64-\/bit aligned (bits 2-\/0 must be zero); however, it is recommended to be 128-\/bit aligned, that is, evenly divisible by 16. This register must be initialized prior to operation 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+enet.\+h\end{DoxyCompactItemize}

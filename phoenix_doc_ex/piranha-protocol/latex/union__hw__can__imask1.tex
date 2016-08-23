@@ -1,0 +1,37 @@
+\hypertarget{union__hw__can__imask1}{}\section{\+\_\+hw\+\_\+can\+\_\+imask1 Union Reference}
+\label{union__hw__can__imask1}\index{\+\_\+hw\+\_\+can\+\_\+imask1@{\+\_\+hw\+\_\+can\+\_\+imask1}}
+
+
+H\+W\+\_\+\+C\+A\+N\+\_\+\+I\+M\+A\+S\+K1 -\/ Interrupt Masks 1 register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+can.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__can__imask1_1_1__hw__can__imask1__bitfields}{\+\_\+hw\+\_\+can\+\_\+imask1\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__can__imask1_a0277528eae7ce600b9a66805f74649ac}{}\label{union__hw__can__imask1_a0277528eae7ce600b9a66805f74649ac}
+
+\item 
+struct \hyperlink{struct__hw__can__imask1_1_1__hw__can__imask1__bitfields}{\+\_\+hw\+\_\+can\+\_\+imask1\+::\+\_\+hw\+\_\+can\+\_\+imask1\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__can__imask1_a595d707939ada3e1eba95bd946356896}{}\label{union__hw__can__imask1_a595d707939ada3e1eba95bd946356896}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+C\+A\+N\+\_\+\+I\+M\+A\+S\+K1 -\/ Interrupt Masks 1 register (RW) 
+
+Reset value\+: 0x00000000U
+
+This register allows any number of a range of the 32 Message Buffer Interrupts to be enabled or disabled for M\+B31 to M\+B0. It contains one interrupt mask bit per buffer, enabling the C\+PU to determine which buffer generates an interrupt after a successful transmission or reception, that is, when the corresponding I\+F\+L\+A\+G1 bit is set. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+can.\+h\end{DoxyCompactItemize}

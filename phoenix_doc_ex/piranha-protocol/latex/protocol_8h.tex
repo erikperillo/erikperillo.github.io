@@ -1,0 +1,232 @@
+\hypertarget{protocol_8h}{}\section{/home/erik/proj/piranha/piranha-\/ptc/src/protocol.h File Reference}
+\label{protocol_8h}\index{/home/erik/proj/piranha/piranha-\/ptc/src/protocol.\+h@{/home/erik/proj/piranha/piranha-\/ptc/src/protocol.\+h}}
+
+
+Protocol definitions.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_aac9f20e2cceee95def25c436f8cf6a85}{M\+S\+G\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~1\hypertarget{protocol_8h_aac9f20e2cceee95def25c436f8cf6a85}{}\label{protocol_8h_aac9f20e2cceee95def25c436f8cf6a85}
+
+\begin{DoxyCompactList}\small\item\em Header field size in bytes. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_aa4dc1e03a5d85190ae4ada6f470c658a}{M\+S\+G\+\_\+\+V\+A\+L\+\_\+\+S\+I\+ZE}~2\hypertarget{protocol_8h_aa4dc1e03a5d85190ae4ada6f470c658a}{}\label{protocol_8h_aa4dc1e03a5d85190ae4ada6f470c658a}
+
+\begin{DoxyCompactList}\small\item\em Value field size in bytes. \end{DoxyCompactList}\item 
+\#define {\bfseries M\+S\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+V\+A\+LS}~4\hypertarget{protocol_8h_a4a3080798d1a468b1e5fa19ce8320264}{}\label{protocol_8h_a4a3080798d1a468b1e5fa19ce8320264}
+
+\item 
+\#define \hyperlink{protocol_8h_abd55521187de5f99b96a34c3acc93ac1}{M\+S\+G\+\_\+\+B\+U\+F\+\_\+\+L\+EN}~(\hyperlink{protocol_8h_aac9f20e2cceee95def25c436f8cf6a85}{M\+S\+G\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE} + \hyperlink{protocol_8h_aa4dc1e03a5d85190ae4ada6f470c658a}{M\+S\+G\+\_\+\+V\+A\+L\+\_\+\+S\+I\+ZE}$\ast$M\+S\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+V\+A\+LS)\hypertarget{protocol_8h_abd55521187de5f99b96a34c3acc93ac1}{}\label{protocol_8h_abd55521187de5f99b96a34c3acc93ac1}
+
+\begin{DoxyCompactList}\small\item\em Messages buffer length in bytes. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_aab9379b7cb61cd27a11f9affb7751512}{M\+S\+G\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+I\+DX}~0\hypertarget{protocol_8h_aab9379b7cb61cd27a11f9affb7751512}{}\label{protocol_8h_aab9379b7cb61cd27a11f9affb7751512}
+
+\begin{DoxyCompactList}\small\item\em Position of header field in message buffer. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a1f2c9daf882a11f781151ad932633b24}{M\+S\+G\+\_\+\+V\+A\+L\+S\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+DX}~(\hyperlink{protocol_8h_aab9379b7cb61cd27a11f9affb7751512}{M\+S\+G\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+I\+DX} + 1)\hypertarget{protocol_8h_a1f2c9daf882a11f781151ad932633b24}{}\label{protocol_8h_a1f2c9daf882a11f781151ad932633b24}
+
+\begin{DoxyCompactList}\small\item\em Position of start of value field in message buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a4be32ff6d05de23e51a9522a957ad8e1}{P\+I\+D\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+M\+IN}~0.\+0\hypertarget{protocol_8h_a4be32ff6d05de23e51a9522a957ad8e1}{}\label{protocol_8h_a4be32ff6d05de23e51a9522a957ad8e1}
+
+\begin{DoxyCompactList}\small\item\em P\+ID parameters range. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a478fdd2dc25abd291844a4d46bc7dcc0}{P\+I\+D\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+M\+AX}~100.\+0\hypertarget{protocol_8h_a478fdd2dc25abd291844a4d46bc7dcc0}{}\label{protocol_8h_a478fdd2dc25abd291844a4d46bc7dcc0}
+
+\begin{DoxyCompactList}\small\item\em P\+ID parameters range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_abeb0e6ae46e7ac60f0e5436251fd97ed}{G\+N\+D\+\_\+\+V\+E\+L\+\_\+\+M\+IN}~-\/100.\+0\hypertarget{protocol_8h_abeb0e6ae46e7ac60f0e5436251fd97ed}{}\label{protocol_8h_abeb0e6ae46e7ac60f0e5436251fd97ed}
+
+\begin{DoxyCompactList}\small\item\em Ground velocity range. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a5ba2fb8e5013dabc20ac2bb3a22fcba2}{G\+N\+D\+\_\+\+V\+E\+L\+\_\+\+M\+AX}~100.\+0\hypertarget{protocol_8h_a5ba2fb8e5013dabc20ac2bb3a22fcba2}{}\label{protocol_8h_a5ba2fb8e5013dabc20ac2bb3a22fcba2}
+
+\begin{DoxyCompactList}\small\item\em Ground velocity range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}~3.\+141593\hypertarget{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{}\label{protocol_8h_a598a3330b3c21701223ee0ca14316eca}
+
+\begin{DoxyCompactList}\small\item\em Angle reference range (in radians). \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_abd0f5620ce0689ac3332c7e5f2c44468}{A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+E\+F\+\_\+\+M\+IN}~-\/\hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}\hypertarget{protocol_8h_abd0f5620ce0689ac3332c7e5f2c44468}{}\label{protocol_8h_abd0f5620ce0689ac3332c7e5f2c44468}
+
+\begin{DoxyCompactList}\small\item\em Angle reference range (in radians). \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a53da4824c5becdf6846413e40484b510}{A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+E\+F\+\_\+\+M\+AX}~\hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}\hypertarget{protocol_8h_a53da4824c5becdf6846413e40484b510}{}\label{protocol_8h_a53da4824c5becdf6846413e40484b510}
+
+\begin{DoxyCompactList}\small\item\em Angle reference range (in radians). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_af8ee1a798716fd75e4cb0c07c219b070}{R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+E\+F\+\_\+\+M\+IN}~-\/\hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}\hypertarget{protocol_8h_af8ee1a798716fd75e4cb0c07c219b070}{}\label{protocol_8h_af8ee1a798716fd75e4cb0c07c219b070}
+
+\begin{DoxyCompactList}\small\item\em Angle reference from robot range (in radians). \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a2d93ea3743ac4243125b6a64dc0d1c46}{R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+E\+F\+\_\+\+M\+AX}~\hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}\hypertarget{protocol_8h_a2d93ea3743ac4243125b6a64dc0d1c46}{}\label{protocol_8h_a2d93ea3743ac4243125b6a64dc0d1c46}
+
+\begin{DoxyCompactList}\small\item\em Angle reference from robot range (in radians). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a00c28fe1dad2dacc94783d4376d6a896}{M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+E\+F\+\_\+\+M\+IN}~-\/\hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}\hypertarget{protocol_8h_a00c28fe1dad2dacc94783d4376d6a896}{}\label{protocol_8h_a00c28fe1dad2dacc94783d4376d6a896}
+
+\begin{DoxyCompactList}\small\item\em Angle reference from magnetometer range (in radians). \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a45bce9bc38c3043e13191ddf74b75b48}{M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+E\+F\+\_\+\+M\+AX}~\hyperlink{protocol_8h_a598a3330b3c21701223ee0ca14316eca}{PI}\hypertarget{protocol_8h_a45bce9bc38c3043e13191ddf74b75b48}{}\label{protocol_8h_a45bce9bc38c3043e13191ddf74b75b48}
+
+\begin{DoxyCompactList}\small\item\em Angle reference from magnetometer range (in radians). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a3a81efa125631cc12c63f5399629cfc3}{B\+R\+A\+K\+E\+\_\+\+I\+N\+T\+E\+N\+S\+I\+T\+Y\+\_\+\+M\+IN}~0.\+0\hypertarget{protocol_8h_a3a81efa125631cc12c63f5399629cfc3}{}\label{protocol_8h_a3a81efa125631cc12c63f5399629cfc3}
+
+\begin{DoxyCompactList}\small\item\em Break intensity. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a9ae462cb7c25b24d3bbbee3084e105c4}{B\+R\+A\+K\+E\+\_\+\+I\+N\+T\+E\+N\+S\+I\+T\+Y\+\_\+\+M\+AX}~100.\+0\hypertarget{protocol_8h_a9ae462cb7c25b24d3bbbee3084e105c4}{}\label{protocol_8h_a9ae462cb7c25b24d3bbbee3084e105c4}
+
+\begin{DoxyCompactList}\small\item\em Break intensity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a534cc4ff4b9e9017111a265bc65b31dd}{B\+R\+A\+K\+E\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+M\+IN}~0.\+0\hypertarget{protocol_8h_a534cc4ff4b9e9017111a265bc65b31dd}{}\label{protocol_8h_a534cc4ff4b9e9017111a265bc65b31dd}
+
+\begin{DoxyCompactList}\small\item\em Jogging speed ratio. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a957fc43685a2460909d6cbed47ba7f7a}{B\+R\+A\+K\+E\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+M\+AX}~100.\+0\hypertarget{protocol_8h_a957fc43685a2460909d6cbed47ba7f7a}{}\label{protocol_8h_a957fc43685a2460909d6cbed47ba7f7a}
+
+\begin{DoxyCompactList}\small\item\em Jogging speed ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_af2c0f269052c0dcb9d19cd28bc6b7bab}{J\+O\+G\+\_\+\+V\+E\+L\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+M\+IN}~0.\+0\hypertarget{protocol_8h_af2c0f269052c0dcb9d19cd28bc6b7bab}{}\label{protocol_8h_af2c0f269052c0dcb9d19cd28bc6b7bab}
+
+\begin{DoxyCompactList}\small\item\em Jogging speed period (in seconds). \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a0d3f966f028dfb9bf30edff2bd2c483a}{J\+O\+G\+\_\+\+V\+E\+L\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+M\+AX}~300.\+0\hypertarget{protocol_8h_a0d3f966f028dfb9bf30edff2bd2c483a}{}\label{protocol_8h_a0d3f966f028dfb9bf30edff2bd2c483a}
+
+\begin{DoxyCompactList}\small\item\em Jogging speed period (in seconds). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_ac64aaf9c6b74b781a923fe003badfbf8}{J\+O\+G\+\_\+\+V\+E\+L\+\_\+\+R\+A\+T\+I\+O\+\_\+\+M\+IN}~0.\+0\hypertarget{protocol_8h_ac64aaf9c6b74b781a923fe003badfbf8}{}\label{protocol_8h_ac64aaf9c6b74b781a923fe003badfbf8}
+
+\begin{DoxyCompactList}\small\item\em Jogging speed ratio. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a465b957f2178c656a987943a98ae1c57}{J\+O\+G\+\_\+\+V\+E\+L\+\_\+\+R\+A\+T\+I\+O\+\_\+\+M\+AX}~1.\+0\hypertarget{protocol_8h_a465b957f2178c656a987943a98ae1c57}{}\label{protocol_8h_a465b957f2178c656a987943a98ae1c57}
+
+\begin{DoxyCompactList}\small\item\em Jogging speed ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a264cac1e9cc9eeb8064f3cab588ba82f}{M\+A\+G\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+IN}~-\/750.\+0\hypertarget{protocol_8h_a264cac1e9cc9eeb8064f3cab588ba82f}{}\label{protocol_8h_a264cac1e9cc9eeb8064f3cab588ba82f}
+
+\begin{DoxyCompactList}\small\item\em Magnetometer calibration values. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_aa8e316f7149a2cc2bb7da80fb4980e74}{M\+A\+G\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+AX}~750.\+0\hypertarget{protocol_8h_aa8e316f7149a2cc2bb7da80fb4980e74}{}\label{protocol_8h_aa8e316f7149a2cc2bb7da80fb4980e74}
+
+\begin{DoxyCompactList}\small\item\em Magnetometer calibration values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_adabe0248191d86bee32eaea838ac3444}{S\+E\+N\+D\+E\+R\+\_\+\+P\+O\+RT}~7532\hypertarget{protocol_8h_adabe0248191d86bee32eaea838ac3444}{}\label{protocol_8h_adabe0248191d86bee32eaea838ac3444}
+
+\begin{DoxyCompactList}\small\item\em Default network values for sender. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a86caa3da484431baefee00e8a59db06c}{S\+E\+N\+D\+E\+R\+\_\+\+I\+F\+A\+C\+E\+\_\+\+A\+D\+DR}~\char`\"{}192.\+168.\+7.\+2\char`\"{}\hypertarget{protocol_8h_a86caa3da484431baefee00e8a59db06c}{}\label{protocol_8h_a86caa3da484431baefee00e8a59db06c}
+
+\begin{DoxyCompactList}\small\item\em Default network values for sender. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a950ff8d3e875c68994623beaa1a933fa}{S\+E\+N\+D\+E\+R\+\_\+\+N\+E\+T\+M\+A\+S\+K\+\_\+\+A\+D\+DR}~\char`\"{}255.\+255.\+255.\+0\char`\"{}\hypertarget{protocol_8h_a950ff8d3e875c68994623beaa1a933fa}{}\label{protocol_8h_a950ff8d3e875c68994623beaa1a933fa}
+
+\begin{DoxyCompactList}\small\item\em Default network values for sender. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a92beb7912c89eb5bd3eed20a4ff60dd1}{S\+E\+N\+D\+E\+R\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+D\+DR}~\char`\"{}0.\+0.\+0.\+0\char`\"{}\hypertarget{protocol_8h_a92beb7912c89eb5bd3eed20a4ff60dd1}{}\label{protocol_8h_a92beb7912c89eb5bd3eed20a4ff60dd1}
+
+\begin{DoxyCompactList}\small\item\em Default network values for sender. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a714d0c166e470fe1d95e17305a084931}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+P\+O\+RT}~7533\hypertarget{protocol_8h_a714d0c166e470fe1d95e17305a084931}{}\label{protocol_8h_a714d0c166e470fe1d95e17305a084931}
+
+\begin{DoxyCompactList}\small\item\em Default network values for receiver. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a03882e8e162387e0e8adcddd9f7249ab}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+I\+F\+A\+C\+E\+\_\+\+A\+D\+DR}~\char`\"{}192.\+168.\+7.\+3\char`\"{}\hypertarget{protocol_8h_a03882e8e162387e0e8adcddd9f7249ab}{}\label{protocol_8h_a03882e8e162387e0e8adcddd9f7249ab}
+
+\begin{DoxyCompactList}\small\item\em Default network values for receiver. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_a5e8e63bf0935c75cc86e09a7dee1e7e8}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+N\+E\+T\+M\+A\+S\+K\+\_\+\+A\+D\+DR}~\char`\"{}255.\+255.\+255.\+0\char`\"{}\hypertarget{protocol_8h_a5e8e63bf0935c75cc86e09a7dee1e7e8}{}\label{protocol_8h_a5e8e63bf0935c75cc86e09a7dee1e7e8}
+
+\begin{DoxyCompactList}\small\item\em Default network values for receiver. \end{DoxyCompactList}\item 
+\#define \hyperlink{protocol_8h_aebb1af878286aece92ff566e2ec26792}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+D\+DR}~\char`\"{}0.\+0.\+0.\+0\char`\"{}\hypertarget{protocol_8h_aebb1af878286aece92ff566e2ec26792}{}\label{protocol_8h_aebb1af878286aece92ff566e2ec26792}
+
+\begin{DoxyCompactList}\small\item\em Default network values for receiver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bac157bdf0b85a40d2619cbc8bc1ae5fe2}{N\+O\+NE}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba8b23c50cc938e0b366df8d8eeeb1bf9f}{B\+R\+A\+KE}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba8c7117b2027e09b34900d50bf52be1fc}{G\+Y\+R\+O\+\_\+\+Z\+E\+RO}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baac501419ceb75b9c41edc1040922814d}{A\+N\+G\+\_\+\+S\+ET}, 
+\\*
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baedce3348d000faaa8900ad5eb1a271b6}{A\+N\+G\+\_\+\+R\+ST}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55badd01b80eb93658fb4cf7eb9aceb89a1d}{L\+E\+D\+\_\+\+ON}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bafc0ca8cc6cbe215fd3f1ae6d40255b40}{L\+E\+D\+\_\+\+O\+FF}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baebab915cbd13e3f686533c8d76300087}{A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF}, 
+\\*
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba666308258087a1df1894501d425a025d}{R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba01bc5af3c81de1bada5c4e5a46342537}{M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba32cbb2d436feb86f45f0c0622834253e}{G\+N\+D\+\_\+\+V\+EL}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba196e0abb22aa9f777d698ae8611ab385}{J\+O\+G\+\_\+\+V\+EL}, 
+\\*
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bac19189693c4b052ff7045cf731ef6cb5}{M\+A\+G\+\_\+\+C\+A\+L\+IB}, 
+\hyperlink{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba110bb214d30b91e3b05c697167f33d48}{P\+I\+D\+\_\+\+P\+A\+R\+A\+MS}
+ \}\begin{DoxyCompactList}\small\item\em Messages to send via protocol. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protocol definitions. 
+
+This file is used by both sender and receiver side so that they can \char`\"{}speak the same language\char`\"{}. 
+
+\subsection{Enumeration Type Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55b}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55b}
+
+
+Messages to send via protocol. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+NE@{N\+O\+NE}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bac157bdf0b85a40d2619cbc8bc1ae5fe2}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bac157bdf0b85a40d2619cbc8bc1ae5fe2}
+}]Do nothing. \index{B\+R\+A\+KE@{B\+R\+A\+KE}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!B\+R\+A\+KE@{B\+R\+A\+KE}}\item[{\em 
+B\+R\+A\+KE\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba8b23c50cc938e0b366df8d8eeeb1bf9f}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba8b23c50cc938e0b366df8d8eeeb1bf9f}
+}]Brake the robot. \index{G\+Y\+R\+O\+\_\+\+Z\+E\+RO@{G\+Y\+R\+O\+\_\+\+Z\+E\+RO}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!G\+Y\+R\+O\+\_\+\+Z\+E\+RO@{G\+Y\+R\+O\+\_\+\+Z\+E\+RO}}\item[{\em 
+G\+Y\+R\+O\+\_\+\+Z\+E\+RO\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba8c7117b2027e09b34900d50bf52be1fc}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba8c7117b2027e09b34900d50bf52be1fc}
+}]Reset gyroscope. \index{A\+N\+G\+\_\+\+S\+ET@{A\+N\+G\+\_\+\+S\+ET}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!A\+N\+G\+\_\+\+S\+ET@{A\+N\+G\+\_\+\+S\+ET}}\item[{\em 
+A\+N\+G\+\_\+\+S\+ET\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baac501419ceb75b9c41edc1040922814d}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baac501419ceb75b9c41edc1040922814d}
+}]Set zero axis to current angle measure. \index{A\+N\+G\+\_\+\+R\+ST@{A\+N\+G\+\_\+\+R\+ST}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!A\+N\+G\+\_\+\+R\+ST@{A\+N\+G\+\_\+\+R\+ST}}\item[{\em 
+A\+N\+G\+\_\+\+R\+ST\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baedce3348d000faaa8900ad5eb1a271b6}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baedce3348d000faaa8900ad5eb1a271b6}
+}]Reset angle zero axis. \index{L\+E\+D\+\_\+\+ON@{L\+E\+D\+\_\+\+ON}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!L\+E\+D\+\_\+\+ON@{L\+E\+D\+\_\+\+ON}}\item[{\em 
+L\+E\+D\+\_\+\+ON\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55badd01b80eb93658fb4cf7eb9aceb89a1d}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55badd01b80eb93658fb4cf7eb9aceb89a1d}
+}]Turn on leds. \index{L\+E\+D\+\_\+\+O\+FF@{L\+E\+D\+\_\+\+O\+FF}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!L\+E\+D\+\_\+\+O\+FF@{L\+E\+D\+\_\+\+O\+FF}}\item[{\em 
+L\+E\+D\+\_\+\+O\+FF\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bafc0ca8cc6cbe215fd3f1ae6d40255b40}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bafc0ca8cc6cbe215fd3f1ae6d40255b40}
+}]Turn off leds. \index{A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF@{A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF@{A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF}}\item[{\em 
+A\+B\+S\+\_\+\+A\+N\+G\+\_\+\+R\+EF\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baebab915cbd13e3f686533c8d76300087}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55baebab915cbd13e3f686533c8d76300087}
+}]Set new angle reference relative to zero axis. \index{R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF@{R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF@{R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF}}\item[{\em 
+R\+E\+L\+\_\+\+A\+N\+G\+\_\+\+R\+EF\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba666308258087a1df1894501d425a025d}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba666308258087a1df1894501d425a025d}
+}]Set new angle reference relative to robot axis. \index{M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF@{M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF@{M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF}}\item[{\em 
+M\+A\+G\+\_\+\+A\+N\+G\+\_\+\+R\+EF\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba01bc5af3c81de1bada5c4e5a46342537}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba01bc5af3c81de1bada5c4e5a46342537}
+}]Set new angle reference relative to north using magnetometer. \index{G\+N\+D\+\_\+\+V\+EL@{G\+N\+D\+\_\+\+V\+EL}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!G\+N\+D\+\_\+\+V\+EL@{G\+N\+D\+\_\+\+V\+EL}}\item[{\em 
+G\+N\+D\+\_\+\+V\+EL\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba32cbb2d436feb86f45f0c0622834253e}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba32cbb2d436feb86f45f0c0622834253e}
+}]Set new ground velocity for robot. \index{J\+O\+G\+\_\+\+V\+EL@{J\+O\+G\+\_\+\+V\+EL}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!J\+O\+G\+\_\+\+V\+EL@{J\+O\+G\+\_\+\+V\+EL}}\item[{\em 
+J\+O\+G\+\_\+\+V\+EL\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba196e0abb22aa9f777d698ae8611ab385}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba196e0abb22aa9f777d698ae8611ab385}
+}]Set new jogging speed for robot. \index{M\+A\+G\+\_\+\+C\+A\+L\+IB@{M\+A\+G\+\_\+\+C\+A\+L\+IB}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!M\+A\+G\+\_\+\+C\+A\+L\+IB@{M\+A\+G\+\_\+\+C\+A\+L\+IB}}\item[{\em 
+M\+A\+G\+\_\+\+C\+A\+L\+IB\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bac19189693c4b052ff7045cf731ef6cb5}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55bac19189693c4b052ff7045cf731ef6cb5}
+}]Magnetometer calibration (min\+\_\+x, max\+\_\+x, min\+\_\+y, max\+\_\+y). \index{P\+I\+D\+\_\+\+P\+A\+R\+A\+MS@{P\+I\+D\+\_\+\+P\+A\+R\+A\+MS}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!P\+I\+D\+\_\+\+P\+A\+R\+A\+MS@{P\+I\+D\+\_\+\+P\+A\+R\+A\+MS}}\item[{\em 
+P\+I\+D\+\_\+\+P\+A\+R\+A\+MS\hypertarget{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba110bb214d30b91e3b05c697167f33d48}{}\label{protocol_8h_a06fc87d81c62e9abb8790b6e5713c55ba110bb214d30b91e3b05c697167f33d48}
+}]Send P\+ID control parameters (P, I, D, N). \end{description}
+\end{Desc}

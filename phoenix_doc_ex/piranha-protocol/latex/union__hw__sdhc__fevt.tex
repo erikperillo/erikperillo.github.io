@@ -1,0 +1,37 @@
+\hypertarget{union__hw__sdhc__fevt}{}\section{\+\_\+hw\+\_\+sdhc\+\_\+fevt Union Reference}
+\label{union__hw__sdhc__fevt}\index{\+\_\+hw\+\_\+sdhc\+\_\+fevt@{\+\_\+hw\+\_\+sdhc\+\_\+fevt}}
+
+
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+F\+E\+VT -\/ Force Event register (WO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+sdhc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__sdhc__fevt_1_1__hw__sdhc__fevt__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+fevt\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__sdhc__fevt_a8d067fab1a0f33884d9f9f71e6e69416}{}\label{union__hw__sdhc__fevt_a8d067fab1a0f33884d9f9f71e6e69416}
+
+\item 
+struct \hyperlink{struct__hw__sdhc__fevt_1_1__hw__sdhc__fevt__bitfields}{\+\_\+hw\+\_\+sdhc\+\_\+fevt\+::\+\_\+hw\+\_\+sdhc\+\_\+fevt\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__sdhc__fevt_ae5571b22fadf4796b9d70009e3547d9f}{}\label{union__hw__sdhc__fevt_ae5571b22fadf4796b9d70009e3547d9f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+S\+D\+H\+C\+\_\+\+F\+E\+VT -\/ Force Event register (WO) 
+
+Reset value\+: 0x00000000U
+
+The Force Event (F\+E\+VT) register is not a physically implemented register. Rather, it is an address at which the Interrupt Status register can be written if the corresponding bit of the Interrupt Status Enable register is set. This register is a write only register and writing 0 to it has no effect. Writing 1 to this register actually sets the corresponding bit of Interrupt Status register. A read from this register always results in 0\textquotesingle{}s. To change the corresponding status bits in the interrupt status register, make sure to set S\+Y\+S\+C\+TL\mbox{[}I\+P\+G\+EN\mbox{]} so that bus clock is always active. Forcing a card interrupt will generate a short pulse on the D\+AT\mbox{[}1\mbox{]} line, and the driver may treat this interrupt as a normal interrupt. The interrupt service routine may skip polling the card interrupt factor as the interrupt is selfcleared. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+sdhc.\+h\end{DoxyCompactItemize}

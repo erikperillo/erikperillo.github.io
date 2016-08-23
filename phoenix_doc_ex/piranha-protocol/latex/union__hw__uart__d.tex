@@ -1,0 +1,37 @@
+\hypertarget{union__hw__uart__d}{}\section{\+\_\+hw\+\_\+uart\+\_\+d Union Reference}
+\label{union__hw__uart__d}\index{\+\_\+hw\+\_\+uart\+\_\+d@{\+\_\+hw\+\_\+uart\+\_\+d}}
+
+
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+D -\/ U\+A\+RT Data Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+uart.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__uart__d_1_1__hw__uart__d__bitfields}{\+\_\+hw\+\_\+uart\+\_\+d\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__uart__d_a1fad3b9f111d5c7579ef11caf3677f03}{}\label{union__hw__uart__d_a1fad3b9f111d5c7579ef11caf3677f03}
+
+\item 
+struct \hyperlink{struct__hw__uart__d_1_1__hw__uart__d__bitfields}{\+\_\+hw\+\_\+uart\+\_\+d\+::\+\_\+hw\+\_\+uart\+\_\+d\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__uart__d_a15d593cf6a22d6872ec5da3285165eea}{}\label{union__hw__uart__d_a15d593cf6a22d6872ec5da3285165eea}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+D -\/ U\+A\+RT Data Register (RW) 
+
+Reset value\+: 0x00U
+
+This register is actually two separate registers. Reads return the contents of the read-\/only receive data register and writes go to the write-\/only transmit data register. In 8-\/bit or 9-\/bit data format, only U\+A\+RT data register (D) needs to be accessed to clear the S1\mbox{[}R\+D\+RF\mbox{]} bit (assuming receiver buffer level is less than R\+W\+F\+I\+FO\mbox{[}R\+X\+W\+A\+T\+ER\mbox{]}). The C3 register needs to be read, prior to the D register, only if the ninth bit of data needs to be captured. Similarly, the ED register needs to be read, prior to the D register, only if the additional flag data for the dataword needs to be captured. In the normal 8-\/bit mode (M bit cleared) if the parity is enabled, you get seven data bits and one parity bit. That one parity bit is loaded into the D register. So, for the data bits, mask off the parity bit from the value you read out of this register. When transmitting in 9-\/bit data format and using 8-\/bit write instructions, write first to transmit bit 8 in U\+A\+RT control register 3 (C3\mbox{[}T8\mbox{]}), then D. A write to C3\mbox{[}T8\mbox{]} stores the data in a temporary register. If D register is written first, and then the new data on data bus is stored in D, the temporary value written by the last write to C3\mbox{[}T8\mbox{]} gets stored in the C3\mbox{[}T8\mbox{]} register. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+uart.\+h\end{DoxyCompactItemize}

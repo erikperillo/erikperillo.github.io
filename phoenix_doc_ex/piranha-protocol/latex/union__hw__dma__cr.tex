@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__cr}{}\section{\+\_\+hw\+\_\+dma\+\_\+cr Union Reference}
+\label{union__hw__dma__cr}\index{\+\_\+hw\+\_\+dma\+\_\+cr@{\+\_\+hw\+\_\+dma\+\_\+cr}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+CR -\/ Control Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__cr_1_1__hw__dma__cr__bitfields}{\+\_\+hw\+\_\+dma\+\_\+cr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__cr_aaa46d2ec372f59547f994781b2768cd6}{}\label{union__hw__dma__cr_aaa46d2ec372f59547f994781b2768cd6}
+
+\item 
+struct \hyperlink{struct__hw__dma__cr_1_1__hw__dma__cr__bitfields}{\+\_\+hw\+\_\+dma\+\_\+cr\+::\+\_\+hw\+\_\+dma\+\_\+cr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__cr_ade75f98107d9848b5a9377332eda6d3b}{}\label{union__hw__dma__cr_ade75f98107d9848b5a9377332eda6d3b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+CR -\/ Control Register (RW) 
+
+Reset value\+: 0x00000000U
+
+The CR defines the basic operating configuration of the D\+MA. Arbitration can be configured to use either a fixed-\/priority or a round-\/robin scheme. For fixed-\/priority arbitration, the highest priority channel requesting service is selected to execute. The channel priority registers assign the priorities; see the D\+C\+H\+P\+R\+In registers. For round-\/robin arbitration, the channel priorities are ignored and channels are cycled through (from high to low channel number) without regard to priority. For correct operation, writes to the CR register must be performed only when the D\+MA channels are inactive; that is, when T\+C\+Dn\+\_\+\+C\+SR\mbox{[}A\+C\+T\+I\+VE\mbox{]} bits are cleared. Minor loop offsets are address offset values added to the final source address (T\+C\+Dn\+\_\+\+S\+A\+D\+DR) or destination address (T\+C\+Dn\+\_\+\+D\+A\+D\+DR) upon minor loop completion. When minor loop offsets are enabled, the minor loop offset (M\+L\+O\+FF) is added to the final source address (T\+C\+Dn\+\_\+\+S\+A\+D\+DR), to the final destination address (T\+C\+Dn\+\_\+\+D\+A\+D\+DR), or to both prior to the addresses being written back into the T\+CD. If the major loop is complete, the minor loop offset is ignored and the major loop address offsets (T\+C\+Dn\+\_\+\+S\+L\+A\+ST and T\+C\+Dn\+\_\+\+D\+L\+A\+S\+T\+\_\+\+S\+GA) are used to compute the next T\+C\+Dn\+\_\+\+S\+A\+D\+DR and T\+C\+Dn\+\_\+\+D\+A\+D\+DR values. When minor loop mapping is enabled (E\+M\+LM is 1), T\+C\+Dn word2 is redefined. A portion of T\+C\+Dn word2 is used to specify multiple fields\+: a source enable bit (S\+M\+L\+OE) to specify the minor loop offset should be applied to the source address (T\+C\+Dn\+\_\+\+S\+A\+D\+DR) upon minor loop completion, a destination enable bit (D\+M\+L\+OE) to specify the minor loop offset should be applied to the destination address (T\+C\+Dn\+\_\+\+D\+A\+D\+DR) upon minor loop completion, and the sign extended minor loop offset value (M\+L\+O\+FF). The same offset value (M\+L\+O\+FF) is used for both source and destination minor loop offsets. When either minor loop offset is enabled (S\+M\+L\+OE set or D\+M\+L\+OE set), the N\+B\+Y\+T\+ES field is reduced to 10 bits. When both minor loop offsets are disabled (S\+M\+L\+OE cleared and D\+M\+L\+OE cleared), the N\+B\+Y\+T\+ES field is a 30-\/bit vector. When minor loop mapping is disabled (E\+M\+LM is 0), all 32 bits of T\+C\+Dn word2 are assigned to the N\+B\+Y\+T\+ES field. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

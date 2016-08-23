@@ -1,0 +1,223 @@
+\hypertarget{group__i2c__hal}{}\section{I2c\+\_\+hal}
+\label{group__i2c__hal}\index{I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__i2c__hal_ga7cc91c89125c25a88e463a9e8550b284}{\+\_\+i2c\+\_\+status} \hyperlink{group__i2c__hal_gadcd21817de0b2ccfe00295f61eb078bf}{i2c\+\_\+status\+\_\+t}\hypertarget{group__i2c__hal_gadcd21817de0b2ccfe00295f61eb078bf}{}\label{group__i2c__hal_gadcd21817de0b2ccfe00295f61eb078bf}
+
+\begin{DoxyCompactList}\small\item\em I2C status return codes. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__i2c__hal_ga94540c1edc80ad8d2b3173114d04259d}{\+\_\+i2c\+\_\+status\+\_\+flag} \hyperlink{group__i2c__hal_gae0adf3ae66a4b77e79fa9ee483380d33}{i2c\+\_\+status\+\_\+flag\+\_\+t}\hypertarget{group__i2c__hal_gae0adf3ae66a4b77e79fa9ee483380d33}{}\label{group__i2c__hal_gae0adf3ae66a4b77e79fa9ee483380d33}
+
+\begin{DoxyCompactList}\small\item\em I2C status flags. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__i2c__hal_ga1625497320644ba123718bafdd2c1f39}{\+\_\+i2c\+\_\+direction} \hyperlink{group__i2c__hal_ga4bf954d998f086594eece268c780bec7}{i2c\+\_\+direction\+\_\+t}\hypertarget{group__i2c__hal_ga4bf954d998f086594eece268c780bec7}{}\label{group__i2c__hal_ga4bf954d998f086594eece268c780bec7}
+
+\begin{DoxyCompactList}\small\item\em Direction of master and slave transfers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__i2c__hal_ga7cc91c89125c25a88e463a9e8550b284}{\+\_\+i2c\+\_\+status} \{ \\*
+{\bfseries k\+Status\+\_\+\+I2\+C\+\_\+\+Success} = 0x0U, 
+{\bfseries k\+Status\+\_\+\+I2\+C\+\_\+\+Out\+Of\+Range} = 0x1U, 
+{\bfseries k\+Status\+\_\+\+I2\+C\+\_\+\+Fail} = 0x2U, 
+\hyperlink{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a49091894b590d7e479605bf113918952}{k\+Status\+\_\+\+I2\+C\+\_\+\+Busy} = 0x3U, 
+\\*
+\hyperlink{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a81ad7cc198436cabbe91ea55c5288747}{k\+Status\+\_\+\+I2\+C\+\_\+\+Timeout} = 0x4U, 
+\hyperlink{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a22495915fb9a79a80f89d93561e3769a}{k\+Status\+\_\+\+I2\+C\+\_\+\+Received\+Nak} = 0x5U, 
+\hyperlink{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a59390c2b988d02e016ec014f9e014557}{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Tx\+Underrun} = 0x6U, 
+\hyperlink{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284ab286ded9de770504a53c67c4fa7ee64b}{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Rx\+Overrun} = 0x7U, 
+\\*
+\hyperlink{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a436dd56a766dbe6a7f2bddd7f29463d1}{k\+Status\+\_\+\+I2\+C\+\_\+\+Aribtration\+Lost} = 0x8U
+ \}\begin{DoxyCompactList}\small\item\em I2C status return codes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__i2c__hal_ga94540c1edc80ad8d2b3173114d04259d}{\+\_\+i2c\+\_\+status\+\_\+flag} \{ \\*
+{\bfseries k\+I2\+C\+Transfer\+Complete} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+T\+CF, 
+{\bfseries k\+I2\+C\+Address\+As\+Slave} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+I\+A\+AS, 
+{\bfseries k\+I2\+C\+Bus\+Busy} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+B\+U\+SY, 
+{\bfseries k\+I2\+C\+Arbitration\+Lost} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+A\+R\+BL, 
+\\*
+{\bfseries k\+I2\+C\+Address\+Match} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+R\+AM, 
+{\bfseries k\+I2\+C\+Slave\+Transmit} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+S\+RW, 
+{\bfseries k\+I2\+C\+Interrupt\+Pending} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+I\+I\+C\+IF, 
+{\bfseries k\+I2\+C\+Received\+Nak} = B\+P\+\_\+\+I2\+C\+\_\+\+S\+\_\+\+R\+X\+AK
+ \}\hypertarget{group__i2c__hal_ga94540c1edc80ad8d2b3173114d04259d}{}\label{group__i2c__hal_ga94540c1edc80ad8d2b3173114d04259d}
+\begin{DoxyCompactList}\small\item\em I2C status flags. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__i2c__hal_ga1625497320644ba123718bafdd2c1f39}{\+\_\+i2c\+\_\+direction} \{ \hyperlink{group__i2c__hal_gga1625497320644ba123718bafdd2c1f39a452f63617b04cbce09e4a23338c21a4e}{k\+I2\+C\+Receive} = 0U, 
+\hyperlink{group__i2c__hal_gga1625497320644ba123718bafdd2c1f39af381933c365d3290c3fceeec2178077a}{k\+I2\+C\+Send} = 1U
+ \}\begin{DoxyCompactList}\small\item\em Direction of master and slave transfers. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Module controls}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__i2c__hal_gad35451486842f04187c74ab5a2c85d6d}{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Restores the I2C peripheral to reset state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Baud rate}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__i2c__hal_gadcd21817de0b2ccfe00295f61eb078bf}{i2c\+\_\+status\+\_\+t} \hyperlink{group__i2c__hal_gabb3902949b38f861502d989c69ab81b6}{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate} (uint32\+\_\+t base\+Addr, uint32\+\_\+t source\+Clock\+In\+Hz, uint32\+\_\+t kbps, uint32\+\_\+t $\ast$absolute\+Error\+\_\+\+Hz)
+\begin{DoxyCompactList}\small\item\em Sets the I2C bus frequency for master transactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Bus operations}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__i2c__hal_ga1b3a849cc66e30eaff24a49f06da2a77}{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Sends a S\+T\+A\+RT or a Repeated S\+T\+A\+RT signal on the I2C bus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Slave address}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__i2c__hal_ga1f0c1d284d62c096bcf1361e7bedef89}{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit} (uint32\+\_\+t base\+Addr, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Sets the primary 7-\/bit slave address. \end{DoxyCompactList}\item 
+void \hyperlink{group__i2c__hal_ga581c7e046e0c94bf04ab20d1575be2e1}{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit} (uint32\+\_\+t base\+Addr, uint16\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Sets the primary slave address and enables 10-\/bit address mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!\+\_\+i2c\+\_\+direction@{\+\_\+i2c\+\_\+direction}}
+\index{\+\_\+i2c\+\_\+direction@{\+\_\+i2c\+\_\+direction}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+i2c\+\_\+direction}{_i2c_direction}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+i2c\+\_\+direction}}\hypertarget{group__i2c__hal_ga1625497320644ba123718bafdd2c1f39}{}\label{group__i2c__hal_ga1625497320644ba123718bafdd2c1f39}
+
+
+Direction of master and slave transfers. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+I2\+C\+Receive@{k\+I2\+C\+Receive}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+I2\+C\+Receive@{k\+I2\+C\+Receive}}\item[{\em 
+k\+I2\+C\+Receive\hypertarget{group__i2c__hal_gga1625497320644ba123718bafdd2c1f39a452f63617b04cbce09e4a23338c21a4e}{}\label{group__i2c__hal_gga1625497320644ba123718bafdd2c1f39a452f63617b04cbce09e4a23338c21a4e}
+}]Master and slave receive. \index{k\+I2\+C\+Send@{k\+I2\+C\+Send}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+I2\+C\+Send@{k\+I2\+C\+Send}}\item[{\em 
+k\+I2\+C\+Send\hypertarget{group__i2c__hal_gga1625497320644ba123718bafdd2c1f39af381933c365d3290c3fceeec2178077a}{}\label{group__i2c__hal_gga1625497320644ba123718bafdd2c1f39af381933c365d3290c3fceeec2178077a}
+}]Master and slave transmit. \end{description}
+\end{Desc}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!\+\_\+i2c\+\_\+status@{\+\_\+i2c\+\_\+status}}
+\index{\+\_\+i2c\+\_\+status@{\+\_\+i2c\+\_\+status}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+i2c\+\_\+status}{_i2c_status}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+i2c\+\_\+status}}\hypertarget{group__i2c__hal_ga7cc91c89125c25a88e463a9e8550b284}{}\label{group__i2c__hal_ga7cc91c89125c25a88e463a9e8550b284}
+
+
+I2C status return codes. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Status\+\_\+\+I2\+C\+\_\+\+Busy@{k\+Status\+\_\+\+I2\+C\+\_\+\+Busy}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+Status\+\_\+\+I2\+C\+\_\+\+Busy@{k\+Status\+\_\+\+I2\+C\+\_\+\+Busy}}\item[{\em 
+k\+Status\+\_\+\+I2\+C\+\_\+\+Busy\hypertarget{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a49091894b590d7e479605bf113918952}{}\label{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a49091894b590d7e479605bf113918952}
+}]The master is already performing a transfer. \index{k\+Status\+\_\+\+I2\+C\+\_\+\+Timeout@{k\+Status\+\_\+\+I2\+C\+\_\+\+Timeout}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+Status\+\_\+\+I2\+C\+\_\+\+Timeout@{k\+Status\+\_\+\+I2\+C\+\_\+\+Timeout}}\item[{\em 
+k\+Status\+\_\+\+I2\+C\+\_\+\+Timeout\hypertarget{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a81ad7cc198436cabbe91ea55c5288747}{}\label{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a81ad7cc198436cabbe91ea55c5288747}
+}]The transfer timed out. \index{k\+Status\+\_\+\+I2\+C\+\_\+\+Received\+Nak@{k\+Status\+\_\+\+I2\+C\+\_\+\+Received\+Nak}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+Status\+\_\+\+I2\+C\+\_\+\+Received\+Nak@{k\+Status\+\_\+\+I2\+C\+\_\+\+Received\+Nak}}\item[{\em 
+k\+Status\+\_\+\+I2\+C\+\_\+\+Received\+Nak\hypertarget{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a22495915fb9a79a80f89d93561e3769a}{}\label{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a22495915fb9a79a80f89d93561e3769a}
+}]The slave device sent a N\+AK in response to a byte. \index{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Tx\+Underrun@{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Tx\+Underrun}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Tx\+Underrun@{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Tx\+Underrun}}\item[{\em 
+k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Tx\+Underrun\hypertarget{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a59390c2b988d02e016ec014f9e014557}{}\label{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a59390c2b988d02e016ec014f9e014557}
+}]I2C Slave TX Underrun error. \index{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Rx\+Overrun@{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Rx\+Overrun}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Rx\+Overrun@{k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Rx\+Overrun}}\item[{\em 
+k\+Status\+\_\+\+I2\+C\+\_\+\+Slave\+Rx\+Overrun\hypertarget{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284ab286ded9de770504a53c67c4fa7ee64b}{}\label{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284ab286ded9de770504a53c67c4fa7ee64b}
+}]I2C Slave RX Overrun error. \index{k\+Status\+\_\+\+I2\+C\+\_\+\+Aribtration\+Lost@{k\+Status\+\_\+\+I2\+C\+\_\+\+Aribtration\+Lost}!I2c\+\_\+hal@{I2c\+\_\+hal}}\index{I2c\+\_\+hal@{I2c\+\_\+hal}!k\+Status\+\_\+\+I2\+C\+\_\+\+Aribtration\+Lost@{k\+Status\+\_\+\+I2\+C\+\_\+\+Aribtration\+Lost}}\item[{\em 
+k\+Status\+\_\+\+I2\+C\+\_\+\+Aribtration\+Lost\hypertarget{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a436dd56a766dbe6a7f2bddd7f29463d1}{}\label{group__i2c__hal_gga7cc91c89125c25a88e463a9e8550b284a436dd56a766dbe6a7f2bddd7f29463d1}
+}]I2C Arbitration Lost error. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init}}
+\index{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init(uint32\+\_\+t base\+Addr)}{I2C_HAL_Init(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void I2\+C\+\_\+\+H\+A\+L\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__i2c__hal_gad35451486842f04187c74ab5a2c85d6d}{}\label{group__i2c__hal_gad35451486842f04187c74ab5a2c85d6d}
+
+
+Restores the I2C peripheral to reset state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & The I2C peripheral base address \\
+\hline
+\end{DoxyParams}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start}}
+\index{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start(uint32\+\_\+t base\+Addr)}{I2C_HAL_SendStart(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void I2\+C\+\_\+\+H\+A\+L\+\_\+\+Send\+Start (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__i2c__hal_ga1b3a849cc66e30eaff24a49f06da2a77}{}\label{group__i2c__hal_ga1b3a849cc66e30eaff24a49f06da2a77}
+
+
+Sends a S\+T\+A\+RT or a Repeated S\+T\+A\+RT signal on the I2C bus. 
+
+This function is used to initiate a new master mode transfer by sending the S\+T\+A\+RT signal. It is also used to send a Repeated S\+T\+A\+RT signal when a transfer is already in progress.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & The I2C peripheral base address \\
+\hline
+\end{DoxyParams}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit}}
+\index{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit(uint32\+\_\+t base\+Addr, uint16\+\_\+t address)}{I2C_HAL_SetAddress10bit(uint32_t baseAddr, uint16_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}void I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address10bit (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint16\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{group__i2c__hal_ga581c7e046e0c94bf04ab20d1575be2e1}{}\label{group__i2c__hal_ga581c7e046e0c94bf04ab20d1575be2e1}
+
+
+Sets the primary slave address and enables 10-\/bit address mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & The I2C peripheral base address \\
+\hline
+{\em address} & The 10-\/bit slave address, in bits \mbox{[}10\+:1\mbox{]} of the value. Bit 0 must be 0. \\
+\hline
+\end{DoxyParams}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit}}
+\index{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit(uint32\+\_\+t base\+Addr, uint8\+\_\+t address)}{I2C_HAL_SetAddress7bit(uint32_t baseAddr, uint8_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}void I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Address7bit (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{group__i2c__hal_ga1f0c1d284d62c096bcf1361e7bedef89}{}\label{group__i2c__hal_ga1f0c1d284d62c096bcf1361e7bedef89}
+
+
+Sets the primary 7-\/bit slave address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & The I2C peripheral base address \\
+\hline
+{\em address} & The slave address in the upper 7 bits. Bit 0 of this value must be 0. \\
+\hline
+\end{DoxyParams}
+\index{I2c\+\_\+hal@{I2c\+\_\+hal}!I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate}}
+\index{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate@{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate}!I2c\+\_\+hal@{I2c\+\_\+hal}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate(uint32\+\_\+t base\+Addr, uint32\+\_\+t source\+Clock\+In\+Hz, uint32\+\_\+t kbps, uint32\+\_\+t $\ast$absolute\+Error\+\_\+\+Hz)}{I2C_HAL_SetBaudRate(uint32_t baseAddr, uint32_t sourceClockInHz, uint32_t kbps, uint32_t *absoluteError_Hz)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i2c\+\_\+status\+\_\+t} I2\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{source\+Clock\+In\+Hz, }
+\item[{uint32\+\_\+t}]{kbps, }
+\item[{uint32\+\_\+t $\ast$}]{absolute\+Error\+\_\+\+Hz}
+\end{DoxyParamCaption}
+)}\hypertarget{group__i2c__hal_gabb3902949b38f861502d989c69ab81b6}{}\label{group__i2c__hal_gabb3902949b38f861502d989c69ab81b6}
+
+
+Sets the I2C bus frequency for master transactions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & The I2C peripheral base address \\
+\hline
+{\em source\+Clock\+In\+Hz} & I2C source input clock in Hertz \\
+\hline
+{\em kbps} & Requested bus frequency in kilohertz. Common values are either 100 or 400. \\
+\hline
+{\em absolute\+Error\+\_\+\+Hz} & If this parameter is not N\+U\+LL, it is filled in with the difference in Hertz between the requested bus frequency and the closest frequency possible given available divider values.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em k\+Status\+\_\+\+Success} & The baud rate was changed successfully. However, there is no guarantee on the minimum error. If you want to ensure that the baud was set to within a certain error, then use the {\itshape absolute\+Error\+\_\+\+Hz} parameter. \\
+\hline
+{\em k\+Status\+\_\+\+Out\+Of\+Range} & The requested baud rate was not within the range of rates supported by the peripheral. \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,896 @@
+\hypertarget{group__edma__hal}{}\section{Edma\+\_\+hal}
+\label{group__edma__hal}\index{Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structEDMATransferConfig}{E\+D\+M\+A\+Transfer\+Config}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA transfer size configuration. \end{DoxyCompactList}\item 
+struct \hyperlink{structEDMAMinorLoopOffsetConfig}{E\+D\+M\+A\+Minor\+Loop\+Offset\+Config}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA T\+CD Minor loop mapping configuration \end{DoxyCompactList}\item 
+union \hyperlink{unionEDMAErrorStatusAll}{E\+D\+M\+A\+Error\+Status\+All}
+\begin{DoxyCompactList}\small\item\em Error status of the e\+D\+MA module. \end{DoxyCompactList}\item 
+struct \hyperlink{structEDMASoftwareTcd}{E\+D\+M\+A\+Software\+Tcd}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA T\+CD \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__edma__hal_ga4522db4e23f95c72a0a7c93080a96355}{\+\_\+edma\+\_\+status} \hyperlink{group__edma__hal_gaba9351bb5972d15c73f14ba9bb507796}{edma\+\_\+status\+\_\+t}\hypertarget{group__edma__hal_gaba9351bb5972d15c73f14ba9bb507796}{}\label{group__edma__hal_gaba9351bb5972d15c73f14ba9bb507796}
+
+\begin{DoxyCompactList}\small\item\em Error code for the e\+D\+MA Driver. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__edma__hal_gac176e6a80e3c1339ec8298bd51e9beab}{\+\_\+edma\+\_\+channel\+\_\+arbitration} \hyperlink{group__edma__hal_ga3d8315315a55394cbdf730af1f79d4bc}{edma\+\_\+channel\+\_\+arbitration\+\_\+t}\hypertarget{group__edma__hal_ga3d8315315a55394cbdf730af1f79d4bc}{}\label{group__edma__hal_ga3d8315315a55394cbdf730af1f79d4bc}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA channel arbitration algorithm used for selection among channels. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__edma__hal_ga483c1c022e62a1682cbb187ecdf3f5b0}{\+\_\+edma\+\_\+chn\+\_\+priority} \hyperlink{group__edma__hal_ga3b4d3d307e14bd39deaf89f1bc7ffa5e}{edma\+\_\+channel\+\_\+priority\+\_\+t}\hypertarget{group__edma__hal_ga3b4d3d307e14bd39deaf89f1bc7ffa5e}{}\label{group__edma__hal_ga3b4d3d307e14bd39deaf89f1bc7ffa5e}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA channel priority setting \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__edma__hal_ga1a7d7ef429d6168ce7c9e43cee40d539}{\+\_\+edma\+\_\+modulo} \hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t}\hypertarget{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{}\label{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA modulo configuration \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__edma__hal_ga4ffcbd8f86285f5c162ae70a6fe155bd}{\+\_\+edma\+\_\+transfer\+\_\+size} \hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t}\hypertarget{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{}\label{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA transfer configuration \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structEDMATransferConfig}{E\+D\+M\+A\+Transfer\+Config} \hyperlink{group__edma__hal_ga01fdc7ba04e6c4187630c6480746c40d}{edma\+\_\+transfer\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA transfer size configuration. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__edma__hal_ga345c5302dbe76db009c0240e1e325797}{\+\_\+edma\+\_\+channel\+\_\+indicator} \hyperlink{group__edma__hal_ga232a0cfe340402eda7039baa8889a161}{edma\+\_\+channel\+\_\+indicator\+\_\+t}\hypertarget{group__edma__hal_ga232a0cfe340402eda7039baa8889a161}{}\label{group__edma__hal_ga232a0cfe340402eda7039baa8889a161}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA channel configuration. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structEDMAMinorLoopOffsetConfig}{E\+D\+M\+A\+Minor\+Loop\+Offset\+Config} \hyperlink{group__edma__hal_gad5e547af3f3fbe7a4250c05007e65ce9}{edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t}\hypertarget{group__edma__hal_gad5e547af3f3fbe7a4250c05007e65ce9}{}\label{group__edma__hal_gad5e547af3f3fbe7a4250c05007e65ce9}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA T\+CD Minor loop mapping configuration \end{DoxyCompactList}\item 
+typedef union \hyperlink{unionEDMAErrorStatusAll}{E\+D\+M\+A\+Error\+Status\+All} \hyperlink{group__edma__hal_gafe6a334451dfc7c6e2abb8598a05a7d4}{edma\+\_\+error\+\_\+status\+\_\+all\+\_\+t}\hypertarget{group__edma__hal_gafe6a334451dfc7c6e2abb8598a05a7d4}{}\label{group__edma__hal_gafe6a334451dfc7c6e2abb8598a05a7d4}
+
+\begin{DoxyCompactList}\small\item\em Error status of the e\+D\+MA module. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__edma__hal_ga82ff0dd938b1e22cb64cfa9e42929c31}{\+\_\+edma\+\_\+bandwidth\+\_\+config} \hyperlink{group__edma__hal_gace5d82450e3fb3e27715ebb7d26ec080}{edma\+\_\+bandwidth\+\_\+config\+\_\+t}\hypertarget{group__edma__hal_gace5d82450e3fb3e27715ebb7d26ec080}{}\label{group__edma__hal_gace5d82450e3fb3e27715ebb7d26ec080}
+
+\begin{DoxyCompactList}\small\item\em Bandwidth control configuration. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structEDMASoftwareTcd}{E\+D\+M\+A\+Software\+Tcd} \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t}\hypertarget{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{}\label{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}
+
+\begin{DoxyCompactList}\small\item\em e\+D\+MA T\+CD \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__edma__hal_ga4522db4e23f95c72a0a7c93080a96355}{\+\_\+edma\+\_\+status} \{ {\bfseries k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Success} = 0U, 
+\hyperlink{group__edma__hal_gga4522db4e23f95c72a0a7c93080a96355a194322022386e0fdc50fcb7437c0742b}{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Invalid\+Argument} = 1U, 
+\hyperlink{group__edma__hal_gga4522db4e23f95c72a0a7c93080a96355ab6b48173a20862eba0b60d25911253d2}{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Fail} = 2U
+ \}\begin{DoxyCompactList}\small\item\em Error code for the e\+D\+MA Driver. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__edma__hal_gac176e6a80e3c1339ec8298bd51e9beab}{\+\_\+edma\+\_\+channel\+\_\+arbitration} \{ \hyperlink{group__edma__hal_ggac176e6a80e3c1339ec8298bd51e9beaba6d292e4c74991982da967eef92aeceb5}{k\+E\+D\+M\+A\+Chn\+Arbitration\+Fixed\+Priority} = 0U, 
+\hyperlink{group__edma__hal_ggac176e6a80e3c1339ec8298bd51e9beabacb97728581b710ac5b456c4f52e4b9ad}{k\+E\+D\+M\+A\+Chn\+Arbitration\+Roundrobin}
+ \}\begin{DoxyCompactList}\small\item\em e\+D\+MA channel arbitration algorithm used for selection among channels. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__edma__hal_ga483c1c022e62a1682cbb187ecdf3f5b0}{\+\_\+edma\+\_\+chn\+\_\+priority} \{ \\*
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority0} = 0U, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority1}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority2}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority3}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority4}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority5}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority6}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority7}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority8}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority9}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority10}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority11}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority12}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority13}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority14}, 
+{\bfseries k\+E\+D\+M\+A\+Chn\+Priority15}
+ \}\hypertarget{group__edma__hal_ga483c1c022e62a1682cbb187ecdf3f5b0}{}\label{group__edma__hal_ga483c1c022e62a1682cbb187ecdf3f5b0}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA channel priority setting \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__edma__hal_ga1a7d7ef429d6168ce7c9e43cee40d539}{\+\_\+edma\+\_\+modulo} \{ \\*
+{\bfseries k\+E\+D\+M\+A\+Modulo\+Disable} = 0U, 
+{\bfseries k\+E\+D\+M\+A\+Modulo2bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo4bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo8bytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo16bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo32bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo64bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo128bytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo256bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo512bytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo1\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo2\+Kbytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo4\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo8\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo16\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo32\+Kbytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo64\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo128\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo256\+Kbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo512\+Kbytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo1\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo2\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo4\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo8\+Mbytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo16\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo32\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo64\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo128\+Mbytes}, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Modulo256\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo512\+Mbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo1\+Gbytes}, 
+{\bfseries k\+E\+D\+M\+A\+Modulo2\+Gbytes}
+ \}\hypertarget{group__edma__hal_ga1a7d7ef429d6168ce7c9e43cee40d539}{}\label{group__edma__hal_ga1a7d7ef429d6168ce7c9e43cee40d539}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA modulo configuration \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__edma__hal_ga4ffcbd8f86285f5c162ae70a6fe155bd}{\+\_\+edma\+\_\+transfer\+\_\+size} \{ \\*
+{\bfseries k\+E\+D\+M\+A\+Transfer\+Size\+\_\+1\+Bytes} = 0x0U, 
+{\bfseries k\+E\+D\+M\+A\+Transfer\+Size\+\_\+2\+Bytes} = 0x1U, 
+{\bfseries k\+E\+D\+M\+A\+Transfer\+Size\+\_\+4\+Bytes} = 0x2U, 
+{\bfseries k\+E\+D\+M\+A\+Transfer\+Size\+\_\+16\+Bytes} = 0x4U, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+Transfer\+Size\+\_\+32\+Bytes} = 0x5U
+ \}\hypertarget{group__edma__hal_ga4ffcbd8f86285f5c162ae70a6fe155bd}{}\label{group__edma__hal_ga4ffcbd8f86285f5c162ae70a6fe155bd}
+\begin{DoxyCompactList}\small\item\em e\+D\+MA transfer configuration \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__edma__hal_ga345c5302dbe76db009c0240e1e325797}{\+\_\+edma\+\_\+channel\+\_\+indicator} \{ \\*
+\hyperlink{group__edma__hal_gga345c5302dbe76db009c0240e1e325797afe39d576f30be63283d3e6e848f7bba5}{k\+E\+D\+M\+A\+Channel0} = 0U, 
+{\bfseries k\+E\+D\+M\+A\+Channel1} = 1U, 
+{\bfseries k\+E\+D\+M\+A\+Channel2} = 2U, 
+{\bfseries k\+E\+D\+M\+A\+Channel3} = 3U, 
+\\*
+{\bfseries k\+E\+D\+M\+A\+All\+Channel} = 64U
+ \}\begin{DoxyCompactList}\small\item\em e\+D\+MA channel configuration. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__edma__hal_ga82ff0dd938b1e22cb64cfa9e42929c31}{\+\_\+edma\+\_\+bandwidth\+\_\+config} \{ \hyperlink{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31af46c62a5d66009cc2044686ee929fe9d}{k\+E\+D\+M\+A\+Bandwidth\+Stall\+None} = 0U, 
+\hyperlink{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31a4d4d354f9915accd4ab274cef525e7fe}{k\+E\+D\+M\+A\+Bandwidth\+Stall4\+Cycle} = 2U, 
+\hyperlink{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31ace96f42ec8428f1df985acfdc5452fe8}{k\+E\+D\+M\+A\+Bandwidth\+Stall8\+Cycle} = 3U
+ \}\begin{DoxyCompactList}\small\item\em Bandwidth control configuration. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{e\+D\+MA H\+AL driver module level operation}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__edma__hal_ga525f4cf91f14f7ce6451ebb9e8c95c8c}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Initializes e\+D\+MA module to known state. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga3be8bbd6ea7977e32cdf4c7348391ebf}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Cancels the remaining data transfer. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_gaeefd145855bdf4381bc03efd088801c4}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Cancels the remaining data transfer and treats it as an error condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{e\+D\+MA H\+AL driver configuration and operation.}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__edma__hal_ga0aebf8f0f919d9bd994699a083e68a6b}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd} (uint32\+\_\+t base\+Addr, bool enable, \hyperlink{group__edma__hal_ga232a0cfe340402eda7039baa8889a161}{edma\+\_\+channel\+\_\+indicator\+\_\+t} channel)
+\begin{DoxyCompactList}\small\item\em Enables/\+Disables the error interrupt for channels. \end{DoxyCompactList}\item 
+bool \hyperlink{group__edma__hal_ga6aea98f443c947cb3d6a7a36e6ffd655}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Checks whether the e\+D\+MA channel error interrupt is enabled or disabled. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_gaac76117f0880966a82524b1be0b8abc7}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd} (uint32\+\_\+t base\+Addr, \hyperlink{group__edma__hal_ga232a0cfe340402eda7039baa8889a161}{edma\+\_\+channel\+\_\+indicator\+\_\+t} channel, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables/\+Disables the D\+MA request for the channel or all channels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{e\+D\+MA H\+AL driver hardware T\+CD configuration functions.}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__edma__hal_ga30ce8853f61da0d0a82b67200d0c75de}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Clears all registers to 0 for the hardware T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga1c53422c4d0a3bae4a03ae4656123298}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, \hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t} src\+Modulo, \hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t} dest\+Modulo, \hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t} src\+Transfer\+Size, \hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t} dest\+Transfer\+Size)
+\begin{DoxyCompactList}\small\item\em Configures the transfer attribute for the e\+D\+MA channel. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga8e8962fede985363851816b9c9221c8a}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, uint32\+\_\+t nbytes)
+\begin{DoxyCompactList}\small\item\em Configures the nbytes for the e\+D\+MA channel. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__edma__hal_ga19ef0b340d2165a0a7a620f222e51186}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Gets the nbytes configuration data for the hardware T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga85dc3cf5ca9b9aef2c58b5cfdfbd1818}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, \hyperlink{group__edma__hal_gad5e547af3f3fbe7a4250c05007e65ce9}{edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t} $\ast$config)
+\begin{DoxyCompactList}\small\item\em Configures the minor loop offset for the hardware T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_gaa92382fc5e5b42191d35420812806410}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd)
+\begin{DoxyCompactList}\small\item\em Configures the memory address for the next transfer T\+CD for the hardware T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga7739a5da12a70aa0d2edb8bf2a423fc8}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, uint32\+\_\+t link\+Channel, bool enable)
+\begin{DoxyCompactList}\small\item\em Sets the channel minor link for the hardware T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga0f403a46d04cfc90feaa358b3d8a96a0}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Sets the major iteration count according to minor loop channel link setting. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__edma__hal_ga1bb524b961b71348221adb2b6bb86b2e}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Gets the number of beginning major counts for the hardware T\+CD. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__edma__hal_ga0151e924e12a540649527b98f7923d60}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Gets the number of current major counts for the hardware T\+CD. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__edma__hal_ga5e37640a7f57586edeba5a1cc94db473}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Gets the number of bytes already transferred for the hardware T\+CD. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__edma__hal_ga5989c80f8a7bbce1448bc5a08e338a15}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Gets the number of bytes haven\textquotesingle{}t transferred for the hardware T\+CD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{E\+D\+MA H\+AL driver software T\+CD configuration functions.}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__edma__hal_ga1d27f98767e3b9255305f3d414a88439}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute} (\hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, \hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t} src\+Modulo, \hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t} dest\+Modulo, \hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t} src\+Transfer\+Size, \hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t} dest\+Transfer\+Size)
+\begin{DoxyCompactList}\small\item\em Configures the transfer attribute for software T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_gac53994cb65a8689aff4e203f9c628953}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes} (uint32\+\_\+t base\+Addr, \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, uint32\+\_\+t nbytes)
+\begin{DoxyCompactList}\small\item\em Configures the nbytes for software T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_gac9d7aa8de4ddd8b488c19f7b947e0bbf}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset} (uint32\+\_\+t base\+Addr, \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, \hyperlink{group__edma__hal_gad5e547af3f3fbe7a4250c05007e65ce9}{edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t} $\ast$config)
+\begin{DoxyCompactList}\small\item\em Configures the minorloop offset for the software T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_gaf1d05ba8a7dd8a5b8a54d97753bad20d}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link} (\hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$next\+Stcd)
+\begin{DoxyCompactList}\small\item\em Configures the memory address for the next transfer T\+CD for the software T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga36f154763e1214f033074a068ac9e242}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link} (\hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, uint32\+\_\+t link\+Channel, bool enable)
+\begin{DoxyCompactList}\small\item\em Set Channel minor link for software T\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga8f60631b84702a9acbd980d1946175a2}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count} (\hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Sets the major iteration count according to minor loop channel link setting. \end{DoxyCompactList}\item 
+void \hyperlink{group__edma__hal_ga8eea4fc26c17b9adf2cf3a0e9d3f25f4}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+CD} (uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd)
+\begin{DoxyCompactList}\small\item\em Copy the software T\+CD configuration to the hardware T\+CD. \end{DoxyCompactList}\item 
+\hyperlink{group__edma__hal_gaba9351bb5972d15c73f14ba9bb507796}{edma\+\_\+status\+\_\+t} \hyperlink{group__edma__hal_ga462868ae1efe70dfefdf95cb737480ce}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer} (uint32\+\_\+t base\+Addr, \hyperlink{group__edma__hal_ga7cc4084521c106d714c925fddff92b40}{edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$stcd, \hyperlink{group__edma__hal_ga01fdc7ba04e6c4187630c6480746c40d}{edma\+\_\+transfer\+\_\+config\+\_\+t} $\ast$config, bool enable\+Int, bool disable\+Dma\+Request)
+\begin{DoxyCompactList}\small\item\em Set the basic transfer for software T\+CD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!edma\+\_\+transfer\+\_\+config\+\_\+t@{edma\+\_\+transfer\+\_\+config\+\_\+t}}
+\index{edma\+\_\+transfer\+\_\+config\+\_\+t@{edma\+\_\+transfer\+\_\+config\+\_\+t}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{edma\+\_\+transfer\+\_\+config\+\_\+t}{edma_transfer_config_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf E\+D\+M\+A\+Transfer\+Config}  {\bf edma\+\_\+transfer\+\_\+config\+\_\+t}}\hypertarget{group__edma__hal_ga01fdc7ba04e6c4187630c6480746c40d}{}\label{group__edma__hal_ga01fdc7ba04e6c4187630c6480746c40d}
+
+
+e\+D\+MA transfer size configuration. 
+
+This structure configures the basic source/destination transfer attribute. This figure shows the e\+D\+MA\textquotesingle{}s transfer model\+: 
+
+ $\vert$ Transfer Size $\vert$ $\vert$ Minor Loop $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ Major loop Count 1 $\vert$ Count $\vert$ Transfer Size $\vert$ $\vert$ \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$--$>$ Minor loop complete 
+
+ $\vert$ $\vert$ $\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ Major Loop Count 2 $\vert$ $\vert$ $\vert$ $\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$--$>$ Minor loop Complete
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---$>$ Major loop complete 
+
+\subsection{Enumeration Type Documentation}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!\+\_\+edma\+\_\+bandwidth\+\_\+config@{\+\_\+edma\+\_\+bandwidth\+\_\+config}}
+\index{\+\_\+edma\+\_\+bandwidth\+\_\+config@{\+\_\+edma\+\_\+bandwidth\+\_\+config}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+edma\+\_\+bandwidth\+\_\+config}{_edma_bandwidth_config}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+edma\+\_\+bandwidth\+\_\+config}}\hypertarget{group__edma__hal_ga82ff0dd938b1e22cb64cfa9e42929c31}{}\label{group__edma__hal_ga82ff0dd938b1e22cb64cfa9e42929c31}
+
+
+Bandwidth control configuration. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+E\+D\+M\+A\+Bandwidth\+Stall\+None@{k\+E\+D\+M\+A\+Bandwidth\+Stall\+None}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+E\+D\+M\+A\+Bandwidth\+Stall\+None@{k\+E\+D\+M\+A\+Bandwidth\+Stall\+None}}\item[{\em 
+k\+E\+D\+M\+A\+Bandwidth\+Stall\+None\hypertarget{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31af46c62a5d66009cc2044686ee929fe9d}{}\label{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31af46c62a5d66009cc2044686ee929fe9d}
+}]No e\+D\+MA engine stalls. \index{k\+E\+D\+M\+A\+Bandwidth\+Stall4\+Cycle@{k\+E\+D\+M\+A\+Bandwidth\+Stall4\+Cycle}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+E\+D\+M\+A\+Bandwidth\+Stall4\+Cycle@{k\+E\+D\+M\+A\+Bandwidth\+Stall4\+Cycle}}\item[{\em 
+k\+E\+D\+M\+A\+Bandwidth\+Stall4\+Cycle\hypertarget{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31a4d4d354f9915accd4ab274cef525e7fe}{}\label{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31a4d4d354f9915accd4ab274cef525e7fe}
+}]e\+D\+MA engine stalls for 4 cycles after each read/write. \index{k\+E\+D\+M\+A\+Bandwidth\+Stall8\+Cycle@{k\+E\+D\+M\+A\+Bandwidth\+Stall8\+Cycle}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+E\+D\+M\+A\+Bandwidth\+Stall8\+Cycle@{k\+E\+D\+M\+A\+Bandwidth\+Stall8\+Cycle}}\item[{\em 
+k\+E\+D\+M\+A\+Bandwidth\+Stall8\+Cycle\hypertarget{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31ace96f42ec8428f1df985acfdc5452fe8}{}\label{group__edma__hal_gga82ff0dd938b1e22cb64cfa9e42929c31ace96f42ec8428f1df985acfdc5452fe8}
+}]e\+D\+MA engine stalls for 8 cycles after each read/write. \end{description}
+\end{Desc}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!\+\_\+edma\+\_\+channel\+\_\+arbitration@{\+\_\+edma\+\_\+channel\+\_\+arbitration}}
+\index{\+\_\+edma\+\_\+channel\+\_\+arbitration@{\+\_\+edma\+\_\+channel\+\_\+arbitration}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+edma\+\_\+channel\+\_\+arbitration}{_edma_channel_arbitration}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+edma\+\_\+channel\+\_\+arbitration}}\hypertarget{group__edma__hal_gac176e6a80e3c1339ec8298bd51e9beab}{}\label{group__edma__hal_gac176e6a80e3c1339ec8298bd51e9beab}
+
+
+e\+D\+MA channel arbitration algorithm used for selection among channels. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+E\+D\+M\+A\+Chn\+Arbitration\+Fixed\+Priority@{k\+E\+D\+M\+A\+Chn\+Arbitration\+Fixed\+Priority}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+E\+D\+M\+A\+Chn\+Arbitration\+Fixed\+Priority@{k\+E\+D\+M\+A\+Chn\+Arbitration\+Fixed\+Priority}}\item[{\em 
+k\+E\+D\+M\+A\+Chn\+Arbitration\+Fixed\+Priority\hypertarget{group__edma__hal_ggac176e6a80e3c1339ec8298bd51e9beaba6d292e4c74991982da967eef92aeceb5}{}\label{group__edma__hal_ggac176e6a80e3c1339ec8298bd51e9beaba6d292e4c74991982da967eef92aeceb5}
+}]Fixed Priority arbitration is used for selection among channels. \index{k\+E\+D\+M\+A\+Chn\+Arbitration\+Roundrobin@{k\+E\+D\+M\+A\+Chn\+Arbitration\+Roundrobin}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+E\+D\+M\+A\+Chn\+Arbitration\+Roundrobin@{k\+E\+D\+M\+A\+Chn\+Arbitration\+Roundrobin}}\item[{\em 
+k\+E\+D\+M\+A\+Chn\+Arbitration\+Roundrobin\hypertarget{group__edma__hal_ggac176e6a80e3c1339ec8298bd51e9beabacb97728581b710ac5b456c4f52e4b9ad}{}\label{group__edma__hal_ggac176e6a80e3c1339ec8298bd51e9beabacb97728581b710ac5b456c4f52e4b9ad}
+}]Round-\/\+Robin arbitration is used for selection among channels. \end{description}
+\end{Desc}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!\+\_\+edma\+\_\+channel\+\_\+indicator@{\+\_\+edma\+\_\+channel\+\_\+indicator}}
+\index{\+\_\+edma\+\_\+channel\+\_\+indicator@{\+\_\+edma\+\_\+channel\+\_\+indicator}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+edma\+\_\+channel\+\_\+indicator}{_edma_channel_indicator}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+edma\+\_\+channel\+\_\+indicator}}\hypertarget{group__edma__hal_ga345c5302dbe76db009c0240e1e325797}{}\label{group__edma__hal_ga345c5302dbe76db009c0240e1e325797}
+
+
+e\+D\+MA channel configuration. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+E\+D\+M\+A\+Channel0@{k\+E\+D\+M\+A\+Channel0}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+E\+D\+M\+A\+Channel0@{k\+E\+D\+M\+A\+Channel0}}\item[{\em 
+k\+E\+D\+M\+A\+Channel0\hypertarget{group__edma__hal_gga345c5302dbe76db009c0240e1e325797afe39d576f30be63283d3e6e848f7bba5}{}\label{group__edma__hal_gga345c5302dbe76db009c0240e1e325797afe39d576f30be63283d3e6e848f7bba5}
+}]Channel 0. \end{description}
+\end{Desc}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!\+\_\+edma\+\_\+status@{\+\_\+edma\+\_\+status}}
+\index{\+\_\+edma\+\_\+status@{\+\_\+edma\+\_\+status}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+edma\+\_\+status}{_edma_status}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+edma\+\_\+status}}\hypertarget{group__edma__hal_ga4522db4e23f95c72a0a7c93080a96355}{}\label{group__edma__hal_ga4522db4e23f95c72a0a7c93080a96355}
+
+
+Error code for the e\+D\+MA Driver. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Invalid\+Argument@{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Invalid\+Argument}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Invalid\+Argument@{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Invalid\+Argument}}\item[{\em 
+k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Invalid\+Argument\hypertarget{group__edma__hal_gga4522db4e23f95c72a0a7c93080a96355a194322022386e0fdc50fcb7437c0742b}{}\label{group__edma__hal_gga4522db4e23f95c72a0a7c93080a96355a194322022386e0fdc50fcb7437c0742b}
+}]Parameter is invalid. \index{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Fail@{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Fail}!Edma\+\_\+hal@{Edma\+\_\+hal}}\index{Edma\+\_\+hal@{Edma\+\_\+hal}!k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Fail@{k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Fail}}\item[{\em 
+k\+Status\+\_\+\+E\+D\+M\+A\+\_\+\+Fail\hypertarget{group__edma__hal_gga4522db4e23f95c72a0a7c93080a96355ab6b48173a20862eba0b60d25911253d2}{}\label{group__edma__hal_gga4522db4e23f95c72a0a7c93080a96355ab6b48173a20862eba0b60d25911253d2}
+}]Failed operation. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer(uint32\+\_\+t base\+Addr)}{EDMA_HAL_CancelTransfer(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Cancel\+Transfer (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga3be8bbd6ea7977e32cdf4c7348391ebf}{}\label{group__edma__hal_ga3be8bbd6ea7977e32cdf4c7348391ebf}
+
+
+Cancels the remaining data transfer. 
+
+This function stops the executing channel and forces the minor loop to finish. The cancellation takes effect after the last write of the current read/write sequence. The CX clears itself after the cancel has been honored. This cancel retires the channel normally as if the minor loop had completed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer(uint32\+\_\+t base\+Addr)}{EDMA_HAL_ErrorCancelTransfer(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Error\+Cancel\+Transfer (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_gaeefd145855bdf4381bc03efd088801c4}{}\label{group__edma__hal_gaeefd145855bdf4381bc03efd088801c4}
+
+
+Cancels the remaining data transfer and treats it as an error condition. 
+
+This function stops the executing channel and forces the minor loop to finish. The cancellation takes effect after the last write of the current read/write sequence. The CX clears itself after the cancel has been honored. This cancel retires the channel normally as if the minor loop had completed. Additional thing is to treat this operation as an error condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_GetErrorIntCmd(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}bool E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Get\+Error\+Int\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga6aea98f443c947cb3d6a7a36e6ffd655}{}\label{group__edma__hal_ga6aea98f443c947cb3d6a7a36e6ffd655}
+
+
+Checks whether the e\+D\+MA channel error interrupt is enabled or disabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error interrupt is enabled (true) or disabled (false). 
+\end{DoxyReturn}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_HTCDClearReg(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Clear\+Reg (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga30ce8853f61da0d0a82b67200d0c75de}{}\label{group__edma__hal_ga30ce8853f61da0d0a82b67200d0c75de}
+
+
+Clears all registers to 0 for the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_HTCDGetBeginMajorCount(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Begin\+Major\+Count (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga1bb524b961b71348221adb2b6bb86b2e}{}\label{group__edma__hal_ga1bb524b961b71348221adb2b6bb86b2e}
+
+
+Gets the number of beginning major counts for the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Begin major counts. 
+\end{DoxyReturn}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_HTCDGetCurrentMajorCount(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Current\+Major\+Count (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga0151e924e12a540649527b98f7923d60}{}\label{group__edma__hal_ga0151e924e12a540649527b98f7923d60}
+
+
+Gets the number of current major counts for the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current major counts. 
+\end{DoxyReturn}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_HTCDGetFinishedBytes(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Finished\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga5e37640a7f57586edeba5a1cc94db473}{}\label{group__edma__hal_ga5e37640a7f57586edeba5a1cc94db473}
+
+
+Gets the number of bytes already transferred for the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data bytes already transferred 
+\end{DoxyReturn}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_HTCDGetNbytes(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Nbytes (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga19ef0b340d2165a0a7a620f222e51186}{}\label{group__edma__hal_ga19ef0b340d2165a0a7a620f222e51186}
+
+
+Gets the nbytes configuration data for the hardware T\+CD. 
+
+This function decides whether the minor loop mapping is enabled or whether the source/dest minor loop mapping is enabled. Then, the nbytes are returned accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nbytes configuration according to minor loop setting. 
+\end{DoxyReturn}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel)}{EDMA_HAL_HTCDGetUnfinishedBytes(uint32_t baseAddr, uint32_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Get\+Unfinished\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga5989c80f8a7bbce1448bc5a08e338a15}{}\label{group__edma__hal_ga5989c80f8a7bbce1448bc5a08e338a15}
+
+
+Gets the number of bytes haven\textquotesingle{}t transferred for the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data bytes already transferred 
+\end{DoxyReturn}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, edma\+\_\+modulo\+\_\+t src\+Modulo, edma\+\_\+modulo\+\_\+t dest\+Modulo, edma\+\_\+transfer\+\_\+size\+\_\+t src\+Transfer\+Size, edma\+\_\+transfer\+\_\+size\+\_\+t dest\+Transfer\+Size)}{EDMA_HAL_HTCDSetAttribute(uint32_t baseAddr, uint32_t channel, edma_modulo_t srcModulo, edma_modulo_t destModulo, edma_transfer_size_t srcTransferSize, edma_transfer_size_t destTransferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{{\bf edma\+\_\+modulo\+\_\+t}}]{src\+Modulo, }
+\item[{{\bf edma\+\_\+modulo\+\_\+t}}]{dest\+Modulo, }
+\item[{{\bf edma\+\_\+transfer\+\_\+size\+\_\+t}}]{src\+Transfer\+Size, }
+\item[{{\bf edma\+\_\+transfer\+\_\+size\+\_\+t}}]{dest\+Transfer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga1c53422c4d0a3bae4a03ae4656123298}{}\label{group__edma__hal_ga1c53422c4d0a3bae4a03ae4656123298}
+
+
+Configures the transfer attribute for the e\+D\+MA channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em src\+Modulo} & enumeration type for an allowed source modulo. The value defines a specific address range specified as the value after the S\+A\+D\+DR + S\+O\+FF calculation is performed on the original register value. Setting this field provides the ability to implement a circular data. For data queues requiring power-\/of-\/2 size bytes, the queue should start at a 0-\/modulo-\/size address and the S\+M\+OD field should be set to the appropriate value for the queue, freezing the desired number of upper address bits. The value programmed into this field specifies the number of the lower address bits allowed to change. For a circular queue application, the S\+O\+FF is typically set to the transfer size to implement post-\/increment addressing with S\+M\+OD function restricting the addresses to a 0-\/modulo-\/size range. \\
+\hline
+{\em dest\+Modulo} & Enum type for an allowed destination modulo. \\
+\hline
+{\em src\+Transfer\+Size} & Enum type for source transfer size. \\
+\hline
+{\em dest\+Transfer\+Size} & Enum type for destination transfer size. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, uint32\+\_\+t link\+Channel, bool enable)}{EDMA_HAL_HTCDSetChannelMinorLink(uint32_t baseAddr, uint32_t channel, uint32_t linkChannel, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Channel\+Minor\+Link (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{uint32\+\_\+t}]{link\+Channel, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga7739a5da12a70aa0d2edb8bf2a423fc8}{}\label{group__edma__hal_ga7739a5da12a70aa0d2edb8bf2a423fc8}
+
+
+Sets the channel minor link for the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em link\+Channel} & Channel to be linked on minor loop complete. \\
+\hline
+{\em enable} & Enable (true)/\+Disable (false) channel minor link. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, uint32\+\_\+t count)}{EDMA_HAL_HTCDSetMajorCount(uint32_t baseAddr, uint32_t channel, uint32_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Major\+Count (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{uint32\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga0f403a46d04cfc90feaa358b3d8a96a0}{}\label{group__edma__hal_ga0f403a46d04cfc90feaa358b3d8a96a0}
+
+
+Sets the major iteration count according to minor loop channel link setting. 
+
+Note here that user need to first set the minor loop channel link and then call this function. The execute flow inside this function is dependent on the minor loop channel link setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em count} & major loop count \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t $\ast$config)}{EDMA_HAL_HTCDSetMinorLoopOffset(uint32_t baseAddr, uint32_t channel, edma_minorloop_offset_config_t *config)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Minor\+Loop\+Offset (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{{\bf edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga85dc3cf5ca9b9aef2c58b5cfdfbd1818}{}\label{group__edma__hal_ga85dc3cf5ca9b9aef2c58b5cfdfbd1818}
+
+
+Configures the minor loop offset for the hardware T\+CD. 
+
+Configures both the enable bits and the offset value. If neither source nor destination offset is enabled, offset is not configured. Note here if source or destination offset is required, the e\+D\+MA module E\+M\+LM bit will be set in this function. User need to know this side effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em config} & Configuration data structure for the minor loop offset \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, uint32\+\_\+t nbytes)}{EDMA_HAL_HTCDSetNbytes(uint32_t baseAddr, uint32_t channel, uint32_t nbytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Nbytes (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{uint32\+\_\+t}]{nbytes}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga8e8962fede985363851816b9c9221c8a}{}\label{group__edma__hal_ga8e8962fede985363851816b9c9221c8a}
+
+
+Configures the nbytes for the e\+D\+MA channel. 
+
+Note here that user need firstly configure the minor loop mapping feature and then call this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em nbytes} & Number of bytes to be transferred in each service request of the channel \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd)}{EDMA_HAL_HTCDSetScatterGatherLink(uint32_t baseAddr, uint32_t channel, edma_software_tcd_t *stcd)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+H\+T\+C\+D\+Set\+Scatter\+Gather\+Link (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_gaa92382fc5e5b42191d35420812806410}{}\label{group__edma__hal_gaa92382fc5e5b42191d35420812806410}
+
+
+Configures the memory address for the next transfer T\+CD for the hardware T\+CD. 
+
+This function enables the scatter/gather feature for the hardware T\+CD and configures the next T\+CD\textquotesingle{}s address. This address points to the beginning of a 0-\/modulo-\/32 byte region containing the next transfer T\+CD to be loaded into this channel. The channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-\/modulo-\/32-\/byte. Otherwise, a configuration error is reported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em stcd} & The pointer to the T\+CD to be linked to this hardware T\+CD. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init(uint32\+\_\+t base\+Addr)}{EDMA_HAL_Init(uint32_t baseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga525f4cf91f14f7ce6451ebb9e8c95c8c}{}\label{group__edma__hal_ga525f4cf91f14f7ce6451ebb9e8c95c8c}
+
+
+Initializes e\+D\+MA module to known state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+CD@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+CD}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+CD@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+CD}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+C\+D(uint32\+\_\+t base\+Addr, uint32\+\_\+t channel, edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd)}{EDMA_HAL_PushSTCDToHTCD(uint32_t baseAddr, uint32_t channel, edma_software_tcd_t *stcd)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Push\+S\+T\+C\+D\+To\+H\+T\+CD (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{channel, }
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga8eea4fc26c17b9adf2cf3a0e9d3f25f4}{}\label{group__edma__hal_ga8eea4fc26c17b9adf2cf3a0e9d3f25f4}
+
+
+Copy the software T\+CD configuration to the hardware T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em channel} & e\+D\+MA channel number. \\
+\hline
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd(uint32\+\_\+t base\+Addr, edma\+\_\+channel\+\_\+indicator\+\_\+t channel, bool enable)}{EDMA_HAL_SetDmaRequestCmd(uint32_t baseAddr, edma_channel_indicator_t channel, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Dma\+Request\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf edma\+\_\+channel\+\_\+indicator\+\_\+t}}]{channel, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_gaac76117f0880966a82524b1be0b8abc7}{}\label{group__edma__hal_gaac76117f0880966a82524b1be0b8abc7}
+
+
+Enables/\+Disables the D\+MA request for the channel or all channels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em enable} & Enable(true) or Disable (false) D\+MA request. \\
+\hline
+{\em channel} & Channel indicator. If k\+E\+D\+M\+A\+All\+Channel is selected, all channels D\+MA request are enabled/disabled. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd(uint32\+\_\+t base\+Addr, bool enable, edma\+\_\+channel\+\_\+indicator\+\_\+t channel)}{EDMA_HAL_SetErrorIntCmd(uint32_t baseAddr, bool enable, edma_channel_indicator_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+Set\+Error\+Int\+Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{bool}]{enable, }
+\item[{{\bf edma\+\_\+channel\+\_\+indicator\+\_\+t}}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga0aebf8f0f919d9bd994699a083e68a6b}{}\label{group__edma__hal_ga0aebf8f0f919d9bd994699a083e68a6b}
+
+
+Enables/\+Disables the error interrupt for channels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em enable} & Enable(true) or Disable (false) error interrupt. \\
+\hline
+{\em channel} & Channel indicator. If k\+E\+D\+M\+A\+All\+Channel is selected, all channels\textquotesingle{} error interrupt will be enabled/disabled. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute(edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, edma\+\_\+modulo\+\_\+t src\+Modulo, edma\+\_\+modulo\+\_\+t dest\+Modulo, edma\+\_\+transfer\+\_\+size\+\_\+t src\+Transfer\+Size, edma\+\_\+transfer\+\_\+size\+\_\+t dest\+Transfer\+Size)}{EDMA_HAL_STCDSetAttribute(edma_software_tcd_t *stcd, edma_modulo_t srcModulo, edma_modulo_t destModulo, edma_transfer_size_t srcTransferSize, edma_transfer_size_t destTransferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{{\bf edma\+\_\+modulo\+\_\+t}}]{src\+Modulo, }
+\item[{{\bf edma\+\_\+modulo\+\_\+t}}]{dest\+Modulo, }
+\item[{{\bf edma\+\_\+transfer\+\_\+size\+\_\+t}}]{src\+Transfer\+Size, }
+\item[{{\bf edma\+\_\+transfer\+\_\+size\+\_\+t}}]{dest\+Transfer\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga1d27f98767e3b9255305f3d414a88439}{}\label{group__edma__hal_ga1d27f98767e3b9255305f3d414a88439}
+
+
+Configures the transfer attribute for software T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em src\+Modulo} & enum type for an allowed source modulo. The value defines a specific address range specified as the value after the S\+A\+D\+DR + S\+O\+FF calculation is performed on the original register value. Setting this field provides the ability to implement a circular data. For data queues requiring power-\/of-\/2 size bytes, the queue should start at a 0-\/modulo-\/size address and the S\+M\+OD field should be set to the appropriate value for the queue, freezing the desired number of upper address bits. The value programmed into this field specifies the number of the lower address bits allowed to change. For a circular queue application, the S\+O\+FF is typically set to the transfer size to implement post-\/increment addressing with S\+M\+OD function restricting the addresses to a 0-\/modulo-\/size range. \\
+\hline
+{\em dest\+Modulo} & Enum type for an allowed destination modulo. \\
+\hline
+{\em src\+Transfer\+Size} & Enum type for source transfer size. \\
+\hline
+{\em dest\+Transfer\+Size} & Enum type for destinatio transfer size. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer(uint32\+\_\+t base\+Addr, edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, edma\+\_\+transfer\+\_\+config\+\_\+t $\ast$config, bool enable\+Int, bool disable\+Dma\+Request)}{EDMA_HAL_STCDSetBasicTransfer(uint32_t baseAddr, edma_software_tcd_t *stcd, edma_transfer_config_t *config, bool enableInt, bool disableDmaRequest)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edma\+\_\+status\+\_\+t} E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Basic\+Transfer (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{{\bf edma\+\_\+transfer\+\_\+config\+\_\+t} $\ast$}]{config, }
+\item[{bool}]{enable\+Int, }
+\item[{bool}]{disable\+Dma\+Request}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga462868ae1efe70dfefdf95cb737480ce}{}\label{group__edma__hal_ga462868ae1efe70dfefdf95cb737480ce}
+
+
+Set the basic transfer for software T\+CD. 
+
+This function is used to setup the basic transfer for software T\+CD. The minor loop setting is not involved here cause minor loop\textquotesingle{}s configuration will lay a impact on the global e\+D\+MA setting. And the source minor loop offset is relevant to the dest minor loop offset. For these reasons, minor loop offset configuration is treated as an advanced configuration. User can call the \hyperlink{group__edma__hal_gac9d7aa8de4ddd8b488c19f7b947e0bbf}{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset()} to configure the minor loop offset feature.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em config} & The pointer to the transfer configuration structure. \\
+\hline
+{\em enable\+Int} & Enables (true) or Disables (false) interrupt on T\+CD complete. \\
+\hline
+{\em disable\+Dma\+Request} & Disables (true) or Enable (false) dma request on T\+CD complete. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link(edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, uint32\+\_\+t link\+Channel, bool enable)}{EDMA_HAL_STCDSetChannelMinorLink(edma_software_tcd_t *stcd, uint32_t linkChannel, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Channel\+Minor\+Link (
+\begin{DoxyParamCaption}
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{uint32\+\_\+t}]{link\+Channel, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga36f154763e1214f033074a068ac9e242}{}\label{group__edma__hal_ga36f154763e1214f033074a068ac9e242}
+
+
+Set Channel minor link for software T\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em link\+Channel} & Channel to be linked on minor loop complete. \\
+\hline
+{\em enable} & Enable (true)/\+Disable (false) channel minor link. \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count(edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, uint32\+\_\+t count)}{EDMA_HAL_STCDSetMajorCount(edma_software_tcd_t *stcd, uint32_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Major\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{uint32\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_ga8f60631b84702a9acbd980d1946175a2}{}\label{group__edma__hal_ga8f60631b84702a9acbd980d1946175a2}
+
+
+Sets the major iteration count according to minor loop channel link setting. 
+
+Note here that user need to first set the minor loop channel link and then call this function. The execute flow inside this function is dependent on the minor loop channel link setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em count} & major loop count \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset(uint32\+\_\+t base\+Addr, edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t $\ast$config)}{EDMA_HAL_STCDSetMinorLoopOffset(uint32_t baseAddr, edma_software_tcd_t *stcd, edma_minorloop_offset_config_t *config)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Minor\+Loop\+Offset (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{{\bf edma\+\_\+minorloop\+\_\+offset\+\_\+config\+\_\+t} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_gac9d7aa8de4ddd8b488c19f7b947e0bbf}{}\label{group__edma__hal_gac9d7aa8de4ddd8b488c19f7b947e0bbf}
+
+
+Configures the minorloop offset for the software T\+CD. 
+
+Configures both the enable bits and the offset value. If neither source nor dest offset is enabled, offset is not configured. Note here if source or destination offset is requred, the e\+D\+MA module E\+M\+LM bit will be set in this function. User need to know this side effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em config} & Configuration data structure for the minorloop offset \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes(uint32\+\_\+t base\+Addr, edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, uint32\+\_\+t nbytes)}{EDMA_HAL_STCDSetNbytes(uint32_t baseAddr, edma_software_tcd_t *stcd, uint32_t nbytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Nbytes (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{uint32\+\_\+t}]{nbytes}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_gac53994cb65a8689aff4e203f9c628953}{}\label{group__edma__hal_gac53994cb65a8689aff4e203f9c628953}
+
+
+Configures the nbytes for software T\+CD. 
+
+Note here that user need firstly configure the minor loop mapping feature and then call this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & Register base address for e\+D\+MA module. \\
+\hline
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em nbytes} & Number of bytes to be transferred in each service request of the channel \\
+\hline
+\end{DoxyParams}
+\index{Edma\+\_\+hal@{Edma\+\_\+hal}!E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link}}
+\index{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link@{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link}!Edma\+\_\+hal@{Edma\+\_\+hal}}
+\subsubsection[{\texorpdfstring{E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link(edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$stcd, edma\+\_\+software\+\_\+tcd\+\_\+t $\ast$next\+Stcd)}{EDMA_HAL_STCDSetScatterGatherLink(edma_software_tcd_t *stcd, edma_software_tcd_t *nextStcd)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+D\+M\+A\+\_\+\+H\+A\+L\+\_\+\+S\+T\+C\+D\+Set\+Scatter\+Gather\+Link (
+\begin{DoxyParamCaption}
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{stcd, }
+\item[{{\bf edma\+\_\+software\+\_\+tcd\+\_\+t} $\ast$}]{next\+Stcd}
+\end{DoxyParamCaption}
+)}\hypertarget{group__edma__hal_gaf1d05ba8a7dd8a5b8a54d97753bad20d}{}\label{group__edma__hal_gaf1d05ba8a7dd8a5b8a54d97753bad20d}
+
+
+Configures the memory address for the next transfer T\+CD for the software T\+CD. 
+
+This function enable the scatter/gather feature for the software T\+CD and configure the next T\+CD\textquotesingle{}s address.\+This address points to the beginning of a 0-\/modulo-\/32 byte region containing the next transfer T\+CD to be loaded into this channel. The channel reload is performed as the major iteration count completes. The scatter/gather address must be 0-\/modulo-\/32-\/byte. Otherwise, a configuration error is reported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stcd} & The pointer to the software T\+CD. \\
+\hline
+{\em next\+Stcd} & The pointer to the T\+CD to be linked to this software T\+CD. \\
+\hline
+\end{DoxyParams}

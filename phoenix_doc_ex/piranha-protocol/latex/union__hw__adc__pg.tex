@@ -1,0 +1,37 @@
+\hypertarget{union__hw__adc__pg}{}\section{\+\_\+hw\+\_\+adc\+\_\+pg Union Reference}
+\label{union__hw__adc__pg}\index{\+\_\+hw\+\_\+adc\+\_\+pg@{\+\_\+hw\+\_\+adc\+\_\+pg}}
+
+
+H\+W\+\_\+\+A\+D\+C\+\_\+\+PG -\/ A\+DC Plus-\/\+Side Gain Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+adc.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__adc__pg_1_1__hw__adc__pg__bitfields}{\+\_\+hw\+\_\+adc\+\_\+pg\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__adc__pg_a6247621dd2feeea37520ad77ac4a350d}{}\label{union__hw__adc__pg_a6247621dd2feeea37520ad77ac4a350d}
+
+\item 
+struct \hyperlink{struct__hw__adc__pg_1_1__hw__adc__pg__bitfields}{\+\_\+hw\+\_\+adc\+\_\+pg\+::\+\_\+hw\+\_\+adc\+\_\+pg\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__adc__pg_a65b57500452d6923e1ec013ba50fad62}{}\label{union__hw__adc__pg_a65b57500452d6923e1ec013ba50fad62}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+A\+D\+C\+\_\+\+PG -\/ A\+DC Plus-\/\+Side Gain Register (RW) 
+
+Reset value\+: 0x00008200U
+
+The Plus-\/\+Side Gain Register (PG) contains the gain error correction for the plus-\/side input in differential mode or the overall conversion in single-\/ended mode. PG, a 16-\/bit real number in binary format, is the gain adjustment factor, with the radix point fixed between A\+D\+P\+G15 and A\+D\+P\+G14. This register must be written by the user with the value described in the calibration procedure. Otherwise, the gain error specifications may not be met. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+adc.\+h\end{DoxyCompactItemize}

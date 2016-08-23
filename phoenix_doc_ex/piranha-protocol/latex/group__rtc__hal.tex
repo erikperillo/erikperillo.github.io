@@ -1,0 +1,280 @@
+\hypertarget{group__rtc__hal}{}\section{Rtc\+\_\+hal}
+\label{group__rtc__hal}\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRtcDatetime}{Rtc\+Datetime}
+\begin{DoxyCompactList}\small\item\em Structure is used to hold the time in a simple \char`\"{}date\char`\"{} format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structRtcDatetime}{Rtc\+Datetime} \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t}\hypertarget{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{}\label{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}
+
+\begin{DoxyCompactList}\small\item\em Structure is used to hold the time in a simple \char`\"{}date\char`\"{} format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{R\+TC H\+AL A\+PI Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__rtc__hal_ga097db04ecc4ded251b0743fc7074f155}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable} (uint32\+\_\+t rtc\+Base\+Addr)
+\begin{DoxyCompactList}\small\item\em Initializes the R\+TC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_gac751af767a41c67ea9a320905c9b7de2}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable} (uint32\+\_\+t rtc\+Base\+Addr)
+\begin{DoxyCompactList}\small\item\em Disables the R\+TC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_gaf0596d13b9de9cc88dc4176936d0898a}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t rtc\+Base\+Addr)
+\begin{DoxyCompactList}\small\item\em Resets the R\+TC module. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga551804764741c28b3fb0591a1e54c57a}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime} (const uint32\+\_\+t $\ast$seconds, \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$datetime)
+\begin{DoxyCompactList}\small\item\em Converts seconds to date time format data structure. \end{DoxyCompactList}\item 
+bool \hyperlink{group__rtc__hal_ga69abdba3fea196506e19d70fe61b6cd0}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format} (const \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$datetime)
+\begin{DoxyCompactList}\small\item\em Checks whether the date time structure elements have the information that is within the range. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga84abf46938a553b62603cf69d2355adb}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs} (const \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$datetime, uint32\+\_\+t $\ast$seconds)
+\begin{DoxyCompactList}\small\item\em Converts the date time format data structure to seconds. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga3f0ab61d920d9cc23ad96af735d14601}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime} (uint32\+\_\+t rtc\+Base\+Addr, const \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$datetime)
+\begin{DoxyCompactList}\small\item\em Sets the R\+TC date and time according to the given time structure. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga60ab24af85534b8b0095bd005cf740de}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs} (uint32\+\_\+t rtc\+Base\+Addr, const uint32\+\_\+t seconds)
+\begin{DoxyCompactList}\small\item\em Sets the R\+TC date and time according to the given time provided in seconds. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga2c76abb37aa936b669963028418d81b3}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime} (uint32\+\_\+t rtc\+Base\+Addr, \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$datetime)
+\begin{DoxyCompactList}\small\item\em Gets the R\+TC time and stores it in the given time structure. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga78137db04d8f8a5e376bfa554f01db5b}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs} (uint32\+\_\+t rtc\+Base\+Addr, uint32\+\_\+t $\ast$seconds)
+\begin{DoxyCompactList}\small\item\em Gets the R\+TC time and returns it in seconds. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc__hal_ga4f2b669596fe55e0f68f0b48402b8507}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm} (uint32\+\_\+t rtc\+Base\+Addr, \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$date)
+\begin{DoxyCompactList}\small\item\em Reads the value of the time alarm. \end{DoxyCompactList}\item 
+bool \hyperlink{group__rtc__hal_gaf7365b1cbbf2dd345c783eb74dfc08bf}{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm} (uint32\+\_\+t rtc\+Base\+Addr, const \hyperlink{group__rtc__hal_ga079a66794dec7b821f9f5fdb6c7c8642}{rtc\+\_\+datetime\+\_\+t} $\ast$date)
+\begin{DoxyCompactList}\small\item\em Sets the R\+TC alarm time and enables the alarm interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs(const rtc\+\_\+datetime\+\_\+t $\ast$datetime, uint32\+\_\+t $\ast$seconds)}{RTC_HAL_ConvertDatetimeToSecs(const rtc_datetime_t *datetime, uint32_t *seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Datetime\+To\+Secs (
+\begin{DoxyParamCaption}
+\item[{const {\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{datetime, }
+\item[{uint32\+\_\+t $\ast$}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga84abf46938a553b62603cf69d2355adb}{}\label{group__rtc__hal_ga84abf46938a553b62603cf69d2355adb}
+
+
+Converts the date time format data structure to seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datetime} & holds the date and time information that needs to be converted to seconds \\
+\hline
+{\em seconds} & holds the converted date and time in seconds \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime(const uint32\+\_\+t $\ast$seconds, rtc\+\_\+datetime\+\_\+t $\ast$datetime)}{RTC_HAL_ConvertSecsToDatetime(const uint32_t *seconds, rtc_datetime_t *datetime)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Convert\+Secs\+To\+Datetime (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t $\ast$}]{seconds, }
+\item[{{\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{datetime}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga551804764741c28b3fb0591a1e54c57a}{}\label{group__rtc__hal_ga551804764741c28b3fb0591a1e54c57a}
+
+
+Converts seconds to date time format data structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & holds the date and time information in seconds \\
+\hline
+{\em datetime} & holds the converted information from seconds in date and time format \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable(uint32\+\_\+t rtc\+Base\+Addr)}{RTC_HAL_Disable(uint32_t rtcBaseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Disable (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_gac751af767a41c67ea9a320905c9b7de2}{}\label{group__rtc__hal_gac751af767a41c67ea9a320905c9b7de2}
+
+
+Disables the R\+TC module. 
+
+This function disablesS the R\+TC counter and oscillator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address. \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable(uint32\+\_\+t rtc\+Base\+Addr)}{RTC_HAL_Enable(uint32_t rtcBaseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Enable (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga097db04ecc4ded251b0743fc7074f155}{}\label{group__rtc__hal_ga097db04ecc4ded251b0743fc7074f155}
+
+
+Initializes the R\+TC module. 
+
+This function enables the R\+TC oscillator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address. \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm(uint32\+\_\+t rtc\+Base\+Addr, rtc\+\_\+datetime\+\_\+t $\ast$date)}{RTC_HAL_GetAlarm(uint32_t rtcBaseAddr, rtc_datetime_t *date)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Alarm (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr, }
+\item[{{\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{date}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga4f2b669596fe55e0f68f0b48402b8507}{}\label{group__rtc__hal_ga4f2b669596fe55e0f68f0b48402b8507}
+
+
+Reads the value of the time alarm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address \\
+\hline
+{\em date} & \mbox{[}out\mbox{]} pointer to a variable where the alarm date and time details are stored. \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime(uint32\+\_\+t rtc\+Base\+Addr, rtc\+\_\+datetime\+\_\+t $\ast$datetime)}{RTC_HAL_GetDatetime(uint32_t rtcBaseAddr, rtc_datetime_t *datetime)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr, }
+\item[{{\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{datetime}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga2c76abb37aa936b669963028418d81b3}{}\label{group__rtc__hal_ga2c76abb37aa936b669963028418d81b3}
+
+
+Gets the R\+TC time and stores it in the given time structure. 
+
+The function reads the value in seconds from the R\+TC register. It then converts to the time structure which provides the time in date, hour, minutes and seconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address \\
+\hline
+{\em datetime} & \mbox{[}out\mbox{]} pointer to a structure where the date and time details are stored. \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs(uint32\+\_\+t rtc\+Base\+Addr, uint32\+\_\+t $\ast$seconds)}{RTC_HAL_GetDatetimeInSecs(uint32_t rtcBaseAddr, uint32_t *seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Datetime\+In\+Secs (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr, }
+\item[{uint32\+\_\+t $\ast$}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga78137db04d8f8a5e376bfa554f01db5b}{}\label{group__rtc__hal_ga78137db04d8f8a5e376bfa554f01db5b}
+
+
+Gets the R\+TC time and returns it in seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address \\
+\hline
+{\em datetime} & \mbox{[}out\mbox{]} pointer to variable where the R\+TC time is stored in seconds \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init(uint32\+\_\+t rtc\+Base\+Addr)}{RTC_HAL_Init(uint32_t rtcBaseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_gaf0596d13b9de9cc88dc4176936d0898a}{}\label{group__rtc__hal_gaf0596d13b9de9cc88dc4176936d0898a}
+
+
+Resets the R\+TC module. 
+
+This function initiates a soft-\/reset of the R\+TC module to reset the R\+TC registers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address.. \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format(const rtc\+\_\+datetime\+\_\+t $\ast$datetime)}{RTC_HAL_IsDatetimeCorrectFormat(const rtc_datetime_t *datetime)}}]{\setlength{\rightskip}{0pt plus 5cm}bool R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Is\+Datetime\+Correct\+Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{datetime}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga69abdba3fea196506e19d70fe61b6cd0}{}\label{group__rtc__hal_ga69abdba3fea196506e19d70fe61b6cd0}
+
+
+Checks whether the date time structure elements have the information that is within the range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datetime} & holds the date and time information that needs to be converted to seconds \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm(uint32\+\_\+t rtc\+Base\+Addr, const rtc\+\_\+datetime\+\_\+t $\ast$date)}{RTC_HAL_SetAlarm(uint32_t rtcBaseAddr, const rtc_datetime_t *date)}}]{\setlength{\rightskip}{0pt plus 5cm}bool R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Alarm (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr, }
+\item[{const {\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{date}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_gaf7365b1cbbf2dd345c783eb74dfc08bf}{}\label{group__rtc__hal_gaf7365b1cbbf2dd345c783eb74dfc08bf}
+
+
+Sets the R\+TC alarm time and enables the alarm interrupt. 
+
+The function checks whether the specified alarm time is greater than the present time. If not, the function does not set the alarm and returns an error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address.. \\
+\hline
+{\em date} & \mbox{[}in\mbox{]} pointer to structure where the alarm date and time details will be stored at. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: success in setting the R\+TC alarm~\newline
+ false\+: error in setting the R\+TC alarm. 
+\end{DoxyReturn}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime(uint32\+\_\+t rtc\+Base\+Addr, const rtc\+\_\+datetime\+\_\+t $\ast$datetime)}{RTC_HAL_SetDatetime(uint32_t rtcBaseAddr, const rtc_datetime_t *datetime)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr, }
+\item[{const {\bf rtc\+\_\+datetime\+\_\+t} $\ast$}]{datetime}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga3f0ab61d920d9cc23ad96af735d14601}{}\label{group__rtc__hal_ga3f0ab61d920d9cc23ad96af735d14601}
+
+
+Sets the R\+TC date and time according to the given time structure. 
+
+The function converts the data from the time structure to seconds and writes the seconds value to the R\+TC register. The R\+TC counter is started after setting the time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address \\
+\hline
+{\em datetime} & \mbox{[}in\mbox{]} Pointer to structure where the date and time details to set are stored. \\
+\hline
+\end{DoxyParams}
+\index{Rtc\+\_\+hal@{Rtc\+\_\+hal}!R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs}}
+\index{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs@{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs}!Rtc\+\_\+hal@{Rtc\+\_\+hal}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs(uint32\+\_\+t rtc\+Base\+Addr, const uint32\+\_\+t seconds)}{RTC_HAL_SetDatetimeInsecs(uint32_t rtcBaseAddr, const uint32_t seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Datetime\+Insecs (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{rtc\+Base\+Addr, }
+\item[{const uint32\+\_\+t}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{group__rtc__hal_ga60ab24af85534b8b0095bd005cf740de}{}\label{group__rtc__hal_ga60ab24af85534b8b0095bd005cf740de}
+
+
+Sets the R\+TC date and time according to the given time provided in seconds. 
+
+The R\+TC counter is started after setting the time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+Base\+Addr} & The R\+TC base address \\
+\hline
+{\em seconds} & \mbox{[}in\mbox{]} Time in seconds \\
+\hline
+\end{DoxyParams}

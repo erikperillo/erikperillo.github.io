@@ -1,0 +1,37 @@
+\hypertarget{union__hw__llwu__f3}{}\section{\+\_\+hw\+\_\+llwu\+\_\+f3 Union Reference}
+\label{union__hw__llwu__f3}\index{\+\_\+hw\+\_\+llwu\+\_\+f3@{\+\_\+hw\+\_\+llwu\+\_\+f3}}
+
+
+H\+W\+\_\+\+L\+L\+W\+U\+\_\+\+F3 -\/ L\+L\+WU Flag 3 register (RO)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+llwu.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__llwu__f3_1_1__hw__llwu__f3__bitfields}{\+\_\+hw\+\_\+llwu\+\_\+f3\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__llwu__f3_af0e452adcb2fd490b3146d372cf2f70b}{}\label{union__hw__llwu__f3_af0e452adcb2fd490b3146d372cf2f70b}
+
+\item 
+struct \hyperlink{struct__hw__llwu__f3_1_1__hw__llwu__f3__bitfields}{\+\_\+hw\+\_\+llwu\+\_\+f3\+::\+\_\+hw\+\_\+llwu\+\_\+f3\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__llwu__f3_a768a7dc6d16a000f57d161f2f02b2f3d}{}\label{union__hw__llwu__f3_a768a7dc6d16a000f57d161f2f02b2f3d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+L\+L\+W\+U\+\_\+\+F3 -\/ L\+L\+WU Flag 3 register (RO) 
+
+Reset value\+: 0x00U
+
+L\+L\+W\+U\+\_\+\+F3 contains the wakeup flags indicating which internal wakeup source caused the M\+CU to exit L\+LS or V\+L\+LS mode. For L\+LS, this is the source causing the C\+PU interrupt flow. For V\+L\+LS, this is the source causing the M\+CU reset flow. For internal peripherals that are capable of running in a low-\/leakage power mode, such as a real time clock module or C\+MP module, the flag from the associated peripheral is accessible as the M\+W\+U\+Fx bit. The flag will need to be cleared in the peripheral instead of writing a 1 to the M\+W\+U\+Fx bit. This register is reset on Chip Reset not V\+L\+LS and by reset types that trigger Chip Reset not V\+L\+LS. It is unaffected by reset types that do not trigger Chip Reset not V\+L\+LS. See the Introduction\+Information found here describes the registers of the Reset Control Module (R\+CM). The R\+CM implements many of the reset functions for the chip. See the chip\textquotesingle{}s reset chapter for more information. details for more information. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+llwu.\+h\end{DoxyCompactItemize}

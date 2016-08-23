@@ -1,0 +1,37 @@
+\hypertarget{union__hw__uart__is7816}{}\section{\+\_\+hw\+\_\+uart\+\_\+is7816 Union Reference}
+\label{union__hw__uart__is7816}\index{\+\_\+hw\+\_\+uart\+\_\+is7816@{\+\_\+hw\+\_\+uart\+\_\+is7816}}
+
+
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+I\+S7816 -\/ U\+A\+RT 7816 Interrupt Status Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+uart.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__uart__is7816_1_1__hw__uart__is7816__bitfields}{\+\_\+hw\+\_\+uart\+\_\+is7816\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__uart__is7816_a74064426b70922ed149b7af38d30f86f}{}\label{union__hw__uart__is7816_a74064426b70922ed149b7af38d30f86f}
+
+\item 
+struct \hyperlink{struct__hw__uart__is7816_1_1__hw__uart__is7816__bitfields}{\+\_\+hw\+\_\+uart\+\_\+is7816\+::\+\_\+hw\+\_\+uart\+\_\+is7816\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__uart__is7816_a410877caeebf8241a4c5fbc43be71eb1}{}\label{union__hw__uart__is7816_a410877caeebf8241a4c5fbc43be71eb1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+I\+S7816 -\/ U\+A\+RT 7816 Interrupt Status Register (RW) 
+
+Reset value\+: 0x00U
+
+The I\+S7816 register provides a mechanism to read and clear the interrupt flags. All flags/interrupts are cleared by writing a 1 to the field location. Writing a 0 has no effect. All bits are \char`\"{}sticky\char`\"{}, meaning they indicate that only the flag condition that occurred since the last time the bit was cleared, not that the condition currently exists. The status flags are set regardless of whether the corresponding field in the I\+E7816 is set or cleared. The I\+E7816 controls only if an interrupt is issued to the host processor. This register is specific to 7816 functionality and the values in this register have no affect on U\+A\+RT operation and should be ignored if 7816E is not set/enabled. This register may be read or written at anytime. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+uart.\+h\end{DoxyCompactItemize}

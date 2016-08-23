@@ -1,0 +1,198 @@
+\hypertarget{fsl__dspi__hal_8h}{}\section{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/dspi/fsl\+\_\+dspi\+\_\+hal.h File Reference}
+\label{fsl__dspi__hal_8h}\index{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/dspi/fsl\+\_\+dspi\+\_\+hal.\+h@{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/dspi/fsl\+\_\+dspi\+\_\+hal.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+dspi\+\_\+features.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+device\+\_\+registers.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDspiDataFormatConfig}{Dspi\+Data\+Format\+Config}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI data format settings configuration structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structDspiSlaveConfig}{Dspi\+Slave\+Config}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI hardware configuration settings for slave mode. \end{DoxyCompactList}\item 
+struct \hyperlink{structDspiBaudRateDivisors}{Dspi\+Baud\+Rate\+Divisors}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI baud rate divisors settings configuration structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structDspiCommandDataConfig}{Dspi\+Command\+Data\+Config}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI command and data configuration structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__dspi__hal_ga06b41ab984bc03e6f1eb07988edcb3ea}{\+\_\+dspi\+\_\+status} \hyperlink{group__dspi__hal_ga22d7dd51eeb108e60311c4139d619e12}{dspi\+\_\+status\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Error codes for the D\+S\+PI driver. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga22d5d3420ce510463f61e41cbe1d1410}{\+\_\+dspi\+\_\+master\+\_\+slave\+\_\+mode} \hyperlink{group__dspi__hal_gab8a31428154823fb3a47109f79f62269}{dspi\+\_\+master\+\_\+slave\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI master or slave configuration. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga8324f34ea4af085c11052288fc94983e}{\+\_\+dspi\+\_\+clock\+\_\+polarity} \hyperlink{group__dspi__hal_ga959b683effa08cff187f755506526745}{dspi\+\_\+clock\+\_\+polarity\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI clock polarity configuration for a given C\+T\+AR. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga648d70d13ec12505a80c423841f53510}{\+\_\+dspi\+\_\+clock\+\_\+phase} \hyperlink{group__dspi__hal_gace26aa668a9601c9d79bdd5205f37b14}{dspi\+\_\+clock\+\_\+phase\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI clock phase configuration for a given C\+T\+AR. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_gaf1134e11fc318e82a6c15882fdab2760}{\+\_\+dspi\+\_\+shift\+\_\+direction} \hyperlink{group__dspi__hal_ga536388ab9d8d1b88f7d112a83b769366}{dspi\+\_\+shift\+\_\+direction\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI data shifter direction options for a given C\+T\+AR. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga78060c4222b1affc8e41f937909ee999}{\+\_\+dspi\+\_\+ctar\+\_\+selection} \hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI Clock and Transfer Attributes Register (C\+T\+AR) selection. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga1b2a1103a54ad51c35f2bdaa52ac7363}{\+\_\+dspi\+\_\+pcs\+\_\+polarity\+\_\+config} \hyperlink{group__dspi__hal_ga8e5abd30c155a0fa6cc651a6535e8aee}{dspi\+\_\+pcs\+\_\+polarity\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI Peripheral Chip Select (P\+CS) Polarity configuration. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga738d1c33c04047440e86e29fabbbba94}{\+\_\+dspi\+\_\+which\+\_\+pcs\+\_\+config} \hyperlink{group__dspi__hal_ga5377cd155b68bf00351fff6e58230062}{dspi\+\_\+which\+\_\+pcs\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI Peripheral Chip Select (P\+CS) configuration (which P\+CS to configure) \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga02a53597bff1469f0365b74ad7a20237}{\+\_\+dspi\+\_\+master\+\_\+sample\+\_\+point} \hyperlink{group__dspi__hal_gacbea989c0426eb1d297b286589e453d1}{dspi\+\_\+master\+\_\+sample\+\_\+point\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI Sample Point\+: Controls when the D\+S\+PI master samples S\+IN in Modified Transfer Format. This field is valid only when C\+P\+HA bit in C\+T\+AR register is 0. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_gae3f607745b9b2fa245188acbe25877f0}{\+\_\+dspi\+\_\+fifo} \hyperlink{group__dspi__hal_ga4b51d4ff135ca4cb541d18e20b2c0995}{dspi\+\_\+fifo\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI F\+I\+FO selects. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_gabf58af9938cec54ac95d73644f41e5f4}{\+\_\+dspi\+\_\+dma\+\_\+or\+\_\+int\+\_\+mode} \hyperlink{group__dspi__hal_ga8a47ddde41f47a45d797d000b6f5e6f8}{dspi\+\_\+dma\+\_\+or\+\_\+int\+\_\+mode\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI Tx F\+I\+FO Fill and Rx F\+I\+FO Drain D\+MA or Interrupt configuration. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga4ceea9e434ef062f9d1a9f34520143a3}{\+\_\+dspi\+\_\+status\+\_\+and\+\_\+interrupt\+\_\+request} \hyperlink{group__dspi__hal_ga59af3ccb7f04892167dc3ddf75cf2696}{dspi\+\_\+status\+\_\+and\+\_\+interrupt\+\_\+request\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI status flags and interrupt request enable. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga7840b2a1d0cefe7f4168ab8384ee0e99}{\+\_\+dspi\+\_\+fifo\+\_\+counter\+\_\+pointer} \hyperlink{group__dspi__hal_ga637a55caf13059a9b15922c74b1031fe}{dspi\+\_\+fifo\+\_\+counter\+\_\+pointer\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI F\+I\+FO counter or pointer defines based on bit positions. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{group__dspi__hal_ga86dbb9c380b74c6654a44a73e90573f9}{\+\_\+dspi\+\_\+delay\+\_\+type} \hyperlink{group__dspi__hal_gaf817b2c70ff1e28088181cd418f4528b}{dspi\+\_\+delay\+\_\+type\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI delay type selection. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structDspiDataFormatConfig}{Dspi\+Data\+Format\+Config} \hyperlink{group__dspi__hal_ga0eeb6e5b9b331a951edcf24c269bdfcd}{dspi\+\_\+data\+\_\+format\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI data format settings configuration structure. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structDspiSlaveConfig}{Dspi\+Slave\+Config} \hyperlink{group__dspi__hal_gad42506023f30bef1b75fbda14adc91c3}{dspi\+\_\+slave\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI hardware configuration settings for slave mode. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structDspiBaudRateDivisors}{Dspi\+Baud\+Rate\+Divisors} \hyperlink{group__dspi__hal_ga6426ca15a4ec2fd17077db5a401737e5}{dspi\+\_\+baud\+\_\+rate\+\_\+divisors\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI baud rate divisors settings configuration structure. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structDspiCommandDataConfig}{Dspi\+Command\+Data\+Config} \hyperlink{group__dspi__hal_gaaf494c415fa4baf4998efa41992e85ce}{dspi\+\_\+command\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em D\+S\+PI command and data configuration structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__dspi__hal_ga06b41ab984bc03e6f1eb07988edcb3ea}{\+\_\+dspi\+\_\+status} \{ \\*
+{\bfseries k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Success} = 0, 
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaa9e7142dae4811be5426a39b6ddb40c31}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Slave\+Tx\+Underrun}, 
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaaba716de1ad68e6351cd2d26d0985b2e6}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Slave\+Rx\+Overrun}, 
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaa2509eed6de02d7a5c463d3c7b8b68eef}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Timeout}, 
+\\*
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaad5ecc8346da4119b8609c6bcb4c57e40}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Busy}, 
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaacec0b51b1aaabedb0343cdbb07754d01}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+No\+Transfer\+In\+Progress}, 
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaa41231c8e5ed53006eaa1a49ed5a5a904}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Invalid\+Bit\+Count}, 
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaa6c53f1865e5e78c67f06ff1238b27fdc}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Invalid\+Instance\+Number}, 
+\\*
+\hyperlink{group__dspi__hal_gga06b41ab984bc03e6f1eb07988edcb3eaac1713712f0410e28da008d714734a6bd}{k\+Status\+\_\+\+D\+S\+P\+I\+\_\+\+Out\+Of\+Range}
+ \}\begin{DoxyCompactList}\small\item\em Error codes for the D\+S\+PI driver. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga22d5d3420ce510463f61e41cbe1d1410}{\+\_\+dspi\+\_\+master\+\_\+slave\+\_\+mode} \{ \hyperlink{group__dspi__hal_gga22d5d3420ce510463f61e41cbe1d1410abf70091c32d55b88b5cdf4993fd252b6}{k\+Dspi\+Master} = 1, 
+\hyperlink{group__dspi__hal_gga22d5d3420ce510463f61e41cbe1d1410aff050dc09b18c67f40105d176c787e0a}{k\+Dspi\+Slave} = 0
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI master or slave configuration. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga8324f34ea4af085c11052288fc94983e}{\+\_\+dspi\+\_\+clock\+\_\+polarity} \{ \hyperlink{group__dspi__hal_gga8324f34ea4af085c11052288fc94983eafffdb6de18c3b46c509c406ac7230586}{k\+Dspi\+Clock\+Polarity\+\_\+\+Active\+High} = 0, 
+\hyperlink{group__dspi__hal_gga8324f34ea4af085c11052288fc94983ea415b9652394fc6b7c50f5d5377426b13}{k\+Dspi\+Clock\+Polarity\+\_\+\+Active\+Low} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI clock polarity configuration for a given C\+T\+AR. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga648d70d13ec12505a80c423841f53510}{\+\_\+dspi\+\_\+clock\+\_\+phase} \{ \hyperlink{group__dspi__hal_gga648d70d13ec12505a80c423841f53510ada723d5970a0b0a28d96a0e707cabd9c}{k\+Dspi\+Clock\+Phase\+\_\+\+First\+Edge} = 0, 
+\hyperlink{group__dspi__hal_gga648d70d13ec12505a80c423841f53510a4f1c4fe8e246d3a87f60c99d214d8921}{k\+Dspi\+Clock\+Phase\+\_\+\+Second\+Edge} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI clock phase configuration for a given C\+T\+AR. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_gaf1134e11fc318e82a6c15882fdab2760}{\+\_\+dspi\+\_\+shift\+\_\+direction} \{ \hyperlink{group__dspi__hal_ggaf1134e11fc318e82a6c15882fdab2760aed75ebb641f649ff0c4eb77d2624bcf2}{k\+Dspi\+Msb\+First} = 0, 
+\hyperlink{group__dspi__hal_ggaf1134e11fc318e82a6c15882fdab2760a582f124b275827ec23b5e4a1a70b25a7}{k\+Dspi\+Lsb\+First} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI data shifter direction options for a given C\+T\+AR. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga78060c4222b1affc8e41f937909ee999}{\+\_\+dspi\+\_\+ctar\+\_\+selection} \{ \hyperlink{group__dspi__hal_gga78060c4222b1affc8e41f937909ee999a21d94da5d7c4e6134907fad358147b35}{k\+Dspi\+Ctar0} = 0, 
+\hyperlink{group__dspi__hal_gga78060c4222b1affc8e41f937909ee999a46f7fb3102bd17be1feeec4ef83f9573}{k\+Dspi\+Ctar1} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI Clock and Transfer Attributes Register (C\+T\+AR) selection. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga1b2a1103a54ad51c35f2bdaa52ac7363}{\+\_\+dspi\+\_\+pcs\+\_\+polarity\+\_\+config} \{ \hyperlink{group__dspi__hal_gga1b2a1103a54ad51c35f2bdaa52ac7363ac82558209fcd03cfcff410f43ccd13df}{k\+Dspi\+Pcs\+\_\+\+Active\+High} = 0, 
+\hyperlink{group__dspi__hal_gga1b2a1103a54ad51c35f2bdaa52ac7363af89a174f7da2c2d1dd94eaee5f451ac7}{k\+Dspi\+Pcs\+\_\+\+Active\+Low} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI Peripheral Chip Select (P\+CS) Polarity configuration. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga738d1c33c04047440e86e29fabbbba94}{\+\_\+dspi\+\_\+which\+\_\+pcs\+\_\+config} \{ \\*
+\hyperlink{group__dspi__hal_gga738d1c33c04047440e86e29fabbbba94abf98b398d467bec5ce1332e7769b9c97}{k\+Dspi\+Pcs0} = 1 $<$$<$ 0, 
+\hyperlink{group__dspi__hal_gga738d1c33c04047440e86e29fabbbba94aae6b37fc82d8d2b7425b85dd63172acf}{k\+Dspi\+Pcs1} = 1 $<$$<$ 1, 
+\hyperlink{group__dspi__hal_gga738d1c33c04047440e86e29fabbbba94aa57c28d2307f3a08d2ca37fede94704b}{k\+Dspi\+Pcs2} = 1 $<$$<$ 2, 
+\hyperlink{group__dspi__hal_gga738d1c33c04047440e86e29fabbbba94a009e764ff551a29673559bdf51e68b37}{k\+Dspi\+Pcs3} = 1 $<$$<$ 3, 
+\\*
+\hyperlink{group__dspi__hal_gga738d1c33c04047440e86e29fabbbba94a68dbb918dfd1398b2b161142e99a2b76}{k\+Dspi\+Pcs4} = 1 $<$$<$ 4, 
+\hyperlink{group__dspi__hal_gga738d1c33c04047440e86e29fabbbba94a4fa2a14f449a06e76693a89b6861157c}{k\+Dspi\+Pcs5} = 1 $<$$<$ 5
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI Peripheral Chip Select (P\+CS) configuration (which P\+CS to configure) \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga02a53597bff1469f0365b74ad7a20237}{\+\_\+dspi\+\_\+master\+\_\+sample\+\_\+point} \{ \hyperlink{group__dspi__hal_gga02a53597bff1469f0365b74ad7a20237a6031fe2cc4a3f05a525ed515736fe8fc}{k\+Dspi\+Sck\+To\+Sin\+\_\+0\+Clock} = 0, 
+\hyperlink{group__dspi__hal_gga02a53597bff1469f0365b74ad7a20237a369e0c0de897725cc26ecbe774c52cea}{k\+Dspi\+Sck\+To\+Sin\+\_\+1\+Clock} = 1, 
+\hyperlink{group__dspi__hal_gga02a53597bff1469f0365b74ad7a20237a22ba66b2d6cfc7ab9e75415894aa457d}{k\+Dspi\+Sck\+To\+Sin\+\_\+2\+Clock} = 2
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI Sample Point\+: Controls when the D\+S\+PI master samples S\+IN in Modified Transfer Format. This field is valid only when C\+P\+HA bit in C\+T\+AR register is 0. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_gae3f607745b9b2fa245188acbe25877f0}{\+\_\+dspi\+\_\+fifo} \{ \hyperlink{group__dspi__hal_ggae3f607745b9b2fa245188acbe25877f0a1bc4ddf8090ce2f77222df8b019b77de}{k\+Dspi\+Tx\+Fifo} = 0, 
+\hyperlink{group__dspi__hal_ggae3f607745b9b2fa245188acbe25877f0a17a12e128e1f01f8024a4de10e7e09d5}{k\+Dspi\+Rx\+Fifo} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI F\+I\+FO selects. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_gabf58af9938cec54ac95d73644f41e5f4}{\+\_\+dspi\+\_\+dma\+\_\+or\+\_\+int\+\_\+mode} \{ \hyperlink{group__dspi__hal_ggabf58af9938cec54ac95d73644f41e5f4ae6f189b379c53dc2ddc1ac1b509dae9e}{k\+Dspi\+Generate\+Int\+Req} = 0, 
+\hyperlink{group__dspi__hal_ggabf58af9938cec54ac95d73644f41e5f4a3bb79d3c56c6110432d38dddef054344}{k\+Dspi\+Generate\+Dma\+Req} = 1
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI Tx F\+I\+FO Fill and Rx F\+I\+FO Drain D\+MA or Interrupt configuration. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga4ceea9e434ef062f9d1a9f34520143a3}{\+\_\+dspi\+\_\+status\+\_\+and\+\_\+interrupt\+\_\+request} \{ \\*
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3a1250abd2c9532ec9024d4e4589b15c4e}{k\+Dspi\+Tx\+Complete} = B\+P\+\_\+\+S\+P\+I\+\_\+\+R\+S\+E\+R\+\_\+\+T\+C\+F\+\_\+\+RE, 
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3a76ae26ce982dc760f34d43ef77aff4df}{k\+Dspi\+Tx\+And\+Rx\+Status} = B\+P\+\_\+\+S\+P\+I\+\_\+\+S\+R\+\_\+\+T\+X\+R\+XS, 
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3ae26e3bb587466c7075af063a5a342b68}{k\+Dspi\+End\+Of\+Queue} = B\+P\+\_\+\+S\+P\+I\+\_\+\+R\+S\+E\+R\+\_\+\+E\+O\+Q\+F\+\_\+\+RE, 
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3a9e1094f02be24573437b71f3c64a78cd}{k\+Dspi\+Tx\+Fifo\+Underflow} = B\+P\+\_\+\+S\+P\+I\+\_\+\+R\+S\+E\+R\+\_\+\+T\+F\+U\+F\+\_\+\+RE, 
+\\*
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3ac47470dc6b1cd08d73107f4aedb1ffb0}{k\+Dspi\+Tx\+Fifo\+Fill\+Request} = B\+P\+\_\+\+S\+P\+I\+\_\+\+R\+S\+E\+R\+\_\+\+T\+F\+F\+F\+\_\+\+RE, 
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3add17f34827e8e5921d4c121569534239}{k\+Dspi\+Rx\+Fifo\+Overflow} = B\+P\+\_\+\+S\+P\+I\+\_\+\+R\+S\+E\+R\+\_\+\+R\+F\+O\+F\+\_\+\+RE, 
+\hyperlink{group__dspi__hal_gga4ceea9e434ef062f9d1a9f34520143a3a573f7989c51c8a6fe6a48dd6388b32d1}{k\+Dspi\+Rx\+Fifo\+Drain\+Request} = B\+P\+\_\+\+S\+P\+I\+\_\+\+R\+S\+E\+R\+\_\+\+R\+F\+D\+F\+\_\+\+RE
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI status flags and interrupt request enable. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga7840b2a1d0cefe7f4168ab8384ee0e99}{\+\_\+dspi\+\_\+fifo\+\_\+counter\+\_\+pointer} \{ \hyperlink{group__dspi__hal_gga7840b2a1d0cefe7f4168ab8384ee0e99ac6931fb9e3b476e6fd89401b83ac3067}{k\+Dspi\+Rx\+Fifo\+Pointer} = B\+P\+\_\+\+S\+P\+I\+\_\+\+S\+R\+\_\+\+P\+O\+P\+N\+X\+T\+P\+TR, 
+\hyperlink{group__dspi__hal_gga7840b2a1d0cefe7f4168ab8384ee0e99acf7633495ed23f4216d761ae1be426a3}{k\+Dspi\+Rx\+Fifo\+Counter} = B\+P\+\_\+\+S\+P\+I\+\_\+\+S\+R\+\_\+\+R\+X\+C\+TR, 
+\hyperlink{group__dspi__hal_gga7840b2a1d0cefe7f4168ab8384ee0e99ae0c9617e48e3fb684e9358ada3925af3}{k\+Dspi\+Tx\+Fifo\+Pointer} = B\+P\+\_\+\+S\+P\+I\+\_\+\+S\+R\+\_\+\+T\+X\+N\+X\+T\+P\+TR, 
+\hyperlink{group__dspi__hal_gga7840b2a1d0cefe7f4168ab8384ee0e99a4f5aa8b944ed48d343f58caf405d4b2c}{k\+Dspi\+Tx\+Fifo\+Counter} = B\+P\+\_\+\+S\+P\+I\+\_\+\+S\+R\+\_\+\+T\+X\+C\+TR
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI F\+I\+FO counter or pointer defines based on bit positions. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__dspi__hal_ga86dbb9c380b74c6654a44a73e90573f9}{\+\_\+dspi\+\_\+delay\+\_\+type} \{ \hyperlink{group__dspi__hal_gga86dbb9c380b74c6654a44a73e90573f9a1b1297e9388df6c83b58ca3bbb3cb267}{k\+Dspi\+Pcs\+To\+Sck} = 1, 
+\hyperlink{group__dspi__hal_gga86dbb9c380b74c6654a44a73e90573f9ae7abf34372d1fd3044103519f52865c8}{k\+Dspi\+Last\+Sck\+To\+Pcs} = 2, 
+\hyperlink{group__dspi__hal_gga86dbb9c380b74c6654a44a73e90573f9a0993c646e3ceed8b6a36ae347592813f}{k\+Dspi\+After\+Transfer} = 3
+ \}\begin{DoxyCompactList}\small\item\em D\+S\+PI delay type selection. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Configuration}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__dspi__hal_gacd6eeaedf410e9e1f41b5b33649e2f53}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Init} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Restores the D\+S\+PI to reset the configuration. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__dspi__hal_ga3884240ccf644a9e72baa9bddaf879a9}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Rate} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t} which\+Ctar, uint32\+\_\+t bits\+Per\+Sec, uint32\+\_\+t source\+Clock\+In\+Hz)
+\begin{DoxyCompactList}\small\item\em Sets the D\+S\+PI baud rate in bits per second. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga50dd7a2c010f8075d8781a5f11840687}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Baud\+Divisors} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t} which\+Ctar, const \hyperlink{group__dspi__hal_ga6426ca15a4ec2fd17077db5a401737e5}{dspi\+\_\+baud\+\_\+rate\+\_\+divisors\+\_\+t} $\ast$divisors)
+\begin{DoxyCompactList}\small\item\em Configures the baud rate divisors manually. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga6204761965cfc6d7ad5fe88ff4529162}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Pcs\+Polarity\+Mode} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga5377cd155b68bf00351fff6e58230062}{dspi\+\_\+which\+\_\+pcs\+\_\+config\+\_\+t} pcs, \hyperlink{group__dspi__hal_ga8e5abd30c155a0fa6cc651a6535e8aee}{dspi\+\_\+pcs\+\_\+polarity\+\_\+config\+\_\+t} active\+Low\+Or\+High)
+\begin{DoxyCompactList}\small\item\em Configures the D\+S\+PI peripheral chip select polarity. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga83363cb5c1c771b1dadfbb4e6a5b84f9}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Fifo\+Cmd} (uint32\+\_\+t base\+Addr, bool enable\+Tx\+Fifo, bool enable\+Rx\+Fifo)
+\begin{DoxyCompactList}\small\item\em Enables (or disables) the D\+S\+PI F\+I\+F\+Os. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga4cc1d890bdeca0e0dd2b289d124e78b5}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Flush\+Fifo\+Cmd} (uint32\+\_\+t base\+Addr, bool enable\+Flush\+Tx\+Fifo, bool enable\+Flush\+Rx\+Fifo)
+\begin{DoxyCompactList}\small\item\em Flushes the D\+S\+PI F\+I\+F\+Os. \end{DoxyCompactList}\item 
+\hyperlink{group__dspi__hal_ga22d7dd51eeb108e60311c4139d619e12}{dspi\+\_\+status\+\_\+t} \hyperlink{group__dspi__hal_ga349aed7131a754766b0375ba2028daf9}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Data\+Format} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t} which\+Ctar, const \hyperlink{group__dspi__hal_ga0eeb6e5b9b331a951edcf24c269bdfcd}{dspi\+\_\+data\+\_\+format\+\_\+config\+\_\+t} $\ast$config)
+\begin{DoxyCompactList}\small\item\em Configures the data format for a particular C\+T\+AR. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga777d6d624b0d638b3ec3e4532e26e2ad}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Delay} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t} which\+Ctar, uint32\+\_\+t prescaler, uint32\+\_\+t scaler, \hyperlink{group__dspi__hal_gaf817b2c70ff1e28088181cd418f4528b}{dspi\+\_\+delay\+\_\+type\+\_\+t} which\+Delay)
+\begin{DoxyCompactList}\small\item\em Manually configures the delay prescaler and scaler for a particular C\+T\+AR. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__dspi__hal_ga93d0ac8aa458b6cce74efd6d7eb7f3c7}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Calculate\+Delay} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8d2c04fe9fd119bdcc613f4c35095721}{dspi\+\_\+ctar\+\_\+selection\+\_\+t} which\+Ctar, \hyperlink{group__dspi__hal_gaf817b2c70ff1e28088181cd418f4528b}{dspi\+\_\+delay\+\_\+type\+\_\+t} which\+Delay, uint32\+\_\+t source\+Clock\+In\+Hz, uint32\+\_\+t delay\+In\+Nano\+Sec)
+\begin{DoxyCompactList}\small\item\em Calculates the delay prescaler and scaler based on the desired delay input in nanoseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Low power}\par
+\end{Indent}
+\begin{Indent}{\bf Interrupts}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__dspi__hal_ga39e1c8668d664e897a0eba1efa99a79b}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Tx\+Fifo\+Fill\+Dma\+Int\+Mode} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8a47ddde41f47a45d797d000b6f5e6f8}{dspi\+\_\+dma\+\_\+or\+\_\+int\+\_\+mode\+\_\+t} mode, bool enable)
+\begin{DoxyCompactList}\small\item\em Configures the D\+S\+PI Tx F\+I\+FO fill request to generate D\+MA or interrupt requests. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga3ae755726cfcdb0e1b1dd97124ddf70c}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Rx\+Fifo\+Drain\+Dma\+Int\+Mode} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga8a47ddde41f47a45d797d000b6f5e6f8}{dspi\+\_\+dma\+\_\+or\+\_\+int\+\_\+mode\+\_\+t} mode, bool enable)
+\begin{DoxyCompactList}\small\item\em Configures the D\+S\+PI Rx F\+I\+FO Drain request to generate D\+MA or interrupt requests. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga33301419ad92394cc238fc4ae5c020b9}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Set\+Int\+Mode} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga59af3ccb7f04892167dc3ddf75cf2696}{dspi\+\_\+status\+\_\+and\+\_\+interrupt\+\_\+request\+\_\+t} interrupt\+Src, bool enable)
+\begin{DoxyCompactList}\small\item\em Configures the D\+S\+PI interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Status}\par
+\end{Indent}
+\begin{Indent}{\bf Data transfer}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__dspi__hal_gab0c96db580d27200d4afc44383f52d73}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Write\+Data\+Mastermode} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_gaaf494c415fa4baf4998efa41992e85ce}{dspi\+\_\+command\+\_\+config\+\_\+t} $\ast$command, uint16\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes data into the data buffer, master mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__dspi__hal_ga59b29aae7daf75de09c4a8e6b637bd7c}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Write\+Data\+Mastermode\+Blocking} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_gaaf494c415fa4baf4998efa41992e85ce}{dspi\+\_\+command\+\_\+config\+\_\+t} $\ast$command, uint16\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes data into the data buffer, master mode and waits till complete to return. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Debug}\par
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__dspi__hal_ga524e117873f9f93c2118f0175b9f6cc5}{D\+S\+P\+I\+\_\+\+H\+A\+L\+\_\+\+Get\+Fifo\+Data} (uint32\+\_\+t base\+Addr, \hyperlink{group__dspi__hal_ga4b51d4ff135ca4cb541d18e20b2c0995}{dspi\+\_\+fifo\+\_\+t} which\+Fifo, uint32\+\_\+t which\+Fifo\+Entry)
+\begin{DoxyCompactList}\small\item\em Reads F\+I\+FO registers for debug purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t {\bfseries spi\+\_\+base\+\_\+addr} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}

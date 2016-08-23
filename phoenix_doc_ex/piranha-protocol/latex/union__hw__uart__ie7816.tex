@@ -1,0 +1,37 @@
+\hypertarget{union__hw__uart__ie7816}{}\section{\+\_\+hw\+\_\+uart\+\_\+ie7816 Union Reference}
+\label{union__hw__uart__ie7816}\index{\+\_\+hw\+\_\+uart\+\_\+ie7816@{\+\_\+hw\+\_\+uart\+\_\+ie7816}}
+
+
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+I\+E7816 -\/ U\+A\+RT 7816 Interrupt Enable Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+uart.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__uart__ie7816_1_1__hw__uart__ie7816__bitfields}{\+\_\+hw\+\_\+uart\+\_\+ie7816\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__uart__ie7816_a065c133b9f986057a7f95da9f290ffcf}{}\label{union__hw__uart__ie7816_a065c133b9f986057a7f95da9f290ffcf}
+
+\item 
+struct \hyperlink{struct__hw__uart__ie7816_1_1__hw__uart__ie7816__bitfields}{\+\_\+hw\+\_\+uart\+\_\+ie7816\+::\+\_\+hw\+\_\+uart\+\_\+ie7816\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__uart__ie7816_a9cbfab9f59163b516b7f17174dfec7e4}{}\label{union__hw__uart__ie7816_a9cbfab9f59163b516b7f17174dfec7e4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+U\+A\+R\+T\+\_\+\+I\+E7816 -\/ U\+A\+RT 7816 Interrupt Enable Register (RW) 
+
+Reset value\+: 0x00U
+
+The I\+E7816 register controls which flags result in an interrupt being issued. This register is specific to 7816 functionality, the corresponding flags that drive the interrupts are not asserted when 7816E is not set/enabled. However, these flags may remain set if they are asserted while 7816E was set and not subsequently cleared. This register may be read or written to at any time. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+uart.\+h\end{DoxyCompactItemize}

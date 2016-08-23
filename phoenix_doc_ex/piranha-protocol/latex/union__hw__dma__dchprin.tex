@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__dchprin}{}\section{\+\_\+hw\+\_\+dma\+\_\+dchprin Union Reference}
+\label{union__hw__dma__dchprin}\index{\+\_\+hw\+\_\+dma\+\_\+dchprin@{\+\_\+hw\+\_\+dma\+\_\+dchprin}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+D\+C\+H\+P\+R\+In -\/ Channel n Priority Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__dchprin_1_1__hw__dma__dchprin__bitfields}{\+\_\+hw\+\_\+dma\+\_\+dchprin\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__dchprin_aec4e7fe67f25ce93cfcd984ccd1da10d}{}\label{union__hw__dma__dchprin_aec4e7fe67f25ce93cfcd984ccd1da10d}
+
+\item 
+struct \hyperlink{struct__hw__dma__dchprin_1_1__hw__dma__dchprin__bitfields}{\+\_\+hw\+\_\+dma\+\_\+dchprin\+::\+\_\+hw\+\_\+dma\+\_\+dchprin\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__dchprin_a8f9d37d1edb2dc41e56f967f66e17293}{}\label{union__hw__dma__dchprin_a8f9d37d1edb2dc41e56f967f66e17293}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+D\+C\+H\+P\+R\+In -\/ Channel n Priority Register (RW) 
+
+Reset value\+: 0x00U
+
+When fixed-\/priority channel arbitration is enabled (CR\mbox{[}E\+R\+CA\mbox{]} = 0), the contents of these registers define the unique priorities associated with each channel . The channel priorities are evaluated by numeric value; for example, 0 is the lowest priority, 1 is the next priority, then 2, 3, etc. Software must program the channel priorities with unique values; otherwise, a configuration error is reported. The range of the priority value is limited to the values of 0 through 15. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

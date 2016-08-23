@@ -1,0 +1,103 @@
+\hypertarget{group__gpio__hal}{}\section{Gpio\+\_\+hal}
+\label{group__gpio__hal}\index{Gpio\+\_\+hal@{Gpio\+\_\+hal}}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{fsl__gpio__hal_8h}{fsl\+\_\+gpio\+\_\+hal.\+h}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO hardware driver configuration. Use these functions to set the G\+P\+IO input/output, set output logic or get input logic. Check the G\+P\+IO header file for base address. Each G\+P\+IO instance has 32 pins with numbers from 0 to 31. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__gpio__hal_ga0df4be96fa56f3bdd7bfa048fdaacd6b}{\+\_\+gpio\+\_\+pin\+\_\+direction} \hyperlink{group__gpio__hal_gaf7d75755774a0f20385fbdda546f1f1d}{gpio\+\_\+pin\+\_\+direction\+\_\+t}\hypertarget{group__gpio__hal_gaf7d75755774a0f20385fbdda546f1f1d}{}\label{group__gpio__hal_gaf7d75755774a0f20385fbdda546f1f1d}
+
+\begin{DoxyCompactList}\small\item\em G\+P\+IO direction definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__gpio__hal_ga0df4be96fa56f3bdd7bfa048fdaacd6b}{\+\_\+gpio\+\_\+pin\+\_\+direction} \{ \hyperlink{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6babec990a5b8f20f01f2beda22945fe54d}{k\+Gpio\+Digital\+Input} = 0, 
+\hyperlink{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6baa00f38f21e6d42b0211d04e53e371247}{k\+Gpio\+Digital\+Output} = 1
+ \}\begin{DoxyCompactList}\small\item\em G\+P\+IO direction definition. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Configuration}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__gpio__hal_ga464b7464be9ddddd535f2ee3ceb712ad}{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir} (uint32\+\_\+t base\+Addr, uint32\+\_\+t pin, \hyperlink{group__gpio__hal_gaf7d75755774a0f20385fbdda546f1f1d}{gpio\+\_\+pin\+\_\+direction\+\_\+t} direction)
+\begin{DoxyCompactList}\small\item\em Sets the individual G\+P\+IO pin to general input or output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Output Operation}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__gpio__hal_ga8038c1d22811c93bde5f4842e1012ff1}{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output} (uint32\+\_\+t base\+Addr, uint32\+\_\+t pin, uint32\+\_\+t output)
+\begin{DoxyCompactList}\small\item\em Sets the output level of the individual G\+P\+IO pin to logic 1 or 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Gpio\+\_\+hal@{Gpio\+\_\+hal}!\+\_\+gpio\+\_\+pin\+\_\+direction@{\+\_\+gpio\+\_\+pin\+\_\+direction}}
+\index{\+\_\+gpio\+\_\+pin\+\_\+direction@{\+\_\+gpio\+\_\+pin\+\_\+direction}!Gpio\+\_\+hal@{Gpio\+\_\+hal}}
+\subsubsection[{\texorpdfstring{\+\_\+gpio\+\_\+pin\+\_\+direction}{_gpio_pin_direction}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+gpio\+\_\+pin\+\_\+direction}}\hypertarget{group__gpio__hal_ga0df4be96fa56f3bdd7bfa048fdaacd6b}{}\label{group__gpio__hal_ga0df4be96fa56f3bdd7bfa048fdaacd6b}
+
+
+G\+P\+IO direction definition. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Gpio\+Digital\+Input@{k\+Gpio\+Digital\+Input}!Gpio\+\_\+hal@{Gpio\+\_\+hal}}\index{Gpio\+\_\+hal@{Gpio\+\_\+hal}!k\+Gpio\+Digital\+Input@{k\+Gpio\+Digital\+Input}}\item[{\em 
+k\+Gpio\+Digital\+Input\hypertarget{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6babec990a5b8f20f01f2beda22945fe54d}{}\label{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6babec990a5b8f20f01f2beda22945fe54d}
+}]Set current pin as digital input \index{k\+Gpio\+Digital\+Output@{k\+Gpio\+Digital\+Output}!Gpio\+\_\+hal@{Gpio\+\_\+hal}}\index{Gpio\+\_\+hal@{Gpio\+\_\+hal}!k\+Gpio\+Digital\+Output@{k\+Gpio\+Digital\+Output}}\item[{\em 
+k\+Gpio\+Digital\+Output\hypertarget{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6baa00f38f21e6d42b0211d04e53e371247}{}\label{group__gpio__hal_gga0df4be96fa56f3bdd7bfa048fdaacd6baa00f38f21e6d42b0211d04e53e371247}
+}]Set current pin as digital output \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Gpio\+\_\+hal@{Gpio\+\_\+hal}!G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir@{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir}}
+\index{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir@{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir}!Gpio\+\_\+hal@{Gpio\+\_\+hal}}
+\subsubsection[{\texorpdfstring{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir(uint32\+\_\+t base\+Addr, uint32\+\_\+t pin, gpio\+\_\+pin\+\_\+direction\+\_\+t direction)}{GPIO_HAL_SetPinDir(uint32_t baseAddr, uint32_t pin, gpio_pin_direction_t direction)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Set\+Pin\+Dir (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{pin, }
+\item[{{\bf gpio\+\_\+pin\+\_\+direction\+\_\+t}}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{group__gpio__hal_ga464b7464be9ddddd535f2ee3ceb712ad}{}\label{group__gpio__hal_ga464b7464be9ddddd535f2ee3ceb712ad}
+
+
+Sets the individual G\+P\+IO pin to general input or output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & G\+P\+IO base address(H\+W\+\_\+\+G\+P\+I\+OA, H\+W\+\_\+\+G\+P\+I\+OB, H\+W\+\_\+\+G\+P\+I\+OC, etc.) \\
+\hline
+{\em pin} & G\+P\+IO port pin number \\
+\hline
+{\em direction} & G\+P\+IO directions
+\begin{DoxyItemize}
+\item k\+Gpio\+Digital\+Input\+: set to input
+\item k\+Gpio\+Digital\+Output\+: set to output 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\index{Gpio\+\_\+hal@{Gpio\+\_\+hal}!G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output@{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output}}
+\index{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output@{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output}!Gpio\+\_\+hal@{Gpio\+\_\+hal}}
+\subsubsection[{\texorpdfstring{G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output(uint32\+\_\+t base\+Addr, uint32\+\_\+t pin, uint32\+\_\+t output)}{GPIO_HAL_WritePinOutput(uint32_t baseAddr, uint32_t pin, uint32_t output)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+P\+I\+O\+\_\+\+H\+A\+L\+\_\+\+Write\+Pin\+Output (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{base\+Addr, }
+\item[{uint32\+\_\+t}]{pin, }
+\item[{uint32\+\_\+t}]{output}
+\end{DoxyParamCaption}
+)}\hypertarget{group__gpio__hal_ga8038c1d22811c93bde5f4842e1012ff1}{}\label{group__gpio__hal_ga8038c1d22811c93bde5f4842e1012ff1}
+
+
+Sets the output level of the individual G\+P\+IO pin to logic 1 or 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Addr} & G\+P\+IO base address(H\+W\+\_\+\+G\+P\+I\+OA, H\+W\+\_\+\+G\+P\+I\+OB, H\+W\+\_\+\+G\+P\+I\+OC, etc.) \\
+\hline
+{\em pin} & G\+P\+IO port pin number \\
+\hline
+{\em output} & pin output logic level \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,37 @@
+\hypertarget{union__hw__enet__mscr}{}\section{\+\_\+hw\+\_\+enet\+\_\+mscr Union Reference}
+\label{union__hw__enet__mscr}\index{\+\_\+hw\+\_\+enet\+\_\+mscr@{\+\_\+hw\+\_\+enet\+\_\+mscr}}
+
+
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+M\+S\+CR -\/ M\+II Speed Control Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+enet.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__enet__mscr_1_1__hw__enet__mscr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+mscr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__enet__mscr_a8457fbb28a757e8c81564b5dbbebab12}{}\label{union__hw__enet__mscr_a8457fbb28a757e8c81564b5dbbebab12}
+
+\item 
+struct \hyperlink{struct__hw__enet__mscr_1_1__hw__enet__mscr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+mscr\+::\+\_\+hw\+\_\+enet\+\_\+mscr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__enet__mscr_ab6aff4c45c2473671bca5da4f091656c}{}\label{union__hw__enet__mscr_ab6aff4c45c2473671bca5da4f091656c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+M\+S\+CR -\/ M\+II Speed Control Register (RW) 
+
+Reset value\+: 0x00000000U
+
+M\+S\+CR provides control of the M\+II clock (M\+DC pin) frequency and allows a preamble drop on the M\+II management frame. The M\+I\+I\+\_\+\+S\+P\+E\+ED field must be programmed with a value to provide an M\+DC frequency of less than or equal to 2.\+5 M\+Hz to be compliant with the I\+E\+EE 802.\+3 M\+II specification. The M\+I\+I\+\_\+\+S\+P\+E\+ED must be set to a non-\/zero value to source a read or write management frame. After the management frame is complete, the M\+S\+CR register may optionally be cleared to turn off M\+DC. The M\+DC signal generated has a 50\% duty cycle except when M\+I\+I\+\_\+\+S\+P\+E\+ED changes during operation. This change takes effect following a rising or falling edge of M\+DC. If the internal module clock is 25 M\+Hz, programming this register to 0x0000\+\_\+0004 results in an M\+DC as stated in the following equation\+: 25 M\+Hz / ((4 + 1) x 2) = 2.\+5 M\+Hz The following table shows the optimum values for M\+I\+I\+\_\+\+S\+P\+E\+ED as a function of internal module clock frequency. Programming Examples for M\+S\+CR Internal M\+AC clock frequency M\+S\+CR \mbox{[}M\+I\+I\+\_\+\+S\+P\+E\+ED\mbox{]} M\+DC frequency 25 M\+Hz 0x4 2.\+50 M\+Hz 33 M\+Hz 0x6 2.\+36 M\+Hz 40 M\+Hz 0x7 2.\+50 M\+Hz 50 M\+Hz 0x9 2.\+50 M\+Hz 66 M\+Hz 0xD 2.\+36 M\+Hz 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+enet.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{union__hw__dma__eei}{}\section{\+\_\+hw\+\_\+dma\+\_\+eei Union Reference}
+\label{union__hw__dma__eei}\index{\+\_\+hw\+\_\+dma\+\_\+eei@{\+\_\+hw\+\_\+dma\+\_\+eei}}
+
+
+H\+W\+\_\+\+D\+M\+A\+\_\+\+E\+EI -\/ Enable Error Interrupt Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+dma.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__dma__eei_1_1__hw__dma__eei__bitfields}{\+\_\+hw\+\_\+dma\+\_\+eei\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__dma__eei_a16b3e3ad1e396fe16b839534fa843ebc}{}\label{union__hw__dma__eei_a16b3e3ad1e396fe16b839534fa843ebc}
+
+\item 
+struct \hyperlink{struct__hw__dma__eei_1_1__hw__dma__eei__bitfields}{\+\_\+hw\+\_\+dma\+\_\+eei\+::\+\_\+hw\+\_\+dma\+\_\+eei\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__dma__eei_a4fc3db033d001fc2fda647a4521eef9a}{}\label{union__hw__dma__eei_a4fc3db033d001fc2fda647a4521eef9a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+D\+M\+A\+\_\+\+E\+EI -\/ Enable Error Interrupt Register (RW) 
+
+Reset value\+: 0x00000000U
+
+The E\+EI register provides a bit map for the 16 channels to enable the error interrupt signal for each channel. The state of any given channel\textquotesingle{}s error interrupt enable is directly affected by writes to this register; it is also affected by writes to the S\+E\+EI and C\+E\+EI. The \{S,C\}E\+EI are provided so the error interrupt enable for a single channel can easily be modified without the need to perform a read-\/modify-\/write sequence to the E\+EI register. The D\+MA error indicator and the error interrupt enable flag must be asserted before an error interrupt request for a given channel is asserted to the interrupt controller. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+dma.\+h\end{DoxyCompactItemize}

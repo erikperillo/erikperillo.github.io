@@ -1,0 +1,37 @@
+\hypertarget{union__hw__ftm__cntin}{}\section{\+\_\+hw\+\_\+ftm\+\_\+cntin Union Reference}
+\label{union__hw__ftm__cntin}\index{\+\_\+hw\+\_\+ftm\+\_\+cntin@{\+\_\+hw\+\_\+ftm\+\_\+cntin}}
+
+
+H\+W\+\_\+\+F\+T\+M\+\_\+\+C\+N\+T\+IN -\/ Counter Initial Value (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+ftm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__ftm__cntin_1_1__hw__ftm__cntin__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+cntin\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__ftm__cntin_ae532da2fc29b87dc4c18ef038aa3f3ed}{}\label{union__hw__ftm__cntin_ae532da2fc29b87dc4c18ef038aa3f3ed}
+
+\item 
+struct \hyperlink{struct__hw__ftm__cntin_1_1__hw__ftm__cntin__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+cntin\+::\+\_\+hw\+\_\+ftm\+\_\+cntin\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__ftm__cntin_a221225d42ecc0e1b28dd648dc400f213}{}\label{union__hw__ftm__cntin_a221225d42ecc0e1b28dd648dc400f213}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+F\+T\+M\+\_\+\+C\+N\+T\+IN -\/ Counter Initial Value (RW) 
+
+Reset value\+: 0x00000000U
+
+The Counter Initial Value register contains the initial value for the F\+TM counter. Writing to the C\+N\+T\+IN register latches the value into a buffer. The C\+N\+T\+IN register is updated with the value of its write buffer according to Registers updated from write buffers. When the F\+TM clock is initially selected, by writing a non-\/zero value to the C\+L\+KS bits, the F\+TM counter starts with the value 0x0000. To avoid this behavior, before the first write to select the F\+TM clock, write the new value to the the C\+N\+T\+IN register and then initialize the F\+TM counter by writing any value to the C\+NT register. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+ftm.\+h\end{DoxyCompactItemize}

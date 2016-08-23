@@ -1,0 +1,37 @@
+\hypertarget{union__hw__enet__eimr}{}\section{\+\_\+hw\+\_\+enet\+\_\+eimr Union Reference}
+\label{union__hw__enet__eimr}\index{\+\_\+hw\+\_\+enet\+\_\+eimr@{\+\_\+hw\+\_\+enet\+\_\+eimr}}
+
+
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+E\+I\+MR -\/ Interrupt Mask Register (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+enet.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__enet__eimr_1_1__hw__enet__eimr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+eimr\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__enet__eimr_a16e3085a0b6b6413ee9d73f1ab938c42}{}\label{union__hw__enet__eimr_a16e3085a0b6b6413ee9d73f1ab938c42}
+
+\item 
+struct \hyperlink{struct__hw__enet__eimr_1_1__hw__enet__eimr__bitfields}{\+\_\+hw\+\_\+enet\+\_\+eimr\+::\+\_\+hw\+\_\+enet\+\_\+eimr\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__enet__eimr_ada417d44b37f825ac558d7cab237566e}{}\label{union__hw__enet__eimr_ada417d44b37f825ac558d7cab237566e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+E\+N\+E\+T\+\_\+\+E\+I\+MR -\/ Interrupt Mask Register (RW) 
+
+Reset value\+: 0x00000000U
+
+E\+I\+MR controls which interrupt events are allowed to generate actual interrupts. A hardware reset clears this register. If the corresponding bits in the E\+IR and E\+I\+MR registers are set, an interrupt is generated. The interrupt signal remains asserted until a 1 is written to the E\+IR field (write 1 to clear) or a 0 is written to the E\+I\+MR field. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+enet.\+h\end{DoxyCompactItemize}

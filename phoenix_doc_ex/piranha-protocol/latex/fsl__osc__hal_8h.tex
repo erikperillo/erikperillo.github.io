@@ -1,0 +1,38 @@
+\hypertarget{fsl__osc__hal_8h}{}\section{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/osc/fsl\+\_\+osc\+\_\+hal.h File Reference}
+\label{fsl__osc__hal_8h}\index{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/osc/fsl\+\_\+osc\+\_\+hal.\+h@{/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/osc/fsl\+\_\+osc\+\_\+hal.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+device\+\_\+registers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fsl\+\_\+osc\+\_\+features.\+h\char`\"{}}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__osc__hal_ga16ed70cebc49879af6f12be1a893595e}{\+\_\+osc\+\_\+capacitor\+\_\+config} \hyperlink{group__osc__hal_ga1a1be2de080a498590bda0c9504f26f8}{osc\+\_\+capacitor\+\_\+config\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Oscillator capacitor load configurations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__osc__hal_ga16ed70cebc49879af6f12be1a893595e}{\+\_\+osc\+\_\+capacitor\+\_\+config} \{ \hyperlink{group__osc__hal_gga16ed70cebc49879af6f12be1a893595eaebd1254426bdca39d45962e6fa96aae8}{k\+Osc\+Capacitor2p} = O\+S\+C\+\_\+\+C\+R\+\_\+\+S\+C2\+P\+\_\+\+M\+A\+SK, 
+\hyperlink{group__osc__hal_gga16ed70cebc49879af6f12be1a893595ea88bf8bd84051bcaa9b3e92513c8fa188}{k\+Osc\+Capacitor4p} = O\+S\+C\+\_\+\+C\+R\+\_\+\+S\+C4\+P\+\_\+\+M\+A\+SK, 
+\hyperlink{group__osc__hal_gga16ed70cebc49879af6f12be1a893595eab1776582cbc311ef8efceed62e30192a}{k\+Osc\+Capacitor8p} = O\+S\+C\+\_\+\+C\+R\+\_\+\+S\+C8\+P\+\_\+\+M\+A\+SK, 
+\hyperlink{group__osc__hal_gga16ed70cebc49879af6f12be1a893595ea479b914c5eb49cd49f2410c7d3e8c23b}{k\+Osc\+Capacitor16p} = O\+S\+C\+\_\+\+C\+R\+\_\+\+S\+C16\+P\+\_\+\+M\+A\+SK
+ \}\begin{DoxyCompactList}\small\item\em Oscillator capacitor load configurations. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf oscillator control A\+P\+Is}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__osc__hal_ga1b1f3852fc78a98eb8dfd2fbdead4f6b}{O\+S\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+External\+Ref\+Clk\+Cmd} (uint32\+\_\+t base\+Addr, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables the external reference clock for the oscillator. \end{DoxyCompactList}\item 
+bool \hyperlink{group__osc__hal_gaa5ce7b966f53ec89b3b38d8983e17ef1}{O\+S\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+External\+Ref\+Clk\+Cmd} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Gets the external reference clock enable setting for the oscillator. \end{DoxyCompactList}\item 
+void \hyperlink{group__osc__hal_ga868cd4379e5ae1d71fd6bd22a39a49eb}{O\+S\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+External\+Ref\+Clk\+In\+Stop\+Mode\+Cmd} (uint32\+\_\+t base\+Addr, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables/disables the external reference clock in stop mode. \end{DoxyCompactList}\item 
+bool \hyperlink{group__osc__hal_ga265bd11586ea4742b87afb66054f6171}{O\+S\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+External\+Ref\+Clk\+In\+Stop\+Mode\+Cmd} (uint32\+\_\+t base\+Addr)
+\begin{DoxyCompactList}\small\item\em Gets the external reference clock enable setting in stop mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__osc__hal_gaf540fc9021fd42e537b69c49720e7cc7}{O\+S\+C\+\_\+\+H\+A\+L\+\_\+\+Set\+Capacitor\+Cmd} (uint32\+\_\+t base\+Addr, \hyperlink{group__osc__hal_ga1a1be2de080a498590bda0c9504f26f8}{osc\+\_\+capacitor\+\_\+config\+\_\+t} capacitor\+Config, bool enable)
+\begin{DoxyCompactList}\small\item\em Enables the capacitor configuration for the oscillator. \end{DoxyCompactList}\item 
+bool \hyperlink{group__osc__hal_gad12001cf61f5f4df53c860bfdc66488e}{O\+S\+C\+\_\+\+H\+A\+L\+\_\+\+Get\+Capacitor\+Cmd} (uint32\+\_\+t base\+Addr, \hyperlink{group__osc__hal_ga1a1be2de080a498590bda0c9504f26f8}{osc\+\_\+capacitor\+\_\+config\+\_\+t} capacitor\+Config)
+\begin{DoxyCompactList}\small\item\em Gets the capacitor configuration for a specific oscillator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}

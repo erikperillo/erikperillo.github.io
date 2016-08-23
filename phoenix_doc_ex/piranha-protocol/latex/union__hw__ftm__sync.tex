@@ -1,0 +1,37 @@
+\hypertarget{union__hw__ftm__sync}{}\section{\+\_\+hw\+\_\+ftm\+\_\+sync Union Reference}
+\label{union__hw__ftm__sync}\index{\+\_\+hw\+\_\+ftm\+\_\+sync@{\+\_\+hw\+\_\+ftm\+\_\+sync}}
+
+
+H\+W\+\_\+\+F\+T\+M\+\_\+\+S\+Y\+NC -\/ Synchronization (RW)  
+
+
+
+
+{\ttfamily \#include $<$M\+K64\+F12\+\_\+ftm.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__hw__ftm__sync_1_1__hw__ftm__sync__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+sync\+\_\+bitfields}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries U}\hypertarget{union__hw__ftm__sync_a7d949edacb3fa0fb9657d153cc16de19}{}\label{union__hw__ftm__sync_a7d949edacb3fa0fb9657d153cc16de19}
+
+\item 
+struct \hyperlink{struct__hw__ftm__sync_1_1__hw__ftm__sync__bitfields}{\+\_\+hw\+\_\+ftm\+\_\+sync\+::\+\_\+hw\+\_\+ftm\+\_\+sync\+\_\+bitfields} {\bfseries B}\hypertarget{union__hw__ftm__sync_aafaefa2718d144e70aa2491733460dcb}{}\label{union__hw__ftm__sync_aafaefa2718d144e70aa2491733460dcb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+W\+\_\+\+F\+T\+M\+\_\+\+S\+Y\+NC -\/ Synchronization (RW) 
+
+Reset value\+: 0x00000000U
+
+This register configures the P\+WM synchronization. A synchronization event can perform the synchronized update of M\+OD, CV, and O\+U\+T\+M\+A\+SK registers with the value of their write buffer and the F\+TM counter initialization. The software trigger, S\+W\+S\+Y\+NC bit, and hardware triggers T\+R\+I\+G0, T\+R\+I\+G1, and T\+R\+I\+G2 bits have a potential conflict if used together when S\+Y\+N\+C\+M\+O\+DE = 0. Use only hardware or software triggers but not both at the same time, otherwise unpredictable behavior is likely to happen. The selection of the loading point, C\+N\+T\+M\+AX and C\+N\+T\+M\+IN bits, is intended to provide the update of M\+OD, C\+N\+T\+IN, and CnV registers across all enabled channels simultaneously. The use of the loading point selection together with S\+Y\+N\+C\+M\+O\+DE = 0 and hardware trigger selection, T\+R\+I\+G0, T\+R\+I\+G1, or T\+R\+I\+G2 bits, is likely to result in unpredictable behavior. The synchronization event selection also depends on the P\+W\+M\+S\+Y\+NC (M\+O\+DE register) and S\+Y\+N\+C\+M\+O\+DE (S\+Y\+N\+C\+O\+NF register) bits. See P\+WM synchronization. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+M\+C\+U\+\_\+\+K64\+F/device/device/\+M\+K64\+F12/M\+K64\+F12\+\_\+ftm.\+h\end{DoxyCompactItemize}

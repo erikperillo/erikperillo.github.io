@@ -1,0 +1,91 @@
+\hypertarget{structEDMATransferConfig}{}\section{E\+D\+M\+A\+Transfer\+Config Struct Reference}
+\label{structEDMATransferConfig}\index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+
+
+e\+D\+MA transfer size configuration.  
+
+
+
+
+{\ttfamily \#include $<$fsl\+\_\+edma\+\_\+hal.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structEDMATransferConfig_aa4084947679d144000e702caf60a4b5a}{src\+Addr}
+\item 
+uint32\+\_\+t \hyperlink{structEDMATransferConfig_a78d3fa690232475c3a21b1c8b84761d2}{dest\+Addr}
+\item 
+\hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t} \hyperlink{structEDMATransferConfig_a6d0b69a4f58895eeaeaaec447c4fae23}{src\+Transfer\+Size}
+\item 
+\hyperlink{group__edma__hal_ga3cd26ca8831986959f668621f2e52d32}{edma\+\_\+transfer\+\_\+size\+\_\+t} \hyperlink{structEDMATransferConfig_a69a61bee8a0b47271644a9f9162d9170}{dest\+Transfer\+Size}
+\item 
+int16\+\_\+t \hyperlink{structEDMATransferConfig_a0fa681434c8a95d906b11ac74798b268}{src\+Offset}
+\item 
+int16\+\_\+t {\bfseries dest\+Offset}\hypertarget{structEDMATransferConfig_af0d09a0a3b482b4ef5075d206779893d}{}\label{structEDMATransferConfig_af0d09a0a3b482b4ef5075d206779893d}
+
+\item 
+uint32\+\_\+t \hyperlink{structEDMATransferConfig_a24aab8f4483f2cb5b1a0583072a860a1}{src\+Last\+Addr\+Adjust}
+\item 
+uint32\+\_\+t \hyperlink{structEDMATransferConfig_afe235925c12cfd39b89e5b73308c87c1}{dest\+Last\+Addr\+Adjust}
+\item 
+\hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t} \hyperlink{structEDMATransferConfig_a1458ad1e6c16ab87b54947399c1e4f67}{src\+Modulo}
+\item 
+\hyperlink{group__edma__hal_ga567f4aba444f1fb55ac796ea3c12b1f6}{edma\+\_\+modulo\+\_\+t} \hyperlink{structEDMATransferConfig_a0941f5eab0cb5e32c47959a38cbdeef8}{dest\+Modulo}
+\item 
+uint32\+\_\+t \hyperlink{structEDMATransferConfig_a749e1b8c1fdbf19e849141670ca3c3d2}{minor\+Loop\+Count}
+\item 
+uint16\+\_\+t \hyperlink{structEDMATransferConfig_aab33d5809b66064e4808662db93d260b}{major\+Loop\+Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+e\+D\+MA transfer size configuration. 
+
+This structure configures the basic source/destination transfer attribute. This figure shows the e\+D\+MA\textquotesingle{}s transfer model\+: 
+
+ $\vert$ Transfer Size $\vert$ $\vert$ Minor Loop $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ Major loop Count 1 $\vert$ Count $\vert$ Transfer Size $\vert$ $\vert$ \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$--$>$ Minor loop complete 
+
+ $\vert$ $\vert$ $\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ Major Loop Count 2 $\vert$ $\vert$ $\vert$ $\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$--$>$ Minor loop Complete
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---$>$ Major loop complete 
+
+\subsection{Member Data Documentation}
+\index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!dest\+Addr@{dest\+Addr}}
+\index{dest\+Addr@{dest\+Addr}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{dest\+Addr}{destAddr}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::dest\+Addr}\hypertarget{structEDMATransferConfig_a78d3fa690232475c3a21b1c8b84761d2}{}\label{structEDMATransferConfig_a78d3fa690232475c3a21b1c8b84761d2}
+Memory address pointing to the destination data. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!dest\+Last\+Addr\+Adjust@{dest\+Last\+Addr\+Adjust}}
+\index{dest\+Last\+Addr\+Adjust@{dest\+Last\+Addr\+Adjust}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{dest\+Last\+Addr\+Adjust}{destLastAddrAdjust}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::dest\+Last\+Addr\+Adjust}\hypertarget{structEDMATransferConfig_afe235925c12cfd39b89e5b73308c87c1}{}\label{structEDMATransferConfig_afe235925c12cfd39b89e5b73308c87c1}
+Last destination address adjustment. Note here it is only valid when scatter/gather feature is not enabled. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!dest\+Modulo@{dest\+Modulo}}
+\index{dest\+Modulo@{dest\+Modulo}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{dest\+Modulo}{destModulo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edma\+\_\+modulo\+\_\+t} E\+D\+M\+A\+Transfer\+Config\+::dest\+Modulo}\hypertarget{structEDMATransferConfig_a0941f5eab0cb5e32c47959a38cbdeef8}{}\label{structEDMATransferConfig_a0941f5eab0cb5e32c47959a38cbdeef8}
+Destination address modulo. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!dest\+Transfer\+Size@{dest\+Transfer\+Size}}
+\index{dest\+Transfer\+Size@{dest\+Transfer\+Size}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{dest\+Transfer\+Size}{destTransferSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edma\+\_\+transfer\+\_\+size\+\_\+t} E\+D\+M\+A\+Transfer\+Config\+::dest\+Transfer\+Size}\hypertarget{structEDMATransferConfig_a69a61bee8a0b47271644a9f9162d9170}{}\label{structEDMATransferConfig_a69a61bee8a0b47271644a9f9162d9170}
+Destination data transfer size. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!major\+Loop\+Count@{major\+Loop\+Count}}
+\index{major\+Loop\+Count@{major\+Loop\+Count}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{major\+Loop\+Count}{majorLoopCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::major\+Loop\+Count}\hypertarget{structEDMATransferConfig_aab33d5809b66064e4808662db93d260b}{}\label{structEDMATransferConfig_aab33d5809b66064e4808662db93d260b}
+Major iteration count. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!minor\+Loop\+Count@{minor\+Loop\+Count}}
+\index{minor\+Loop\+Count@{minor\+Loop\+Count}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{minor\+Loop\+Count}{minorLoopCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::minor\+Loop\+Count}\hypertarget{structEDMATransferConfig_a749e1b8c1fdbf19e849141670ca3c3d2}{}\label{structEDMATransferConfig_a749e1b8c1fdbf19e849141670ca3c3d2}
+Minor bytes transfer count. Number of bytes to be transferred in each service request of the channel. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!src\+Addr@{src\+Addr}}
+\index{src\+Addr@{src\+Addr}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{src\+Addr}{srcAddr}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::src\+Addr}\hypertarget{structEDMATransferConfig_aa4084947679d144000e702caf60a4b5a}{}\label{structEDMATransferConfig_aa4084947679d144000e702caf60a4b5a}
+Memory address pointing to the source data. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!src\+Last\+Addr\+Adjust@{src\+Last\+Addr\+Adjust}}
+\index{src\+Last\+Addr\+Adjust@{src\+Last\+Addr\+Adjust}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{src\+Last\+Addr\+Adjust}{srcLastAddrAdjust}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::src\+Last\+Addr\+Adjust}\hypertarget{structEDMATransferConfig_a24aab8f4483f2cb5b1a0583072a860a1}{}\label{structEDMATransferConfig_a24aab8f4483f2cb5b1a0583072a860a1}
+Last source address adjustment. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!src\+Modulo@{src\+Modulo}}
+\index{src\+Modulo@{src\+Modulo}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{src\+Modulo}{srcModulo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edma\+\_\+modulo\+\_\+t} E\+D\+M\+A\+Transfer\+Config\+::src\+Modulo}\hypertarget{structEDMATransferConfig_a1458ad1e6c16ab87b54947399c1e4f67}{}\label{structEDMATransferConfig_a1458ad1e6c16ab87b54947399c1e4f67}
+Source address modulo. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!src\+Offset@{src\+Offset}}
+\index{src\+Offset@{src\+Offset}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{src\+Offset}{srcOffset}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t E\+D\+M\+A\+Transfer\+Config\+::src\+Offset}\hypertarget{structEDMATransferConfig_a0fa681434c8a95d906b11ac74798b268}{}\label{structEDMATransferConfig_a0fa681434c8a95d906b11ac74798b268}
+Sign-\/extended offset applied to the current source address to form the next-\/state value as each source read/write is completed. \index{E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}!src\+Transfer\+Size@{src\+Transfer\+Size}}
+\index{src\+Transfer\+Size@{src\+Transfer\+Size}!E\+D\+M\+A\+Transfer\+Config@{E\+D\+M\+A\+Transfer\+Config}}
+\subsubsection[{\texorpdfstring{src\+Transfer\+Size}{srcTransferSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edma\+\_\+transfer\+\_\+size\+\_\+t} E\+D\+M\+A\+Transfer\+Config\+::src\+Transfer\+Size}\hypertarget{structEDMATransferConfig_a6d0b69a4f58895eeaeaaec447c4fae23}{}\label{structEDMATransferConfig_a6d0b69a4f58895eeaeaaec447c4fae23}
+Source data transfer size. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/proj/piranha/code/piranha-\/ptc/src/receiver/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+K64\+F/\+T\+A\+R\+G\+E\+T\+\_\+\+Freescale/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+M\+C\+U\+S/\+T\+A\+R\+G\+E\+T\+\_\+\+K\+P\+S\+D\+K\+\_\+\+C\+O\+D\+E/hal/edma/fsl\+\_\+edma\+\_\+hal.\+h\end{DoxyCompactItemize}
