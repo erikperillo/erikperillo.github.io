@@ -140,11 +140,15 @@ z-index: 999;
 		border-radius: 5px;
 		color: #fff;
 		font-size: 18px;
+		margin-bottom: 3cm;
 		padding: 10px 30px;
 		text-decoration: none;
 		text-transform: capitalize;
 		-webkit-transition: all 0.3s ease;
-						transition: all 0.3s ease;
+		transition: all 0.3s ease;
+}
+.empty {
+	padding-bottom: 0.75cm;	
 }
 .feature-content-link:hover, .feature-content-link:link, .feature-content-link:visited	{
 	color: white;
