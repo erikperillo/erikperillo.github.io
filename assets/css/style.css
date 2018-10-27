@@ -1,12 +1,12 @@
 body
 {
-    width: 55%;
-    min-width: 500px;
+    width: 40%;
+    min-width: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: lightgray;
     font-family: "Lucida Console";
-    font-size: 155%;
+    font-size: 200%;
 }
 
 #post
